@@ -1,0 +1,444 @@
+== France ==
+{{Monopoly board detail
+ |Edition = [[Paris]] Edition
+ |Copyright_date =
+ |Released_by =
+ |Issued_through =
+
+ |corner_1 = '''Départ'''
+ |corner_2 = En prison
+ |corner_3 = Parking Gratuit
+ |corner_4 = Allez en prison
+
+ |spaces_horizontal = 9
+ |spaces_vertical = 9
+
+ |Color_101 = #ff00ff |Space_101 = Boul. de [[Belleville, Paris|Belleville]]
+ |Color_102 = |Space_102 = Caisse de communauté
+ |Color_103 = #ff00ff |Space_103 = Rue Lecourbe
+ |Color_104 = |Space_104 = Impôt sur le revenu
+ |Color_105 = |Space_105 = [[Gare Montparnasse]]
+ |Color_106 = SkyBlue |Space_106 = [[Rue de Vaugirard]]
+ |Color_107 = |Space_107 = Chance
+ |Color_108 = SkyBlue |Space_108 = Rue de Courcelles
+ |Color_109 = SkyBlue |Space_109 = Avenue de la République
+ |Color_110 = |Space_110 =
+ |Color_111 = |Space_111 =
+ |Color_112 = |Space_112 =
+
+ |Color_201 = |Space_201 =
+ |Color_202 = |Space_202 =
+ |Color_203 = |Space_203 =
+ |Color_204 = DarkOrchid |Space_204 = Boul. de la Villette
+ |Color_205 = |Space_205 = [[Électricité de France|Compagnie d'électricité]]
+ |Color_206 = DarkOrchid |Space_206 = Avenue de Neuilly
+ |Color_207 = DarkOrchid |Space_207 = Rue de Paradis
+ |Color_208 = |Space_208 = [[Paris-Gare de Lyon|Gare de Lyon]]
+ |Color_209 = Orange |Space_209 = Avenue Mozart
+ |Color_210 = |Space_210 = Caisse de communauté
+ |Color_211 = Orange |Space_211 = [[Boulevard Saint-Michel]]
+ |Color_212 = Orange |Space_212 = [[Place Pigalle]]
+
+ |Color_301 = Red |Space_301 = Avenue Matignon
+ |Color_302 = |Space_302 = Chance
+ |Color_303 = Red |Space_303 = Boulevard Malesherbes
+ |Color_304 = Red |Space_304 = [[Avenue Henri-Martin]]
+ |Color_305 = |Space_305 = [[Gare du Nord]]
+ |Color_306 = Yellow |Space_306 = [[Faubourg Saint-Honoré]]
+ |Color_307 = Yellow |Space_307 = Place de la Bourse
+ |Color_308 = |Space_308 = [[Veolia Environnement|Compagnie des eaux]]
+ |Color_309 = Yellow |Space_309 = Rue Lafayette
+ |Color_310 = |Space_310 =
+ |Color_311 = |Space_311 =
+ |Color_312 = |Space_312 =
+
+ |Color_401 = Green |Space_401 = Avenue de Breteuil
+ |Color_402 = Green |Space_402 = [[Avenue Foch]]
+ |Color_403 = |Space_403 = Caisse de communauté
+ |Color_404 = Green |Space_404 = [[Boulevard des Capucines]]
+ |Color_405 = |Space_405 = [[Gare Saint-Lazare]]
+ |Color_406 = |Space_406 = Chance
+ |Color_407 = Blue |Space_407 = [[Champs-Élysées|Avenue des Champs-Élysées]]
+ |Color_408 = |Space_408 = Taxe de luxe
+ |Color_409 = Blue |Space_409 = [[Rue de la Paix]]
+ |Color_410 = |Space_410 =
+ |Color_411 = |Space_411 =
+ |Color_412 = |Space_412 =
+
+ |Game_description = Main French board, also updated for Monopoly - Nouveau plateau in 2005.
+ |Tokens =
+ |Other_features = 1st color group lilac<ref>{{cite web|url=http://www.muurkrant.nl/monopoly/france_-_2005_-_New_streets.htm|title=France - 2005 - New Streets?|accessdate=2009-01-31|url-status=dead|archiveurl=https://web.archive.org/web/20081226151106/http://www.muurkrant.nl/monopoly/france_-_2005_-_New_streets.htm|archivedate=2008-12-26}}</ref>
+ |Images =
+}}
+[[Alsace]] Edition
+
+[[Amiens]] Edition
+
+[[Angers]] Edition
+
+[[Avignon]] Edition
+
+[[Bassin d'Arcachon]] Edition
+
+[[Beauvais]] Edition
+
+[[Besançon]] Edition
+
+[[Bordeaux]] Edition
+
+[[Brest, France|Brest]] Edition
+
+[[Brittany]] Edition
+
+[[Caen]] Edition
+
+[[Camargue]] Edition
+
+[[Chamonix]] Edition
+
+[[Corsica|Corse]] Edition
+
+{{Monopoly board detail
+ |Edition = [[Côte d'Azur]] Edition (2000)
+ |Copyright_date =
+ |Released_by =
+ |Issued_through =
+
+ |corner_1 = Départ
+ |corner_2 = En prison
+ |corner_3 = Parc gratuit
+ |corner_4 = Allez en prison
+
+ |spaces_horizontal = 9
+ |spaces_vertical = 9
+
+ |Color_101 = SaddleBrown |Space_101 = La Ciotat: Allée Lumière
+ |Color_102 = |Space_102 = Caisse de communauté
+ |Color_103 = SaddleBrown |Space_103 = Cavalaire-sur-Mer: Avenue des Alliés
+ |Color_104 = |Space_104 = Impôt sur le revenu
+ |Color_105 = |Space_105 = Casino de Cassis
+ |Color_106 = SkyBlue |Space_106 = Cagnes-Sur-Mer: Boulevard du Maréchal Juin
+ |Color_107 = |Space_107 = Chance
+ |Color_108 = SkyBlue |Space_108 = Sanary-sur-Mer: Avenue Portissol
+ |Color_109 = SkyBlue |Space_109 = Bandol: Quai Général de Gaulle
+ |Color_110 = |Space_110 =
+ |Color_111 = |Space_111 =
+ |Color_112 = |Space_112 =
+
+ |Color_201 = |Space_201 =
+ |Color_202 = |Space_202 =
+ |Color_203 = |Space_203 =
+ |Color_204 = DarkOrchid |Space_204 = Bormes-les-Mimosas: Rue Carnot
+ |Color_205 = |Space_205 = Compagnie de distribution d'électricité
+ |Color_206 = DarkOrchid |Space_206 = Hyères: Avenue Gambetta
+ |Color_207 = DarkOrchid |Space_207 = Le Lavandou: Avenue Delattre de Tassigny
+ |Color_208 = |Space_208 = Casino de Monaco
+ |Color_209 = Orange |Space_209 = Saint-Paul-de-Vence: Place du Jeu de Boule
+ |Color_210 = |Space_210 = Caisse de communauté
+ |Color_211 = Orange |Space_211 = Toulon: Boulevard de Strasbourg
+ |Color_212 = Orange |Space_212 = Juan-les-Pins: Boulevard Charles Guillaumont
+
+ |Color_301 = Red |Space_301 = Menton: Promenade du Soleil
+ |Color_302 = |Space_302 = Chance
+ |Color_303 = Red |Space_303 = Antibes: Boulevard du Cap
+ |Color_304 = Red |Space_304 = Saint-Jean-Cap-Ferrat: Pointe Sainte-Hospice
+ |Color_305 = |Space_305 = Casino de Nice
+ |Color_306 = Yellow |Space_306 = Sainte-Maxime: Promenade Simone Lorière
+ |Color_307 = |Space_307 = Compagnie de distribution des eaux
+ |Color_308 = Yellow |Space_308 = Cassis: Quai des Beaux
+ |Color_309 = Yellow |Space_309 = Saint-Raphaël: Rue Félix Martin
+ |Color_310 = |Space_310 =
+ |Color_311 = |Space_311 =
+ |Color_312 = |Space_312 =
+
+ |Color_401 = Green |Space_401 = Saint-Tropez: Quai de Suffren
+ |Color_402 = Green |Space_402 = Grasse: Boulevard J-H. Fragonard
+ |Color_403 = |Space_403 = Caisse de communauté
+ |Color_404 = Green |Space_404 = Principauté de Monaco: Boulevard des Moulins
+ |Color_405 = |Space_405 = Casino de Cannes
+ |Color_406 = |Space_406 = Chance
+ |Color_407 = Blue |Space_407 = Cannes: La Croisette
+ |Color_408 = |Space_408 = Taxe de luxe
+ |Color_409 = Blue |Space_409 = Nice: Promenade des Anglais
+ |Color_410 = |Space_410 =
+ |Color_411 = |Space_411 =
+ |Color_412 = |Space_412 =
+
+ |Game_description = Released on the occasion of the International Games Festival in [[Cannes]].
+ |Tokens =
+ |Other_features =
+ |Images =
+}}
+[[Dijon]] Edition
+
+[[Dunkirk]] Edition
+
+[[Gironde]] Edition
+
+[[Grenoble]] Edition
+
+{{Monopoly board detail
+ |Edition = [[Guadeloupe]] Edition (1999)
+ |Copyright_date =
+ |Released_by =
+ |Issued_through =
+
+ |corner_1 = Départ
+ |corner_2 = En Prison
+ |corner_3 = Parc Gratuit
+ |corner_4 = Allez en Prison
+
+ |spaces_horizontal = 9
+ |spaces_vertical = 9
+
+ |Color_101 = SaddleBrown |Space_101 = Sainte-Rose: Sofaïa
+ |Color_102 = |Space_102 = Caisse de communauté
+ |Color_103 = SaddleBrown |Space_103 = La Désirade: Petite-Terre
+ |Color_104 = |Space_104 = Impôt sur le revenu
+ |Color_105 = |Space_105 = Gourbeyre: Marina de Rivière-Sens
+ |Color_106 = SkyBlue |Space_106 = Pointe-Noire: Plage de Petite Anse
+ |Color_107 = |Space_107 = Chance
+ |Color_108 = SkyBlue |Space_108 = Lamentin: Ravine Chaude
+ |Color_109 = SkyBlue |Space_109 = Route de la Traversée
+ |Color_110 = |Space_110 =
+ |Color_111 = |Space_111 =
+ |Color_112 = |Space_112 =
+
+ |Color_201 = |Space_201 =
+ |Color_202 = |Space_202 =
+ |Color_203 = |Space_203 =
+ |Color_204 = DarkOrchid |Space_204 = Le Moule: Baie du Moule
+ |Color_205 = |Space_205 = Compagnie de distribution d'électricité
+ |Color_206 = DarkOrchid |Space_206 = Marie-Galante: Habitation Murat
+ |Color_207 = DarkOrchid |Space_207 = Anse-Bertrand: Pointe de la Vigie
+ |Color_208 = |Space_208 = Marina du Gosier
+ |Color_209 = Orange |Space_209 = Sainte-Anne: Plage de la Caravelle
+ |Color_210 = |Space_210 = Caisse de communauté
+ |Color_211 = Orange |Space_211 = Capesterre: Allée Dumanoir
+ |Color_212 = Orange |Space_212 = Les Saintes: Baie des Saintes
+
+ |Color_301 = Red |Space_301 = Basse-Terre: Champ d'Arbaud
+ |Color_302 = |Space_302 = Chance
+ |Color_303 = Red |Space_303 = Bouillante: Plage de Malendure
+ |Color_304 = Red |Space_304 = Pointe-à-Pitre: Place du Marché aux Épices
+ |Color_305 = |Space_305 = Marina de Saint-Martin
+ |Color_306 = Yellow |Space_306 = Jarry: Boulevard de Houelbourg
+ |Color_307 = Yellow |Space_307 = Basse-Terre: Boulevard Maritime
+ |Color_308 = |Space_308 = Compagnie de distribution des eaux
+ |Color_309 = Yellow |Space_309 = Deshaies: Pointe Batterie
+ |Color_310 = |Space_310 =
+ |Color_311 = |Space_311 =
+ |Color_312 = |Space_312 =
+
+ |Color_401 = Green |Space_401 = Petit-Bourg: Hauteurs de Vernou
+ |Color_402 = Green |Space_402 = Pointe-à-Pitre: Rue Frébault
+ |Color_403 = |Space_403 = Caisse de communauté
+ |Color_404 = Green |Space_404 = Saint-Claude: Plateau de la Soufrière
+ |Color_405 = |Space_405 = Marina de Saint-Barthélémy
+ |Color_406 = |Space_406 = Chance
+ |Color_407 = Blue |Space_407 = Hauteurs de Saint-François
+ |Color_408 = |Space_408 = Taxe de luxe
+ |Color_409 = Blue |Space_409 = Gosier: Pointe de la Verdure
+ |Color_410 = |Space_410 =
+ |Color_411 = |Space_411 =
+ |Color_412 = |Space_412 =
+
+ |Game_description =
+ |Tokens =
+ |Other_features =
+ |Images =
+}}
+[[Le Havre]] Edition
+
+[[Lille]] Edition
+
+[[Lorraine (province)|Lorraine]] Edition
+
+{{Monopoly board detail
+ |Edition = [[Lyon]] Edition (1998)
+ |Copyright_date = 1998
+ |Released_by =
+ |Issued_through =
+
+ |corner_1 = Départ
+ |corner_2 = En Prison
+ |corner_3 = Parc Gratuit
+ |corner_4 = Allez en Prison
+
+ |spaces_horizontal = 9
+ |spaces_vertical = 9
+
+ |Color_101 = SaddleBrown |Space_101 = Boulevard des États-Unis
+ |Color_102 = |Space_102 = Caisse de communauté
+ |Color_103 = SaddleBrown |Space_103 = Rue des Capucins
+ |Color_104 = |Space_104 = Impôt sur le revenu
+ |Color_105 = |Space_105 = Gare de Lyon Part-Dieu
+ |Color_106 = SkyBlue |Space_106 = Rue Marrietton
+ |Color_107 = |Space_107 = Chance
+ |Color_108 = SkyBlue |Space_108 = Avenue Tony Garnier
+ |Color_109 = SkyBlue |Space_109 = Avenue Berthelot
+ |Color_110 = |Space_110 =
+ |Color_111 = |Space_111 =
+ |Color_112 = |Space_112 =
+
+ |Color_201 = |Space_201 =
+ |Color_202 = |Space_202 =
+ |Color_203 = |Space_203 =
+ |Color_204 = DarkOrchid |Space_204 = Rue Saint Jean
+ |Color_205 = |Space_205 = Compagnie de distribution d'électricité
+ |Color_206 = DarkOrchid |Space_206 = Avenue Jean Jaurès
+ |Color_207 = DarkOrchid |Space_207 = Cours de la Liberté
+ |Color_208 = |Space_208 = Gare de Perrache
+ |Color_209 = Orange |Space_209 = Rue Garibaldi
+ |Color_210 = |Space_210 = Caisse de communauté
+ |Color_211 = Orange |Space_211 = Cours Lafayette
+ |Color_212 = Orange |Space_212 = Rue de Brest
+
+ |Color_301 = Red |Space_301 = Place Bellecour
+ |Color_302 = |Space_302 = Chance
+ |Color_303 = Red |Space_303 = Rue Auguste Comte
+ |Color_304 = Red |Space_304 = Rue Victor Hugo
+ |Color_305 = |Space_305 = Gare des Brotteaux
+ |Color_306 = Yellow |Space_306 = Boulevard des Brotteaux
+ |Color_307 = Yellow |Space_307 = Avenue du Maréchal de Saxe
+ |Color_308 = |Space_308 = Compagnie de distribution des eaux
+ |Color_309 = Yellow |Space_309 = Boulevard de la Croix Rousse
+ |Color_310 = |Space_310 =
+ |Color_311 = |Space_311 =
+ |Color_312 = |Space_312 =
+
+ |Color_401 = Green |Space_401 = Rue du Président E.Herriot
+ |Color_402 = Green |Space_402 = Avenue Foch
+ |Color_403 = |Space_403 = Caisse de communauté
+ |Color_404 = Green |Space_404 = Cours Vitton
+ |Color_405 = |Space_405 = Gare de Satolas
+ |Color_406 = |Space_406 = Chance
+ |Color_407 = Blue |Space_407 = Rue de la République
+ |Color_408 = |Space_408 = Taxe de luxe
+ |Color_409 = Blue |Space_409 = Boulevard des Belges
+ |Color_410 = |Space_410 =
+ |Color_411 = |Space_411 =
+ |Color_412 = |Space_412 =
+
+ |Game_description =
+ |Tokens =
+ |Other_features =
+ |Images =
+}}
+[[Marseille]] Edition
+
+{{Monopoly board detail
+ |Edition = [[Martinique]] Edition (1999)
+ |Copyright_date =
+ |Released_by =
+ |Issued_through =
+
+ |corner_1 = Départ
+ |corner_2 = En Prison
+ |corner_3 = Parc Gratuit
+ |corner_4 = Allez en Prison
+
+ |spaces_horizontal = 9
+ |spaces_vertical = 9
+
+ |Color_101 = SaddleBrown |Space_101 = Route du Rhum
+ |Color_102 = |Space_102 = Caisse de communauté
+ |Color_103 = SaddleBrown |Space_103 = Le Precheur: Anse Couleuvre
+ |Color_104 = |Space_104 = Impôt sur le revenu
+ |Color_105 = |Space_105 = Marina du François
+ |Color_106 = SkyBlue |Space_106 = Fort-de-France: Place de la Savane
+ |Color_107 = |Space_107 = Chance
+ |Color_108 = SkyBlue |Space_108 = Route de la Trace
+ |Color_109 = SkyBlue |Space_109 = Pitons du Carbet
+ |Color_110 = |Space_110 =
+ |Color_111 = |Space_111 =
+ |Color_112 = |Space_112 =
+
+ |Color_201 = |Space_201 =
+ |Color_202 = |Space_202 =
+ |Color_203 = |Space_203 =
+ |Color_204 = DarkOrchid |Space_204 = Trace des Jésuites
+ |Color_205 = |Space_205 = Compagnie de distribution d'électricité
+ |Color_206 = DarkOrchid |Space_206 = Fort-de-France: Fort Saint-Louis
+ |Color_207 = DarkOrchid |Space_207 = Saint-Joseph: Coeur Bouliqui
+ |Color_208 = |Space_208 = Marina de Fort-de-France
+ |Color_209 = Orange |Space_209 = Montagne Vauclin
+ |Color_210 = |Space_210 = Caisse de communauté
+ |Color_211 = Orange |Space_211 = Ajoupa Bouillon: Gorges de la Falaise
+ |Color_212 = Orange |Space_212 = Tartane: Chateau Dubuc
+
+ |Color_301 = Red |Space_301 = Sainte-Anne: Cap Chevalier
+ |Color_302 = |Space_302 = Chance
+ |Color_303 = Red |Space_303 = Trois Ilets: Domaine de la Pagerie
+ |Color_304 = Red |Space_304 = Route des Anses
+ |Color_305 = |Space_305 = Marina des Trois Ilets
+ |Color_306 = Yellow |Space_306 = La Montagne Pelée
+ |Color_307 = Yellow |Space_307 = Le François: Ilet Oscar
+ |Color_308 = |Space_308 = Compagnie de distribution des eaux
+ |Color_309 = Yellow |Space_309 = Rade de Saint-Pierre
+ |Color_310 = |Space_310 =
+ |Color_311 = |Space_311 =
+ |Color_312 = |Space_312 =
+
+ |Color_401 = Green |Space_401 = Fort-de-France: Quai de Suffren
+ |Color_402 = Green |Space_402 = Rocher du Diamant
+ |Color_403 = |Space_403 = Caisse de communauté
+ |Color_404 = Green |Space_404 = Les Anses d'Arlets: Grande Anse
+ |Color_405 = |Space_405 = Marina du Marin
+ |Color_406 = |Space_406 = Chance
+ |Color_407 = Blue |Space_407 = Trois Ilets: Pointe du Bout
+ |Color_408 = |Space_408 = Taxe de luxe
+ |Color_409 = Blue |Space_409 = Sainte-Anne: Les Salines
+ |Color_410 = |Space_410 =
+ |Color_411 = |Space_411 =
+ |Color_412 = |Space_412 =
+
+ |Game_description =
+ |Tokens =
+ |Other_features =
+ |Images =
+}}
+[[Metz]] Edition
+
+[[Montcuq]] Edition
+
+[[Montpellier]] Edition
+
+[[Nantes]] Edition
+
+[[Nice]] Edition
+
+[[Nîmes]] Edition
+
+[[Nord-Pas de Calais]] Edition
+
+[[Orléans]] Edition
+
+[[Northern Basque Country|Pays Basque]] Edition
+
+[[Périgord]] Edition
+
+[[Poitou]] Edition
+
+[[Reims]] Edition
+
+[[Rennes]] Edition
+
+{{Monopoly board detail
+ |Edition = [[Réunion]] Edition (2000)
+ |Copyright_date =
+ |Released_by =
+ |Issued_through =
+
+ |corner_1 = Départ
+ |corner_2 = En Prison
+ |corner_3 = Parc Gratuit
+ |corner_4 = Allez en Prison
+
+ |spaces_horizontal = 9
+ |spaces_vertical = 9
+
+ |Color_101 = SaddleBrown |Space_101 = Bras-Panon: Rivière des Roches
+ |Color_102 = |Space_102 = Caisse de communauté
+ |Color_103 = SaddleBrown |Space_103 = Sainte-Suzanne: Rue Pierre Mendès France
+ |Color_104 = |Space_104 = Impôt sur
