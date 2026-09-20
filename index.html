@@ -2541,6 +2541,10 @@
         alert("Veuillez saisir un nom pour l'édition.");
         return;
       }
+      if (!/monopoly/i.test(name)) {
+        alert("Action refusée : Cette application est exclusivement réservée à la collection de jeux Monopoly. L'ajout d'autres jeux de société n'est pas autorisé.");
+        return;
+      }
 
       const status = document.getElementById("addStatus").value;
       const cat = document.getElementById("addCategory").value.trim() || "Personnalisée";
@@ -3047,7 +3051,8 @@
         }
       }
 
-      // 1b. Native OCR Text Detection (detect copyright year, Hasbro/Parker, legal mentions)
+      // 1b. Native OCR Text Detection (detect copyright year, Hasbro/Parker, legal mentions & Monopoly check)
+      let ocrAllText = "";
       if ("TextDetector" in window) {
         try {
           const textDetector = new window.TextDetector();
@@ -3062,6 +3067,7 @@
             if (detectedTexts && detectedTexts.length > 0) {
               for (let t of detectedTexts) {
                 const str = t.rawValue || "";
+                ocrAllText += " " + str;
                 if (/hasbro/i.test(str)) detectedLegalPublisher = "Hasbro";
                 else if (/parker/i.test(str)) detectedLegalPublisher = "Parker Brothers";
                 else if (/winning\s*moves/i.test(str)) detectedLegalPublisher = "Winning Moves";
@@ -3109,7 +3115,7 @@
       if (geminiKey && geminiKey.trim() && photos.length > 0) {
         try {
           const parts = [
-            { text: "Analyse ces photos d'une boîte de Monopoly physique (face avant avec logo/thème, dos avec mentions légales, pions, règles ou détails). REGARDE ATTENTIVEMENT AU DOS LE COPYRIGHT OU L'ANNÉE LÉGALE (ex: © 2021, 2021 Hasbro, etc.). Ne jamais inventer l'année en cours (2026). Identifie précisément: 1. Le nom officiel exact du jeu (ex: Monopoly 3, 2, 1, Monopoly Builder, etc.), 2. L'année d'édition exacte imprimée sur la boîte, 3. L'éditeur (Hasbro, Parker Brothers, Winning Moves, etc.), 4. La catégorie du jeu, 5. Le code-barres EAN si visible. Réponds UNIQUEMENT sous forme de JSON strict: {\"title\": \"...\", \"year\": \"...\", \"publisher\": \"...\", \"category\": \"...\", \"barcode\": \"...\"}" }
+            { text: "Analyse ces photos d'une boîte de jeu de société. ATTENTION : cette application est EXCLUSIVEMENT dédiée aux Monopoly. Si ce n'est PAS un Monopoly (ex: Scrabble, Uno, Cluedo, Catan, Bonne Paye, etc.), réponds UNIQUEMENT: {\"is_monopoly\": false, \"detected_game\": \"...\"} . Si c'est bien un Monopoly, identifie précisément: 1. Le nom officiel exact du jeu (ex: Monopoly 3, 2, 1, Monopoly Builder, etc.), 2. L'année d'édition exacte imprimée au dos de la boîte (mentions légales / copyright), 3. L'éditeur, 4. La catégorie, 5. Le code-barres EAN si visible. Réponds sous forme de JSON strict: {\"is_monopoly\": true, \"title\": \"...\", \"year\": \"...\", \"publisher\": \"...\", \"category\": \"...\", \"barcode\": \"...\"}" }
           ];
 
           photos.slice(0, 4).forEach(function(p) {
@@ -3138,7 +3144,27 @@
         }
       }
 
-      // 3. Match Barcode in Known Dictionary or Database
+      // 3. Check if game is NOT a Monopoly
+      let isNotMonopoly = false;
+      let detectedNonMonopolyName = "";
+
+      const nonMonopolyRegex = /\b(scrabble|cluedo|clue|trivial\s*pursuit|bonne\s*paye|payday|catan|carcassonne|dixit|uno|puissance\s*4|connect\s*4|qui\s*est[\s-]ce|guess\s*who|twister|boggle|risk|stratego|destins|docteur\s*maboul|operation|timeline|7\s*wonders|splendor|aventuriers\s*du\s*rail|ticket\s*to\s*ride|mille\s*bornes|tarot|belote|poker|echecs|chess|dames|dominos|mastermind|rummikub|jungle\s*speed|time's\s*up|dobble)\b/i;
+
+      if (aiDetection && aiDetection.is_monopoly === false) {
+        isNotMonopoly = true;
+        detectedNonMonopolyName = aiDetection.detected_game || "Autre jeu";
+      } else if (aiDetection && aiDetection.title && !/monopoly/i.test(aiDetection.title)) {
+        isNotMonopoly = true;
+        detectedNonMonopolyName = aiDetection.title;
+      } else if (ocrAllText) {
+        const otherMatch = ocrAllText.match(nonMonopolyRegex);
+        if (otherMatch && !/monopoly/i.test(ocrAllText)) {
+          isNotMonopoly = true;
+          detectedNonMonopolyName = otherMatch[0];
+        }
+      }
+
+      // Match Barcode in Known Dictionary or Database
       let dbBarcodeMatch = null;
       if (detectedBarcode) {
         dbBarcodeMatch = database.find(function(item) {
@@ -3202,7 +3228,9 @@
         year: resolvedYear, // null if unknown, NEVER 2026!
         publisher: resolvedPublisher,
         category: resolvedCategory,
-        barcode: detectedBarcode
+        barcode: detectedBarcode,
+        isNotMonopoly: isNotMonopoly,
+        detectedNonMonopolyName: detectedNonMonopolyName
       };
 
       overlay.style.display = "none";
@@ -3262,6 +3290,28 @@
     function renderScannerResults(candidates, query) {
       const container = document.getElementById("scannerResultArea");
       const statsLabel = document.getElementById("matchStatsLabel");
+
+      const nonMonopolyRegex = /\b(scrabble|cluedo|clue|trivial\s*pursuit|bonne\s*paye|payday|catan|carcassonne|dixit|uno|puissance\s*4|connect\s*4|qui\s*est[\s-]ce|guess\s*who|twister|boggle|risk|stratego|destins|docteur\s*maboul|operation|timeline|7\s*wonders|splendor|aventuriers\s*du\s*rail|ticket\s*to\s*ride|mille\s*bornes|tarot|belote|poker|echecs|chess|dames|dominos|mastermind|rummikub|jungle\s*speed|time's\s*up|dobble)\b/i;
+      const isQueryNonMonopoly = query && nonMonopolyRegex.test(query) && !/monopoly/i.test(query);
+
+      // BLOCKING SCREEN IF NOT A MONOPOLY
+      if ((detectedInfoFromScan && detectedInfoFromScan.isNotMonopoly) || isQueryNonMonopoly) {
+        statsLabel.textContent = "Jeu non autorisé";
+        const gameName = (detectedInfoFromScan && detectedInfoFromScan.detectedNonMonopolyName) ? detectedInfoFromScan.detectedNonMonopolyName : (query || "autre jeu de société");
+        container.innerHTML = 
+          '<div style="background: rgba(239, 68, 68, 0.08); border: 2px solid #ef4444; border-radius: 12px; padding: 24px; text-align: center; margin: 12px 0;">' +
+            '<div style="font-size: 3rem; margin-bottom: 10px;">🚫</div>' +
+            '<h3 style="color: #ef4444; font-size: 1.25rem; font-weight: 800; margin: 0 0 8px 0;">Ce jeu n\'est pas un Monopoly</h3>' +
+            '<p style="color: var(--text-muted); font-size: 0.9rem; max-width: 480px; margin: 0 auto 16px auto; line-height: 1.5;">' +
+              'Le jeu détecté (<strong>' + gameName.replace(/"/g, '&quot;') + '</strong>) ne fait pas partie de l\'univers Monopoly.<br>' +
+              'Cette application est <strong>exclusivement réservée aux jeux Monopoly</strong>. L\'ajout d\'autres jeux de société n\'est pas autorisé.' +
+            '</p>' +
+            '<button class="btn btn-primary" onclick="resetScannerUI()" style="background: #6366f1; border-color: #6366f1; font-weight: 700; padding: 10px 18px;">' +
+              '🔄 Scanner un jeu Monopoly' +
+            '</button>' +
+          '</div>';
+        return;
+      }
 
       const frontPhoto = currentScannedPhotos.find(function(p) { return p.role === "front"; }) || currentScannedPhotos[0];
       const backPhoto = currentScannedPhotos.find(function(p) { return p.role === "back"; }) || (currentScannedPhotos.length > 1 ? currentScannedPhotos[1] : null);
@@ -3561,6 +3611,10 @@
         let name = nameInput ? nameInput.value.trim() : "";
         if (!name) {
           name = (detectedInfoFromScan && detectedInfoFromScan.title) ? detectedInfoFromScan.title : "Monopoly (Nouvelle Édition)";
+        }
+        if (!/monopoly/i.test(name)) {
+          alert("Action refusée : Cette application est exclusivement réservée à la gamme Monopoly. Le nom doit obligatoirement inclure 'Monopoly'.");
+          return;
         }
         const yearInput = document.getElementById("scanNewYear");
         const yearVal = yearInput ? yearInput.value.trim() : "";
