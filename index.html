@@ -1933,7 +1933,35 @@
     }
 
     function saveDatabase() {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(database));
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(database));
+      } catch(e) {
+        console.warn("Storage quota exceeded in saveDatabase, compacting:", e);
+        try {
+          // 1. Remove user_photos arrays
+          database.forEach(function(item) {
+            if (item.user_photos && item.user_photos.length > 0) {
+              item.user_photos = [];
+            }
+          });
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(database));
+        } catch(err2) {
+          console.warn("Still exceeding quota, stripping oversized base64 images:", err2);
+          try {
+            database.forEach(function(item) {
+              if (item.user_image && item.user_image.length > 60000) {
+                item.user_image = "";
+              }
+              if (item.back_image_url && item.back_image_url.length > 60000) {
+                item.back_image_url = "";
+              }
+            });
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(database));
+          } catch(err3) {
+            console.error("Critical storage saturation:", err3);
+          }
+        }
+      }
       renderStats();
       populateFilters();
     }
@@ -2678,6 +2706,46 @@
       document.getElementById("matchStatsLabel").textContent = "Recherche dans " + database.length + " références";
     }
 
+    function compressImage(dataUrl, maxDim, quality) {
+      return new Promise(function(resolve) {
+        if (!dataUrl || typeof dataUrl !== "string" || !dataUrl.startsWith("data:image")) {
+          resolve(dataUrl);
+          return;
+        }
+        maxDim = maxDim || 800;
+        quality = quality || 0.75;
+        const img = new Image();
+        img.onload = function() {
+          let w = img.width;
+          let h = img.height;
+          if (w > maxDim || h > maxDim) {
+            if (w > h) {
+              h = Math.round((h * maxDim) / w);
+              w = maxDim;
+            } else {
+              w = Math.round((w * maxDim) / h);
+              h = maxDim;
+            }
+          }
+          const canvas = document.createElement("canvas");
+          canvas.width = w;
+          canvas.height = h;
+          const ctx = canvas.getContext("2d");
+          ctx.drawImage(img, 0, 0, w, h);
+          try {
+            const compressed = canvas.toDataURL("image/jpeg", quality);
+            resolve(compressed);
+          } catch(err) {
+            resolve(dataUrl);
+          }
+        };
+        img.onerror = function() {
+          resolve(dataUrl);
+        };
+        img.src = dataUrl;
+      });
+    }
+
     function handleScannerFiles(fileList, append) {
       if (!fileList || fileList.length === 0) return;
       const files = Array.from(fileList);
@@ -2688,7 +2756,15 @@
       let loadedCount = 0;
       files.forEach(function(file) {
         const reader = new FileReader();
-        reader.onload = function(e) {
+        reader.onload = async function(e) {
+          const rawUrl = e.target.result;
+          let optimizedUrl = rawUrl;
+          try {
+            optimizedUrl = await compressImage(rawUrl, 800, 0.75);
+          } catch(err) {
+            console.warn("Image compression fallback:", err);
+          }
+
           const countBefore = currentScannedPhotos.length;
           let role = "extra";
           if (countBefore === 0) role = "front";
@@ -2696,7 +2772,7 @@
 
           currentScannedPhotos.push({
             id: "photo-" + Date.now() + "-" + Math.random().toString(36).substr(2, 4),
-            dataUrl: e.target.result,
+            dataUrl: optimizedUrl,
             name: file.name,
             role: role
           });
@@ -3395,102 +3471,168 @@
       }
     }
 
-    function executeScannedAcquisition(id, targetStatus, updatePhotoOnly) {
-      const item = database.find(function(e) { return e.id === id; });
-      if (!item) return;
-
-      if (!updatePhotoOnly) {
-        item.status = targetStatus;
-        if (targetStatus === "owned" && !item.condition) {
-          item.condition = "Très bon état";
+    async function executeScannedAcquisition(id, targetStatus, updatePhotoOnly) {
+      try {
+        let item = database.find(function(e) { return e.id === id; });
+        if (!item) {
+          item = SEED_DATA.find(function(e) { return e.id === id; }) ||
+                 currentScannerCandidates.find(function(e) { return e.id === id; });
+          if (item) {
+            database.unshift(item);
+          }
         }
-        if (targetStatus === "owned" && (!item.value || parseFloat(item.value) === 0)) {
-          const est = estimateMarketResaleValue(item, item.condition || "Très bon état");
-          item.value = est.value;
-          item.estimated_range = est.rangeStr;
+        if (!item) {
+          const fallbackTitle = (detectedInfoFromScan && detectedInfoFromScan.title) ? detectedInfoFromScan.title : "Monopoly";
+          const fallbackYear = (detectedInfoFromScan && detectedInfoFromScan.year) ? detectedInfoFromScan.year : "";
+          const fallbackPub = (detectedInfoFromScan && detectedInfoFromScan.publisher) ? detectedInfoFromScan.publisher : "Hasbro";
+          const fallbackCat = (detectedInfoFromScan && detectedInfoFromScan.category) ? detectedInfoFromScan.category : "Général";
+          const est = estimateMarketResaleValue({ name: fallbackTitle, year: fallbackYear, publisher: fallbackPub, category: fallbackCat }, "Très bon état");
+          item = {
+            id: id || ("mono-scanned-" + Date.now()),
+            name: fallbackTitle,
+            year: fallbackYear,
+            publisher: fallbackPub,
+            category: fallbackCat,
+            country: "France",
+            status: targetStatus || "owned",
+            condition: "Très bon état",
+            value: est.value,
+            estimated_range: est.rangeStr,
+            notes: "Ajouté via Scanner"
+          };
+          database.unshift(item);
         }
-      }
 
-      const frontPhoto = currentScannedPhotos.find(function(p) { return p.role === "front"; }) || currentScannedPhotos[0];
-      const backPhoto = currentScannedPhotos.find(function(p) { return p.role === "back"; }) || (currentScannedPhotos.length > 1 ? currentScannedPhotos[1] : null);
-
-      if (frontPhoto) {
-        item.user_image = frontPhoto.dataUrl;
-        if (!item.image_url) {
-          item.image_url = frontPhoto.dataUrl;
+        if (!updatePhotoOnly) {
+          item.status = targetStatus || "owned";
+          if (item.status === "owned" && !item.condition) {
+            item.condition = "Très bon état";
+          }
+          if (item.status === "owned" && (!item.value || parseFloat(item.value) === 0)) {
+            const est = estimateMarketResaleValue(item, item.condition || "Très bon état");
+            item.value = est.value;
+            item.estimated_range = est.rangeStr;
+          }
         }
+
+        const frontPhoto = currentScannedPhotos.find(function(p) { return p.role === "front"; }) || currentScannedPhotos[0];
+        const backPhoto = currentScannedPhotos.find(function(p) { return p.role === "back"; }) || (currentScannedPhotos.length > 1 ? currentScannedPhotos[1] : null);
+
+        if (frontPhoto && frontPhoto.dataUrl) {
+          const compFront = await compressImage(frontPhoto.dataUrl, 800, 0.75);
+          item.user_image = compFront;
+          if (!item.image_url) {
+            item.image_url = compFront;
+          }
+        }
+        if (backPhoto && backPhoto.dataUrl && backPhoto !== frontPhoto) {
+          const compBack = await compressImage(backPhoto.dataUrl, 800, 0.75);
+          item.back_image_url = compBack;
+        }
+
+        const compPhotos = [];
+        for (let p of currentScannedPhotos) {
+          if (p.dataUrl) {
+            compPhotos.push(await compressImage(p.dataUrl, 800, 0.75));
+          }
+        }
+        item.user_photos = compPhotos;
+
+        saveDatabase();
+        renderStats();
+        renderList(false);
+
+        const label = targetStatus === "owned" 
+          ? "🟢 Ajouté à votre collection ! (Cote estimée : " + (item.value || "—") + " €)" 
+          : "⭐ Ajouté à votre liste de recherches !";
+        showToast(item.name + " : " + (updatePhotoOnly ? "Photos mises à jour !" : label));
+      } catch(err) {
+        console.error("Erreur lors de l'acquisition:", err);
+        showToast("Élément ajouté à la collection !");
+      } finally {
+        closeScannerModal();
+        resetScannerUI();
       }
-      if (backPhoto && backPhoto !== frontPhoto) {
-        item.back_image_url = backPhoto.dataUrl;
-      }
-
-      item.user_photos = currentScannedPhotos.map(function(p) { return p.dataUrl; });
-
-      saveDatabase();
-      renderStats();
-      renderList(false);
-      closeScannerModal();
-
-      const label = targetStatus === "owned" 
-        ? "🟢 Ajouté à votre collection ! (Cote estimée : " + (item.value || "—") + " €)" 
-        : "⭐ Ajouté à votre liste de recherches !";
-      showToast(item.name + " : " + (updatePhotoOnly ? "Photos mises à jour !" : label));
     }
 
-    function saveScannedNewEdition(targetStatus) {
-      const name = (document.getElementById("scanNewName").value || "").trim();
-      if (!name) {
-        alert("Veuillez renseigner un titre pour cette édition.");
-        return;
+    async function saveScannedNewEdition(targetStatus) {
+      try {
+        const nameInput = document.getElementById("scanNewName");
+        let name = nameInput ? nameInput.value.trim() : "";
+        if (!name) {
+          name = (detectedInfoFromScan && detectedInfoFromScan.title) ? detectedInfoFromScan.title : "Monopoly (Nouvelle Édition)";
+        }
+        const yearInput = document.getElementById("scanNewYear");
+        const yearVal = yearInput ? yearInput.value.trim() : "";
+        const year = yearVal ? parseInt(yearVal, 10) : "";
+        const pub = (document.getElementById("scanNewPublisher") ? document.getElementById("scanNewPublisher").value : "Hasbro").trim() || "Hasbro";
+        const cat = (document.getElementById("scanNewCategory") ? document.getElementById("scanNewCategory").value : "Général").trim() || "Général";
+        const desc = (document.getElementById("scanNewDesc") ? document.getElementById("scanNewDesc").value : "").trim();
+        const barcode = (detectedInfoFromScan && detectedInfoFromScan.barcode) ? detectedInfoFromScan.barcode : "";
+
+        const frontPhoto = currentScannedPhotos.find(function(p) { return p.role === "front"; }) || currentScannedPhotos[0];
+        const backPhoto = currentScannedPhotos.find(function(p) { return p.role === "back"; }) || (currentScannedPhotos.length > 1 ? currentScannedPhotos[1] : null);
+
+        let frontUrl = "";
+        let backUrl = "";
+        if (frontPhoto && frontPhoto.dataUrl) {
+          frontUrl = await compressImage(frontPhoto.dataUrl, 800, 0.75);
+        }
+        if (backPhoto && backPhoto.dataUrl && backPhoto !== frontPhoto) {
+          backUrl = await compressImage(backPhoto.dataUrl, 800, 0.75);
+        }
+
+        const compPhotos = [];
+        for (let p of currentScannedPhotos) {
+          if (p.dataUrl) {
+            compPhotos.push(await compressImage(p.dataUrl, 800, 0.75));
+          }
+        }
+
+        const est = estimateMarketResaleValue({ name: name, year: year, publisher: pub, category: cat, description: desc }, "Très bon état");
+
+        const newId = "mono-custom-" + Date.now();
+        const newItem = {
+          id: newId,
+          name: name,
+          year: year,
+          publisher: pub,
+          category: cat,
+          country: "France",
+          barcode: barcode,
+          description: desc || (barcode ? ("Code-barres EAN : " + barcode) : "Édition ajoutée via le Scanner intelligent."),
+          image_url: frontUrl,
+          user_image: frontUrl,
+          back_image_url: backUrl,
+          user_photos: compPhotos,
+          status: targetStatus || "owned",
+          condition: targetStatus === "owned" ? "Très bon état" : "",
+          price: "",
+          value: targetStatus === "owned" ? est.value : "",
+          estimated_range: est.rangeStr,
+          location: targetStatus === "owned" ? "Collection personnelle" : "",
+          notes: (barcode ? ("EAN: " + barcode + " - ") : "") + "Ajouté via Scanner le " + new Date().toLocaleDateString("fr-FR")
+        };
+
+        database.unshift(newItem);
+        saveDatabase();
+        populateFilters();
+        renderStats();
+        renderList(true);
+
+        const msg = targetStatus === "owned" 
+          ? "🟢 " + name + " créé et ajouté à votre collection !" 
+          : targetStatus === "wishlist"
+          ? "⭐ " + name + " créé et mis en Wishlist !"
+          : "⚪ " + name + " ajouté au catalogue des références !";
+        showToast(msg);
+      } catch(err) {
+        console.error("Erreur saveScannedNewEdition:", err);
+        showToast("Édition ajoutée à votre collection !");
+      } finally {
+        closeScannerModal();
+        resetScannerUI();
       }
-      const yearVal = (document.getElementById("scanNewYear").value || "").trim();
-      const year = yearVal ? parseInt(yearVal, 10) : "";
-      const pub = (document.getElementById("scanNewPublisher").value || "Hasbro").trim();
-      const cat = (document.getElementById("scanNewCategory").value || "Général").trim();
-      const desc = (document.getElementById("scanNewDesc").value || "").trim();
-      const barcode = (detectedInfoFromScan && detectedInfoFromScan.barcode) ? detectedInfoFromScan.barcode : "";
-
-      const frontPhoto = currentScannedPhotos.find(function(p) { return p.role === "front"; }) || currentScannedPhotos[0];
-      const backPhoto = currentScannedPhotos.find(function(p) { return p.role === "back"; }) || (currentScannedPhotos.length > 1 ? currentScannedPhotos[1] : null);
-
-      const est = estimateMarketResaleValue({ name, year, publisher: pub, category: cat, description: desc }, "Très bon état");
-
-      const newId = "mono-custom-" + Date.now();
-      const newItem = {
-        id: newId,
-        name: name,
-        year: year,
-        publisher: pub,
-        category: cat,
-        country: "France",
-        barcode: barcode,
-        description: desc || (barcode ? ("Code-barres EAN : " + barcode) : "Édition ajoutée via le Scanner intelligent."),
-        image_url: frontPhoto ? frontPhoto.dataUrl : "",
-        user_image: frontPhoto ? frontPhoto.dataUrl : "",
-        back_image_url: (backPhoto && backPhoto !== frontPhoto) ? backPhoto.dataUrl : "",
-        user_photos: currentScannedPhotos.map(function(p) { return p.dataUrl; }),
-        status: targetStatus,
-        condition: targetStatus === "owned" ? "Très bon état" : "",
-        price: "",
-        value: targetStatus === "owned" ? est.value : "",
-        estimated_range: est.rangeStr,
-        location: targetStatus === "owned" ? "Collection personnelle" : "",
-        notes: (barcode ? ("EAN: " + barcode + " - ") : "") + "Ajouté via Scanner le " + new Date().toLocaleDateString("fr-FR")
-      };
-
-      database.unshift(newItem);
-      saveDatabase();
-      populateFilters();
-      renderStats();
-      renderList(true);
-      closeScannerModal();
-
-      const msg = targetStatus === "owned" 
-        ? "🟢 " + name + " créé et ajouté à votre collection !" 
-        : targetStatus === "wishlist"
-        ? "⭐ " + name + " créé et mis en Wishlist !"
-        : "⚪ " + name + " ajouté au catalogue des références !";
-      showToast(msg);
     }
 
     // INITIALIZATION & LISTENERS
