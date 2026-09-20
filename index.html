@@ -1647,13 +1647,56 @@
     // ==========================================
     // COTE & VALEUR DE REVENTE MARCHÉ SECONDAIRE
     // ==========================================
-    function getMarketLinks(name) {
-      const clean = (name || "").replace(/Monopoly\s*[:–-]?\s*/i, "").trim() || name;
-      const fullQuery = "Monopoly " + clean;
+    function getMarketLinks(itemOrName) {
+      const item = typeof itemOrName === "object" && itemOrName !== null ? itemOrName : { name: itemOrName || "" };
+      const rawName = (item.name || "").trim();
+      const year = item.year && parseInt(item.year) > 1900 ? String(item.year) : "";
+      const pub = (item.publisher || "").trim();
+
+      // Nettoyer les mentions parasites et la ponctuation qui perturbent les recherches
+      let cleanTitle = rawName
+        .replace(/^Monopoly\s*[:–-]?\s*/i, "")
+        .replace(/\s*\(FR\s*\/?\s*VF\)/gi, "")
+        .replace(/\s*\(Version fran[çc]aise\)/gi, "")
+        .replace(/\s*\(Édition standard\)/gi, "")
+        .replace(/\s*\(Bo[îi]te [a-z0-9\s-]+\)/gi, "")
+        .replace(/\s*\(.*?\)/g, "")
+        .replace(/[?!=–—:;]/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+
+      const baseQuery = "Monopoly " + cleanTitle;
+      
+      // Requête ultra-ciblée (avec année et éditeur distinctif pour ne trouver QUE cet exemplaire exact)
+      let exactQuery = baseQuery;
+      if (year && !exactQuery.includes(year)) {
+        exactQuery += " " + year;
+      }
+      if (pub.toLowerCase().includes("winning moves") && !exactQuery.toLowerCase().includes("winning")) {
+        exactQuery += " Winning Moves";
+      }
+
+      // eBay : Catégorie 220 (Jeux de société) + Ventes terminées et réussies (LH_Complete=1&LH_Sold=1)
+      const ebayExact = "https://www.ebay.fr/sch/220/i.html?_nkw=" + encodeURIComponent('"' + baseQuery + '"' + (year ? ' ' + year : '')) + "&LH_Complete=1&LH_Sold=1";
+      const ebayBroad = "https://www.ebay.fr/sch/220/i.html?_nkw=" + encodeURIComponent(baseQuery) + "&LH_Complete=1&LH_Sold=1";
+
+      // Vinted : sans catalog erroné (1058 = Petites robes noires sur Vinted !), mot-clé "jeu" pour cibler les jeux
+      const vintedExact = "https://www.vinted.fr/catalog?search_text=" + encodeURIComponent("jeu " + exactQuery);
+      const vintedBroad = "https://www.vinted.fr/catalog?search_text=" + encodeURIComponent("jeu " + baseQuery);
+
+      // LeBonCoin : category=43 (Jeux & Jouets)
+      const lbcExact = "https://www.leboncoin.fr/recherche?category=43&text=" + encodeURIComponent(exactQuery);
+      const lbcBroad = "https://www.leboncoin.fr/recherche?category=43&text=" + encodeURIComponent(baseQuery);
+
       return {
-        ebaySold: "https://www.ebay.fr/sch/i.html?_nkw=" + encodeURIComponent(fullQuery) + "&LH_Complete=1&LH_Sold=1",
-        vinted: "https://www.vinted.fr/catalog?search_text=" + encodeURIComponent(fullQuery),
-        leboncoin: "https://www.leboncoin.fr/recherche?text=" + encodeURIComponent(fullQuery)
+        ebaySold: ebayExact,
+        ebayBroad: ebayBroad,
+        vinted: vintedExact,
+        vintedBroad: vintedBroad,
+        leboncoin: lbcExact,
+        leboncoinBroad: lbcBroad,
+        exactQuery: exactQuery,
+        baseQuery: baseQuery
       };
     }
 
@@ -2105,7 +2148,7 @@
         const est = estimateMarketResaleValue(item, item.condition);
         const displayVal = item.value ? item.value : est.value;
         const rangeText = item.estimated_range || est.rangeStr;
-        const links = getMarketLinks(item.name);
+        const links = getMarketLinks(item);
 
         if (item.status === "owned") {
           userInfoHtml = '<div class="card-user-info">';
@@ -2119,10 +2162,11 @@
           if (item.price) userInfoHtml += '<div><strong>Achat :</strong> ' + item.price + ' €</div>';
           if (item.notes) userInfoHtml += '<div><strong>Note :</strong> ' + item.notes + '</div>';
           userInfoHtml += 
-            '<div style="display:flex; gap:6px; margin-top:8px; flex-wrap:wrap;">' +
-              '<a href="' + links.ebaySold + '" target="_blank" class="market-btn ebay" title="Ventes réelles terminées sur eBay">🛒 Ventes eBay</a>' +
-              '<a href="' + links.vinted + '" target="_blank" class="market-btn vinted" title="Prix sur Vinted">🏷️ Vinted</a>' +
+            '<div style="display:flex; gap:5px; margin-top:8px; flex-wrap:wrap; align-items:center;">' +
+              '<a href="' + links.ebaySold + '" target="_blank" class="market-btn ebay" title="Ventes réelles terminées sur eBay (Catégorie Jeux de société uniquement)">🛒 Ventes eBay</a>' +
+              '<a href="' + links.vinted + '" target="_blank" class="market-btn vinted" title="Prix Vinted (Catégorie Jeux de société uniquement)">🏷️ Vinted</a>' +
               '<a href="' + links.leboncoin + '" target="_blank" class="market-btn lbc" title="Annonces Le Bon Coin">📦 Le Bon Coin</a>' +
+              '<a href="' + links.vintedBroad + '" target="_blank" class="market-btn" style="border:1px dashed var(--border-color); font-size:0.65rem; padding:2px 5px;" title="Recherche Vinted plus large (si le vendeur n\'a pas indiqué l\'année précise)">🔎 Large</a>' +
             '</div>';
           userInfoHtml += '</div>';
         } else if (item.status === "wishlist") {
@@ -2135,17 +2179,21 @@
           if (item.price) userInfoHtml += '<div>Budget max : ' + item.price + ' €</div>';
           if (item.notes) userInfoHtml += '<div>' + item.notes + '</div>';
           userInfoHtml += 
-            '<div style="display:flex; gap:6px; margin-top:8px; flex-wrap:wrap;">' +
-              '<a href="' + links.ebaySold + '" target="_blank" class="market-btn ebay" title="Ventes réelles terminées sur eBay">🛒 Ventes eBay</a>' +
-              '<a href="' + links.vinted + '" target="_blank" class="market-btn vinted" title="Prix sur Vinted">🏷️ Vinted</a>' +
+            '<div style="display:flex; gap:5px; margin-top:8px; flex-wrap:wrap; align-items:center;">' +
+              '<a href="' + links.ebaySold + '" target="_blank" class="market-btn ebay" title="Ventes réelles terminées sur eBay (Catégorie Jeux de société uniquement)">🛒 Ventes eBay</a>' +
+              '<a href="' + links.vinted + '" target="_blank" class="market-btn vinted" title="Prix Vinted (Catégorie Jeux de société uniquement)">🏷️ Vinted</a>' +
               '<a href="' + links.leboncoin + '" target="_blank" class="market-btn lbc" title="Annonces Le Bon Coin">📦 Le Bon Coin</a>' +
+              '<a href="' + links.vintedBroad + '" target="_blank" class="market-btn" style="border:1px dashed var(--border-color); font-size:0.65rem; padding:2px 5px;" title="Recherche Vinted plus large (si le vendeur n\'a pas indiqué l\'année précise)">🔎 Large</a>' +
             '</div>';
           userInfoHtml += '</div>';
         } else {
           userInfoHtml = 
-            '<div style="margin-top:8px; padding-top:6px; border-top:1px solid rgba(255,255,255,0.06); display:flex; justify-content:space-between; align-items:center;">' +
+            '<div style="margin-top:8px; padding-top:6px; border-top:1px solid rgba(255,255,255,0.06); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:4px;">' +
               '<span style="font-size:0.75rem; color:var(--text-muted);">Cote estimée : <strong style="color:#f59e0b;">~' + displayVal + ' €</strong></span>' +
-              '<a href="' + links.ebaySold + '" target="_blank" class="market-btn ebay" style="font-size:0.68rem; padding:2px 6px;" title="Vérifier les ventes réelles sur eBay">🛒 eBay</a>' +
+              '<div style="display:flex; gap:4px;">' +
+                '<a href="' + links.ebaySold + '" target="_blank" class="market-btn ebay" style="font-size:0.68rem; padding:2px 6px;" title="Vérifier les ventes réelles sur eBay (Jeux)">🛒 eBay</a>' +
+                '<a href="' + links.vinted + '" target="_blank" class="market-btn vinted" style="font-size:0.68rem; padding:2px 6px;" title="Vérifier sur Vinted (Jeux)">🏷️ Vinted</a>' +
+              '</div>' +
             '</div>';
         }
 
@@ -2199,7 +2247,7 @@
 
         const est = estimateMarketResaleValue(item, item.condition);
         const displayVal = item.value ? item.value : est.value;
-        const links = getMarketLinks(item.name);
+        const links = getMarketLinks(item);
 
         tr.innerHTML = 
           '<td>' + thumbHtml + '</td>' +
@@ -2210,9 +2258,10 @@
           '<td>' + (item.publisher || 'Hasbro') + '</td>' +
           '<td>' + (item.country || 'Monde') + '</td>' +
           '<td>' +
-            '<div style="display:flex; align-items:center; gap:6px;">' +
+            '<div style="display:flex; align-items:center; gap:4px;">' +
               '<span class="resale-badge">~' + displayVal + ' €</span>' +
-              '<a href="' + links.ebaySold + '" target="_blank" class="market-btn ebay" style="padding:1px 5px; font-size:0.65rem;" title="Ventes eBay">🛒</a>' +
+              '<a href="' + links.ebaySold + '" target="_blank" class="market-btn ebay" style="padding:1px 5px; font-size:0.65rem;" title="Ventes terminées eBay (Exemplaire exact)">🛒</a>' +
+              '<a href="' + links.vinted + '" target="_blank" class="market-btn vinted" style="padding:1px 5px; font-size:0.65rem;" title="Vinted Jeux de société (Exemplaire exact)">🏷️</a>' +
             '</div>' +
           '</td>' +
           '<td><button class="edit-btn" data-id="' + item.id + '" style="padding:4px 8px;">✏️ Modifier</button></td>';
@@ -2304,7 +2353,7 @@
       const est = estimateMarketResaleValue(item, item.condition);
       const displayVal = item.value ? item.value : est.value;
       const rangeText = item.estimated_range || est.rangeStr;
-      const links = getMarketLinks(item.name);
+      const links = getMarketLinks(item);
 
       detailsHtml += 
         '<div style="margin-top:12px; padding:12px; background:rgba(245,158,11,0.08); border:1px solid rgba(245,158,11,0.3); border-radius:8px;">' +
@@ -2314,10 +2363,14 @@
               '<span style="font-size:0.8rem; color:var(--text-muted); margin-left:8px;">(Fourchette : ' + rangeText + ')</span>' +
             '</div>' +
             '<div style="display:flex; gap:6px; flex-wrap:wrap;">' +
-              '<a href="' + links.ebaySold + '" target="_blank" class="market-btn ebay" style="font-size:0.75rem; padding:4px 9px;">🛒 Ventes Réelles eBay</a>' +
-              '<a href="' + links.vinted + '" target="_blank" class="market-btn vinted" style="font-size:0.75rem; padding:4px 9px;">🏷️ Prix Vinted</a>' +
+              '<a href="' + links.ebaySold + '" target="_blank" class="market-btn ebay" style="font-size:0.75rem; padding:4px 9px;" title="Ventes réelles terminées sur eBay (Catégorie Jeux uniquement)">🎯 Ventes eBay Exactes</a>' +
+              '<a href="' + links.vinted + '" target="_blank" class="market-btn vinted" style="font-size:0.75rem; padding:4px 9px;" title="Vinted Jeux de société (Exemplaire exact)">🎯 Vinted Exact</a>' +
               '<a href="' + links.leboncoin + '" target="_blank" class="market-btn lbc" style="font-size:0.75rem; padding:4px 9px;">📦 Le Bon Coin</a>' +
+              '<a href="' + links.vintedBroad + '" target="_blank" class="market-btn" style="border:1px dashed var(--border-color); font-size:0.7rem; padding:4px 7px;" title="Recherche sans l\'année si peu d\'annonces avec l\'année exacte">🔎 Vinted Large</a>' +
             '</div>' +
+          '</div>' +
+          '<div style="margin-top:6px; font-size:0.73rem; color:var(--text-muted);">' +
+            'Recherche ciblée : <code style="color:#38bdf8; background:rgba(56,189,248,0.1); padding:2px 6px; border-radius:4px;">' + links.exactQuery + '</code> (Filtré sur la catégorie Jeux de société)' +
           '</div>' +
         '</div>';
 
@@ -2344,11 +2397,12 @@
       document.getElementById("editNotes").value = item.notes || "";
       document.getElementById("editImageUrl").value = item.image_url || "";
 
-      const links = getMarketLinks(item.name);
+      const links = getMarketLinks(item);
       document.getElementById("editMarketLinks").innerHTML = 
-        '<a href="' + links.ebaySold + '" target="_blank" class="market-btn ebay" style="font-size:0.7rem; padding:2px 7px;">🛒 Ventes eBay</a>' +
-        '<a href="' + links.vinted + '" target="_blank" class="market-btn vinted" style="font-size:0.7rem; padding:2px 7px;">🏷️ Vinted</a>' +
-        '<a href="' + links.leboncoin + '" target="_blank" class="market-btn lbc" style="font-size:0.7rem; padding:2px 7px;">📦 Le Bon Coin</a>';
+        '<a href="' + links.ebaySold + '" target="_blank" class="market-btn ebay" style="font-size:0.72rem; padding:3px 8px;" title="Ventes terminées eBay (Exemplaire exact)">🎯 Ventes eBay Exactes</a>' +
+        '<a href="' + links.vinted + '" target="_blank" class="market-btn vinted" style="font-size:0.72rem; padding:3px 8px;" title="Vinted Jeux de société (Exemplaire exact)">🎯 Vinted Exact</a>' +
+        '<a href="' + links.leboncoin + '" target="_blank" class="market-btn lbc" style="font-size:0.72rem; padding:3px 8px;">📦 Leboncoin</a>' +
+        '<a href="' + links.vintedBroad + '" target="_blank" class="market-btn" style="border:1px dashed var(--border-color); font-size:0.68rem; padding:3px 6px;" title="Recherche sans l\'année">🔎 Large</a>';
 
       document.getElementById("autoEstimateBtn").onclick = function() {
         const cond = document.getElementById("editCondition").value;
