@@ -1,0 +1,86 @@
+{
+  "monopoly-rick-and-morty": {
+    "title": "Monopoly Rick & Morty",
+    "image": "https://monopolymania.com/public/monopoly_rick-and-morty_boite.jpg"
+  },
+  "monopoly-stranger-things": {
+    "title": "Monopoly Stranger Things",
+    "image": "https://monopolymania.com/public/.monopoly_stranger-things_boite_s.jpg"
+  },
+  "monopoly-assassins-creed": {
+    "title": "Monopoly Assassin's Creed",
+    "image": "https://monopolymania.com/public/.monopoly_assassins-creed_boite_s.jpg"
+  },
+  "monopoly-dragon-ball-z": {
+    "title": "Monopoly Dragon Ball Z",
+    "image": "https://monopolymania.com/public/.monopoly_dragon-ball-z_boite_s.jpg"
+  },
+  "monopoly-gamer-nintendo": {
+    "title": "Monopoly Gamer",
+    "image": "https://monopolymania.com/public/monopoly_gamer-nintendo_boite.jpg"
+  },
+  "monopoly-the-nightmare-before-christmas": {
+    "title": "Monopoly The Nightmare Before Christmas (édition collector)",
+    "image": "https://monopolymania.com/public/.monopoly_the-nightmare-before-christmas_boite_s.jpg"
+  },
+  "monopoly-avengers": {
+    "title": "Monopoly Avengers",
+    "image": "https://monopolymania.com/public/.monopoly_avengers_boite_s.jpg"
+  },
+  "monopoly-the-big-bang-theory": {
+    "title": "Monopoly The Big Bang Theory",
+    "image": "https://monopolymania.com/public/.monopoly_the-big-bang-theory_boite_s.jpg"
+  },
+  "monopoly-the-walking-dead": {
+    "title": "Monopoly The Walking Dead (édition de survie)",
+    "image": "https://monopolymania.com/public/.monopoly_the-walking-dead_boite_s.jpg"
+  },
+  "monopoly-pokemon": {
+    "title": "Monopoly Pokémon (édition de Kanto)",
+    "image": "https://monopolymania.com/public/.monopoly_pokemon_boite_s.jpg"
+  },
+  "monopoly-minions": {
+    "title": "Monopoly Minions (édition collector)",
+    "image": "https://monopolymania.com/public/.monopoly_minions_boite_s.jpg"
+  },
+  "monopoly-junior": {
+    "title": "Monopoly Junior",
+    "image": "https://monopolymania.com/public/.monopoly_junior_boite_s.jpg"
+  },
+  "monopoly-disney": {
+    "title": "Monopoly Disney (édition collector)",
+    "image": "https://monopolymania.com/public/.monopoly_disneyclassic_boite_s.jpg"
+  },
+  "monopoly-star-wars": {
+    "title": "Monopoly Star Wars (édition collector)",
+    "image": "https://monopolymania.com/public/.monopoly_starwars_boite_s.jpg"
+  },
+  "monopoly-classique": {
+    "title": "Monopoly Classique",
+    "image": "https://monopolymania.com/public/.monopoly_classique_boite_s.jpg"
+  },
+  "monopoly-nintendo": {
+    "title": "Monopoly Nintendo (édition collector)",
+    "image": "https://monopolymania.com/public/.monopoly_nintendo_boite_s.jpg"
+  },
+  "monopoly-fallout": {
+    "title": "Monopoly Fallout (édition collector)",
+    "image": "https://monopolymania.com/public/.monopoly_fallout_boite_s.jpg"
+  },
+  "monopoly-zelda": {
+    "title": "Monopoly Zelda (édition collector)",
+    "image": "https://monopolymania.com/public/.monopoly_zelda_boite_s.jpg"
+  },
+  "monopoly-world-of-warcraft": {
+    "title": "Monopoly World Of Warcraft (édition collector)",
+    "image": "https://monopolymania.com/public/.monopoly_world-of-warcraft_boite_s.jpg"
+  },
+  "monopoly-game-of-thrones": {
+    "title": "Monopoly Game Of Thrones (édition collector)",
+    "image": "https://monopolymania.com/public/.monopoly_game-of-thrones_boite_s.jpg"
+  },
+  "monopoly-acdc": {
+    "title": "Monopoly ACDC (édition collector)",
+    "image": "https://monopolymania.com/public/.monopoly_acdc_boite_s.jpg"
+  }
+}

@@ -1,0 +1,13 @@
+# Python scratch & temporary files
+scratch/
+__pycache__/
+*.pyc
+*.pyo
+
+# OS generated
+Thumbs.db
+.DS_Store
+
+# Private personal collection backup (do not push to public GitHub)
+monopoly_sauvegarde_perso.json
+*.backup.json
