@@ -61,6 +61,11 @@
       transition: background-color 0.2s, border-color 0.2s;
     }
 
+    html, body {
+      overflow-x: hidden;
+      max-width: 100vw;
+    }
+
     body {
       font-family: var(--font);
       background-color: var(--bg-main);
@@ -132,6 +137,14 @@
       display: flex;
       align-items: center;
       gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .header-actions-primary, .header-actions-secondary {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
     }
 
     .btn {
@@ -920,15 +933,79 @@
     }
 
     @media (max-width: 768px) {
+      .container {
+        padding: 0 12px;
+      }
       .form-row {
         grid-template-columns: 1fr;
       }
       .stats-bar {
         grid-template-columns: 1fr 1fr;
+        gap: 8px;
       }
       .header-content {
         flex-direction: column;
         align-items: stretch;
+        gap: 12px;
+        padding: 6px 0;
+      }
+      .logo-area {
+        justify-content: flex-start;
+      }
+      .logo-badge {
+        font-size: 1.1rem;
+        padding: 4px 10px;
+      }
+      .logo-title h1 {
+        font-size: 1.15rem;
+      }
+      .logo-title p {
+        font-size: 0.75rem;
+      }
+      .header-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+      }
+      .header-actions-primary {
+        display: grid;
+        grid-template-columns: 1.25fr 1fr;
+        gap: 8px;
+        width: 100%;
+      }
+      .header-actions-primary .btn {
+        justify-content: center;
+        padding: 12px 8px;
+        font-size: 0.88rem;
+        white-space: nowrap;
+        border-radius: 10px;
+      }
+      .header-actions-secondary {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+        gap: 6px;
+        width: 100%;
+      }
+      .header-actions-secondary .btn {
+        justify-content: center;
+        padding: 7px 4px;
+        font-size: 0.74rem;
+        white-space: nowrap;
+        border-radius: 6px;
+      }
+      .search-row {
+        flex-direction: column;
+        gap: 8px;
+      }
+      .search-row select, .search-row .search-input-wrapper {
+        width: 100%;
+      }
+    }
+
+    @media (display-mode: standalone) {
+      #installPwaBtn {
+        display: none !important;
       }
     }
 
@@ -1150,15 +1227,19 @@
         </div>
       </div>
       <div class="header-actions">
-        <button class="btn btn-secondary" id="themeBtn" title="Basculer Mode Clair / Sombre">🌓 Thème</button>
-        <button class="btn btn-secondary" id="exportCsvBtn" title="Exporter pour Microsoft Excel">📊 Export Excel (CSV)</button>
-        <button class="btn btn-secondary" id="backupJsonBtn" title="Sauvegarder ma progression">💾 Sauvegarde</button>
-        <label class="btn btn-secondary" style="cursor:pointer;" title="Restaurer une sauvegarde">
-          📥 Restaurer <input type="file" id="importJsonInput" accept=".json" style="display:none;">
-        </label>
-        <button class="btn btn-secondary" id="installPwaBtn" style="background: rgba(16, 185, 129, 0.15); color: #10b981; border: 1px solid #10b981; font-weight: 700;" title="Installer l'application sur votre smartphone ou PC">📲 Installer l'App</button>
-        <button class="btn btn-secondary" id="scanBoxBtn" style="background: linear-gradient(135deg, #6366f1, #4f46e5); color: #fff; font-weight: 700; border: none; box-shadow: 0 4px 12px rgba(99,102,241,0.35);" title="Identifier une boîte par photo ou code-barres">📸 Scanner & Identifier</button>
-        <button class="btn btn-primary" id="addCustomBtn">➕ Ajouter manuellement</button>
+        <div class="header-actions-primary">
+          <button class="btn btn-secondary" id="scanBoxBtn" style="background: linear-gradient(135deg, #6366f1, #4f46e5); color: #fff; font-weight: 700; border: none; box-shadow: 0 4px 12px rgba(99,102,241,0.35);" title="Identifier une boîte par photo ou code-barres">📸 Scanner & Identifier</button>
+          <button class="btn btn-primary" id="addCustomBtn">➕ Ajouter</button>
+        </div>
+        <div class="header-actions-secondary">
+          <button class="btn btn-secondary" id="backupJsonBtn" title="Sauvegarder ma progression">💾 Sauvegarde</button>
+          <label class="btn btn-secondary" style="cursor:pointer;" title="Restaurer une sauvegarde">
+            📥 Restaurer <input type="file" id="importJsonInput" accept=".json" style="display:none;">
+          </label>
+          <button class="btn btn-secondary" id="exportCsvBtn" title="Exporter pour Microsoft Excel">📊 Excel</button>
+          <button class="btn btn-secondary" id="themeBtn" title="Basculer Mode Clair / Sombre">🌓 Thème</button>
+          <button class="btn btn-secondary" id="installPwaBtn" style="background: rgba(16, 185, 129, 0.15); color: #10b981; border: 1px solid #10b981; font-weight: 700;" title="Installer l'application sur votre smartphone ou PC">📲 Installer</button>
+        </div>
       </div>
     </div>
   </header>
