@@ -1,4 +1,4 @@
-const CACHE_NAME = "monopoly-hub-v2";
+const CACHE_NAME = "monopoly-hub-v4";
 const ASSETS_TO_CACHE = [
   "./",
   "./index.html",

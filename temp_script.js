@@ -548,6 +548,30 @@
     }
 
     function renderList(resetPagination) {
+      if (currentActiveTab === "home") {
+        renderHomeDashboard();
+        const cards = document.getElementById("cardsContainer");
+        if (cards) cards.style.display = "none";
+        const table = document.getElementById("tableContainer");
+        if (table) table.style.display = "none";
+        const pag = document.getElementById("paginationBar");
+        if (pag) pag.style.display = "none";
+        const ctrl = document.querySelector(".controls-panel");
+        if (ctrl) ctrl.style.display = "none";
+        return;
+      }
+      if (currentActiveTab === "scanner") {
+        const cards = document.getElementById("cardsContainer");
+        if (cards) cards.style.display = "none";
+        const table = document.getElementById("tableContainer");
+        if (table) table.style.display = "none";
+        const pag = document.getElementById("paginationBar");
+        if (pag) pag.style.display = "none";
+        const ctrl = document.querySelector(".controls-panel");
+        if (ctrl) ctrl.style.display = "none";
+        return;
+      }
+
       if (resetPagination) displayedCount = PAGE_SIZE;
 
       const filtered = getFilteredAndSortedEditions();
@@ -638,7 +662,7 @@
             const missingCount = (item.missing_pieces && item.missing_pieces.properties ? item.missing_pieces.properties.length : 0) +
               (item.missing_pieces && item.missing_pieces.bills ? item.missing_pieces.bills.length : 0) +
               (item.missing_pieces && item.missing_pieces.tokens ? item.missing_pieces.tokens.length : 0);
-            completenessBadge = '<span class="badge-incomplete" title="Pièces manquantes">⚠️ Incomplet ' + (missingCount > 0 ? '(' + missingCount + ')' : '') + '</span>';
+            completenessBadge = '<button type="button" class="badge-incomplete clickable" onclick="openMissingPiecesModal(\'' + item.id + '\', event)" title="Cliquer pour afficher la liste détaillée des pièces manquantes">⚠️ Incomplet ' + (missingCount > 0 ? '(' + missingCount + ')' : '') + ' <span style="font-size:0.7em; opacity:0.85;">🔍</span></button>';
           } else {
             completenessBadge = '<span class="badge-complete" title="Jeu 100% complet">🟢 Complet</span>';
           }
@@ -694,7 +718,7 @@
             if (mp.dice && mp.dice.length > 0) mpList.push('Dés');
             if (mp.buildings && (mp.buildings.houses > 0 || mp.buildings.hotels > 0 || mp.buildings.skyscrapers > 0)) mpList.push('Bâtiments');
             if (mp.other && (mp.other.rules || mp.other.board || mp.other.tray)) mpList.push('Matériel');
-            userInfoHtml += '<div style="color:#f59e0b; font-size:0.75rem; margin-top:4px;"><strong>⚠️ Manque :</strong> ' + (mpList.length > 0 ? mpList.join(', ') : 'Pièces signalées') + '</div>';
+            userInfoHtml += '<div class="missing-pieces-summary-btn" onclick="openMissingPiecesModal(\'' + item.id + '\', event)" title="Cliquer pour voir la liste détaillée des pièces manquantes"><strong>⚠️ Manque :</strong> ' + (mpList.length > 0 ? mpList.join(', ') : 'Pièces signalées') + ' <span style="text-decoration:underline; font-size:0.72rem; margin-left:4px; opacity:0.9;">(Voir détail ➔)</span></div>';
           } else {
             userInfoHtml += '<div style="color:#10b981; font-size:0.75rem; margin-top:4px;"><strong>🟢 Exemplaire 100% complet</strong></div>';
           }
@@ -787,9 +811,18 @@
         const displayVal = item.value ? item.value : est.value;
         const links = getMarketLinks(item);
 
+        let compBadge = "";
+        if (item.status === "owned") {
+          if (item.is_complete === false) {
+            compBadge = ' <button type="button" class="badge-incomplete clickable" style="margin-left:4px; font-size:0.68rem; padding:2px 6px; vertical-align:middle;" onclick="openMissingPiecesModal(\'' + item.id + '\', event)" title="Cliquer pour afficher les pièces manquantes">⚠️ Incomplet</button>';
+          } else {
+            compBadge = ' <span class="badge-complete" style="margin-left:4px; font-size:0.68rem; padding:2px 6px; vertical-align:middle;">🟢 Complet</span>';
+          }
+        }
+
         tr.innerHTML = 
           '<td>' + thumbHtml + '</td>' +
-          '<td><span class="status-ribbon ' + badgeClass + '" style="position:static;display:inline-block;cursor:pointer;" data-action="cycle" data-id="' + item.id + '">' + statusLabel + '</span></td>' +
+          '<td><span class="status-ribbon ' + badgeClass + '" style="position:static;display:inline-block;cursor:pointer;" data-action="cycle" data-id="' + item.id + '">' + statusLabel + '</span>' + compBadge + '</td>' +
           '<td><strong>' + item.name + '</strong></td>' +
           '<td><span class="card-category">' + (item.category || '') + '</span></td>' +
           '<td>' + (item.year || '—') + '</td>' +
@@ -961,6 +994,7 @@
       const googleQuery = encodeURIComponent(item.name + " boîte monopoly");
       document.getElementById("lightboxGoogleLink").href = "https://www.google.com/search?tbm=isch&q=" + googleQuery;
 
+      document.body.classList.add("modal-open");
       document.getElementById("lightboxModalBackdrop").classList.add("open");
     }
 
@@ -1700,6 +1734,138 @@
     }
 
 
+    
+    // ==========================================================
+    // MODALE DÉTAIL DES PIÈCES MANQUANTES (Click sur Incomplet)
+    // ==========================================================
+    function openMissingPiecesModal(itemId, event) {
+      if (event) {
+        event.stopPropagation();
+        if (event.preventDefault) event.preventDefault();
+      }
+      const item = database.find(function(d) { return d.id === itemId; });
+      if (!item) return;
+
+      const modal = document.getElementById("missingPiecesModalBackdrop");
+      if (!modal) return;
+
+      document.getElementById("missingModalItemTitle").textContent = item.name + (item.year ? " (" + item.year + ")" : "");
+      
+      const editBtn = document.getElementById("missingModalEditBtn");
+      if (editBtn) {
+        editBtn.onclick = function() {
+          closeMissingPiecesModal();
+          openEditModal(item.id);
+        };
+      }
+
+      const body = document.getElementById("missingModalBody");
+      const mp = item.missing_pieces || { properties: [], bills: [], tokens: [], dice: [], buildings: {}, other: {} };
+      
+      let html = "";
+      
+      // Résumé d'en-tête
+      html += '<div style="background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 10px; padding: 10px 14px; display: flex; align-items: center; justify-content: space-between;">';
+      html += '  <div style="font-weight: 700; color: #f59e0b; font-size: 0.88rem;">📦 Statut : Boîte Incomplète</div>';
+      html += '  <div style="font-size: 0.76rem; color: var(--text-muted);">' + (item.condition || "État déclaré") + '</div>';
+      html += '</div>';
+
+      let hasAny = false;
+
+      // 1. Propriétés manquantes
+      if (mp.properties && mp.properties.length > 0) {
+        hasAny = true;
+        html += '<div style="margin-top: 6px;">';
+        html += '  <div style="font-size: 0.8rem; font-weight: 800; color: #f87171; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">🏷️ Cartes Propriétés Manquantes (' + mp.properties.length + ') :</div>';
+        html += '  <div style="display: flex; flex-wrap: wrap; gap: 6px;">';
+        mp.properties.forEach(function(prop) {
+          html += '    <span style="background: rgba(239, 68, 68, 0.15); border: 1px solid rgba(239, 68, 68, 0.4); color: #fca5a5; padding: 4px 10px; border-radius: 6px; font-size: 0.78rem; font-weight: 600;">❌ ' + prop + '</span>';
+        });
+        html += '  </div>';
+        html += '</div>';
+      }
+
+      // 2. Billets manquants
+      if (mp.bills && mp.bills.length > 0) {
+        hasAny = true;
+        html += '<div style="margin-top: 6px;">';
+        html += '  <div style="font-size: 0.8rem; font-weight: 800; color: #38bdf8; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">💶 Billets / Banque Manquants (' + mp.bills.length + ') :</div>';
+        html += '  <div style="display: flex; flex-wrap: wrap; gap: 6px;">';
+        mp.bills.forEach(function(bill) {
+          const bName = typeof bill === "object" ? (bill.name + (bill.count ? " (" + bill.count + " ex.)" : "")) : bill;
+          html += '    <span style="background: rgba(56, 189, 248, 0.15); border: 1px solid rgba(56, 189, 248, 0.4); color: #7dd3fc; padding: 4px 10px; border-radius: 6px; font-size: 0.78rem; font-weight: 600;">❌ ' + bName + '</span>';
+        });
+        html += '  </div>';
+        html += '</div>';
+      }
+
+      // 3. Pions manquants
+      if (mp.tokens && mp.tokens.length > 0) {
+        hasAny = true;
+        html += '<div style="margin-top: 6px;">';
+        html += '  <div style="font-size: 0.8rem; font-weight: 800; color: #a855f7; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">♟️ Pions / Figurines Manquants (' + mp.tokens.length + ') :</div>';
+        html += '  <div style="display: flex; flex-wrap: wrap; gap: 6px;">';
+        mp.tokens.forEach(function(tok) {
+          html += '    <span style="background: rgba(168, 85, 247, 0.15); border: 1px solid rgba(168, 85, 247, 0.4); color: #d8b4fe; padding: 4px 10px; border-radius: 6px; font-size: 0.78rem; font-weight: 600;">❌ ' + tok + '</span>';
+        });
+        html += '  </div>';
+        html += '</div>';
+      }
+
+      // 4. Dés manquants
+      if (mp.dice && mp.dice.length > 0) {
+        hasAny = true;
+        html += '<div style="margin-top: 6px;">';
+        html += '  <div style="font-size: 0.8rem; font-weight: 800; color: #ec4899; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">🎲 Dés Manquants (' + mp.dice.length + ') :</div>';
+        html += '  <div style="display: flex; flex-wrap: wrap; gap: 6px;">';
+        mp.dice.forEach(function(die) {
+          html += '    <span style="background: rgba(236, 72, 153, 0.15); border: 1px solid rgba(236, 72, 153, 0.4); color: #f472b6; padding: 4px 10px; border-radius: 6px; font-size: 0.78rem; font-weight: 600;">❌ ' + die + '</span>';
+        });
+        html += '  </div>';
+        html += '</div>';
+      }
+
+      // 5. Bâtiments manquants
+      if (mp.buildings && (mp.buildings.houses > 0 || mp.buildings.hotels > 0 || mp.buildings.skyscrapers > 0)) {
+        hasAny = true;
+        html += '<div style="margin-top: 6px;">';
+        html += '  <div style="font-size: 0.8rem; font-weight: 800; color: #10b981; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">🏠 Bâtiments Manquants :</div>';
+        html += '  <div style="display: flex; flex-wrap: wrap; gap: 6px;">';
+        if (mp.buildings.houses > 0) html += '    <span style="background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.4); color: #6ee7b7; padding: 4px 10px; border-radius: 6px; font-size: 0.78rem; font-weight: 600;">❌ ' + mp.buildings.houses + ' Maisons</span>';
+        if (mp.buildings.hotels > 0) html += '    <span style="background: rgba(239, 68, 68, 0.15); border: 1px solid rgba(239, 68, 68, 0.4); color: #fca5a5; padding: 4px 10px; border-radius: 6px; font-size: 0.78rem; font-weight: 600;">❌ ' + mp.buildings.hotels + ' Hôtels</span>';
+        if (mp.buildings.skyscrapers > 0) html += '    <span style="background: rgba(56, 189, 248, 0.15); border: 1px solid rgba(56, 189, 248, 0.4); color: #7dd3fc; padding: 4px 10px; border-radius: 6px; font-size: 0.78rem; font-weight: 600;">❌ ' + mp.buildings.skyscrapers + ' Gratte-ciels</span>';
+        html += '  </div>';
+        html += '</div>';
+      }
+
+      // 6. Matériel manquant
+      if (mp.other && (mp.other.rules || mp.other.board || mp.other.tray)) {
+        hasAny = true;
+        html += '<div style="margin-top: 6px;">';
+        html += '  <div style="font-size: 0.8rem; font-weight: 800; color: #f59e0b; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">📖 Matériel & Boîte :</div>';
+        html += '  <div style="display: flex; flex-wrap: wrap; gap: 6px;">';
+        if (mp.other.rules) html += '    <span style="background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.4); color: #fcd34d; padding: 4px 10px; border-radius: 6px; font-size: 0.78rem; font-weight: 600;">❌ Livret de Règles manquant</span>';
+        if (mp.other.board) html += '    <span style="background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.4); color: #fcd34d; padding: 4px 10px; border-radius: 6px; font-size: 0.78rem; font-weight: 600;">❌ Plateau de jeu manquant</span>';
+        if (mp.other.tray) html += '    <span style="background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.4); color: #fcd34d; padding: 4px 10px; border-radius: 6px; font-size: 0.78rem; font-weight: 600;">❌ Sabot / Rangement plastique manquant</span>';
+        html += '  </div>';
+        html += '</div>';
+      }
+
+      if (!hasAny) {
+        html += '<div style="text-align: center; padding: 20px; color: var(--text-muted); font-size: 0.85rem;">Aucun élément manquant spécifique n\'a été coché pour cette boîte.<br>Cliquez sur "Modifier" ci-dessous pour renseigner les pièces manquantes.</div>';
+      }
+
+      body.innerHTML = html;
+      document.body.classList.add("modal-open");
+      modal.classList.add("open");
+    }
+
+    function closeMissingPiecesModal() {
+      const modal = document.getElementById("missingPiecesModalBackdrop");
+      if (modal) modal.classList.remove("open");
+      document.body.classList.remove("modal-open");
+    }
+
     function openEditModal(id) {
       const item = database.find(function(e) { return e.id === id; });
       if (!item) return;
@@ -1730,6 +1896,7 @@
 
       renderCompletenessWidget("editCompletenessContainer", item);
       updateEditPreview(item);
+      document.body.classList.add("modal-open");
       document.getElementById("editModalBackdrop").classList.add("open");
     }
 
@@ -1763,6 +1930,7 @@
         item.missing_pieces = JSON.parse(JSON.stringify(currentWidgetState.missing_pieces));
       }
 
+      document.body.classList.remove("modal-open");
       document.getElementById("editModalBackdrop").classList.remove("open");
       saveDatabase();
       renderList(false);
@@ -1781,6 +1949,7 @@
       document.getElementById("addStatus").value = "owned";
       document.getElementById("addModalImagePreview").innerHTML = "";
       renderCompletenessWidget("addCompletenessContainer", { name: "Nouveau Monopoly", is_complete: true });
+      document.body.classList.add("modal-open");
       document.getElementById("addModalBackdrop").classList.add("open");
     }
 
@@ -1824,6 +1993,7 @@
       };
 
       database.unshift(newEdition);
+      document.body.classList.remove("modal-open");
       document.getElementById("addModalBackdrop").classList.remove("open");
       saveDatabase();
       renderList(true);
@@ -3352,8 +3522,7 @@
       initDatabase();
       renderStats();
       populateFilters();
-      renderList(true);
-      switchTab(currentActiveTab);
+      switchTab(currentActiveTab || "home");
 
       const themeBtn = document.getElementById("themeBtn");
       if (themeBtn) {
@@ -3447,19 +3616,23 @@
 
       // Lightbox Actions
       document.getElementById("closeLightbox").addEventListener("click", function() {
-        document.getElementById("lightboxModalBackdrop").classList.remove("open");
+        document.body.classList.remove("modal-open");
+      document.getElementById("lightboxModalBackdrop").classList.remove("open");
       });
       document.getElementById("lightboxEditBtn").addEventListener("click", function() {
-        document.getElementById("lightboxModalBackdrop").classList.remove("open");
+        document.body.classList.remove("modal-open");
+      document.getElementById("lightboxModalBackdrop").classList.remove("open");
         if (activeLightboxId) openEditModal(activeLightboxId);
       });
 
       // Edit Modal Actions
       document.getElementById("closeEditModal").addEventListener("click", function() {
-        document.getElementById("editModalBackdrop").classList.remove("open");
+        document.body.classList.remove("modal-open");
+      document.getElementById("editModalBackdrop").classList.remove("open");
       });
       document.getElementById("cancelEditBtn").addEventListener("click", function() {
-        document.getElementById("editModalBackdrop").classList.remove("open");
+        document.body.classList.remove("modal-open");
+      document.getElementById("editModalBackdrop").classList.remove("open");
       });
       document.getElementById("saveEditBtn").addEventListener("click", saveEditModal);
 
@@ -3484,10 +3657,12 @@
       const addCustomBtn = document.getElementById("addCustomBtn");
       if (addCustomBtn) addCustomBtn.addEventListener("click", openAddModal);
       document.getElementById("closeAddModal").addEventListener("click", function() {
-        document.getElementById("addModalBackdrop").classList.remove("open");
+        document.body.classList.remove("modal-open");
+      document.getElementById("addModalBackdrop").classList.remove("open");
       });
       document.getElementById("cancelAddBtn").addEventListener("click", function() {
-        document.getElementById("addModalBackdrop").classList.remove("open");
+        document.body.classList.remove("modal-open");
+      document.getElementById("addModalBackdrop").classList.remove("open");
       });
       document.getElementById("confirmAddBtn").addEventListener("click", saveCustomEdition);
 
