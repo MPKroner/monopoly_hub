@@ -1579,6 +1579,42 @@
       color: var(--text-muted);
       margin: 0;
     }
+
+    /* Refonte Épurée Mobile : Masquer barre stats encombrante et nuages de filtres */
+    .stats-bar {
+      display: none !important;
+    }
+    #statusPills, #categoryPills {
+      display: none !important;
+    }
+    #countrySelect, #publisherSelect, #decadeSelect {
+      display: none !important;
+    }
+    .controls-panel {
+      padding: 10px 14px;
+      margin-bottom: 14px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      box-shadow: var(--card-shadow);
+    }
+    .search-row {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .search-input-wrapper {
+      flex: 1 1 200px;
+      min-width: 0;
+    }
+    #sortSelect {
+      flex: 0 0 auto;
+      min-width: 130px;
+    }
+    .view-toggle {
+      flex: 0 0 auto;
+    }
   </style>
 </head>
 <body>
@@ -2493,7 +2529,28 @@
         if (currentFilterStatus === "none" && item.status !== "none" && item.status) return false;
         if (currentFilterStatus === "photos-only" && !item.image_url) return false;
 
-        if (currentFilterCategory !== "all" && item.category !== currentFilterCategory) return false;
+        if (currentFilterCategory !== "all") {
+          const cat = (item.category || "").toLowerCase();
+          const name = (item.name || "").toLowerCase();
+          const fullText = cat + " " + name;
+          if (currentFilterCategory === "Classique") {
+            if (!/classique|standard|vintage|historique|anniversaire|1935|deluxe/i.test(fullText)) return false;
+          } else if (currentFilterCategory === "Films") {
+            if (!/film|série|cinéma|warner|disney|star wars|marvel|harry potter|pop culture/i.test(fullText)) return false;
+          } else if (currentFilterCategory === "Jeux Vidéo") {
+            if (!/jeu.*vidéo|geek|anime|manga|nintendo|pokemon|pokémon|zelda|mario|gamer|playstation/i.test(fullText)) return false;
+          } else if (currentFilterCategory === "Villes") {
+            if (!/ville|pays|région|france|monde|paris|lyon|marseille|bordeaux/i.test(fullText)) return false;
+          } else if (currentFilterCategory === "Marques") {
+            if (!/marque|sport|foot|auto|ferrari|voiture|fc|ol/i.test(fullText)) return false;
+          } else if (currentFilterCategory === "Cartes") {
+            if (!/carte|rapide|deal|bid|express/i.test(fullText)) return false;
+          } else if (currentFilterCategory === "Variantes") {
+            if (!/variante|règle|junior|enfant|tricher|cheaters|builder|mauvais perdant/i.test(fullText)) return false;
+          } else if (item.category !== currentFilterCategory) {
+            return false;
+          }
+        }
         if (currentCountry !== "all" && item.country !== currentCountry) return false;
         if (currentPublisher !== "all" && item.publisher !== currentPublisher) return false;
 
@@ -2561,6 +2618,31 @@
         cardsContainer.style.display = "none";
         document.getElementById("tableContainer").style.display = "none";
         paginationBar.style.display = "none";
+
+        if (currentFilterStatus === "wishlist" && !currentSearchTerm) {
+          emptyState.innerHTML = 
+            '<div style="text-align:center; padding: 40px 16px;">' +
+              '<span style="font-size:3.2rem; display:block; margin-bottom:12px;">⭐</span>' +
+              '<h3 style="margin-bottom:8px; font-size:1.15rem;">Votre Wishlist est vide</h3>' +
+              '<p style="color:var(--text-muted); font-size:0.88rem; max-width:380px; margin:0 auto 16px;">Vous n\'avez pas encore d\'édition recherchée. Explorez le catalogue pour repérer vos prochains jeux !</p>' +
+              '<button class="btn btn-primary" onclick="switchTab(\'catalog\')">📚 Explorer le catalogue</button>' +
+            '</div>';
+        } else if (currentFilterStatus === "owned" && !currentSearchTerm) {
+          emptyState.innerHTML = 
+            '<div style="text-align:center; padding: 40px 16px;">' +
+              '<span style="font-size:3.2rem; display:block; margin-bottom:12px;">📦</span>' +
+              '<h3 style="margin-bottom:8px; font-size:1.15rem;">Votre collection est vide</h3>' +
+              '<p style="color:var(--text-muted); font-size:0.88rem; max-width:380px; margin:0 auto 16px;">Scannez une boîte ou ajoutez un Monopoly pour commencer votre inventaire !</p>' +
+              '<button class="btn btn-primary" onclick="openScannerModal()">📸 Scanner ma première boîte</button>' +
+            '</div>';
+        } else {
+          emptyState.innerHTML = 
+            '<div style="text-align:center; padding: 40px 16px;">' +
+              '<span style="font-size:3.2rem; display:block; margin-bottom:12px;">🔎</span>' +
+              '<h3 style="margin-bottom:8px; font-size:1.15rem;">Aucune édition trouvée</h3>' +
+              '<p style="color:var(--text-muted); font-size:0.88rem; max-width:380px; margin:0 auto 16px;">Aucun Monopoly ne correspond à votre recherche "' + (currentSearchTerm || '').replace(/</g, '&lt;') + '".</p>' +
+            '</div>';
+        }
         return;
       }
 
@@ -4110,9 +4192,11 @@
 
     function switchTab(tabName) {
       currentActiveTab = tabName;
-      localStorage.setItem("monopoly_active_tab", tabName);
+      try {
+        localStorage.setItem("monopoly_active_tab", tabName);
+      } catch(e) {}
 
-      // Update Bottom Nav Active Classes
+      // Mettre à jour la classe active sur la barre de navigation
       document.querySelectorAll(".nav-item").forEach(function(el) { el.classList.remove("active"); });
       const navBtn = document.getElementById("nav" + tabName.charAt(0).toUpperCase() + tabName.slice(1) + "Btn");
       if (navBtn) navBtn.classList.add("active");
@@ -4126,9 +4210,23 @@
       const tableContainer = document.getElementById("tableContainer");
       const paginationBar = document.getElementById("paginationBar");
 
+      const statusPills = document.getElementById("statusPills");
+      const categoryPills = document.getElementById("categoryPills");
+      const countrySelect = document.getElementById("countrySelect");
+      const publisherSelect = document.getElementById("publisherSelect");
+      const decadeSelect = document.getElementById("decadeSelect");
+      const searchInput = document.getElementById("searchInput");
+
+      // Masquer systématiquement l'ancienne barre stats et les filtres lourds
+      if (statsBar) statsBar.style.display = "none";
+      if (statusPills) statusPills.style.display = "none";
+      if (categoryPills) categoryPills.style.display = "none";
+      if (countrySelect) countrySelect.style.display = "none";
+      if (publisherSelect) publisherSelect.style.display = "none";
+      if (decadeSelect) decadeSelect.style.display = "none";
+
       if (tabName === "home") {
-        viewHome.style.display = "block";
-        if (statsBar) statsBar.style.display = "none";
+        if (viewHome) viewHome.style.display = "block";
         if (controlsPanel) controlsPanel.style.display = "none";
         if (sectionBanner) sectionBanner.style.display = "none";
         if (themeCarousel) themeCarousel.style.display = "none";
@@ -4137,8 +4235,7 @@
         if (paginationBar) paginationBar.style.display = "none";
         renderHomeDashboard();
       } else {
-        viewHome.style.display = "none";
-        if (statsBar) statsBar.style.display = "flex";
+        if (viewHome) viewHome.style.display = "none";
         if (controlsPanel) controlsPanel.style.display = "block";
         if (sectionBanner) sectionBanner.style.display = "flex";
 
@@ -4146,29 +4243,52 @@
         const descEl = document.getElementById("sectionHeaderDesc");
         const actionsEl = document.getElementById("sectionHeaderActions");
 
+        // Réinitialiser la recherche à chaque changement d'onglet pour afficher la vue complète
+        currentSearchTerm = "";
+        if (searchInput) searchInput.value = "";
+        currentFilterCategory = "all";
+        currentCountry = "all";
+        currentPublisher = "all";
+        currentDecade = "all";
+
         if (tabName === "collection") {
           currentFilterStatus = "owned";
-          updateStatusPillsUI();
           if (themeCarousel) themeCarousel.style.display = "none";
-          titleEl.textContent = "🟢 Ma Collection Personnelle";
-          descEl.textContent = "Vos boîtes enregistrées avec photos réelles et cotes estimées.";
-          actionsEl.innerHTML = '<button class="btn btn-primary" onclick="openAddModal()" style="font-size:0.75rem; padding:5px 10px;">➕ Ajouter une boîte</button>';
+          if (searchInput) searchInput.placeholder = "🔍 Rechercher dans ma collection...";
+
+          const ownedItems = database.filter(function(i) { return i.status === "owned"; });
+          let totalVal = 0;
+          ownedItems.forEach(function(i) {
+            const est = estimateMarketResaleValue(i, i.condition);
+            totalVal += (i.value && !isNaN(parseFloat(i.value))) ? parseFloat(i.value) : est.value;
+          });
+
+          if (titleEl) titleEl.innerHTML = '🟢 Ma Collection <span style="font-size:0.9rem; font-weight:normal; opacity:0.8;">(' + ownedItems.length + ')</span>';
+          if (descEl) descEl.textContent = ownedItems.length + " éditions enregistrées • Valeur estimée : " + Math.round(totalVal) + " €";
+          if (actionsEl) actionsEl.innerHTML = '<button class="btn btn-primary" onclick="openAddModal()" style="font-size:0.78rem; padding:6px 12px;">➕ Ajouter</button>';
           renderList(true);
         } else if (tabName === "wishlist") {
           currentFilterStatus = "wishlist";
-          updateStatusPillsUI();
           if (themeCarousel) themeCarousel.style.display = "none";
-          titleEl.textContent = "⭐ Ma Wishlist & Recherches";
-          descEl.textContent = "Vos éditions recherchées pour vos sorties brocantes et achats en ligne.";
-          actionsEl.innerHTML = '<button class="btn btn-secondary" onclick="switchTab(\'catalog\')" style="font-size:0.75rem; padding:5px 10px;">📚 Chercher dans le catalogue</button>';
+          if (searchInput) searchInput.placeholder = "🔍 Rechercher dans ma wishlist...";
+
+          const wishItems = database.filter(function(i) { return i.status === "wishlist"; });
+          if (titleEl) titleEl.innerHTML = '⭐ Ma Wishlist <span style="font-size:0.9rem; font-weight:normal; opacity:0.8;">(' + wishItems.length + ')</span>';
+          if (descEl) descEl.textContent = wishItems.length + " éditions recherchées pour vos brocantes";
+          if (actionsEl) actionsEl.innerHTML = '<button class="btn btn-secondary" onclick="switchTab(\'catalog\')" style="font-size:0.78rem; padding:6px 12px;">📚 Explorer le catalogue</button>';
           renderList(true);
         } else if (tabName === "catalog") {
           currentFilterStatus = "all";
-          updateStatusPillsUI();
           if (themeCarousel) themeCarousel.style.display = "block";
-          titleEl.textContent = "📚 Répertoire Mondial Monopoly";
-          descEl.textContent = "1 225 éditions répertoriées avec historique et cotes du marché.";
-          actionsEl.innerHTML = '<button class="btn btn-secondary" onclick="openScannerModal()" style="font-size:0.75rem; padding:5px 10px;">📸 Scanner une boîte</button>';
+          document.querySelectorAll(".theme-chip").forEach(function(c) { c.classList.remove("active"); });
+          const allChip = document.querySelector(".theme-chip");
+          if (allChip) allChip.classList.add("active");
+
+          if (searchInput) searchInput.placeholder = "🔍 Rechercher parmi 1 226 éditions (ex: Zelda, Paris, 1935...)...";
+
+          if (titleEl) titleEl.innerHTML = '📚 Catalogue Mondial Monopoly <span style="font-size:0.9rem; font-weight:normal; opacity:0.8;">(' + database.length + ')</span>';
+          if (descEl) descEl.textContent = database.length + " éditions répertoriées avec historique et cotes";
+          if (actionsEl) actionsEl.innerHTML = '<button class="btn btn-secondary" onclick="openScannerModal()" style="font-size:0.78rem; padding:6px 12px;">📸 Scanner une boîte</button>';
           renderList(true);
         }
       }
@@ -4233,25 +4353,7 @@
     function selectThemeChip(themeKeyword, chipBtn) {
       document.querySelectorAll(".theme-chip").forEach(function(c) { c.classList.remove("active"); });
       if (chipBtn) chipBtn.classList.add("active");
-
-      if (themeKeyword === "all") {
-        currentFilterCategory = "all";
-      } else {
-        const matchingCat = Object.keys(database.reduce(function(acc, item) {
-          if (item.category) acc[item.category] = true;
-          return acc;
-        }, {})).find(function(c) {
-          return c.toLowerCase().includes(themeKeyword.toLowerCase());
-        });
-        currentFilterCategory = matchingCat || "all";
-      }
-
-      // Update pills
-      document.querySelectorAll("#categoryPills .pill").forEach(function(p) {
-        if (p.getAttribute("data-category") === currentFilterCategory) p.classList.add("active");
-        else p.classList.remove("active");
-      });
-
+      currentFilterCategory = themeKeyword;
       renderList(true);
     }
 
