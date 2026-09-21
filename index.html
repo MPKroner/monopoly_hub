@@ -1615,6 +1615,270 @@
     .view-toggle {
       flex: 0 0 auto;
     }
+
+    /* ====================================================
+       MODERN REFINED SEARCH BAR & TOOLBAR
+       ==================================================== */
+    .controls-panel {
+      padding: 10px 14px !important;
+      margin-bottom: 14px !important;
+      background: var(--bg-surface) !important;
+      border: 1px solid var(--border-color) !important;
+      border-radius: 14px !important;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25) !important;
+    }
+
+    .modern-search-bar {
+      display: flex;
+      align-items: center;
+      background: var(--bg-card);
+      border: 1.5px solid var(--border-color);
+      border-radius: 12px;
+      padding: 0 14px;
+      height: 44px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      transition: all 0.2s ease;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .modern-search-bar:focus-within {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(225, 29, 72, 0.2);
+    }
+    .modern-search-icon {
+      font-size: 1.05rem;
+      margin-right: 10px;
+      opacity: 0.75;
+      flex-shrink: 0;
+      user-select: none;
+    }
+    .modern-search-input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      color: var(--text-main);
+      font-size: 0.92rem;
+      font-weight: 500;
+      outline: none;
+      padding: 0;
+      min-width: 0;
+    }
+    .modern-search-input::placeholder {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+    .modern-search-clear {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 1.3rem;
+      cursor: pointer;
+      padding: 0 4px;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .modern-search-clear:hover {
+      color: var(--text-main);
+    }
+
+    .modern-toolbar-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 10px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .modern-sort-select {
+      flex: 1 1 auto;
+      max-width: 220px;
+      padding: 8px 12px;
+      font-size: 0.82rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      color: var(--text-main);
+      outline: none;
+      cursor: pointer;
+    }
+    .modern-sort-select:focus {
+      border-color: var(--primary);
+    }
+
+    /* ====================================================
+       COMPLETENESS & MISSING PIECES WIDGET
+       ==================================================== */
+    .completeness-widget {
+      background: rgba(0, 0, 0, 0.25);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 14px;
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+    .completeness-toggle-group {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .completeness-toggle-btn {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 10px;
+      border: 1.5px solid var(--border-color);
+      background: var(--bg-card);
+      color: var(--text-muted);
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.2s ease;
+    }
+    .completeness-toggle-btn:hover {
+      border-color: var(--text-main);
+    }
+    .completeness-toggle-btn.active.complete {
+      border-color: #10b981;
+      background: rgba(16, 185, 129, 0.12);
+      color: #10b981;
+      box-shadow: 0 0 12px rgba(16, 185, 129, 0.2);
+    }
+    .completeness-toggle-btn.active.incomplete {
+      border-color: #f59e0b;
+      background: rgba(245, 158, 11, 0.12);
+      color: #f59e0b;
+      box-shadow: 0 0 12px rgba(245, 158, 11, 0.2);
+    }
+
+    .missing-accordion {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .missing-cat-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .missing-cat-header {
+      padding: 10px 14px;
+      background: rgba(255, 255, 255, 0.02);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 700;
+      font-size: 0.85rem;
+      user-select: none;
+    }
+    .missing-cat-body {
+      padding: 12px 14px;
+      border-top: 1px solid var(--border-color);
+      background: var(--bg-card);
+    }
+
+    /* Property Chips Grid */
+    .prop-chips-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 6px;
+      max-height: 260px;
+      overflow-y: auto;
+      padding-right: 4px;
+    }
+    .prop-chip {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border-radius: 6px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      font-size: 0.76rem;
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.15s ease;
+    }
+    .prop-chip.selected-missing {
+      background: rgba(239, 68, 68, 0.15);
+      border-color: #ef4444;
+      color: #fca5a5;
+      font-weight: 700;
+    }
+    .prop-color-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* Currency & Bills Rows */
+    .currency-selector-row {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+    .curr-pill {
+      padding: 4px 10px;
+      border-radius: 20px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-surface);
+      font-size: 0.74rem;
+      cursor: pointer;
+    }
+    .curr-pill.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+      font-weight: 700;
+    }
+    .bills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 6px;
+    }
+    .bill-item-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 6px 10px;
+      font-size: 0.78rem;
+    }
+
+    /* Badges for cards */
+    .badge-complete {
+      background: rgba(16, 185, 129, 0.15);
+      color: #10b981;
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      font-size: 0.68rem;
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .badge-incomplete {
+      background: rgba(245, 158, 11, 0.18);
+      color: #f59e0b;
+      border: 1px solid rgba(245, 158, 11, 0.5);
+      font-size: 0.68rem;
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
   </style>
 </head>
 <body>
@@ -1666,7 +1930,7 @@
           <div class="hub-tile-sub">Accéder à vos boîtes, photos réelles et cotes d'occasion</div>
         </div>
 
-        <div class="hub-tile-card" onclick="openScannerModal()" style="border-left: 4px solid #6366f1;">
+        <div class="hub-tile-card" onclick="switchTab('scanner')" style="border-left: 4px solid #6366f1;">
           <div class="hub-tile-icon">📸</div>
           <div class="hub-tile-title">Scanner une Boîte</div>
           <div class="hub-tile-sub">Identification instantanée par photo (Face & Dos) ou code-barres</div>
@@ -1694,6 +1958,83 @@
           <button class="btn btn-secondary" onclick="switchTab('collection')" style="font-size: 0.75rem; padding: 3px 8px;">Voir tout ➔</button>
         </div>
         <div id="homeRecentGrid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px;"></div>
+      </div>
+    </section>
+
+    <!-- VUE SCANNER / IDENTIFICATION PLEIN ÉCRAN (Onglet Natif) -->
+    <section id="viewScanner" class="view-tab-content" style="display: none;">
+      <div class="section-banner-header" style="background: linear-gradient(135deg, rgba(30,27,75,0.95), rgba(49,46,129,0.85)); border-color: rgba(99,102,241,0.4);">
+        <div>
+          <h2 class="section-banner-title" style="color: #fff;">📸 Scanner & Identification</h2>
+          <p class="section-banner-desc" style="color: #c7d2fe;">Photographiez une boîte pour une détection automatique de l'édition, des pièces et de sa cote</p>
+        </div>
+      </div>
+
+      <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: var(--radius); padding: 18px; box-shadow: var(--card-shadow); margin-bottom: 24px;">
+        <!-- Drag & Drop Zone -->
+        <div class="scanner-dropzone" id="scannerDropzone">
+          <input type="file" id="scannerFileInput" accept="image/*" style="display:none;" capture="environment" multiple>
+          <input type="file" id="scannerAddMoreInput" accept="image/*" style="display:none;" capture="environment" multiple>
+          <div id="scannerEmptyState">
+            <span style="font-size: 2.8rem; display: block; margin-bottom: 8px;">📸</span>
+            <div style="font-weight: 700; font-size: 1.1rem; margin-bottom: 4px;">Prenez une photo ou déposez vos images (Face, Dos, Code-barres...)</div>
+            <div style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 12px;">Vous pouvez ajouter plusieurs photos en même temps (Face avant et Dos de boîte)</div>
+            <button class="btn btn-primary" type="button" id="scannerPickFileBtn" style="background: linear-gradient(135deg, #6366f1, #4f46e5); border: none;">📸 Prendre une photo / Choisir un fichier</button>
+          </div>
+          <div id="scannerPreviewArea" style="display: none; position: relative; text-align: center;">
+            <div style="position: relative; display: inline-block; max-width: 100%;">
+              <img id="scannerPreviewImg" style="max-height: 220px; max-width: 100%; border-radius: 8px; object-fit: contain; box-shadow: 0 6px 16px rgba(0,0,0,0.5);">
+              <div id="scannerScanningOverlay" class="scanner-laser-overlay" style="display: none;">
+                <div class="scanner-laser-line"></div>
+                <div class="scanner-status-text">⚡ Analyse multi-photos en cours...</div>
+              </div>
+            </div>
+            
+            <!-- Gallery of thumbnails -->
+            <div class="scanner-gallery" id="scannerGallery"></div>
+            
+            <div style="display: flex; gap: 8px; justify-content: center; margin-top: 10px; flex-wrap: wrap;">
+              <button class="btn btn-secondary" id="scannerAddMoreBtn" type="button" style="padding: 5px 12px; font-size: 0.78rem; background: rgba(56, 189, 248, 0.12); color: var(--accent); border: 1px solid var(--accent);">➕ Ajouter une autre photo (Dos / Code-barres)</button>
+              <button class="btn btn-secondary" id="scannerChangePhotoBtn" type="button" style="padding: 5px 12px; font-size: 0.78rem; background: rgba(0,0,0,0.6); color: #fff; border: 1px solid rgba(255,255,255,0.2);">Effacer les photos</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Key Settings Bar (Optional) -->
+        <div style="margin-top: 12px; display: flex; align-items: center; justify-content: space-between; background: rgba(255,255,255,0.03); padding: 8px 14px; border-radius: 8px; border: 1px solid var(--border-color); font-size: 0.82rem;">
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <span>🤖 Moteur de détection :</span>
+            <span id="aiKeyStatusBadge" style="font-size: 0.72rem; padding: 2px 8px; border-radius: 4px; background: rgba(16,185,129,0.15); color: #10b981; font-weight: 700;">Code-barres & Catalogue local actif</span>
+          </div>
+          <button type="button" id="toggleAiKeyBtn" style="background: none; border: none; color: var(--accent); cursor: pointer; text-decoration: underline; font-size: 0.8rem;">Clé IA Gemini (Optionnel)</button>
+        </div>
+        <div id="aiKeyConfigRow" style="display: none; margin-top: 8px; padding: 12px; background: var(--bg-surface); border-radius: 8px; border: 1px solid var(--border-color);">
+          <label style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); display: block; margin-bottom: 4px;">Clé API Google Gemini (Vision automatique) :</label>
+          <div style="display: flex; gap: 8px;">
+            <input type="password" id="geminiApiKeyInput" class="form-control" placeholder="Collez votre clé API Gemini ici..." style="font-size: 0.85rem;">
+            <button class="btn btn-primary" id="saveGeminiApiKeyBtn" type="button" style="padding: 6px 14px; font-size: 0.8rem;">Enregistrer</button>
+          </div>
+          <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 4px;">Gratuit sur Google AI Studio. Permet la détection automatique même sur les photos floues ou partielles.</div>
+        </div>
+
+        <!-- Real-time Assist Bar -->
+        <div style="margin-top: 14px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
+            <label style="font-size: 0.78rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">Mots-clés / Titre détecté sur la boîte :</label>
+            <span id="matchStatsLabel" style="font-size: 0.75rem; color: var(--text-muted);">Recherche dans 1 226 références</span>
+          </div>
+          <div style="position: relative;">
+            <input type="text" id="scannerSearchQuery" class="form-control" placeholder="Titre ou mots visibles sur la boîte (ex: Fortnite, Builder, Gliss, Mega, 1992...)" style="padding-left: 36px; font-weight: 600;">
+            <span style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); opacity: 0.5;">🔍</span>
+          </div>
+        </div>
+
+        <!-- Dynamic Results Container -->
+        <div id="scannerResultArea" style="margin-top: 16px;">
+          <div style="text-align: center; padding: 24px; color: var(--text-muted); border: 1px dashed var(--border-color); border-radius: 8px;">
+            <span>💡</span> Déposez une photo ci-dessus ou saisissez un mot-clé pour lancer l'identification.
+          </div>
+        </div>
       </div>
     </section>
 
@@ -1757,58 +2098,37 @@
 
     <!-- Search & Filter Controls -->
     <div class="controls-panel">
-      <!-- Search & Select Row -->
-      <div class="search-row">
-        <div class="search-input-wrapper">
-          <span class="search-icon">🔍</span>
-          <input type="text" id="searchInput" class="search-input" placeholder="Rechercher une édition (ex: Builder, Glisse, 1935, Zelda, Paris, Pokémon, DBZ, Star Wars...)">
-        </div>
-        <select id="countrySelect" class="filter-select">
-          <option value="all">Tous les Pays / Régions</option>
-        </select>
-        <select id="publisherSelect" class="filter-select">
-          <option value="all">Tous les Éditeurs</option>
-        </select>
-        <select id="decadeSelect" class="filter-select">
-          <option value="all">Toutes les Époques</option>
-          <option value="1930s">Années 1930 (Origines & Packaging 1935)</option>
-          <option value="1940-1970">1940-1979 (Wartime & Boîtes Blanches)</option>
-          <option value="1980s">Années 1980 (50ème Anniversaire...)</option>
-          <option value="1990s">Années 1990 (Deluxe, 60ème...)</option>
-          <option value="2000s">Années 2000 (Rues de Paris, 70ème...)</option>
-          <option value="2010s">Années 2010 (Empire, Gamer, 80ème...)</option>
-          <option value="2020s">Années 2020 (Builder, Glisse, 85ème...)</option>
-        </select>
-        <select id="sortSelect" class="filter-select">
+      <!-- Barre de recherche moderne épurée -->
+      <div class="modern-search-bar">
+        <span class="modern-search-icon">🔍</span>
+        <input type="text" id="searchInput" class="modern-search-input" placeholder="Rechercher une édition..." autocomplete="off">
+        <button type="button" id="clearSearchBtn" class="modern-search-clear" onclick="clearSearchInput()" style="display:none;" title="Effacer la recherche">&times;</button>
+      </div>
+
+      <!-- Barre d'outils compacte (Tri & Vue) -->
+      <div class="modern-toolbar-row">
+        <select id="sortSelect" class="modern-sort-select">
           <option value="name-asc">Nom (A → Z)</option>
           <option value="name-desc">Nom (Z → A)</option>
           <option value="year-desc">Année (Plus récente)</option>
           <option value="year-asc">Année (Plus ancienne)</option>
           <option value="status">Statut (Possédé d'abord)</option>
-          <option value="value-desc">💰 Cote / Valeur (La plus chère)</option>
-          <option value="value-asc">💰 Cote / Valeur (La plus abordable)</option>
+          <option value="value-desc">💰 Cote (La plus chère)</option>
+          <option value="value-asc">💰 Cote (La plus abordable)</option>
         </select>
+
         <div class="view-toggle">
-          <button class="view-toggle-btn active" id="cardViewBtn">🃏 Grille</button>
-          <button class="view-toggle-btn" id="tableViewBtn">📋 Tableau</button>
+          <button class="view-toggle-btn active" id="cardViewBtn" title="Vue Grille">🃏 Grille</button>
+          <button class="view-toggle-btn" id="tableViewBtn" title="Vue Tableau">📋 Tableau</button>
         </div>
       </div>
 
-      <!-- Status Pills -->
-      <div class="pills-container" id="statusPills">
-        <span class="pills-label">Statut :</span>
-        <span class="pill active" data-status="all">Tous (<span id="countAll">0</span>)</span>
-        <span class="pill" data-status="owned">🟢 Possédés (<span id="countOwned">0</span>)</span>
-        <span class="pill" data-status="wishlist">⭐ Recherchés (<span id="countWishlist">0</span>)</span>
-        <span class="pill" data-status="none">⚪ Non possédés (<span id="countNone">0</span>)</span>
-        <span class="pill" data-status="photos-only">📸 Avec Photo Uniquement</span>
-      </div>
-
-      <!-- Category Pills -->
-      <div class="pills-container" id="categoryPills">
-        <span class="pills-label">Catégorie :</span>
-        <span class="pill active" data-category="all">Toutes</span>
-      </div>
+      <!-- Champs préservés pour compatibilité silencieuse -->
+      <select id="countrySelect" style="display:none;"><option value="all">Tous les Pays</option></select>
+      <select id="publisherSelect" style="display:none;"><option value="all">Tous les Éditeurs</option></select>
+      <select id="decadeSelect" style="display:none;"><option value="all">Toutes les Époques</option></select>
+      <div id="statusPills" style="display:none;"><span class="pill" data-status="all">Tous</span></div>
+      <div id="categoryPills" style="display:none;"><span class="pill" data-category="all">Toutes</span></div>
     </div>
 
     <!-- Empty State Message -->
@@ -1919,6 +2239,9 @@
           <textarea id="editNotes" class="form-control" rows="2" placeholder="Détails spécifiques (pions manquants, version française, édition limitée numérotée...)"></textarea>
         </div>
 
+        <!-- Sélecteur complet de pièces manquantes par profil d'édition -->
+        <div id="editCompletenessContainer"></div>
+
         <div class="form-group">
           <label>Photo de la jaquette de votre boîte</label>
           <div style="display:flex; gap:10px; align-items:center;">
@@ -2004,39 +2327,7 @@
     </div>
   </div>
 
-  <!-- Box Scanner & Identifier Modal -->
-  <div class="modal-backdrop" id="scannerModalBackdrop">
-    <div class="modal-card" style="max-width: 860px; width: 100%; box-sizing: border-box;">
-      <div class="modal-header" style="background: linear-gradient(135deg, #1e1b4b, #312e81); color: #fff;">
-        <div style="display: flex; align-items: center; gap: 10px; min-width: 0; flex: 1;">
-          <span style="font-size: 1.5rem; flex-shrink: 0;">🔍</span>
-          <div style="min-width: 0;">
-            <h2 style="font-size: 1.15rem; font-weight: 800; color: #fff; margin: 0; word-break: break-word;">Scanner & Identifier une Boîte</h2>
-            <p style="font-size: 0.74rem; color: #c7d2fe; margin: 2px 0 0 0; line-height: 1.2;">Reconnaissance intelligente multi-photos</p>
-          </div>
-        </div>
-        <button class="modal-close-btn" id="closeScannerModal" style="color:#c7d2fe; flex-shrink: 0;">&times;</button>
-      </div>
-
-      <div class="modal-body" style="max-height: calc(85vh - 130px); overflow-y: auto;">
-        <!-- Drag & Drop Zone -->
-        <div class="scanner-dropzone" id="scannerDropzone">
-          <input type="file" id="scannerFileInput" accept="image/*" style="display:none;" capture="environment" multiple>
-          <input type="file" id="scannerAddMoreInput" accept="image/*" style="display:none;" capture="environment" multiple>
-          <div id="scannerEmptyState">
-            <span style="font-size: 2.8rem; display: block; margin-bottom: 8px;">📸</span>
-            <div style="font-weight: 700; font-size: 1.1rem; margin-bottom: 4px;">Glissez-déposez vos photos ici (Face, Dos, Code-barres...)</div>
-            <div style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 12px;">Vous pouvez ajouter plusieurs photos en même temps (Face avant et Dos de boîte)</div>
-            <button class="btn btn-primary" type="button" id="scannerPickFileBtn" style="background: linear-gradient(135deg, #6366f1, #4f46e5); border: none;">Choisir une ou plusieurs photos</button>
-          </div>
-          <div id="scannerPreviewArea" style="display: none; position: relative; text-align: center;">
-            <div style="position: relative; display: inline-block; max-width: 100%;">
-              <img id="scannerPreviewImg" style="max-height: 220px; max-width: 100%; border-radius: 8px; object-fit: contain; box-shadow: 0 6px 16px rgba(0,0,0,0.5);">
-              <div id="scannerScanningOverlay" class="scanner-laser-overlay" style="display: none;">
-                <div class="scanner-laser-line"></div>
-                <div class="scanner-status-text">⚡ Analyse multi-photos en cours...</div>
-              </div>
-            </div>
+  
             
             <!-- Gallery of thumbnails -->
             <div class="scanner-gallery" id="scannerGallery"></div>
@@ -2689,6 +2980,18 @@
         const googleQuery = encodeURIComponent(item.name + " boite jeu");
         const googleUrl = "https://www.google.com/search?tbm=isch&q=" + googleQuery;
 
+        let completenessBadge = "";
+        if (item.status === "owned") {
+          if (item.is_complete === false) {
+            const missingCount = (item.missing_pieces && item.missing_pieces.properties ? item.missing_pieces.properties.length : 0) +
+              (item.missing_pieces && item.missing_pieces.bills ? item.missing_pieces.bills.length : 0) +
+              (item.missing_pieces && item.missing_pieces.tokens ? item.missing_pieces.tokens.length : 0);
+            completenessBadge = '<span class="badge-incomplete" title="Pièces manquantes">⚠️ Incomplet ' + (missingCount > 0 ? '(' + missingCount + ')' : '') + '</span>';
+          } else {
+            completenessBadge = '<span class="badge-complete" title="Jeu 100% complet">🟢 Complet</span>';
+          }
+        }
+
         let coverHtml = "";
         if (item.image_url) {
           const verifiedBadge = item.back_image_url
@@ -2729,6 +3032,20 @@
           if (item.location) userInfoHtml += '<div><strong>Emplacement :</strong> ' + item.location + '</div>';
           if (item.price) userInfoHtml += '<div><strong>Achat :</strong> ' + item.price + ' €</div>';
           if (item.notes) userInfoHtml += '<div><strong>Note :</strong> ' + item.notes + '</div>';
+
+          if (item.is_complete === false && item.missing_pieces) {
+            const mp = item.missing_pieces;
+            const mpList = [];
+            if (mp.properties && mp.properties.length > 0) mpList.push(mp.properties.length + ' prop.');
+            if (mp.bills && mp.bills.length > 0) mpList.push('Billets (' + mp.bills.length + ')');
+            if (mp.tokens && mp.tokens.length > 0) mpList.push('Pions (' + mp.tokens.length + ')');
+            if (mp.dice && mp.dice.length > 0) mpList.push('Dés');
+            if (mp.buildings && (mp.buildings.houses > 0 || mp.buildings.hotels > 0 || mp.buildings.skyscrapers > 0)) mpList.push('Bâtiments');
+            if (mp.other && (mp.other.rules || mp.other.board || mp.other.tray)) mpList.push('Matériel');
+            userInfoHtml += '<div style="color:#f59e0b; font-size:0.75rem; margin-top:4px;"><strong>⚠️ Manque :</strong> ' + (mpList.length > 0 ? mpList.join(', ') : 'Pièces signalées') + '</div>';
+          } else {
+            userInfoHtml += '<div style="color:#10b981; font-size:0.75rem; margin-top:4px;"><strong>🟢 Exemplaire 100% complet</strong></div>';
+          }
           userInfoHtml += 
             '<div style="display:flex; gap:5px; margin-top:8px; flex-wrap:wrap; align-items:center;">' +
               '<a href="' + links.ebaySold + '" target="_blank" class="market-btn ebay" title="Ventes réelles terminées sur eBay (Catégorie Jeux de société uniquement)">🛒 Ventes eBay</a>' +
@@ -2774,6 +3091,7 @@
             '<div class="card-top">' +
               '<span class="card-category">' + (item.category || 'Général') + '</span>' +
               '<span class="card-year">' + (item.year || '—') + '</span>' +
+            (completenessBadge ? ' ' + completenessBadge : '') +
             '</div>' +
             '<h3 class="card-title">' + item.name + '</h3>' +
             '<div class="card-meta">' +
@@ -2910,11 +3228,44 @@
       if (item.description) detailsHtml += '<p style="margin-top:8px; color:var(--text-muted);">' + item.description + '</p>';
 
       if (item.status === "owned") {
-        detailsHtml += '<div style="margin-top:12px; padding:12px; background:rgba(16,185,129,0.12); border:1px solid rgba(16,185,129,0.35); border-radius:6px; color:#10b981;">';
-        detailsHtml += '<div style="font-weight:700; margin-bottom:4px;">🟢 Exemplaire dans votre collection</div>';
+        detailsHtml += '<div style="margin-top:12px; padding:12px; background:rgba(16,185,129,0.12); border:1px solid rgba(16,185,129,0.35); border-radius:8px; color:#10b981;">';
+        detailsHtml += '<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">' +
+          '<div style="font-weight:800; font-size:0.95rem;">🟢 Exemplaire dans votre collection</div>' +
+          (item.is_complete === false ? 
+            '<span class="badge-incomplete" style="font-size:0.75rem;">⚠️ Incomplet</span>' : 
+            '<span class="badge-complete" style="font-size:0.75rem;">🟢 100% Complet</span>') +
+        '</div>';
         detailsHtml += (item.condition ? '<div><strong>État :</strong> ' + item.condition + '</div>' : '');
         detailsHtml += (item.location ? '<div><strong>Emplacement :</strong> ' + item.location + '</div>' : '');
         if (item.notes) detailsHtml += '<div style="margin-top:4px; font-size:0.85rem; color:#d1fae5;"><strong>Notes & Réf :</strong> ' + item.notes + '</div>';
+
+        // Affichage détaillé des pièces manquantes dans la lightbox
+        if (item.is_complete === false && item.missing_pieces) {
+          const mp = item.missing_pieces;
+          detailsHtml += '<div style="margin-top:10px; padding:10px; background:rgba(245,158,11,0.15); border:1px solid rgba(245,158,11,0.4); border-radius:6px; color:#fde68a;">';
+          detailsHtml += '<div style="font-weight:800; color:#f59e0b; margin-bottom:6px; font-size:0.85rem;">⚠️ Inventaire des Pièces Manquantes :</div>';
+          detailsHtml += '<ul style="margin:0; padding-left:18px; font-size:0.8rem; line-height:1.4;">';
+          if (mp.properties && mp.properties.length > 0) detailsHtml += '<li><strong>Propriétés (' + mp.properties.length + ') :</strong> ' + mp.properties.join(', ') + '</li>';
+          if (mp.bills && mp.bills.length > 0) detailsHtml += '<li><strong>Billets :</strong> ' + mp.bills.map(function(b) { return (b.count ? b.count + 'x ' : '') + b.name; }).join(', ') + '</li>';
+          if (mp.tokens && mp.tokens.length > 0) detailsHtml += '<li><strong>Pions :</strong> ' + mp.tokens.join(', ') + '</li>';
+          if (mp.dice && mp.dice.length > 0) detailsHtml += '<li><strong>Dés :</strong> ' + mp.dice.join(', ') + '</li>';
+          if (mp.buildings && (mp.buildings.houses > 0 || mp.buildings.hotels > 0 || mp.buildings.skyscrapers > 0)) {
+            const bParts = [];
+            if (mp.buildings.houses > 0) bParts.push(mp.buildings.houses + ' maison(s)');
+            if (mp.buildings.hotels > 0) bParts.push(mp.buildings.hotels + ' hôtel(s)');
+            if (mp.buildings.skyscrapers > 0) bParts.push(mp.buildings.skyscrapers + ' gratte-ciel(s)');
+            detailsHtml += '<li><strong>Bâtiments :</strong> ' + bParts.join(', ') + '</li>';
+          }
+          if (mp.other) {
+            const oParts = [];
+            if (mp.other.rules) oParts.push('Livret de règles');
+            if (mp.other.board) oParts.push('Plateau');
+            if (mp.other.tray) oParts.push('Calage intérieur');
+            if (oParts.length > 0) detailsHtml += '<li><strong>Matériel :</strong> ' + oParts.join(', ') + '</li>';
+          }
+          detailsHtml += '</ul></div>';
+        }
+
         detailsHtml += '</div>';
       }
 
@@ -2951,6 +3302,741 @@
     }
 
     // Edit Modal
+    
+    // ====================================================
+    // EDITION PROFILES & COMPLETENESS TRACKING ENGINE
+    // ====================================================
+    const EDITION_PROFILES = {
+      mega: {
+        id: "mega",
+        name: "Monopoly Mega Edition",
+        properties: [
+          { name: "Boulevard de Belleville", color: "#8B5A2B", group: "Marron" },
+          { name: "Rue Lecourbe", color: "#8B5A2B", group: "Marron" },
+          { name: "Rue de la Pompe", color: "#8B5A2B", group: "Marron" },
+          { name: "Rue de Vaugirard", color: "#38bdf8", group: "Bleu Ciel" },
+          { name: "Rue de Courcelles", color: "#38bdf8", group: "Bleu Ciel" },
+          { name: "Avenue de la République", color: "#38bdf8", group: "Bleu Ciel" },
+          { name: "Avenue de Choisy", color: "#38bdf8", group: "Bleu Ciel" },
+          { name: "Boulevard de la Villette", color: "#ec4899", group: "Rose" },
+          { name: "Avenue de Neuilly", color: "#ec4899", group: "Rose" },
+          { name: "Rue de Paradis", color: "#ec4899", group: "Rose" },
+          { name: "Avenue de Suffren", color: "#ec4899", group: "Rose" },
+          { name: "Avenue Mozart", color: "#f97316", group: "Orange" },
+          { name: "Boulevard Saint-Michel", color: "#f97316", group: "Orange" },
+          { name: "Place Pigalle", color: "#f97316", group: "Orange" },
+          { name: "Boulevard de Grenelle", color: "#f97316", group: "Orange" },
+          { name: "Avenue Matignon", color: "#ef4444", group: "Rouge" },
+          { name: "Boulevard Malesherbes", color: "#ef4444", group: "Rouge" },
+          { name: "Avenue Henri-Martin", color: "#ef4444", group: "Rouge" },
+          { name: "Place de l'Étoile", color: "#ef4444", group: "Rouge" },
+          { name: "Faubourg Saint-Honoré", color: "#eab308", group: "Jaune" },
+          { name: "Place de la Bourse", color: "#eab308", group: "Jaune" },
+          { name: "Rue La Fayette", color: "#eab308", group: "Jaune" },
+          { name: "Rue de Rivoli", color: "#eab308", group: "Jaune" },
+          { name: "Avenue de Breteuil", color: "#10b981", group: "Vert" },
+          { name: "Avenue Foch", color: "#10b981", group: "Vert" },
+          { name: "Boulevard des Capucines", color: "#10b981", group: "Vert" },
+          { name: "Avenue Montaigne", color: "#10b981", group: "Vert" },
+          { name: "Avenue des Champs-Élysées", color: "#2563eb", group: "Bleu Foncé" },
+          { name: "Rue de la Paix", color: "#2563eb", group: "Bleu Foncé" },
+          { name: "Place Vendôme", color: "#2563eb", group: "Bleu Foncé" },
+          { name: "Gare Montparnasse", color: "#475569", group: "Gares" },
+          { name: "Gare de Lyon", color: "#475569", group: "Gares" },
+          { name: "Gare du Nord", color: "#475569", group: "Gares" },
+          { name: "Gare Saint-Lazare", color: "#475569", group: "Gares" },
+          { name: "Dépôt ferroviaire / Gare Routière", color: "#475569", group: "Gares" },
+          { name: "Compagnie d'Électricité", color: "#94a3b8", group: "Services" },
+          { name: "Compagnie des Eaux", color: "#94a3b8", group: "Services" },
+          { name: "Compagnie du Gaz", color: "#94a3b8", group: "Services" }
+        ],
+        currency: "euros",
+        bills: ["1 €", "5 €", "10 €", "20 €", "50 €", "100 €", "500 €", "1 000 €"],
+        tokens: ["Voiture", "Chapeau", "Chien", "Bateau", "Chaussure", "Dé à coudre", "Brouette", "Cavalier"],
+        dice: ["1 dé blanc", "2 dés blancs", "1 Dé Rapide Rouge (Speed Die)"],
+        has_skyscrapers: true
+      },
+
+      electronic: {
+        id: "electronic",
+        name: "Monopoly Banque Électronique",
+        is_electronic: true,
+        electronic_units: ["1 Terminal bancaire électronique", "4 à 6 Cartes bancaires de crédit à puce"],
+        tokens: ["Téléphone", "Rollers", "Avion", "Burger", "Skateboard", "Voiture"],
+        dice: ["1 dé blanc", "2 dés blancs"],
+        has_skyscrapers: false
+      },
+
+      pop_dbz: {
+        id: "pop_dbz",
+        name: "Monopoly Dragon Ball Z",
+        properties: [
+          { name: "Kame House", color: "#8B5A2B", group: "Terre" },
+          { name: "Maison de Son Goku", color: "#8B5A2B", group: "Terre" },
+          { name: "Tour Karin", color: "#38bdf8", group: "Sanctuaire" },
+          { name: "Palais de Kami-Sama", color: "#38bdf8", group: "Sanctuaire" },
+          { name: "Salle de l'Esprit et du Temps", color: "#38bdf8", group: "Sanctuaire" },
+          { name: "Capsule Corporation", color: "#ec4899", group: "Capital City" },
+          { name: "Palais de Baba la Voyante", color: "#ec4899", group: "Capital City" },
+          { name: "Tour du Muscle", color: "#ec4899", group: "Capital City" },
+          { name: "Tournoi des Arts Martiaux", color: "#f97316", group: "Arènes" },
+          { name: "Arène des Cell Games", color: "#f97316", group: "Arènes" },
+          { name: "Palais du Roi Enma", color: "#f97316", group: "Au-Delà" },
+          { name: "Chemin du Serpent", color: "#ef4444", group: "Au-Delà" },
+          { name: "Planète Kaïo", color: "#ef4444", group: "Au-Delà" },
+          { name: "Planète Namek", color: "#ef4444", group: "Namek" },
+          { name: "Village de Grand Chef", color: "#eab308", group: "Namek" },
+          { name: "Vaisseau de Freezer", color: "#eab308", group: "Namek" },
+          { name: "Planète Vegeta", color: "#eab308", group: "Espace" },
+          { name: "Planète des Kaïoshins", color: "#10b981", group: "Divin" },
+          { name: "Monde des Enfers", color: "#10b981", group: "Divin" },
+          { name: "Mont Paozu", color: "#10b981", group: "Origines" },
+          { name: "Planète de Beerus", color: "#2563eb", group: "Dieux" },
+          { name: "Tournoi du Pouvoir", color: "#2563eb", group: "Dieux" },
+          { name: "Vaisseau Capsule Corp", color: "#475569", group: "Transports" },
+          { name: "Nuage Magique", color: "#475569", group: "Transports" },
+          { name: "Capsule Spatiale Saiyan", color: "#475569", group: "Transports" },
+          { name: "Machine Temporelle", color: "#475569", group: "Transports" },
+          { name: "Dragon Radar", color: "#94a3b8", group: "Objets" },
+          { name: "Scouter (Détecteur)", color: "#94a3b8", group: "Objets" }
+        ],
+        currency: "zeni",
+        bills: ["1 Zeni", "5 Zeni", "10 Zeni", "20 Zeni", "50 Zeni", "100 Zeni", "500 Zeni"],
+        tokens: ["Épée de Trunks", "Dragon Radar", "Armure Saiyan", "Carapace Tortue", "Boule à 4 étoiles", "Capsule Corp"],
+        dice: ["1 dé blanc", "2 dés blancs"],
+        has_skyscrapers: false
+      },
+
+      pop_pokemon: {
+        id: "pop_pokemon",
+        name: "Monopoly Pokémon",
+        properties: [
+          { name: "Bourg Palette", color: "#8B5A2B", group: "Départ" },
+          { name: "Route 1", color: "#8B5A2B", group: "Départ" },
+          { name: "Arène d'Argenta", color: "#38bdf8", group: "Arènes" },
+          { name: "Mont Sélénite", color: "#38bdf8", group: "Arènes" },
+          { name: "Arène d'Azuria", color: "#38bdf8", group: "Arènes" },
+          { name: "Arène de Carmin sur Mer", color: "#ec4899", group: "Arènes" },
+          { name: "L'Océane", color: "#ec4899", group: "Arènes" },
+          { name: "Tour Pokémon", color: "#ec4899", group: "Arènes" },
+          { name: "Arène de Céladopole", color: "#f97316", group: "Arènes" },
+          { name: "Casino Rocket", color: "#f97316", group: "Arènes" },
+          { name: "Repaire Rocket", color: "#f97316", group: "Arènes" },
+          { name: "Arène de Parmanie", color: "#ef4444", group: "Arènes" },
+          { name: "Parc Safari", color: "#ef4444", group: "Arènes" },
+          { name: "Piste Cyclable", color: "#ef4444", group: "Arènes" },
+          { name: "Arène de Safrania", color: "#eab308", group: "Arènes" },
+          { name: "Sylphe SARL", color: "#eab308", group: "Arènes" },
+          { name: "Centrale Électrique", color: "#eab308", group: "Arènes" },
+          { name: "Arène de Cramois'Île", color: "#10b981", group: "Arènes" },
+          { name: "Manoir Pokémon", color: "#10b981", group: "Arènes" },
+          { name: "Îles Écume", color: "#10b981", group: "Arènes" },
+          { name: "Arène de Jadielle", color: "#2563eb", group: "Élite" },
+          { name: "Plateau Indigo", color: "#2563eb", group: "Élite" },
+          { name: "Poké Ball", color: "#475569", group: "Balls" },
+          { name: "Super Ball", color: "#475569", group: "Balls" },
+          { name: "Hyper Ball", color: "#475569", group: "Balls" },
+          { name: "Master Ball", color: "#475569", group: "Balls" },
+          { name: "Boutique Pokémon", color: "#94a3b8", group: "Services" },
+          { name: "Centre Pokémon", color: "#94a3b8", group: "Services" }
+        ],
+        currency: "pokedollar",
+        bills: ["1 ₽", "5 ₽", "10 ₽", "20 ₽", "50 ₽", "100 ₽", "500 ₽"],
+        tokens: ["Pikachu", "Bulbizarre", "Salamèche", "Carapuce", "Évoli", "Rondoudou"],
+        dice: ["1 dé blanc", "2 dés blancs"],
+        has_skyscrapers: false
+      },
+
+      pop_starwars: {
+        id: "pop_starwars",
+        name: "Monopoly Star Wars",
+        properties: [
+          { name: "Tatooine - Ferme des Lars", color: "#8B5A2B", group: "Bordure Extérieure" },
+          { name: "Mos Eisley Cantina", color: "#8B5A2B", group: "Bordure Extérieure" },
+          { name: "Hoth - Base Écho", color: "#38bdf8", group: "Planètes Froides" },
+          { name: "Champs d'astéroïdes", color: "#38bdf8", group: "Espace" },
+          { name: "Cité des Nuages de Bespin", color: "#38bdf8", group: "Bordure Extérieure" },
+          { name: "Endor - Village des Ewoks", color: "#ec4899", group: "Lune Forestière" },
+          { name: "Générateur de Bouclier d'Endor", color: "#ec4899", group: "Lune Forestière" },
+          { name: "Dagobah - Hutte de Yoda", color: "#ec4899", group: "Système Souterrain" },
+          { name: "Kamino - Cité de Tipoca", color: "#f97316", group: "Clones" },
+          { name: "Geonosis - Arène", color: "#f97316", group: "Séparatistes" },
+          { name: "Utapau - Cité Pau", color: "#f97316", group: "Guerre" },
+          { name: "Mustafar - Complexe Minier", color: "#ef4444", group: "Volcanique" },
+          { name: "Kashyyyk - Cité de Kachirho", color: "#ef4444", group: "Wookiees" },
+          { name: "Naboo - Palais de Theed", color: "#ef4444", group: "Secteur Chommell" },
+          { name: "Coruscant - Sénat Galactique", color: "#eab308", group: "Noyau" },
+          { name: "Temple Jedi de Coruscant", color: "#eab308", group: "Noyau" },
+          { name: "Palais Impérial", color: "#eab308", group: "Noyau" },
+          { name: "Étoile de la Mort I", color: "#10b981", group: "Empire" },
+          { name: "Étoile de la Mort II", color: "#10b981", group: "Empire" },
+          { name: "Salle du Trône de l'Empereur", color: "#10b981", group: "Empire" },
+          { name: "Base Starkiller", color: "#2563eb", group: "Premier Ordre" },
+          { name: "Exegol - Citadelle Sith", color: "#2563eb", group: "Sith" },
+          { name: "Faucon Millenium", color: "#475569", group: "Vaisseaux" },
+          { name: "X-Wing T-65", color: "#475569", group: "Vaisseaux" },
+          { name: "Chasseur TIE", color: "#475569", group: "Vaisseaux" },
+          { name: "Destroyer Stellaire", color: "#475569", group: "Vaisseaux" },
+          { name: "Réacteur Hyperdrive", color: "#94a3b8", group: "Systèmes" },
+          { name: "Générateur d'Énergie", color: "#94a3b8", group: "Systèmes" }
+        ],
+        currency: "credits",
+        bills: ["10 Crédits", "50 Crédits", "100 Crédits", "200 Crédits", "500 Crédits"],
+        tokens: ["Casque Dark Vador", "Faucon Millenium", "R2-D2", "Casque Stormtrooper", "Sabre Laser", "X-Wing"],
+        dice: ["1 dé blanc", "2 dés blancs"],
+        has_skyscrapers: false
+      },
+
+      pop_harrypotter: {
+        id: "pop_harrypotter",
+        name: "Monopoly Harry Potter",
+        properties: [
+          { name: "Le Chaudron Baveur", color: "#8B5A2B", group: "Londres Magique" },
+          { name: "Chemin de Traverse", color: "#8B5A2B", group: "Londres Magique" },
+          { name: "Magasin d'Ollivander", color: "#38bdf8", group: "Boutiques" },
+          { name: "Fleury et Bott", color: "#38bdf8", group: "Boutiques" },
+          { name: "Boutique de Farces et Attrapes", color: "#38bdf8", group: "Boutiques" },
+          { name: "Quai 9 ¾", color: "#ec4899", group: "Transports" },
+          { name: "Les Trois Balais", color: "#ec4899", group: "Pré-au-Lard" },
+          { name: "Zonko", color: "#ec4899", group: "Pré-au-Lard" },
+          { name: "Honeydukes", color: "#f97316", group: "Pré-au-Lard" },
+          { name: "La Cabane Hurlante", color: "#f97316", group: "Pré-au-Lard" },
+          { name: "Cabane de Hagrid", color: "#f97316", group: "Poudlard" },
+          { name: "Forêt Interdite", color: "#ef4444", group: "Poudlard" },
+          { name: "Terrain de Quidditch", color: "#ef4444", group: "Poudlard" },
+          { name: "Serres de Botanique", color: "#ef4444", group: "Poudlard" },
+          { name: "Salle sur Demande", color: "#eab308", group: "Château" },
+          { name: "Bibliothèque de Poudlard", color: "#eab308", group: "Château" },
+          { name: "Grande Salle de Poudlard", color: "#eab308", group: "Château" },
+          { name: "Bureau de Dumbledore", color: "#10b981", group: "Poudlard" },
+          { name: "Chambre des Secrets", color: "#10b981", group: "Secrets" },
+          { name: "Ministère de la Magie", color: "#10b981", group: "Institutions" },
+          { name: "Manoir des Malefoy", color: "#2563eb", group: "Lieux Sombres" },
+          { name: "Château de Poudlard", color: "#2563eb", group: "Poudlard" },
+          { name: "Poudlard Express", color: "#475569", group: "Gares" },
+          { name: "Magicobus", color: "#475569", group: "Gares" },
+          { name: "Side-car de Sirius", color: "#475569", group: "Gares" },
+          { name: "Ford Anglia volante", color: "#475569", group: "Gares" },
+          { name: "Gringotts (Banque)", color: "#94a3b8", group: "Services" },
+          { name: "Gazette du Sorcier", color: "#94a3b8", group: "Services" }
+        ],
+        currency: "galleons",
+        bills: ["1 Noise", "5 Mornilles", "10 Gallions", "20 Gallions", "50 Gallions", "100 Gallions", "500 Gallions"],
+        tokens: ["Vif d'or", "Choixpeau", "Chouette Hedwige", "Épée de Gryffondor", "Éclair de Feu", "Potion"],
+        dice: ["1 dé blanc", "2 dés blancs"],
+        has_skyscrapers: false
+      },
+
+      standard_france: {
+        id: "standard_france",
+        name: "Monopoly Standard France",
+        properties: [
+          { name: "Boulevard de Belleville", color: "#8B5A2B", group: "Marron" },
+          { name: "Rue Lecourbe", color: "#8B5A2B", group: "Marron" },
+          { name: "Rue de Vaugirard", color: "#38bdf8", group: "Bleu Ciel" },
+          { name: "Rue de Courcelles", color: "#38bdf8", group: "Bleu Ciel" },
+          { name: "Avenue de la République", color: "#38bdf8", group: "Bleu Ciel" },
+          { name: "Boulevard de la Villette", color: "#ec4899", group: "Rose" },
+          { name: "Avenue de Neuilly", color: "#ec4899", group: "Rose" },
+          { name: "Rue de Paradis", color: "#ec4899", group: "Rose" },
+          { name: "Avenue Mozart", color: "#f97316", group: "Orange" },
+          { name: "Boulevard Saint-Michel", color: "#f97316", group: "Orange" },
+          { name: "Place Pigalle", color: "#f97316", group: "Orange" },
+          { name: "Avenue Matignon", color: "#ef4444", group: "Rouge" },
+          { name: "Boulevard Malesherbes", color: "#ef4444", group: "Rouge" },
+          { name: "Avenue Henri-Martin", color: "#ef4444", group: "Rouge" },
+          { name: "Faubourg Saint-Honoré", color: "#eab308", group: "Jaune" },
+          { name: "Place de la Bourse", color: "#eab308", group: "Jaune" },
+          { name: "Rue La Fayette", color: "#eab308", group: "Jaune" },
+          { name: "Avenue de Breteuil", color: "#10b981", group: "Vert" },
+          { name: "Avenue Foch", color: "#10b981", group: "Vert" },
+          { name: "Boulevard des Capucines", color: "#10b981", group: "Vert" },
+          { name: "Avenue des Champs-Élysées", color: "#2563eb", group: "Bleu Foncé" },
+          { name: "Rue de la Paix", color: "#2563eb", group: "Bleu Foncé" },
+          { name: "Gare Montparnasse", color: "#475569", group: "Gares" },
+          { name: "Gare de Lyon", color: "#475569", group: "Gares" },
+          { name: "Gare du Nord", color: "#475569", group: "Gares" },
+          { name: "Gare Saint-Lazare", color: "#475569", group: "Gares" },
+          { name: "Compagnie d'Électricité", color: "#94a3b8", group: "Services" },
+          { name: "Compagnie des Eaux", color: "#94a3b8", group: "Services" }
+        ],
+        tokens: ["Chapeau", "Voiture", "Chien", "Chaussure", "Bateau", "Dé à coudre", "Fer à repasser", "Brouette"],
+        dice: ["1 dé blanc", "2 dés blancs"],
+        has_skyscrapers: false
+      }
+    };
+
+    function getEditionProfile(item) {
+      const name = (item && item.name) ? item.name.toLowerCase() : "";
+      const desc = (item && item.description) ? item.description.toLowerCase() : "";
+      const year = (item && item.year) ? parseInt(item.year, 10) : 2010;
+      const full = name + " " + desc;
+
+      let profile;
+      if (/mega|mga/i.test(full)) {
+        profile = JSON.parse(JSON.stringify(EDITION_PROFILES.mega));
+      } else if (/lectronique|electronique|banking|banque lectr/i.test(full)) {
+        profile = JSON.parse(JSON.stringify(EDITION_PROFILES.electronic));
+        profile.properties = JSON.parse(JSON.stringify(EDITION_PROFILES.standard_france.properties));
+      } else if (/dragon ball|dbz/i.test(full)) {
+        profile = JSON.parse(JSON.stringify(EDITION_PROFILES.pop_dbz));
+      } else if (/pok[e]mon/i.test(full)) {
+        profile = JSON.parse(JSON.stringify(EDITION_PROFILES.pop_pokemon));
+      } else if (/star wars/i.test(full)) {
+        profile = JSON.parse(JSON.stringify(EDITION_PROFILES.pop_starwars));
+      } else if (/harry potter/i.test(full)) {
+        profile = JSON.parse(JSON.stringify(EDITION_PROFILES.pop_harrypotter));
+      } else {
+        profile = JSON.parse(JSON.stringify(EDITION_PROFILES.standard_france));
+      }
+
+      // Devises vintage vs moderne pour les éditions à billets
+      if (!profile.is_electronic && !profile.currency) {
+        if (year < 2002) {
+          profile.currency = "francs";
+          profile.bills = ["100 F", "500 F", "1 000 F", "2 000 F", "5 000 F", "10 000 F", "50 000 F"];
+          if (/mega/i.test(full)) profile.bills.push("100 000 F");
+        } else {
+          profile.currency = "euros";
+          profile.bills = ["1 €", "5 €", "10 €", "20 €", "50 €", "100 €", "500 €"];
+          if (/mega/i.test(full)) profile.bills.push("1 000 €");
+        }
+      }
+
+      return profile;
+    }
+
+    // State management for the currently active completeness widget
+    let currentWidgetContainerId = null;
+    let currentWidgetState = {
+      is_complete: true,
+      missing_pieces: {
+        properties: [],
+        bills: [],
+        tokens: [],
+        dice: [],
+        buildings: { houses: 0, hotels: 0, skyscrapers: 0 },
+        other: { rules: false, board: false, tray: false }
+      },
+      profile: null,
+      activeCategory: "properties"
+    };
+
+    function renderCompletenessWidget(containerId, item) {
+      currentWidgetContainerId = containerId;
+      const container = document.getElementById(containerId);
+      if (!container) return;
+
+      const profile = getEditionProfile(item);
+      currentWidgetState.profile = profile;
+
+      if (item && item.is_complete !== undefined) {
+        currentWidgetState.is_complete = Boolean(item.is_complete);
+      } else {
+        currentWidgetState.is_complete = true;
+      }
+
+      if (item && item.missing_pieces) {
+        currentWidgetState.missing_pieces = JSON.parse(JSON.stringify(item.missing_pieces));
+        if (!currentWidgetState.missing_pieces.properties) currentWidgetState.missing_pieces.properties = [];
+        if (!currentWidgetState.missing_pieces.bills) currentWidgetState.missing_pieces.bills = [];
+        if (!currentWidgetState.missing_pieces.tokens) currentWidgetState.missing_pieces.tokens = [];
+        if (!currentWidgetState.missing_pieces.dice) currentWidgetState.missing_pieces.dice = [];
+        if (!currentWidgetState.missing_pieces.buildings) currentWidgetState.missing_pieces.buildings = { houses: 0, hotels: 0, skyscrapers: 0 };
+        if (!currentWidgetState.missing_pieces.other) currentWidgetState.missing_pieces.other = { rules: false, board: false, tray: false };
+      } else {
+        currentWidgetState.missing_pieces = {
+          properties: [],
+          bills: [],
+          tokens: [],
+          dice: [],
+          buildings: { houses: 0, hotels: 0, skyscrapers: 0 },
+          other: { rules: false, board: false, tray: false }
+        };
+      }
+
+      redrawCompletenessWidget();
+    }
+
+    function redrawCompletenessWidget() {
+      const container = document.getElementById(currentWidgetContainerId);
+      if (!container) return;
+
+      const st = currentWidgetState;
+      const prof = st.profile || EDITION_PROFILES.standard_france;
+      const isComp = st.is_complete;
+      const mp = st.missing_pieces;
+
+      let html = '<div class="completeness-widget">';
+      
+      // Header with edition detection info
+      html += '<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; flex-wrap:wrap; gap:6px;">' +
+        '<div style="font-weight:700; font-size:0.86rem; color:var(--text-main);">🧩 État d\'exhaustivité de la boîte :</div>' +
+        '<div style="font-size:0.75rem; background:rgba(56,189,248,0.12); color:var(--accent); border:1px solid rgba(56,189,248,0.3); padding:2px 8px; border-radius:12px;">' +
+          'Édition : ' + prof.name + ' (' + (prof.properties ? prof.properties.length : 28) + ' propriétés)' +
+        '</div>' +
+      '</div>';
+
+      // Big toggle buttons
+      html += '<div class="completeness-toggle-group">' +
+        '<button type="button" class="btn-completeness-toggle ' + (isComp ? 'active-complete' : '') + '" onclick="setCompletenessStatus(true)">' +
+          '🟢 Jeu 100% Complet' +
+        '</button>' +
+        '<button type="button" class="btn-completeness-toggle ' + (!isComp ? 'active-incomplete' : '') + '" onclick="setCompletenessStatus(false)">' +
+          '⚠️ Pièces Manquantes' +
+        '</button>' +
+      '</div>';
+
+      // If Incomplete: show categories & interactive accordion
+      if (!isComp) {
+        html += '<div style="margin-top:12px; animation: fadeIn 0.2s ease;">';
+
+        // Count badges for tabs
+        const propCount = mp.properties.length;
+        const billCount = mp.bills.length;
+        const tokenCount = mp.tokens.length;
+        const diceCount = mp.dice.length;
+        const bldCount = (mp.buildings.houses > 0 ? 1 : 0) + (mp.buildings.hotels > 0 ? 1 : 0) + (mp.buildings.skyscrapers > 0 ? 1 : 0);
+        const otherCount = (mp.other.rules ? 1 : 0) + (mp.other.board ? 1 : 0) + (mp.other.tray ? 1 : 0);
+
+        // Category Pills
+        html += '<div class="missing-category-tabs">' +
+          '<button type="button" class="missing-cat-btn ' + (st.activeCategory === 'properties' ? 'active' : '') + '" onclick="setCompletenessCategory(\'properties\')">' +
+            '🏷️ Propriétés ' + (propCount > 0 ? '<span class="badge-count">' + propCount + '</span>' : '') +
+          '</button>' +
+          '<button type="button" class="missing-cat-btn ' + (st.activeCategory === 'bills' ? 'active' : '') + '" onclick="setCompletenessCategory(\'bills\')">' +
+            (prof.is_electronic ? '💳 Terminal & Cartes' : '💶 Billets') + (billCount > 0 ? '<span class="badge-count">' + billCount + '</span>' : '') +
+          '</button>' +
+          '<button type="button" class="missing-cat-btn ' + (st.activeCategory === 'tokens' ? 'active' : '') + '" onclick="setCompletenessCategory(\'tokens\')">' +
+            '♟️ Pions ' + (tokenCount > 0 ? '<span class="badge-count">' + tokenCount + '</span>' : '') +
+          '</button>' +
+          '<button type="button" class="missing-cat-btn ' + (st.activeCategory === 'dice' ? 'active' : '') + '" onclick="setCompletenessCategory(\'dice\')">' +
+            '🎲 Dés ' + (diceCount > 0 ? '<span class="badge-count">' + diceCount + '</span>' : '') +
+          '</button>' +
+          '<button type="button" class="missing-cat-btn ' + (st.activeCategory === 'buildings' ? 'active' : '') + '" onclick="setCompletenessCategory(\'buildings\')">' +
+            '🏠 Bâtiments ' + (bldCount > 0 ? '<span class="badge-count">' + bldCount + '</span>' : '') +
+          '</button>' +
+          '<button type="button" class="missing-cat-btn ' + (st.activeCategory === 'other' ? 'active' : '') + '" onclick="setCompletenessCategory(\'other\')">' +
+            '📖 Matériel ' + (otherCount > 0 ? '<span class="badge-count">' + otherCount + '</span>' : '') +
+          '</button>' +
+        '</div>';
+
+        // Tab: PROPERTIES (Supports > 28 properties!)
+        if (st.activeCategory === 'properties') {
+          html += '<div style="margin-top:10px;">' +
+            '<div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">' +
+              'Touchez un titre pour le marquer comme <strong>manquant</strong> (Total répertorié pour cette édition : ' + prof.properties.length + ' cartes) :' +
+            '</div>' +
+            '<div class="prop-chips-grid">';
+
+          prof.properties.forEach(function(p) {
+            const isMissing = mp.properties.indexOf(p.name) !== -1;
+            html += '<div class="prop-chip ' + (isMissing ? 'selected-missing' : '') + '" onclick="toggleMissingProp(\'' + p.name.replace(/'/g, "\\'") + '\')">' +
+              '<span class="prop-color-dot" style="background:' + p.color + ';"></span>' +
+              '<span>' + (isMissing ? '❌ ' : '') + p.name + '</span>' +
+            '</div>';
+          });
+
+          // Also show any custom properties added by the user
+          mp.properties.forEach(function(cp) {
+            const inProf = prof.properties.some(function(p) { return p.name === cp; });
+            if (!inProf) {
+              html += '<div class="prop-chip selected-missing" onclick="toggleMissingProp(\'' + cp.replace(/'/g, "\\'") + '\')">' +
+                '<span class="prop-color-dot" style="background:#a855f7;"></span>' +
+                '<span>❌ ' + cp + ' (Personnalisé)</span>' +
+              '</div>';
+            }
+          });
+
+          html += '</div>';
+
+          // Add custom property field
+          html += '<div style="margin-top:10px; display:flex; gap:6px;">' +
+            '<input type="text" id="customPropInput" class="form-control" placeholder="Ajouter une propriété non listée (variante rare, ville...)" style="font-size:0.8rem; padding:6px 10px;">' +
+            '<button type="button" class="btn btn-secondary" onclick="addCustomPropertyFromInput()" style="font-size:0.78rem; padding:6px 12px; white-space:nowrap;">➕ Ajouter</button>' +
+          '</div>';
+
+          html += '</div>';
+        }
+
+        // Tab: BILLS / BANKING
+        else if (st.activeCategory === 'bills') {
+          html += '<div style="margin-top:10px;">';
+
+          if (prof.is_electronic) {
+            html += '<div style="background:rgba(239,68,68,0.06); border:1px solid rgba(239,68,68,0.2); border-radius:6px; padding:10px; margin-bottom:10px; font-size:0.8rem;">' +
+              '⚡ <strong>Édition Électronique</strong> : Aucun billet papier dans cette boîte.' +
+            '</div>';
+            prof.electronic_units.forEach(function(unit) {
+              const isMissing = mp.bills.some(function(b) { return b.name === unit; });
+              html += '<label class="bill-item-row" style="cursor:pointer; margin-bottom:6px;">' +
+                '<input type="checkbox" ' + (isMissing ? 'checked' : '') + ' onchange="toggleMissingBillItem(\'' + unit.replace(/'/g, "\\'") + '\')"> ' +
+                '<span>' + unit + ' manquant</span>' +
+              '</label>';
+            });
+          } else {
+            html += '<div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">' +
+              'Cochez les coupures de billets manquantes pour cette édition (' + (prof.currency === 'francs' ? 'Francs vintage' : prof.currency === 'euros' ? 'Euros' : prof.currency) + ') :' +
+            '</div>' +
+            '<div class="bills-grid">';
+
+            prof.bills.forEach(function(bName) {
+              const existing = mp.bills.find(function(b) { return b.name === bName; });
+              const isMissing = Boolean(existing);
+              const count = existing ? (existing.count || "") : "";
+
+              html += '<div class="bill-item-row">' +
+                '<input type="checkbox" ' + (isMissing ? 'checked' : '') + ' onchange="toggleMissingBillItem(\'' + bName.replace(/'/g, "\\'") + '\')"> ' +
+                '<span style="font-weight:600; flex:1;">' + bName + '</span>' +
+                (isMissing ? 
+                  '<input type="number" min="1" max="50" placeholder="Qté" value="' + count + '" style="width:50px; padding:2px 4px; font-size:0.75rem; background:var(--bg-card); border:1px solid var(--border-color); border-radius:4px; color:var(--text-main);" onchange="updateMissingBillCount(\'' + bName.replace(/'/g, "\\'") + '\', this.value)">' 
+                  : '') +
+              '</div>';
+            });
+
+            html += '</div>';
+          }
+
+          html += '</div>';
+        }
+
+        // Tab: TOKENS (Pions)
+        else if (st.activeCategory === 'tokens') {
+          html += '<div style="margin-top:10px;">' +
+            '<div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Cochez les pions métalliques / figurines manquants :</div>' +
+            '<div class="prop-chips-grid">';
+
+          prof.tokens.forEach(function(tok) {
+            const isMissing = mp.tokens.indexOf(tok) !== -1;
+            html += '<div class="prop-chip ' + (isMissing ? 'selected-missing' : '') + '" onclick="toggleMissingTokenItem(\'' + tok.replace(/'/g, "\\'") + '\')">' +
+              '<span>' + (isMissing ? '❌ ' : '♟️ ') + tok + '</span>' +
+            '</div>';
+          });
+
+          // Custom tokens
+          mp.tokens.forEach(function(ct) {
+            if (prof.tokens.indexOf(ct) === -1) {
+              html += '<div class="prop-chip selected-missing" onclick="toggleMissingTokenItem(\'' + ct.replace(/'/g, "\\'") + '\')">' +
+                '<span>❌ ' + ct + ' (Personnalisé)</span>' +
+              '</div>';
+            }
+          });
+
+          html += '</div>';
+
+          // Add custom token input
+          html += '<div style="margin-top:10px; display:flex; gap:6px;">' +
+            '<input type="text" id="customTokenInput" class="form-control" placeholder="Ajouter un pion personnalisé (ex: Figurine collector...)" style="font-size:0.8rem; padding:6px 10px;">' +
+            '<button type="button" class="btn btn-secondary" onclick="addCustomTokenFromInput()" style="font-size:0.78rem; padding:6px 12px; white-space:nowrap;">➕ Ajouter</button>' +
+          '</div>';
+
+          html += '</div>';
+        }
+
+        // Tab: DICE (Dés)
+        else if (st.activeCategory === 'dice') {
+          html += '<div style="margin-top:10px;">' +
+            '<div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Cochez les dés manquants :</div>' +
+            '<div style="display:flex; flex-direction:column; gap:8px;">';
+
+          prof.dice.forEach(function(die) {
+            const isMissing = mp.dice.indexOf(die) !== -1;
+            html += '<label class="bill-item-row" style="cursor:pointer;">' +
+              '<input type="checkbox" ' + (isMissing ? 'checked' : '') + ' onchange="toggleMissingDieItem(\'' + die.replace(/'/g, "\\'") + '\')"> ' +
+              '<span>🎲 ' + die + ' manquant</span>' +
+            '</label>';
+          });
+
+          html += '</div></div>';
+        }
+
+        // Tab: BUILDINGS (Maisons / Hôtels / Gratte-ciels)
+        else if (st.activeCategory === 'buildings') {
+          html += '<div style="margin-top:10px;">' +
+            '<div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Indiquez le nombre de bâtiments manquants :</div>' +
+            '<div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(180px, 1fr)); gap:8px;">' +
+              '<div class="bill-item-row" style="justify-content:space-between;">' +
+                '<span>🏠 Maisons vertes (max 32) :</span>' +
+                '<input type="number" min="0" max="32" value="' + (mp.buildings.houses || 0) + '" style="width:60px; padding:3px 6px; font-size:0.8rem; background:var(--bg-card); border:1px solid var(--border-color); border-radius:4px; color:var(--text-main);" onchange="setMissingBuildingCount(\'houses\', this.value)">' +
+              '</div>' +
+              '<div class="bill-item-row" style="justify-content:space-between;">' +
+                '<span>🏨 Hôtels rouges (max 12) :</span>' +
+                '<input type="number" min="0" max="12" value="' + (mp.buildings.hotels || 0) + '" style="width:60px; padding:3px 6px; font-size:0.8rem; background:var(--bg-card); border:1px solid var(--border-color); border-radius:4px; color:var(--text-main);" onchange="setMissingBuildingCount(\'hotels\', this.value)">' +
+              '</div>';
+
+          if (prof.has_skyscrapers) {
+            html += '<div class="bill-item-row" style="justify-content:space-between;">' +
+              '<span>🏙️ Gratte-ciels Mega (max 8) :</span>' +
+              '<input type="number" min="0" max="8" value="' + (mp.buildings.skyscrapers || 0) + '" style="width:60px; padding:3px 6px; font-size:0.8rem; background:var(--bg-card); border:1px solid var(--border-color); border-radius:4px; color:var(--text-main);" onchange="setMissingBuildingCount(\'skyscrapers\', this.value)">' +
+            '</div>';
+          }
+
+          html += '</div></div>';
+        }
+
+        // Tab: OTHER (Règles, Plateau, Calage)
+        else if (st.activeCategory === 'other') {
+          html += '<div style="margin-top:10px;">' +
+            '<div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Cochez les éléments de boîte manquants :</div>' +
+            '<div style="display:flex; flex-direction:column; gap:8px;">' +
+              '<label class="bill-item-row" style="cursor:pointer;">' +
+                '<input type="checkbox" ' + (mp.other.rules ? 'checked' : '') + ' onchange="toggleMissingOtherItem(\'rules\')"> ' +
+                '<span>📖 Livret de règles du jeu manquant</span>' +
+              '</label>' +
+              '<label class="bill-item-row" style="cursor:pointer;">' +
+                '<input type="checkbox" ' + (mp.other.board ? 'checked' : '') + ' onchange="toggleMissingOtherItem(\'board\')"> ' +
+                '<span>🗺️ Plateau de jeu manquant ou très abîmé</span>' +
+              '</label>' +
+              '<label class="bill-item-row" style="cursor:pointer;">' +
+                '<input type="checkbox" ' + (mp.other.tray ? 'checked' : '') + ' onchange="toggleMissingOtherItem(\'tray\')"> ' +
+                '<span>📦 Calage plastique intérieur (thermoformé) manquant</span>' +
+              '</label>' +
+            '</div>' +
+          '</div>';
+        }
+
+        // Live summary block
+        const summaryParts = [];
+        if (propCount > 0) summaryParts.push('<strong>' + propCount + '</strong> propriété(s) (' + mp.properties.slice(0, 3).join(', ') + (propCount > 3 ? '...' : '') + ')');
+        if (billCount > 0) summaryParts.push('<strong>' + billCount + '</strong> coupure(s) de billets');
+        if (tokenCount > 0) summaryParts.push('<strong>' + tokenCount + '</strong> pion(s)');
+        if (diceCount > 0) summaryParts.push('<strong>' + diceCount + '</strong> dé(s)');
+        if (bldCount > 0) {
+          const bArr = [];
+          if (mp.buildings.houses > 0) bArr.push(mp.buildings.houses + ' maison(s)');
+          if (mp.buildings.hotels > 0) bArr.push(mp.buildings.hotels + ' hôtel(s)');
+          if (mp.buildings.skyscrapers > 0) bArr.push(mp.buildings.skyscrapers + ' gratte-ciel(s)');
+          summaryParts.push(bArr.join(', '));
+        }
+        if (otherCount > 0) {
+          const oArr = [];
+          if (mp.other.rules) oArr.push('Règles');
+          if (mp.other.board) oArr.push('Plateau');
+          if (mp.other.tray) oArr.push('Calage');
+          summaryParts.push(oArr.join(', '));
+        }
+
+        html += '<div style="margin-top:12px; padding:10px; border-radius:6px; background:rgba(245,158,11,0.12); border:1px solid rgba(245,158,11,0.3); font-size:0.8rem; color:#fde68a;">' +
+          '<div style="font-weight:700; color:#f59e0b; margin-bottom:4px;">⚠️ Résumé des pièces manquantes déclarées :</div>' +
+          '<div>' + (summaryParts.length > 0 ? summaryParts.join(' • ') : 'Aucune pièce cochée pour le moment.') + '</div>' +
+        '</div>';
+
+        html += '</div>';
+      }
+
+      html += '</div>';
+      container.innerHTML = html;
+    }
+
+    function setCompletenessStatus(isComplete) {
+      currentWidgetState.is_complete = isComplete;
+      redrawCompletenessWidget();
+    }
+
+    function setCompletenessCategory(category) {
+      currentWidgetState.activeCategory = category;
+      redrawCompletenessWidget();
+    }
+
+    function toggleMissingProp(propName) {
+      const arr = currentWidgetState.missing_pieces.properties;
+      const idx = arr.indexOf(propName);
+      if (idx === -1) {
+        arr.push(propName);
+      } else {
+        arr.splice(idx, 1);
+      }
+      redrawCompletenessWidget();
+    }
+
+    function addCustomPropertyFromInput() {
+      const input = document.getElementById("customPropInput");
+      if (!input) return;
+      const val = input.value.trim();
+      if (!val) return;
+      const arr = currentWidgetState.missing_pieces.properties;
+      if (arr.indexOf(val) === -1) {
+        arr.push(val);
+      }
+      input.value = "";
+      redrawCompletenessWidget();
+    }
+
+    function toggleMissingBillItem(billName) {
+      const arr = currentWidgetState.missing_pieces.bills;
+      const idx = arr.findIndex(function(b) { return b.name === billName; });
+      if (idx === -1) {
+        arr.push({ name: billName, count: 1 });
+      } else {
+        arr.splice(idx, 1);
+      }
+      redrawCompletenessWidget();
+    }
+
+    function updateMissingBillCount(billName, countVal) {
+      const arr = currentWidgetState.missing_pieces.bills;
+      const item = arr.find(function(b) { return b.name === billName; });
+      if (item) {
+        item.count = parseInt(countVal, 10) || 1;
+      }
+    }
+
+    function toggleMissingTokenItem(tokenName) {
+      const arr = currentWidgetState.missing_pieces.tokens;
+      const idx = arr.indexOf(tokenName);
+      if (idx === -1) {
+        arr.push(tokenName);
+      } else {
+        arr.splice(idx, 1);
+      }
+      redrawCompletenessWidget();
+    }
+
+    function addCustomTokenFromInput() {
+      const input = document.getElementById("customTokenInput");
+      if (!input) return;
+      const val = input.value.trim();
+      if (!val) return;
+      const arr = currentWidgetState.missing_pieces.tokens;
+      if (arr.indexOf(val) === -1) {
+        arr.push(val);
+      }
+      input.value = "";
+      redrawCompletenessWidget();
+    }
+
+    function toggleMissingDieItem(dieName) {
+      const arr = currentWidgetState.missing_pieces.dice;
+      const idx = arr.indexOf(dieName);
+      if (idx === -1) {
+        arr.push(dieName);
+      } else {
+        arr.splice(idx, 1);
+      }
+      redrawCompletenessWidget();
+    }
+
+    function setMissingBuildingCount(type, val) {
+      currentWidgetState.missing_pieces.buildings[type] = parseInt(val, 10) || 0;
+    }
+
+    function toggleMissingOtherItem(key) {
+      currentWidgetState.missing_pieces.other[key] = !currentWidgetState.missing_pieces.other[key];
+      redrawCompletenessWidget();
+    }
+
+    function clearSearchInput() {
+      const input = document.getElementById("searchInput");
+      if (input) {
+        input.value = "";
+        currentSearchTerm = "";
+      }
+      const clearBtn = document.getElementById("clearSearchBtn");
+      if (clearBtn) clearBtn.style.display = "none";
+      renderList(true);
+    }
+
+
     function openEditModal(id) {
       const item = database.find(function(e) { return e.id === id; });
       if (!item) return;
@@ -2979,6 +4065,7 @@
         showToast("Cote estimée : " + est.value + " € (" + est.rangeStr + ")");
       };
 
+      renderCompletenessWidget("editCompletenessContainer", item);
       updateEditPreview(item);
       document.getElementById("editModalBackdrop").classList.add("open");
     }
@@ -3008,6 +4095,10 @@
       const newImg = document.getElementById("editImageUrl").value.trim();
       item.image_url = newImg;
       item.is_verified_box = Boolean(newImg);
+      if (currentWidgetState) {
+        item.is_complete = currentWidgetState.is_complete;
+        item.missing_pieces = JSON.parse(JSON.stringify(currentWidgetState.missing_pieces));
+      }
 
       document.getElementById("editModalBackdrop").classList.remove("open");
       saveDatabase();
@@ -3026,6 +4117,7 @@
       document.getElementById("addImageUrl").value = "";
       document.getElementById("addStatus").value = "owned";
       document.getElementById("addModalImagePreview").innerHTML = "";
+      renderCompletenessWidget("addCompletenessContainer", { name: "Nouveau Monopoly", is_complete: true });
       document.getElementById("addModalBackdrop").classList.add("open");
     }
 
@@ -3057,6 +4149,8 @@
         publisher: pub,
         description: desc,
         image_url: document.getElementById("addImageUrl").value.trim() || "",
+        is_complete: currentWidgetState ? currentWidgetState.is_complete : true,
+        missing_pieces: currentWidgetState ? JSON.parse(JSON.stringify(currentWidgetState.missing_pieces)) : { properties: [], bills: [], tokens: [], dice: [], buildings: { houses: 0, hotels: 0, skyscrapers: 0 }, other: {} },
         status: status,
         condition: status === "owned" ? "Très bon état" : "",
         price: "",
@@ -3075,7 +4169,7 @@
 
     // EXPORT & BACKUP
     function exportToCsv() {
-      const headers = ["ID", "Statut", "Nom", "Categorie", "Annee", "Pays", "Editeur", "Image_URL", "Etat", "Prix_Achat_EUR", "Valeur_Estimee_EUR", "Emplacement", "Notes", "Description"];
+      const headers = ["ID", "Statut", "Nom", "Categorie", "Annee", "Pays", "Editeur", "Image_URL", "Etat", "Prix_Achat_EUR", "Valeur_Estimee_EUR", "Emplacement", "Completude", "Pieces_Manquantes", "Notes", "Description"];
       const rows = database.map(function(e) {
         return [
           '"' + (e.id || '').replace(/"/g, '""') + '"',
@@ -3090,6 +4184,8 @@
           '"' + (e.price || '') + '"',
           '"' + (e.value || '') + '"',
           '"' + (e.location || '').replace(/"/g, '""') + '"',
+          '"' + (e.is_complete === false ? 'Incomplet' : 'Complet') + '"',
+          '"' + (e.missing_pieces ? JSON.stringify(e.missing_pieces).replace(/"/g, '""') : '') + '"',
           '"' + (e.notes || '').replace(/"/g, '""') + '"',
           '"' + (e.description || '').replace(/"/g, '""') + '"'
         ];
@@ -3158,17 +4254,11 @@
     let detectedInfoFromScan = null;
 
     function openScannerModal() {
-      const modal = document.getElementById("scannerModalBackdrop");
-      modal.classList.add("open");
-      updateAiBadgeStatus();
-      if (currentScannedPhotos.length === 0) {
-        resetScannerUI();
-      }
+      switchTab("scanner");
     }
 
     function closeScannerModal() {
-      const modal = document.getElementById("scannerModalBackdrop");
-      modal.classList.remove("open");
+      switchTab("collection");
     }
 
     function updateAiBadgeStatus() {
@@ -3876,12 +4966,16 @@
                 '<button type="button" class="btn btn-secondary" onclick="searchWebForScanned(\'leboncoin\')" style="font-size: 0.75rem; padding: 4px 8px; color: #f97316; border-color: #f97316;">📦 Leboncoin</button>' +
               '</div>' +
             '</div>' +
+            '<div id="scannerNewCompletenessContainer" style="margin-top:14px;"></div>' +
             '<div class="scanner-action-buttons" style="display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; padding-top: 12px; border-top: 1px solid var(--border-color);">' +
               '<button class="btn btn-secondary" onclick="saveScannedNewEdition(\'none\')">⚪ Ajouter au catalogue seul</button>' +
               '<button class="btn btn-secondary" onclick="saveScannedNewEdition(\'wishlist\')" style="border-color: #f59e0b; color: #f59e0b;">⭐ Ajouter en Wishlist</button>' +
               '<button class="btn btn-primary" onclick="saveScannedNewEdition(\'owned\')" style="background: #10b981; border-color: #10b981; font-weight: 700;">🟢 Ajouter à ma Collection</button>' +
             '</div>' +
           '</div>';
+        if (document.getElementById("scannerNewCompletenessContainer")) {
+          renderCompletenessWidget("scannerNewCompletenessContainer", { name: prefillName || "Nouveau Monopoly", year: prefillYear || 2020, is_complete: true });
+        }
         return;
       }
 
@@ -3955,6 +5049,7 @@
               '</div>' +
             '</div>' +
           '</div>' +
+          '<div id="scannerCompletenessContainer" style="margin-top:14px;"></div>' +
           '<div class="scanner-action-buttons" style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border-color); align-items: center; justify-content: flex-end;">' +
             (isOwned ? 
               '<span style="font-size: 0.82rem; color: #10b981; font-weight: 600; margin-right: auto;">✅ Cet article est déjà enregistré dans votre collection !</span>' +
@@ -4005,6 +5100,9 @@
         '</div>';
 
       container.innerHTML = topMatchHtml + othersHtml + notInCatalogHtml;
+      if (document.getElementById("scannerCompletenessContainer") && topMatch) {
+        renderCompletenessWidget("scannerCompletenessContainer", topMatch);
+      }
     }
 
     function selectScannerCandidate(id) {
@@ -4049,6 +5147,10 @@
 
         if (!updatePhotoOnly) {
           item.status = targetStatus || "owned";
+          if (currentWidgetState) {
+            item.is_complete = currentWidgetState.is_complete;
+            item.missing_pieces = JSON.parse(JSON.stringify(currentWidgetState.missing_pieces));
+          }
           if (item.status === "owned" && !item.condition) {
             item.condition = "Très bon état";
           }
@@ -4153,6 +5255,8 @@
           user_image: frontUrl,
           back_image_url: backUrl,
           user_photos: compPhotos,
+          is_complete: currentWidgetState ? currentWidgetState.is_complete : true,
+          missing_pieces: currentWidgetState ? JSON.parse(JSON.stringify(currentWidgetState.missing_pieces)) : { properties: [], bills: [], tokens: [], dice: [], buildings: { houses: 0, hotels: 0, skyscrapers: 0 }, other: {} },
           status: targetStatus || "owned",
           condition: targetStatus === "owned" ? "Très bon état" : "",
           price: "",
@@ -4202,6 +5306,7 @@
       if (navBtn) navBtn.classList.add("active");
 
       const viewHome = document.getElementById("viewHome");
+      const viewScanner = document.getElementById("viewScanner");
       const statsBar = document.querySelector(".stats-bar");
       const controlsPanel = document.querySelector(".controls-panel");
       const sectionBanner = document.getElementById("viewSectionHeader");
@@ -4209,24 +5314,14 @@
       const cardsGrid = document.getElementById("cardsContainer");
       const tableContainer = document.getElementById("tableContainer");
       const paginationBar = document.getElementById("paginationBar");
-
-      const statusPills = document.getElementById("statusPills");
-      const categoryPills = document.getElementById("categoryPills");
-      const countrySelect = document.getElementById("countrySelect");
-      const publisherSelect = document.getElementById("publisherSelect");
-      const decadeSelect = document.getElementById("decadeSelect");
       const searchInput = document.getElementById("searchInput");
 
-      // Masquer systématiquement l'ancienne barre stats et les filtres lourds
+      // Masquer systématiquement l'ancienne barre stats
       if (statsBar) statsBar.style.display = "none";
-      if (statusPills) statusPills.style.display = "none";
-      if (categoryPills) categoryPills.style.display = "none";
-      if (countrySelect) countrySelect.style.display = "none";
-      if (publisherSelect) publisherSelect.style.display = "none";
-      if (decadeSelect) decadeSelect.style.display = "none";
 
       if (tabName === "home") {
         if (viewHome) viewHome.style.display = "block";
+        if (viewScanner) viewScanner.style.display = "none";
         if (controlsPanel) controlsPanel.style.display = "none";
         if (sectionBanner) sectionBanner.style.display = "none";
         if (themeCarousel) themeCarousel.style.display = "none";
@@ -4234,7 +5329,21 @@
         if (tableContainer) tableContainer.style.display = "none";
         if (paginationBar) paginationBar.style.display = "none";
         renderHomeDashboard();
+      } else if (tabName === "scanner") {
+        if (viewScanner) viewScanner.style.display = "block";
+        if (viewHome) viewHome.style.display = "none";
+        if (controlsPanel) controlsPanel.style.display = "none";
+        if (sectionBanner) sectionBanner.style.display = "none";
+        if (themeCarousel) themeCarousel.style.display = "none";
+        if (cardsGrid) cardsGrid.style.display = "none";
+        if (tableContainer) tableContainer.style.display = "none";
+        if (paginationBar) paginationBar.style.display = "none";
+        updateAiBadgeStatus();
+        if (currentScannedPhotos.length === 0) {
+          resetScannerUI();
+        }
       } else {
+        if (viewScanner) viewScanner.style.display = "none";
         if (viewHome) viewHome.style.display = "none";
         if (controlsPanel) controlsPanel.style.display = "block";
         if (sectionBanner) sectionBanner.style.display = "flex";
@@ -4243,9 +5352,12 @@
         const descEl = document.getElementById("sectionHeaderDesc");
         const actionsEl = document.getElementById("sectionHeaderActions");
 
-        // Réinitialiser la recherche à chaque changement d'onglet pour afficher la vue complète
         currentSearchTerm = "";
-        if (searchInput) searchInput.value = "";
+        if (searchInput) {
+          searchInput.value = "";
+          const clearBtn = document.getElementById("clearSearchBtn");
+          if (clearBtn) clearBtn.style.display = "none";
+        }
         currentFilterCategory = "all";
         currentCountry = "all";
         currentPublisher = "all";
@@ -4254,7 +5366,7 @@
         if (tabName === "collection") {
           currentFilterStatus = "owned";
           if (themeCarousel) themeCarousel.style.display = "none";
-          if (searchInput) searchInput.placeholder = "🔍 Rechercher dans ma collection...";
+          if (searchInput) searchInput.placeholder = "Rechercher dans ma collection...";
 
           const ownedItems = database.filter(function(i) { return i.status === "owned"; });
           let totalVal = 0;
@@ -4270,7 +5382,7 @@
         } else if (tabName === "wishlist") {
           currentFilterStatus = "wishlist";
           if (themeCarousel) themeCarousel.style.display = "none";
-          if (searchInput) searchInput.placeholder = "🔍 Rechercher dans ma wishlist...";
+          if (searchInput) searchInput.placeholder = "Rechercher dans ma wishlist...";
 
           const wishItems = database.filter(function(i) { return i.status === "wishlist"; });
           if (titleEl) titleEl.innerHTML = '⭐ Ma Wishlist <span style="font-size:0.9rem; font-weight:normal; opacity:0.8;">(' + wishItems.length + ')</span>';
@@ -4284,11 +5396,11 @@
           const allChip = document.querySelector(".theme-chip");
           if (allChip) allChip.classList.add("active");
 
-          if (searchInput) searchInput.placeholder = "🔍 Rechercher parmi 1 226 éditions (ex: Zelda, Paris, 1935...)...";
+          if (searchInput) searchInput.placeholder = "Rechercher parmi 1 226 éditions (ex: Zelda, Paris, 1935...)...";
 
           if (titleEl) titleEl.innerHTML = '📚 Catalogue Mondial Monopoly <span style="font-size:0.9rem; font-weight:normal; opacity:0.8;">(' + database.length + ')</span>';
           if (descEl) descEl.textContent = database.length + " éditions répertoriées avec historique et cotes";
-          if (actionsEl) actionsEl.innerHTML = '<button class="btn btn-secondary" onclick="openScannerModal()" style="font-size:0.78rem; padding:6px 12px;">📸 Scanner une boîte</button>';
+          if (actionsEl) actionsEl.innerHTML = '<button class="btn btn-secondary" onclick="switchTab(\'scanner\')" style="font-size:0.78rem; padding:6px 12px;">📸 Scanner une boîte</button>';
           renderList(true);
         }
       }
@@ -4434,6 +5546,8 @@
 
       document.getElementById("searchInput").addEventListener("input", function(e) {
         currentSearchTerm = e.target.value.trim();
+        const clearBtn = document.getElementById("clearSearchBtn");
+        if (clearBtn) clearBtn.style.display = currentSearchTerm ? "flex" : "none";
         renderList(true);
       });
 
