@@ -337,20 +337,33 @@
       const pct = total > 0 ? Math.round((owned / total) * 100) : 0;
       const photoPct = total > 0 ? Math.round((withPhotos / total) * 100) : 0;
 
-      document.getElementById("statTotal").textContent = total.toLocaleString("fr-FR");
-      document.getElementById("statWithPhotos").textContent = withPhotos.toLocaleString("fr-FR");
-      document.getElementById("statPhotoPct").textContent = photoPct + "% de la base en photos";
-      document.getElementById("statOwned").textContent = owned.toLocaleString("fr-FR");
-      document.getElementById("statOwnedPct").textContent = "(" + pct + "%)";
-      document.getElementById("statProgressBar").style.width = pct + "%";
-      document.getElementById("statWishlist").textContent = wishlist.toLocaleString("fr-FR");
-      document.getElementById("statEstimatedValue").textContent = totalVal.toLocaleString('fr-FR', { minimumFractionDigits: 0, maximumFractionDigits: 2 }) + " €";
-      document.getElementById("statSpentValue").textContent = totalSpent.toLocaleString('fr-FR', { minimumFractionDigits: 0, maximumFractionDigits: 2 }) + " €";
+      const elStatTotal = document.getElementById("statTotal");
+      if (elStatTotal) elStatTotal.textContent = total.toLocaleString("fr-FR");
+      const elStatWithPhotos = document.getElementById("statWithPhotos");
+      if (elStatWithPhotos) elStatWithPhotos.textContent = withPhotos.toLocaleString("fr-FR");
+      const elStatPhotoPct = document.getElementById("statPhotoPct");
+      if (elStatPhotoPct) elStatPhotoPct.textContent = photoPct + "% de la base en photos";
+      const elStatOwned = document.getElementById("statOwned");
+      if (elStatOwned) elStatOwned.textContent = owned.toLocaleString("fr-FR");
+      const elStatOwnedPct = document.getElementById("statOwnedPct");
+      if (elStatOwnedPct) elStatOwnedPct.textContent = "(" + pct + "%)";
+      const elStatProgressBar = document.getElementById("statProgressBar");
+      if (elStatProgressBar) elStatProgressBar.style.width = pct + "%";
+      const elStatWishlist = document.getElementById("statWishlist");
+      if (elStatWishlist) elStatWishlist.textContent = wishlist.toLocaleString("fr-FR");
+      const elStatEstimatedValue = document.getElementById("statEstimatedValue");
+      if (elStatEstimatedValue) elStatEstimatedValue.textContent = totalVal.toLocaleString('fr-FR', { minimumFractionDigits: 0, maximumFractionDigits: 2 }) + " €";
+      const elStatSpentValue = document.getElementById("statSpentValue");
+      if (elStatSpentValue) elStatSpentValue.textContent = totalSpent.toLocaleString('fr-FR', { minimumFractionDigits: 0, maximumFractionDigits: 2 }) + " €";
 
-      document.getElementById("countAll").textContent = total;
-      document.getElementById("countOwned").textContent = owned;
-      document.getElementById("countWishlist").textContent = wishlist;
-      document.getElementById("countNone").textContent = none;
+      const elCountAll = document.getElementById("countAll");
+      if (elCountAll) elCountAll.textContent = total;
+      const elCountOwned = document.getElementById("countOwned");
+      if (elCountOwned) elCountOwned.textContent = owned;
+      const elCountWishlist = document.getElementById("countWishlist");
+      if (elCountWishlist) elCountWishlist.textContent = wishlist;
+      const elCountNone = document.getElementById("countNone");
+      if (elCountNone) elCountNone.textContent = none;
 
       // Update Bottom Nav Bar Badges
       const badgeOwned = document.getElementById("navBadgeOwned");
@@ -1907,7 +1920,7 @@
       if (lines.length < 2) throw new Error("Fichier CSV vide ou incomplet.");
 
       const firstLine = lines[0];
-      const delim = (firstLine.split(";").length > firstLine.split(",").length) ? ";" : ",";
+      const delim = (firstLine.split(";").length >= firstLine.split(",").length) ? ";" : ",";
 
       function parseCsvLine(line) {
         const result = [];
@@ -1933,15 +1946,17 @@
         return result.map(function(s) { return s.trim(); });
       }
 
-      const headerCells = parseCsvLine(lines[0]).map(function(h) { return h.toLowerCase().replace(/["\s_]/g, ""); });
-      const idIdx = headerCells.indexOf("id");
-      const nameIdx = headerCells.indexOf("nom") !== -1 ? headerCells.indexOf("nom") : headerCells.indexOf("name");
-      const statusIdx = headerCells.indexOf("statut") !== -1 ? headerCells.indexOf("statut") : headerCells.indexOf("status");
-      const condIdx = headerCells.indexOf("etat") !== -1 ? headerCells.indexOf("etat") : headerCells.indexOf("condition");
-      const priceIdx = headerCells.findIndex(function(h) { return h.includes("prix") || h.includes("price"); });
-      const valIdx = headerCells.findIndex(function(h) { return h.includes("valeur") || h.includes("cote"); });
-      const locIdx = headerCells.findIndex(function(h) { return h.includes("emplacement") || h.includes("location"); });
-      const notesIdx = headerCells.indexOf("notes");
+      const headerCells = parseCsvLine(lines[0]).map(function(h) { 
+        return h.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/["\s_]/g, ""); 
+      });
+      const idIdx = headerCells.findIndex(function(h) { return h === "id"; });
+      const nameIdx = headerCells.findIndex(function(h) { return h.includes("nom") || h.includes("name") || h.includes("titre") || h.includes("edition"); });
+      const statusIdx = headerCells.findIndex(function(h) { return h.includes("statut") || h.includes("status"); });
+      const condIdx = headerCells.findIndex(function(h) { return h.includes("etat") || h.includes("condition"); });
+      const priceIdx = headerCells.findIndex(function(h) { return h.includes("prix") || h.includes("price") || h.includes("achat"); });
+      const valIdx = headerCells.findIndex(function(h) { return h.includes("valeur") || h.includes("cote") || h.includes("value"); });
+      const locIdx = headerCells.findIndex(function(h) { return h.includes("emplacement") || h.includes("rangement") || h.includes("location"); });
+      const notesIdx = headerCells.findIndex(function(h) { return h.includes("note"); });
       const compIdx = headerCells.findIndex(function(h) { return h.includes("complet"); });
       const mpIdx = headerCells.findIndex(function(h) { return h.includes("manquant") || h.includes("pieces"); });
 
@@ -1952,13 +1967,18 @@
 
         const rowId = idIdx !== -1 ? row[idIdx] : "";
         const rowName = nameIdx !== -1 ? row[nameIdx] : "";
-        let rowStatus = statusIdx !== -1 ? row[statusIdx].toLowerCase() : "none";
-        if (rowStatus.includes("posséd") || rowStatus.includes("possed") || rowStatus === "owned") {
-          rowStatus = "owned";
-        } else if (rowStatus.includes("recherch") || rowStatus === "wishlist") {
-          rowStatus = "wishlist";
-        } else {
-          rowStatus = "none";
+        let rowStatus = "none";
+        if (statusIdx !== -1 && row[statusIdx]) {
+          const s = row[statusIdx].toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
+          if (s.includes("non")) {
+            rowStatus = "none";
+          } else if (s.includes("possed") || s === "owned") {
+            rowStatus = "owned";
+          } else if (s.includes("recherch") || s.includes("wish") || s.includes("souhait")) {
+            rowStatus = "wishlist";
+          } else {
+            rowStatus = "none";
+          }
         }
 
         const itemObj = {
@@ -3496,8 +3516,10 @@
       // Box Scanner Events
       const scanBoxBtn = document.getElementById("scanBoxBtn");
       if (scanBoxBtn) scanBoxBtn.addEventListener("click", openScannerModal);
-      document.getElementById("closeScannerModal").addEventListener("click", closeScannerModal);
-      document.getElementById("closeScannerFooterBtn").addEventListener("click", closeScannerModal);
+      const closeScannerBtn = document.getElementById("closeScannerModal");
+      if (closeScannerBtn) closeScannerBtn.addEventListener("click", closeScannerModal);
+      const closeScannerFooter = document.getElementById("closeScannerFooterBtn");
+      if (closeScannerFooter) closeScannerFooter.addEventListener("click", closeScannerModal);
 
       const scannerDropzone = document.getElementById("scannerDropzone");
       const scannerFileInput = document.getElementById("scannerFileInput");
