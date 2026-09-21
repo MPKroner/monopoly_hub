@@ -1,0 +1,3631 @@
+
+    const SEED_DATA = [{"id": "mono-3-2-1", "name": "Monopoly 3, 2, 1", "category": "Cartes & Parties Rapides", "year": 2021, "country": "France", "publisher": "Hasbro", "description": "Jeu de cartes rapide où les joueurs font des enchères secrètes pour remporter des propriétés en 15 minutes.", "barcode": "5010993828739", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "10", "location": "", "notes": "Code-barres EAN 5010993828739 - Hasbro Gaming 2021."}, {"id": "mono-monopoly-madness", "name": "MONOPOLY Madness", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition MONOPOLY Madness éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-fallout-collector-s-edition", "name": "MONOPOLY: Fallout Collector's Edition", "category": "Jeux Vidéo", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition MONOPOLY: Fallout Collector's Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly", "name": "Monopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-84-l-a-games", "name": "Monopoly '84 L.A. Games", "category": "Variantes & Règles Spéciales", "year": 1984, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly '84 L.A. Games éditée par Hasbro.", "image_url": "images/box_mono-monopoly-84-l-a-games.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-2012-pc-version", "name": "Monopoly (2012 PC Version)", "category": "Éditions Spéciales & Thématiques", "year": 2012, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly (2012 PC Version) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-2012-pc-version.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-tv-game-show", "name": "Monopoly (TV game show)", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly (TV game show) éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-uk", "name": "Monopoly (UK)", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Royaume-Uni", "publisher": "Parker Brothers", "description": "Édition Monopoly (UK) éditée par Parker Brothers.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-cereal", "name": "Monopoly (cereal)", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly (cereal) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-cereal.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-disambiguation", "name": "Monopoly (disambiguation)", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly (disambiguation) éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-film", "name": "Monopoly (film)", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly (film) éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-game-show", "name": "Monopoly (game show)", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly (game show) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-game-show.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-com-edition", "name": "Monopoly .com Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly .com Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-007-50th-anniversary-edition", "name": "Monopoly 007 50th Anniversary Edition", "category": "Variantes & Règles Spéciales", "year": 2012, "country": "Royaume-Uni", "publisher": "Winning Moves", "description": "Édition Monopoly 007 50th Anniversary Edition éditée par Winning Moves.", "image_url": "images/box_mono-monopoly-007-50th-anniversary-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-007-collector-s-edition", "name": "Monopoly 007 Collector's Edition", "category": "Variantes & Règles Spéciales", "year": 2006, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly 007 Collector's Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-007-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-007-edition", "name": "Monopoly 007 Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 007 Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-1-000-000-edition", "name": "Monopoly 1,000,000 Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 1,000,000 Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-1-000-000-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-1-f-c-k-ln-edition", "name": "Monopoly 1. F.C. Köln Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 1. F.C. Köln Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-1-f-c-k-ln-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-1-fc-kaiserslautern-edition", "name": "Monopoly 1. FC Kaiserslautern Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 1. FC Kaiserslautern Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-1-fc-kaiserslautern-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-1-fsv-mainz-05-edition", "name": "Monopoly 1. FSV Mainz 05 Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 1. FSV Mainz 05 Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-1-fsv-mainz-05-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-11th-deluxe-edition", "name": "Monopoly 11th Deluxe Edition", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 11th Deluxe Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-1899-hoffenheim-edition", "name": "Monopoly 1899 Hoffenheim Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 1899 Hoffenheim Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-1899-hoffenheim-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-1935-commemorative-edition", "name": "Monopoly 1935 Commemorative Edition", "category": "Variantes & Règles Spéciales", "year": 1935, "country": "USA", "publisher": "Parker Brothers", "description": "Édition Monopoly 1935 Commemorative Edition éditée par Parker Brothers.", "image_url": "images/box_mono-monopoly-1935-commemorative-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-1935-deluxe-first-edition", "name": "Monopoly 1935 Deluxe First Edition", "category": "Classique & Anniversaire", "year": 1935, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 1935 Deluxe First Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-1935-deluxe-first-edition-2002-reproducti", "name": "Monopoly 1935 Deluxe First Edition (2002 Reproduction)", "category": "Classique & Anniversaire", "year": 1935, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 1935 Deluxe First Edition (2002 Reproduction) éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-1935-first-deluxe-edition", "name": "Monopoly 1935 First Deluxe Edition", "category": "Variantes & Règles Spéciales", "year": 1935, "country": "USA", "publisher": "Winning Moves", "description": "Édition Monopoly 1935 First Deluxe Edition éditée par Winning Moves.", "image_url": "images/box_mono-monopoly-1935-first-deluxe-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-1935-s-edition", "name": "Monopoly 1935's Edition", "category": "Classique & Anniversaire", "year": 1935, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 1935's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-1935-s-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-1936-deluxe-wood-edition", "name": "Monopoly 1936 Deluxe Wood Edition", "category": "Variantes & Règles Spéciales", "year": 1936, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 1936 Deluxe Wood Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-1936-deluxe-wood-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-1964-standard-edition-us", "name": "Monopoly 1964 Standard Edition (US)", "category": "Classique & Anniversaire", "year": 1964, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 1964 Standard Edition (US) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-1964-standard-edition-us.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-1965-deluxe-edition-in-wooden-case", "name": "Monopoly 1965 Deluxe Edition in wooden case", "category": "Classique & Anniversaire", "year": 1965, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 1965 Deluxe Edition in wooden case éditée par Hasbro.", "image_url": "images/box_mono-monopoly-1965-deluxe-edition-in-wooden-case.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-1991-last-edition", "name": "Monopoly 1991 Last Edition", "category": "Classique & Anniversaire", "year": 1991, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 1991 Last Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-1991-last-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-1999-nfl-gridiron-limited-edition", "name": "Monopoly 1999 NFL Gridiron Limited Edition", "category": "Marques & Sports", "year": 1999, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 1999 NFL Gridiron Limited Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-2000-millennium-edition", "name": "Monopoly 2000 Millennium Edition", "category": "Éditions Spéciales & Thématiques", "year": 2000, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 2000 Millennium Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-2000-millennium-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-2006-fifa-world-cup-edition", "name": "Monopoly 2006 FIFA World Cup Edition", "category": "Marques & Sports", "year": 2006, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 2006 FIFA World Cup Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-2006-fifa-world-cup-germany-edition", "name": "Monopoly 2006 FIFA World Cup Germany Edition", "category": "Variantes & Règles Spéciales", "year": 2006, "country": "Allemagne", "publisher": "Winning Moves", "description": "Édition Monopoly 2006 FIFA World Cup Germany Edition éditée par Winning Moves.", "image_url": "images/box_mono-monopoly-2006-fifa-world-cup-germany-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-200x-future-las-vegas-edition", "name": "Monopoly 200X Future Las Vegas Edition", "category": "Villes & Pays (Monde)", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 200X Future Las Vegas Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-200x-future-las-vegas-version", "name": "Monopoly 200X Future Las Vegas Version", "category": "Villes & Pays (Monde)", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 200X Future Las Vegas Version éditée par Hasbro.", "image_url": "images/box_mono-monopoly-200x-future-las-vegas-version.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-2010-fifa-world-cup-south-africa-edition", "name": "Monopoly 2010 FIFA World Cup South Africa Edition", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 2010 FIFA World Cup South Africa Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-2010-fifa-world-cup-south-africa-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-2012-olympic-games-edition", "name": "Monopoly 2012 Olympic Games Edition", "category": "Éditions Spéciales & Thématiques", "year": 2012, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 2012 Olympic Games Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-2012-olympic-games-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-2014-fifa-world-cup-brasil-edition", "name": "Monopoly 2014 FIFA World Cup Brasil Edition", "category": "Marques & Sports", "year": 2014, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 2014 FIFA World Cup Brasil Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-2014-fifa-world-cup-brasil-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-2018-fifa-world-cup-russia-edition", "name": "Monopoly 2018 FIFA World Cup Russia Edition", "category": "Marques & Sports", "year": 2018, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 2018 FIFA World Cup Russia Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-2018-fifa-world-cup-russia-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-2026-fifa-world-cup-edition", "name": "Monopoly 2026 FIFA World Cup Edition", "category": "Marques & Sports", "year": 2026, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 2026 FIFA World Cup Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-2026-fifa-world-cup-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-25th-anniversary-edition", "name": "Monopoly 25th Anniversary Edition", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 25th Anniversary Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-25th-anniversary-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-25th-rim-blackberry-anniversary-edition", "name": "Monopoly 25th RIM (Blackberry) Anniversary Edition", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 25th RIM (Blackberry) Anniversary Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-30th-anniversary-edition", "name": "Monopoly 30th Anniversary Edition", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 30th Anniversary Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-30th-anniversary-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-3d-monopoly-new-york-edition-by-charles-f", "name": "Monopoly 3D Monopoly New York Edition by Charles Fazzino", "category": "Villes & Pays (Monde)", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 3D Monopoly New York Edition by Charles Fazzino éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-3d-new-york-edition", "name": "Monopoly 3D New York Edition", "category": "Villes & Pays (Monde)", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 3D New York Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-3d-new-york-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-40th-anniversary-deluxe-edition", "name": "Monopoly 40th Anniversary Deluxe Edition", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 40th Anniversary Deluxe Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-40th-anniversary-deluxe-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-40th-anniversary-edition", "name": "Monopoly 40th Anniversary Edition", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 40th Anniversary Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-40th-anniversary-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-50th-anniversary-deluxe-edition", "name": "Monopoly 50th Anniversary Deluxe Edition", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 50th Anniversary Deluxe Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-50th", "name": "Monopoly 50ème Anniversaire (1935-1985)", "category": "Classique & Anniversaire", "year": 1985, "country": "Monde", "publisher": "Parker Brothers", "description": "Édition commémorative spéciale 50 ans avec boîte argentée ou dorée et pions en métal collector.", "theme": {"bg1": "#14532d", "bg2": "#3f2d19", "icon": "vintage", "accent": "#fbbf24"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-60th-anniversary-edition", "name": "Monopoly 60th Anniversary Edition", "category": "Classique & Anniversaire", "year": 1995, "country": "USA", "publisher": "Parker Brothers", "description": "Édition Monopoly 60th Anniversary Edition éditée par Parker Brothers.", "image_url": "images/box_mono-monopoly-60th-anniversary-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-60th", "name": "Monopoly 60ème Anniversaire (1935-1995)", "category": "Classique & Anniversaire", "year": 1995, "country": "Monde", "publisher": "Parker Brothers", "description": "Boîte en métal embossé commémorative avec pions dorés spéciaux.", "theme": {"bg1": "#14532d", "bg2": "#3f2d19", "icon": "vintage", "accent": "#fbbf24"}, "image_url": "images/mono-60th.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-65th-anniversary-1935-2000-edition", "name": "Monopoly 65th Anniversary 1935-2000 Edition", "category": "Classique & Anniversaire", "year": 2000, "country": "USA", "publisher": "Hasbro", "description": "Édition Monopoly 65th Anniversary 1935-2000 Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-65th-anniversary-1935-2000-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-70th-anniversary-edition", "name": "Monopoly 70th Anniversary Edition", "category": "Classique & Anniversaire", "year": 2005, "country": "USA", "publisher": "Parker Brothers", "description": "Édition Monopoly 70th Anniversary Edition éditée par Parker Brothers.", "image_url": "images/box_mono-monopoly-70th-anniversary-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-70th", "name": "Monopoly 70ème Anniversaire", "category": "Classique & Anniversaire", "year": 2005, "country": "Monde", "publisher": "Hasbro", "description": "Boîte en fer blanc argenté avec cartes argentées et pions chromés.", "theme": {"bg1": "#14532d", "bg2": "#3f2d19", "icon": "vintage", "accent": "#fbbf24"}, "image_url": "images/mono-70th.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-80th-anniversary-edition", "name": "Monopoly 80th Anniversary Edition", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 80th Anniversary Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-80th-anniversary-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-80th", "name": "Monopoly 80ème Anniversaire (1935-2015)", "category": "Classique & Anniversaire", "year": 2015, "country": "Monde / France", "publisher": "Hasbro", "description": "Comprend 8 pions vintage emblématiques représentant chacun une décennie (années 30 à 2000).", "theme": {"bg1": "#14532d", "bg2": "#3f2d19", "icon": "vintage", "accent": "#fbbf24"}, "image_url": "images/mono-80th.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-85th-anniversary-edition", "name": "Monopoly 85th Anniversary Edition", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 85th Anniversary Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-85th-anniversary-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-85th", "name": "Monopoly 85ème Anniversaire", "category": "Classique & Anniversaire", "year": 2020, "country": "Monde / France", "publisher": "Hasbro", "description": "Édition de luxe festive avec finitions brillantes et pions spéciaux célébrant 85 ans de Monopoly.", "theme": {"bg1": "#14532d", "bg2": "#3f2d19", "icon": "vintage", "accent": "#fbbf24"}, "image_url": "images/mono-85th.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-90th-anniversary-edition", "name": "Monopoly 90th Anniversary Edition", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 90th Anniversary Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-90th-anniversary-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-90th-winter-olympics-anniversary-edition", "name": "Monopoly 90th Winter Olympics Anniversary Edition", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly 90th Winter Olympics Anniversary Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-90th-winter-olympics-anniversary-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-et-si-invente-aujourdhui", "name": "Monopoly : Et si Monopoly était inventé aujourd'hui ?", "category": "Déclinaisons & Variantes", "year": 2006, "country": "France", "publisher": "Parker / Hasbro", "description": "Édition spéciale 70 ans de Monopoly avec prix en millions d'euros, lieux parisiens modernes (Stade de France, Musée d'Orsay, Tour Eiffel) et pions contemporains (téléphone, rollers, avion, burger, skate).", "image_url": "images/box_mono-et-si-invente-aujourdhui.jpg", "is_verified_box": true, "back_image_url": "images/box_mono-et-si-invente-aujourdhui-dos.jpg", "status": "none", "condition": "", "location": "", "notes": "", "price": "", "value": ""}, {"id": "mono-et-si-invente-electronique", "name": "Monopoly : Et si Monopoly était inventé aujourd'hui ? (Banque Électronique)", "category": "Déclinaisons & Variantes", "year": 2005, "country": "France", "publisher": "Parker / Hasbro", "description": "Version spéciale 70 ans équipée d'un terminal bancaire électronique et de cartes de crédit avec 15 millions d'euros de crédit immédiat. Pions modernes en métal (téléphone, rollers, navette, burger).", "image_url": "images/box_mono-et-si-invente-electronique.jpg", "is_verified_box": true, "back_image_url": "images/box_mono-et-si-invente-electronique-dos.jpg", "status": "none", "condition": "", "location": "", "notes": "", "price": "", "value": ""}, {"id": "mono-france-villes-2008", "name": "Monopoly : Les Villes de France (Et si le Monopoly était inventé aujourd'hui ?)", "category": "Villes & Régions (France)", "year": 2008, "country": "France", "publisher": "Hasbro / Parker", "description": "Édition historique issue du grand vote national des Français en 2008 : Dunkerque est élue sur la case Rue de la Paix, Montauban sur les Champs-Élysées, et 20 autres villes françaises représentées.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-nightmare-before-christmas", "name": "Monopoly : Nightmare Before Christmas", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly : Nightmare Before Christmas éditée par Hasbro.", "image_url": "images/box_mono-monopoly-nightmare-before-christmas.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-a-christmas-story-collector-s-edition", "name": "Monopoly A Christmas Story Collector’s Edition", "category": "Variantes & Règles Spéciales", "year": 2007, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly A Christmas Story Collector’s Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-a-christmas-story-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-a-court-of-thorns-and-roses-edition", "name": "Monopoly A Court of Thorns and Roses Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly A Court of Thorns and Roses Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-a-court-of-thorns-and-roses-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-abba-edition", "name": "Monopoly ABBA Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly ABBA Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-abba-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-music-acdc", "name": "Monopoly AC/DC Collector's Edition", "category": "Musique & Groupes", "year": 2011, "country": "Monde", "publisher": "USAopoly", "description": "Back in Black, Highway to Hell, For Those About to Rock, pions cloche d'enfer, casquette d'Angus, canon.", "theme": {"bg1": "#18181b", "bg2": "#27272a", "icon": "music", "accent": "#f43f5e"}, "image_url": "images/mono-music-acdc.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-ac-dc-edition", "name": "Monopoly AC/DC Edition", "category": "Musique & Groupes", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly AC/DC Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-afl-premier-carlton-edition", "name": "Monopoly AFL Premier – Carlton Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly AFL Premier – Carlton Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-afl-premier-carlton-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-afl-premier-collingwood-edition", "name": "Monopoly AFL Premier – Collingwood Edition", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly AFL Premier – Collingwood Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-afl-premier-collingwood-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-afl-premier-geelong-edition", "name": "Monopoly AFL Premier – Geelong Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly AFL Premier – Geelong Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-afl-premier-geelong-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-asml-edition", "name": "Monopoly ASML Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly ASML Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-asml-special-edition", "name": "Monopoly ASML Special Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly ASML Special Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-asml-special-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-aachen-edition", "name": "Monopoly Aachen Edition", "category": "Variantes & Règles Spéciales", "year": 2006, "country": "Allemagne", "publisher": "Winning Moves", "description": "Édition Monopoly Aachen Edition éditée par Winning Moves.", "image_url": "images/box_mono-monopoly-aachen-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-aberdeen-edition", "name": "Monopoly Aberdeen Edition", "category": "Variantes & Règles Spéciales", "year": 2006, "country": "Royaume-Uni", "publisher": "Winning Moves", "description": "Édition Monopoly Aberdeen Edition éditée par Winning Moves.", "image_url": "images/box_mono-monopoly-aberdeen-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-abileneopoly", "name": "Monopoly Abileneopoly", "category": "Variantes & Règles Spéciales", "year": 2007, "country": "USA", "publisher": "Hasbro", "description": "Édition Monopoly Abileneopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-abileneopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-abington-opoly", "name": "Monopoly Abington-opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Abington-opoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-abingtonopoly", "name": "Monopoly Abingtonopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Abingtonopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-abingtonopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-accra-edition", "name": "Monopoly Accra Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Accra Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-accra-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-achievement-hunter-edition", "name": "Monopoly Achievement Hunter Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Achievement Hunter Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-adelaide-crows-20th-anniversary-edition", "name": "Monopoly Adelaide Crows 20th Anniversary Edition", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Adelaide Crows 20th Anniversary Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-adelaide-crows-20th-anniversary-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-adelaide-crows-20th-anniversary-edition-1", "name": "Monopoly Adelaide Crows 20th anniversary Edition", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Adelaide Crows 20th anniversary Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-adelaide-crows-charity-edition", "name": "Monopoly Adelaide Crows Charity Edition", "category": "Éditions Spéciales & Thématiques", "year": 2005, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Adelaide Crows Charity Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-adelaide-crows-charity-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-adelaide-crows-edition", "name": "Monopoly Adelaide Crows Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Adelaide Crows Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-adelaide-edition", "name": "Monopoly Adelaide Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Adelaide Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-adelaide-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-advance-to-boardwalk", "name": "Monopoly Advance to Boardwalk", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Advance to Boardwalk éditée par Hasbro.", "image_url": "images/box_mono-monopoly-advance-to-boardwalk.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-adventure-time-collector-s-edition", "name": "Monopoly Adventure Time Collector's Edition", "category": "Variantes & Règles Spéciales", "year": 2013, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Adventure Time Collector's Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-adventure-time-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-affton-opoly", "name": "Monopoly Affton-opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Affton-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-affton-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-aggie-opoly", "name": "Monopoly Aggie-opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Aggie-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-aggie-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-aix-en-provence-edition", "name": "Monopoly Aix en Provence Edition", "category": "Villes & Régions (France)", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Aix en Provence Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-aix-en-provence-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-al-dallal", "name": "Monopoly Al Dallal", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Al Dallal éditée par Hasbro.", "image_url": "images/box_mono-monopoly-al-dallal.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-al-dallal-edition", "name": "Monopoly Al Dallal Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Al Dallal Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-alan-turing-edition", "name": "Monopoly Alan Turing Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Alan Turing Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-alan-turing-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-alaska-edition", "name": "Monopoly Alaska Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Alaska Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-alaska-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-alaska-s-iditarod-edition", "name": "Monopoly Alaska's Iditarod Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Alaska's Iditarod Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-alaska-s-iditarod-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-albany-edition", "name": "Monopoly Albany Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Albany Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-albany-in-a-box", "name": "Monopoly Albany-in-a-box", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Albany-in-a-box éditée par Hasbro.", "image_url": "images/box_mono-monopoly-albany-in-a-box.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-alberta-opoly", "name": "Monopoly Alberta-opoly", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Canada", "publisher": "Hasbro", "description": "Édition Monopoly Alberta-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-alberta-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-albertsons-edition", "name": "Monopoly Albertsons Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Albertsons Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-albuquerque-opoly", "name": "Monopoly Albuquerque-opoly", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "USA", "publisher": "Hasbro", "description": "Édition Monopoly Albuquerque-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-albuquerque-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-alfa-opoly", "name": "Monopoly Alfa-opoly", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Alfa-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-alfa-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-algarve-opoly", "name": "Monopoly Algarve-opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Algarve-opoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-algarveopoly", "name": "Monopoly Algarveopoly", "category": "Variantes & Règles Spéciales", "year": 1998, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Algarveopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-algarveopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-alice-in-wonderland-collector-s-edition", "name": "Monopoly Alice in Wonderland Collector's Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Alice in Wonderland Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-alice-in-wonderland-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-all-blacks-charity-edition", "name": "Monopoly All Blacks Charity Edition", "category": "Variantes & Règles Spéciales", "year": 2009, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly All Blacks Charity Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-all-blacks-charity-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-allstate-insurance-edition", "name": "Monopoly Allstate Insurance Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Allstate Insurance Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-allstate-main-street-edition", "name": "Monopoly Allstate Main Street Edition", "category": "Variantes & Règles Spéciales", "year": 1982, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Allstate Main Street Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-allstate-main-street-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-allstate-main-street-edition-1", "name": "Monopoly Allstate main street Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Allstate main street Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-alpaca-opoly", "name": "Monopoly Alpaca-opoly", "category": "Variantes & Règles Spéciales", "year": 2009, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Alpaca-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-alpaca-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-region-alsace", "name": "Monopoly Alsace", "category": "Villes & Régions (France)", "year": 2003, "country": "France", "publisher": "Winning Moves", "description": "Château du Haut-Kœnigsbourg, Route des Vins, Colmar, Riquewihr et maisons à colombages.", "theme": {"bg1": "#047857", "bg2": "#0f172a", "icon": "region", "accent": "#34d399"}, "image_url": "images/mono-region-alsace.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-alsace-edition", "name": "Monopoly Alsace Edition", "category": "Variantes & Règles Spéciales", "year": 2002, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Alsace Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-alsace-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-alton-towers-edition", "name": "Monopoly Alton Towers Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Alton Towers Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-alton-towers-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-al-s-edition", "name": "Monopoly Alès Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Alès Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-al-s-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-amarillo-opoly", "name": "Monopoly Amarillo-opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Amarillo-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-amarillo-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-america-special-edition", "name": "Monopoly America Special Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly America Special Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-america-special-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-america-s-national-parks-edition", "name": "Monopoly America's National Parks Edition", "category": "Variantes & Règles Spéciales", "year": 2005, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly America's National Parks Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-america-s-national-parks-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-america-opoly", "name": "Monopoly America-opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly America-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-america-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-american-chopper-edition", "name": "Monopoly American Chopper Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "USA", "publisher": "Hasbro", "description": "Édition Monopoly American Chopper Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-american-chopper-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-american-express-funds-edition", "name": "Monopoly American Express Funds Edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "USA", "publisher": "Hasbro", "description": "Édition Monopoly American Express Funds Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-american-express-funds-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-american-version-edition", "name": "Monopoly American Version Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "USA", "publisher": "Hasbro", "description": "Édition Monopoly American Version Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-american-version-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-american-edition", "name": "Monopoly American edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "USA", "publisher": "Hasbro", "description": "Édition Monopoly American edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-amherst-opoly", "name": "Monopoly Amherst-opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Amherst-opoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-amherstopoly", "name": "Monopoly Amherstopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Amherstopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-amherstopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-ami-opoly", "name": "Monopoly Ami-opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Ami-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-ami-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-amiens-edition", "name": "Monopoly Amiens Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Amiens Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-amiens-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-city-amsterdam", "name": "Monopoly Amsterdam", "category": "Villes & Pays (Monde)", "year": 2005, "country": "Pays-Bas", "publisher": "Hasbro", "description": "Canaux d'Amsterdam, Place du Dam, Rijksmuseum, Maison d'Anne Frank, Quartier des musées.", "theme": {"bg1": "#0c4a6e", "bg2": "#0f172a", "icon": "globe", "accent": "#38bdf8"}, "image_url": "images/mono-city-amsterdam.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-amsterdam-edition", "name": "Monopoly Amsterdam Edition", "category": "Villes & Pays (Monde)", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Amsterdam Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-amsterdam-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-amsterdam-edition-2001-release", "name": "Monopoly Amsterdam Edition (2001 release)", "category": "Villes & Pays (Monde)", "year": 2001, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Amsterdam Edition (2001 release) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-amsterdam-edition-2001-release.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-angers-edition", "name": "Monopoly Angers Edition", "category": "Villes & Régions (France)", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Angers Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-angers-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-angry-birds-edition", "name": "Monopoly Angry Birds Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Angry Birds Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-angry-birds-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-vg-animal-crossing", "name": "Monopoly Animal Crossing New Horizons", "category": "Jeux Vidéo", "year": 2021, "country": "Monde / France", "publisher": "Hasbro", "description": "Explorez des îles, attrapez des insectes et des poissons, vendez-les contre des Nook Miles pour gagner !", "theme": {"bg1": "#312e81", "bg2": "#0f172a", "icon": "gamepad", "accent": "#a855f7"}, "image_url": "images/mono-vg-animal-crossing.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-animal-crossing-new-horizons-edition", "name": "Monopoly Animal Crossing: New Horizons Edition", "category": "Jeux Vidéo", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Animal Crossing: New Horizons Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-animal-crossing-new-horizons-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-anti-monopoly-1", "name": "Monopoly Anti Monopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Anti Monopoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-anti-monopoly", "name": "Monopoly Anti-Monopoly", "category": "Variantes & Règles Spéciales", "year": 1974, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Anti-Monopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-anti-monopoly.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-antwerp-edition", "name": "Monopoly Antwerp Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Antwerp Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-antwerp-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-app-banking", "name": "Monopoly App Banking", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly App Banking éditée par Hasbro.", "image_url": "images/box_mono-monopoly-app-banking.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-arabic-edition", "name": "Monopoly Arabic Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Arabic Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-arabic-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-vg-pacman", "name": "Monopoly Arcade Pac-Man", "category": "Jeux Vidéo", "year": 2020, "country": "Monde / France", "publisher": "Hasbro", "description": "Mini borne d'arcade Pac-Man rétro interactive incluse pour jouer et enregistrer ses scores.", "theme": {"bg1": "#312e81", "bg2": "#0f172a", "icon": "gamepad", "accent": "#a855f7"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-argentina-edition", "name": "Monopoly Argentina Edition", "category": "Villes & Pays (Monde)", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Argentina Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-argentina-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-ariel-edition", "name": "Monopoly Ariel Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Ariel Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-ariel-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-arizona-edition", "name": "Monopoly Arizona Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Arizona Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-arizona-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-arlington-opoly", "name": "Monopoly Arlington-opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Arlington-opoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-arlingtonopoly", "name": "Monopoly Arlingtonopoly", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "USA", "publisher": "Hasbro", "description": "Édition Monopoly Arlingtonopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-arlingtonopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-arlon-edition", "name": "Monopoly Arlon Edition", "category": "Variantes & Règles Spéciales", "year": 2007, "country": "France", "publisher": "Hasbro", "description": "Édition Monopoly Arlon Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-arlon-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-arsenal-farewell-to-highbury-edition", "name": "Monopoly Arsenal - Farewell to Highbury Edition", "category": "Variantes & Règles Spéciales", "year": 2005, "country": "Royaume-Uni", "publisher": "Winning Moves", "description": "Édition Monopoly Arsenal - Farewell to Highbury Edition éditée par Winning Moves.", "image_url": "images/box_mono-monopoly-arsenal-farewell-to-highbury-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-arsenal-edition", "name": "Monopoly Arsenal Edition", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Arsenal Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-arsenal-f-c-edition", "name": "Monopoly Arsenal F.C. Edition", "category": "Variantes & Règles Spéciales", "year": 2011, "country": "Royaume-Uni", "publisher": "Winning Moves", "description": "Édition Monopoly Arsenal F.C. Edition éditée par Winning Moves.", "image_url": "images/box_mono-monopoly-arsenal-f-c-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-artful-tales", "name": "Monopoly Artful Tales", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Artful Tales éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-article-of-the-month", "name": "Monopoly Article of the Month", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Article of the Month éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-artopoly", "name": "Monopoly Artopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Artopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-artopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-vg-assassins-creed", "name": "Monopoly Assassin's Creed", "category": "Jeux Vidéo", "year": 2014, "country": "Monde / France", "publisher": "Winning Moves", "description": "Incarnez Altaïr, Ezio, Connor, Edward Kenway, Arno Dorian dans les villes historiques de la confrérie.", "theme": {"bg1": "#312e81", "bg2": "#0f172a", "icon": "gamepad", "accent": "#a855f7"}, "image_url": "images/mono-vg-assassins-creed.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-assassin-s-creed-edition", "name": "Monopoly Assassin's Creed Edition", "category": "Jeux Vidéo", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Assassin's Creed Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-assassin-s-creed-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-aston-villa-edition", "name": "Monopoly Aston Villa Edition", "category": "Éditions Spéciales & Thématiques", "year": 2009, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Aston Villa Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-aston-villa-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-astronomy-edition", "name": "Monopoly Astronomy Edition", "category": "Variantes & Règles Spéciales", "year": 2001, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Astronomy Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-astronomy-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-manga-asterix", "name": "Monopoly Astérix et Obélix", "category": "Anime & Manga", "year": 2019, "country": "France / Europe", "publisher": "Winning Moves", "description": "Le Village Gaulois qui résiste à l'envahisseur, menhirs, sangliers, camp de Babaorum et potion magique.", "theme": {"bg1": "#7c2d12", "bg2": "#1e293b", "icon": "manga", "accent": "#fb923c"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-atlanta-braves-collector-s-edition", "name": "Monopoly Atlanta Braves Collector's Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Atlanta Braves Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-atlanta-braves-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-auburn-university-opoly", "name": "Monopoly Auburn University-opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Auburn University-opoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-auburn-opoly", "name": "Monopoly Auburn-opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Auburn-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-auburn-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-auburnopoly", "name": "Monopoly Auburnopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Auburnopoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-auction", "name": "Monopoly Auction", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Auction éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-austin-opoly", "name": "Monopoly Austin-opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Austin-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-austin-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-australia-edition", "name": "Monopoly Australia Edition", "category": "Villes & Pays (Monde)", "year": 2010, "country": "Australie", "publisher": "Hasbro", "description": "Édition Monopoly Australia Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-australia-edition-new", "name": "Monopoly Australia Edition (New)", "category": "Villes & Pays (Monde)", "year": 2010, "country": "Australie", "publisher": "Hasbro", "description": "Édition Monopoly Australia Edition (New) éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-australia-post", "name": "Monopoly Australia Post", "category": "Villes & Pays (Monde)", "year": 2010, "country": "Australie", "publisher": "Hasbro", "description": "Édition Monopoly Australia Post éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-australia-post-edition", "name": "Monopoly Australia Post Edition", "category": "Villes & Pays (Monde)", "year": 2010, "country": "Australie", "publisher": "Hasbro", "description": "Édition Monopoly Australia Post Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-australia-post-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-australian-edition", "name": "Monopoly Australian Edition", "category": "Villes & Pays (Monde)", "year": 2010, "country": "Australie", "publisher": "Hasbro", "description": "Édition Monopoly Australian Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-australian-edition-old", "name": "Monopoly Australian Edition (Old)", "category": "Variantes & Règles Spéciales", "year": 1996, "country": "Australie", "publisher": "Parker Brothers", "description": "Édition Monopoly Australian Edition (Old) éditée par Parker Brothers.", "image_url": "images/box_mono-monopoly-australian-edition-old.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-australian-football-league", "name": "Monopoly Australian Football League", "category": "Marques & Sports", "year": 2010, "country": "Australie", "publisher": "Hasbro", "description": "Édition Monopoly Australian Football League éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-australian-football-league-edition", "name": "Monopoly Australian Football League Edition", "category": "Marques & Sports", "year": 2010, "country": "Australie", "publisher": "Hasbro", "description": "Édition Monopoly Australian Football League Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-australian-football-league-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-australian-here-and-now-edition", "name": "Monopoly Australian Here and Now Edition", "category": "Villes & Pays (Monde)", "year": 2010, "country": "Australie", "publisher": "Hasbro", "description": "Édition Monopoly Australian Here and Now Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-australian-here-and-now-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-australian-rules-football-league", "name": "Monopoly Australian Rules Football League", "category": "Marques & Sports", "year": 2010, "country": "Australie", "publisher": "Hasbro", "description": "Édition Monopoly Australian Rules Football League éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-australian-rules-football-league-edition", "name": "Monopoly Australian Rules Football League Edition", "category": "Marques & Sports", "year": 2010, "country": "Australie", "publisher": "Hasbro", "description": "Édition Monopoly Australian Rules Football League Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-australian-war-memorial", "name": "Monopoly Australian War Memorial", "category": "Villes & Pays (Monde)", "year": 2010, "country": "Australie", "publisher": "Hasbro", "description": "Édition Monopoly Australian War Memorial éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-region-auvergne", "name": "Monopoly Auvergne", "category": "Villes & Régions (France)", "year": 2006, "country": "France", "publisher": "Winning Moves", "description": "Parc naturel des Volcans d'Auvergne, Vulcania, Lac Pavin, Mont-Dore, Saint-Nectaire et Cantal.", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-auvergne-edition", "name": "Monopoly Auvergne Edition", "category": "Villes & Régions (France)", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Auvergne Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-auvergne-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-aveyron-edition", "name": "Monopoly Aveyron Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Aveyron Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-aveyron-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-aviation-edition", "name": "Monopoly Aviation Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Aviation Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-avignon-edition", "name": "Monopoly Avignon Edition", "category": "Villes & Régions (France)", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Avignon Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-avignon-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-b-c-opoly", "name": "Monopoly B.C.opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly B.C.opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-b-c-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-bc-hydro-opoly", "name": "Monopoly BC Hydro opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly BC Hydro opoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-bsa-100th-anniversary-edition", "name": "Monopoly BSA 100th Anniversary Edition", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly BSA 100th Anniversary Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-bsa-100th-anniversary-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-back-to-the-future-edition", "name": "Monopoly Back To The Future Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Back To The Future Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-back-to-the-future-trilogy-30th-anniversa", "name": "Monopoly Back to the Future Trilogy '30th Anniversary Edition’", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Back to the Future Trilogy '30th Anniversary Edition’ éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-back-to-the-future-trilogy-30th-anniversa-1", "name": "Monopoly Back to the Future Trilogy 30th Anniversary Edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Back to the Future Trilogy 30th Anniversary Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-back-to-the-future-trilogy-30th-anniversa-1.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-back-to-the-future-trilogy-custom-edition", "name": "Monopoly Back to the Future Trilogy Custom Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Back to the Future Trilogy Custom Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-bacon-opoly", "name": "Monopoly Bacon-opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Bacon-opoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-region-baie-de-somme", "name": "Monopoly Baie de Somme", "category": "Villes & Régions (France)", "year": 2014, "country": "France", "publisher": "Winning Moves", "description": "Saint-Valery-sur-Somme, Le Crotoy, Parc du Marquenterre, les phoques de la baie et le petit train à vapeur.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-bailout-monopoly", "name": "Monopoly Bailout Monopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Bailout Monopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-bailout-monopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-baltimore-edition", "name": "Monopoly Baltimore Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Baltimore Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-baltimore-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-bama-opoly", "name": "Monopoly Bama-opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Bama-opoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-bamaopoly", "name": "Monopoly Bamaopoly", "category": "Villes & Pays (Monde)", "year": 2010, "country": "USA", "publisher": "Hasbro", "description": "Édition Monopoly Bamaopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-bamaopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-bancopoly", "name": "Monopoly Bancopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Bancopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-bancopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-electronic-bank", "name": "Monopoly Banque Électronique (Electronic Banking)", "category": "Variantes & Règles Spéciales", "year": 2006, "country": "France / Monde", "publisher": "Hasbro", "description": "Remplacement des billets par une unité bancaire électronique et des cartes de crédit pour chaque joueur.", "theme": {"bg1": "#0369a1", "bg2": "#0f172a", "icon": "electronic", "accent": "#38bdf8"}, "image_url": "images/mono-electronic-bank.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-ultimate-bank", "name": "Monopoly Banque Électronique Ultime (Ultimate Banking)", "category": "Variantes & Règles Spéciales", "year": 2016, "country": "France / Monde", "publisher": "Hasbro", "description": "Lecteur sans contact tap-to-pay instantané : scanne les cartes de propriété et cartes bancaires automatiquement.", "theme": {"bg1": "#0369a1", "bg2": "#0f172a", "icon": "electronic", "accent": "#38bdf8"}, "image_url": "images/mono-ultimate-bank.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-basin-street", "name": "Monopoly Basin Street", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Basin Street éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-bass-fishing-edition", "name": "Monopoly Bass Fishing Edition", "category": "Variantes & Règles Spéciales", "year": 1999, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Bass Fishing Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-bass-fishing-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-basse-normandie-edition", "name": "Monopoly Basse-Normandie Edition", "category": "Villes & Régions (France)", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Basse-Normandie Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-basse-normandie-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-region-arcachon", "name": "Monopoly Bassin d'Arcachon", "category": "Villes & Régions (France)", "year": 2007, "country": "France", "publisher": "Winning Moves", "description": "Dune du Pilat, Banc d'Arguin, cabanes tchanquées de l'Île aux Oiseaux, Cap Ferret et dégustation d'huîtres.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-batman", "name": "Monopoly Batman Collector's Edition", "category": "Films & Séries", "year": 2005, "country": "USA / Monde", "publisher": "USAopoly", "description": "Gotham City, l'Asile d'Arkham, Wayne Enterprises et la Batcave avec pions Batmobile et Bat-Signal.", "theme": {"bg1": "#18181b", "bg2": "#09090b", "icon": "bat", "accent": "#eab308"}, "image_url": "images/mono-pop-batman.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-batman-and-robin-collector-s-edition", "name": "Monopoly Batman and Robin Collector's Edition", "category": "Variantes & Règles Spéciales", "year": 1997, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Batman and Robin Collector's Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-batman-and-robin-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-batman-and-robin-edition", "name": "Monopoly Batman and Robin Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Batman and Robin Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-baton-rouge-edition", "name": "Monopoly Baton Rouge Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Baton Rouge Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-baton-rouge-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-battleship", "name": "Monopoly Battleship", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Battleship éditée par Hasbro.", "image_url": "images/box_mono-monopoly-battleship.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-bayern-edition", "name": "Monopoly Bayern Edition", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Bayern Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-bayern-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-bayren-edition", "name": "Monopoly Bayren Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Bayren Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-bayview-dock", "name": "Monopoly Bayview Dock", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Bayview Dock éditée par Hasbro.", "image_url": "images/box_mono-monopoly-bayview-dock.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-beagle-opoly", "name": "Monopoly Beagle-opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Beagle-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-beagle-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-bean-opoly", "name": "Monopoly Bean-opoly", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Bean-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-bean-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-beatles-collector-s-edition", "name": "Monopoly Beatles Collector's Edition", "category": "Musique & Groupes", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Beatles Collector's Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-beatles-collectors-edition", "name": "Monopoly Beatles Collectors Edition", "category": "Musique & Groupes", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Beatles Collectors Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-beauvais-edition", "name": "Monopoly Beauvais Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Beauvais Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-beauvais-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-beaveropoly", "name": "Monopoly Beaveropoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Beaveropoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-beaveropoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-be-national", "name": "Monopoly Belgique (Édition Nationale)", "category": "Villes & Régions (France)", "year": 2000, "country": "Belgique", "publisher": "Hasbro", "description": "Édition bilingue français / néerlandais avec les grandes villes belges (Bruges, Gand, Liège, Anvers).", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-bellevue-edition", "name": "Monopoly Bellevue Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Bellevue Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-bellevue-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-ben-10-edition", "name": "Monopoly Ben 10 Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Ben 10 Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-ben-10-junior-edition", "name": "Monopoly Ben 10 Junior Edition", "category": "Junior & Enfants", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Ben 10 Junior Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-ben-10-junior-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-berkshire-hathaway-diamond-edition", "name": "Monopoly Berkshire Hathaway Diamond Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Berkshire Hathaway Diamond Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-berkshire-hathaway-diamond-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-city-berlin", "name": "Monopoly Berlin", "category": "Villes & Pays (Monde)", "year": 2005, "country": "Allemagne", "publisher": "Winning Moves", "description": "Porte de Brandebourg, Alexanderplatz, Mur de Berlin, Kurfürstendamm et Potsdamer Platz.", "theme": {"bg1": "#0c4a6e", "bg2": "#0f172a", "icon": "globe", "accent": "#38bdf8"}, "image_url": "images/mono-city-berlin.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-berlin-edition", "name": "Monopoly Berlin Edition", "category": "Villes & Pays (Monde)", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Berlin Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-berlin-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-besancon-edition", "name": "Monopoly Besancon Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Besancon Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-besan-on-edition", "name": "Monopoly Besançon Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Besançon Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-besan-on-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-best-buy-corp-edition", "name": "Monopoly Best Buy Corp. Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Best Buy Corp. Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-best-buy-corp-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-betty-boop-collector-s-edition", "name": "Monopoly Betty Boop Collector's Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Betty Boop Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-betty-boop-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-betty-boop-edition", "name": "Monopoly Betty Boop Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Betty Boop Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-beyond-boardwalk-and-park-place", "name": "Monopoly Beyond Boardwalk and Park Place", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Beyond Boardwalk and Park Place éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-beyond-boardwalk-and-park-place-alternati", "name": "Monopoly Beyond Boardwalk and Park Place (Alternative Rules)", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Beyond Boardwalk and Park Place (Alternative Rules) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-beyond-boardwalk-and-park-place-alternati.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-beyond-boardwalk-and-park-place-book", "name": "Monopoly Beyond Boardwalk and Park Place (book)", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Beyond Boardwalk and Park Place (book) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-beyond-boardwalk-and-park-place-book.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-ville-biarritz", "name": "Monopoly Biarritz & Côte Basque", "category": "Villes & Régions (France)", "year": 2005, "country": "France", "publisher": "Winning Moves", "description": "Rocher de la Vierge, Hôtel du Palais, Grande Plage, spots de surf légendaires et casino.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-bible-opoly", "name": "Monopoly Bible-opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Bible-opoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-bibleopoly", "name": "Monopoly Bibleopoly", "category": "Variantes & Règles Spéciales", "year": 1991, "country": "USA", "publisher": "Hasbro", "description": "Édition Monopoly Bibleopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-bibleopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-bid-2020", "name": "Monopoly Bid", "category": "Variantes & Règles Spéciales", "year": 2020, "country": "France / Monde", "publisher": "Hasbro", "description": "Jeu de cartes rapide et tactique basé sur des enchères à l'aveugle pour rafler des groupes de propriétés.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-bielefeld-edition", "name": "Monopoly Bielefeld Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Bielefeld Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-bielefeld-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-big-bang-theory-edition", "name": "Monopoly Big Bang Theory Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Big Bang Theory Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-big-bang-theory-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-birmingham-alabama-edition-1", "name": "Monopoly Birmingham (Alabama) Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Birmingham (Alabama) Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-birmingham-alabama-edition-1.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-birmingham-uk-edition", "name": "Monopoly Birmingham (UK) Edition", "category": "Variantes & Règles Spéciales", "year": 1998, "country": "Royaume-Uni", "publisher": "Winning Moves", "description": "Édition Monopoly Birmingham (UK) Edition éditée par Winning Moves.", "image_url": "images/box_mono-monopoly-birmingham-uk-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-birmingham-edition", "name": "Monopoly Birmingham Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Birmingham Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-birmingham-alabama-edition", "name": "Monopoly Birmingham, Alabama Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Birmingham, Alabama Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-birthday-gift", "name": "Monopoly Birthday Gift", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Birthday Gift éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-black-color-group-properties", "name": "Monopoly Black Color Group Properties", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Black Color Group Properties éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-bloxopoly-collector-s-edition", "name": "Monopoly Bloxopoly Collector's Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Bloxopoly Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-bloxopoly-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-bloxopoly-collector-edition", "name": "Monopoly Bloxopoly: Collector Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Bloxopoly: Collector Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-bluey-junior-edition", "name": "Monopoly Bluey Junior Edition", "category": "Junior & Enfants", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Bluey Junior Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-board-crawl-edition", "name": "Monopoly Board Crawl Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Board Crawl Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-board-crawl-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-boardwalk", "name": "Monopoly Boardwalk", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Boardwalk éditée par Hasbro.", "image_url": "images/box_mono-monopoly-boardwalk.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-boca-juniors-edition", "name": "Monopoly Boca Juniors Edition", "category": "Junior & Enfants", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Boca Juniors Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-boca-juniors-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-bogen-perk-property", "name": "Monopoly Bogenšperk (Property)", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Bogenšperk (Property) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-bogen-perk-property.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-boise-edition", "name": "Monopoly Boise Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Boise Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-boise-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-book-oploy", "name": "Monopoly Book-oploy", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Book-oploy éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-bookoploy", "name": "Monopoly Bookoploy", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Bookoploy éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-bookopoly", "name": "Monopoly Bookopoly", "category": "Variantes & Règles Spéciales", "year": 2006, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Bookopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-bookopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-bookshelf-editions", "name": "Monopoly Bookshelf Editions", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Bookshelf Editions éditée par Hasbro.", "image_url": "images/box_mono-monopoly-bookshelf-editions.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-ville-bordeaux", "name": "Monopoly Bordeaux", "category": "Villes & Régions (France)", "year": 2004, "country": "France", "publisher": "Winning Moves", "description": "Place de la Bourse, Grand Théâtre, Rue Sainte-Catherine, Miroir d'eau et vignobles bordelais.", "theme": {"bg1": "#1e40af", "bg2": "#0f172a", "icon": "city", "accent": "#60a5fa"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-borinkopoly", "name": "Monopoly Borinkopoly", "category": "Variantes & Règles Spéciales", "year": 2006, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Borinkopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-borinkopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-borussia-dortmund-double-sieger-2012-edit", "name": "Monopoly Borussia Dortmund Double-Sieger 2012 Edition", "category": "Marques & Sports", "year": 2012, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Borussia Dortmund Double-Sieger 2012 Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-borussia-dortmund-double-sieger-2012-edit.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-borussia-dortmund-edition", "name": "Monopoly Borussia Dortmund Edition", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Borussia Dortmund Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-borussia-dortmund-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-boston-celtics-edition", "name": "Monopoly Boston Celtics Edition", "category": "Marques & Sports", "year": 2006, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Boston Celtics Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-boston-celtics-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-boston-red-sox-collector-s-edition", "name": "Monopoly Boston Red Sox Collector's Edition", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Boston Red Sox Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-boston-red-sox-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-boston-red-sox-edition", "name": "Monopoly Boston Red Sox Edition", "category": "Variantes & Règles Spéciales", "year": 2006, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Boston Red Sox Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-boston-red-sox-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-boston-opoly", "name": "Monopoly Boston-opoly", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "USA", "publisher": "Hasbro", "description": "Édition Monopoly Boston-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-boston-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-boulder-edition", "name": "Monopoly Boulder Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Boulder Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-boulder-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-boutique-edition", "name": "Monopoly Boutique Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Boutique Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-boutique-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-boy-scouts-of-america-edition", "name": "Monopoly Boy Scouts of America Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Boy Scouts of America Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-boy-scouts-of-america-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-bradford-edition", "name": "Monopoly Bradford Edition", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Bradford Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-bradford-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-branson-edition", "name": "Monopoly Branson Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Branson Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-branson-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-bratz-junior-edition", "name": "Monopoly Bratz Junior Edition", "category": "Junior & Enfants", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Bratz Junior Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-bratz-junior-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-bratz-monopoly-jr-edition", "name": "Monopoly Bratz Monopoly Jr. Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Bratz Monopoly Jr. Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-brave-collector-s-edition", "name": "Monopoly Brave Collector's Edition", "category": "Variantes & Règles Spéciales", "year": 2012, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Brave Collector's Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-brave-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-breaking-bad", "name": "Monopoly Breaking Bad", "category": "Films & Séries", "year": 2020, "country": "USA / Monde", "publisher": "USAopoly", "description": "Albuquerque : Los Pollos Hermanos, le labo clandestin, le camping-car Fleetwood Bounder, le chapeau Heisenberg.", "theme": {"bg1": "#4c0519", "bg2": "#18181b", "icon": "cinema", "accent": "#f43f5e"}, "image_url": "images/mono-pop-breaking-bad.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-breaking-bad-edition", "name": "Monopoly Breaking Bad Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Breaking Bad Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-breaking-bad-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-bremen-edition", "name": "Monopoly Bremen Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Bremen Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-bremen-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-bremerhaven-edition", "name": "Monopoly Bremerhaven Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Bremerhaven Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-bremerhaven-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-region-bretagne", "name": "Monopoly Bretagne", "category": "Villes & Régions (France)", "year": 2002, "country": "France", "publisher": "Winning Moves", "description": "Saint-Malo, Brest, Golfe du Morbihan, Carnac, Forêt de Brocéliande et Côte de Granit Rose.", "theme": {"bg1": "#047857", "bg2": "#0f172a", "icon": "region", "accent": "#34d399"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-brew-opoly", "name": "Monopoly Brew-opoly", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Brew-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-brew-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-brighton-hove-edition", "name": "Monopoly Brighton & Hove Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Brighton & Hove Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-brighton-hove-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-brighton-edition", "name": "Monopoly Brighton Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Brighton Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-brighton-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-brightside", "name": "Monopoly Brightside", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Brightside éditée par Hasbro.", "image_url": "images/box_mono-monopoly-brightside.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-brisbane-broncos-nrl-wow-edition", "name": "Monopoly Brisbane Broncos NRL WOW Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Brisbane Broncos NRL WOW Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-brisbane-broncos-wow-charity-edition", "name": "Monopoly Brisbane Broncos WOW Charity Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Brisbane Broncos WOW Charity Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-brisbane-broncos-wow-charity-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-britney-spears-edition", "name": "Monopoly Britney Spears Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Britney Spears Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-britney-spears-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-brooklyn-edition", "name": "Monopoly Brooklyn Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Brooklyn Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-brooklyn-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-brown-color-group-properties", "name": "Monopoly Brown Color Group Properties", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Brown Color Group Properties éditée par Hasbro.", "image_url": "images/box_mono-monopoly-brown-color-group-properties.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-be-bruxelles", "name": "Monopoly Bruxelles", "category": "Villes & Régions (France)", "year": 2001, "country": "Belgique", "publisher": "Winning Moves", "description": "Grand-Place de Bruxelles, Atomium, Manneken-Pis, Sablon et Palais Royal.", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-buckey-oploly", "name": "Monopoly Buckey-oploly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Buckey-oploly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-buckoploly", "name": "Monopoly Buckoploly", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "USA", "publisher": "Hasbro", "description": "Édition Monopoly Buckoploly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-buckoploly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-builder", "name": "Monopoly Builder", "category": "Déclinaisons & Variantes", "year": 2021, "country": "France", "publisher": "Hasbro Gaming", "description": "Édition stratégique où les joueurs achètent des terrains et empilent des blocs de construction en 3D sur l'île Monopoly pour ériger leur penthouse au centre de la ville.", "image_url": "images/box_mono-builder.jpg", "is_verified_box": true, "back_image_url": "images/box_mono-builder-dos.jpg", "status": "none", "condition": "", "location": "", "notes": "", "price": "", "value": ""}, {"id": "mono-monopoly-bunnings-warehouse-edition", "name": "Monopoly Bunnings Warehouse Edition", "category": "Variantes & Règles Spéciales", "year": 2007, "country": "Australie", "publisher": "Hasbro", "description": "Édition Monopoly Bunnings Warehouse Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-bunnings-warehouse-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-bus-ticket", "name": "Monopoly Bus Ticket", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "USA", "publisher": "Hasbro", "description": "Édition Monopoly Bus Ticket éditée par Hasbro.", "image_url": "images/box_mono-monopoly-bus-ticket.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-caen-edition", "name": "Monopoly Caen Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Caen Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-caen-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-region-calvados", "name": "Monopoly Calvados", "category": "Villes & Régions (France)", "year": 2011, "country": "France", "publisher": "Winning Moves", "description": "Pays d'Auge, Deauville, Trouville, Honfleur, Bayeux et plages du Débarquement.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-camargue-edition", "name": "Monopoly Camargue Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Camargue Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-camargue-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-cambridge-massachusetts-edition", "name": "Monopoly Cambridge (Massachusetts) Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Cambridge (Massachusetts) Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-cambridge-massachusetts-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-cambridge-edition", "name": "Monopoly Cambridge Edition", "category": "Variantes & Règles Spéciales", "year": 2004, "country": "Royaume-Uni", "publisher": "Winning Moves", "description": "Édition Monopoly Cambridge Edition éditée par Winning Moves.", "image_url": "images/box_mono-monopoly-cambridge-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-cambridge-edition-ma-usa", "name": "Monopoly Cambridge Edition (MA, USA)", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "USA", "publisher": "Hasbro", "description": "Édition Monopoly Cambridge Edition (MA, USA) éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-canada-opoly", "name": "Monopoly Canada-opoly", "category": "Villes & Pays (Monde)", "year": 2010, "country": "Canada", "publisher": "Hasbro", "description": "Édition Monopoly Canada-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-canada-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-canadian-edition-1961-release", "name": "Monopoly Canadian Edition (1961 release)", "category": "Classique & Anniversaire", "year": 1961, "country": "Canada", "publisher": "Hasbro", "description": "Édition Monopoly Canadian Edition (1961 release) éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-canadian-edition-1982-release", "name": "Monopoly Canadian Edition (1982 release)", "category": "Classique & Anniversaire", "year": 1982, "country": "Canada", "publisher": "Hasbro", "description": "Édition Monopoly Canadian Edition (1982 release) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-canadian-edition-1982-release.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-canadian-edition-1985-release", "name": "Monopoly Canadian Edition (1985 release)", "category": "Variantes & Règles Spéciales", "year": 1985, "country": "Canada", "publisher": "Hasbro", "description": "Édition Monopoly Canadian Edition (1985 release) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-canadian-edition-1985-release.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-canadian-edition-2000-release", "name": "Monopoly Canadian Edition (2000 release)", "category": "Éditions Spéciales & Thématiques", "year": 2000, "country": "Canada", "publisher": "Hasbro", "description": "Édition Monopoly Canadian Edition (2000 release) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-canadian-edition-2000-release.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-canadian-electronic-banking-edition-2010-", "name": "Monopoly Canadian Electronic Banking Edition (2010 release)", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Canada", "publisher": "Hasbro", "description": "Édition Monopoly Canadian Electronic Banking Edition (2010 release) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-canadian-electronic-banking-edition-2010-.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-canberra", "name": "Monopoly Canberra", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Canberra éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-canberra-edition", "name": "Monopoly Canberra Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Canberra Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-canberra-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-candy-opoly", "name": "Monopoly Candy-opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Candy-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-candy-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-cantabria-edition", "name": "Monopoly Cantabria Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Cantabria Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-cantabria-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-cape-cod-edition", "name": "Monopoly Cape Cod Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Cape Cod Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-cape-cod-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-capitol-hill", "name": "Monopoly Capitol Hill", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Capitol Hill éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-capitol-hill-alternative-rules", "name": "Monopoly Capitol Hill (Alternative Rules)", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Capitol Hill (Alternative Rules) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-capitol-hill-alternative-rules.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-cardiff-edition", "name": "Monopoly Cardiff Edition", "category": "Variantes & Règles Spéciales", "year": 2009, "country": "Royaume-Uni", "publisher": "Winning Moves", "description": "Édition Monopoly Cardiff Edition éditée par Winning Moves.", "image_url": "images/box_mono-monopoly-cardiff-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-cards", "name": "Monopoly Cards", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Cards éditée par Hasbro.", "image_url": "images/box_mono-monopoly-cards.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-cartoon-network-edition", "name": "Monopoly Cartoon Network Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Cartoon Network Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-cartoon-network-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-cash-grab", "name": "Monopoly Cash Grab", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Cash Grab éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-casino-rama-big-time-edition", "name": "Monopoly Casino Rama Big Time Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Casino Rama Big Time Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-casino-rama-big-time-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-cat-lovers-edition", "name": "Monopoly Cat Lovers Edition", "category": "Variantes & Règles Spéciales", "year": 2007, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Cat Lovers Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-cat-lovers-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-cat-in-the-hat-opoly", "name": "Monopoly Cat in the Hat-opoly", "category": "Variantes & Règles Spéciales", "year": 2003, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Cat in the Hat-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-cat-in-the-hat-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-caterpillar-cat-edition", "name": "Monopoly Caterpillar (CAT) Edition", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Caterpillar (CAT) Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-caterpillar-cat-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-central-city", "name": "Monopoly Central City", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Central City éditée par Hasbro.", "image_url": "images/box_mono-monopoly-central-city.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-central-quay", "name": "Monopoly Central Quay", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Central Quay éditée par Hasbro.", "image_url": "images/box_mono-monopoly-central-quay.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-century-of-flight-edition", "name": "Monopoly Century of Flight Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Century of Flight Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-century-of-flight-aviation-edition", "name": "Monopoly Century of Flight: Aviation Edition", "category": "Variantes & Règles Spéciales", "year": 2007, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Century of Flight: Aviation Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-century-of-flight-aviation-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-cereal-edition", "name": "Monopoly Cereal Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Cereal Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-region-champagne", "name": "Monopoly Champagne", "category": "Villes & Régions (France)", "year": 2008, "country": "France", "publisher": "Winning Moves", "description": "Grandes maisons de champagne d'Épernay et Reims, côte des Blancs, Montagne de Reims et caves historiques.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-championship-edition", "name": "Monopoly Championship Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Championship Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-chance-2023", "name": "Monopoly Chance", "category": "Variantes & Règles Spéciales", "year": 2023, "country": "France / Monde", "publisher": "Hasbro", "description": "Jeu de cartes et de dés rapides : tentez votre chance pour acheter des propriétés sans faire faillite !", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-charles-darrow", "name": "Monopoly Charles Darrow", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Charles Darrow éditée par Hasbro.", "image_url": "images/box_mono-monopoly-charles-darrow.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-charleston-edition", "name": "Monopoly Charleston Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Charleston Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-charleston-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-cheaters-edition", "name": "Monopoly Cheaters Edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Cheaters Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-cheaters-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-chelmsford-edition", "name": "Monopoly Chelmsford Edition", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Chelmsford Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-chelmsford-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-chelsea-f-c-edition-1", "name": "Monopoly Chelsea F.C Edition", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Chelsea F.C Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-chelsea-f-c-edition", "name": "Monopoly Chelsea F.C. Edition", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Chelsea F.C. Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-chelsea-f-c-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-city-chicago", "name": "Monopoly Chicago", "category": "Villes & Pays (Monde)", "year": 2001, "country": "USA", "publisher": "USAopoly", "description": "Willis Tower (Sears Tower), Millennium Park (The Bean), Navy Pier, Magnificent Mile, Wrigley Field.", "theme": {"bg1": "#0c4a6e", "bg2": "#0f172a", "icon": "globe", "accent": "#38bdf8"}, "image_url": "images/mono-city-chicago.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-chicago-edition", "name": "Monopoly Chicago Edition", "category": "Variantes & Règles Spéciales", "year": 1995, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Chicago Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-chicago-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-chicago-white-sox-edition", "name": "Monopoly Chicago White Sox Edition", "category": "Variantes & Règles Spéciales", "year": 2005, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Chicago White Sox Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-chicago-white-sox-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-chicago-in-a-box", "name": "Monopoly Chicago in a Box", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "USA", "publisher": "Hasbro", "description": "Édition Monopoly Chicago in a Box éditée par Hasbro.", "image_url": "images/box_mono-monopoly-chicago-in-a-box.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-chile-edition", "name": "Monopoly Chile Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Chile Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-chile-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-china-edition", "name": "Monopoly China Edition", "category": "Villes & Pays (Monde)", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly China Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-china-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-chocolate-edition", "name": "Monopoly Chocolate Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Chocolate Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-chocolate-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-chocolate-opoly", "name": "Monopoly Chocolate-opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Chocolate-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-chocolate-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-christmas-opoly", "name": "Monopoly Christmas-opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Christmas-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-christmas-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-city-3d", "name": "Monopoly City", "category": "Variantes & Règles Spéciales", "year": 2009, "country": "France / Monde", "publisher": "Hasbro", "description": "Jeu de construction urbaine en 3D : bâtissez des gratte-ciels, maisons, stades et zones industrielles au centre du plateau grâce à l'unité de construction électronique.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-city-game", "name": "Monopoly City (game)", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly City (game) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-city-game.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-city-streets", "name": "Monopoly City Streets", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly City Streets éditée par Hasbro.", "image_url": "images/box_mono-monopoly-city-streets.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-city-of-lagos-edition", "name": "Monopoly City of Lagos Edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly City of Lagos Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-city-of-lagos-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-cityville-monopoly", "name": "Monopoly Cityville Monopoly", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Cityville Monopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-cityville-monopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-classic-edition", "name": "Monopoly Classic Edition", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Classic Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-classic-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-fr-standard", "name": "Monopoly Classique Standard (Rues de Paris)", "category": "Classique & Anniversaire", "year": 2008, "country": "France", "publisher": "Hasbro", "description": "L'édition de référence avec le plateau français moderne (Belleville à Rue de la Paix) et pions modernes.", "theme": {"bg1": "#1e3a8a", "bg2": "#1e293b", "icon": "monument", "accent": "#ef4444"}, "image_url": "images/mono-fr-standard.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-ville-clermont", "name": "Monopoly Clermont-Ferrand", "category": "Villes & Régions (France)", "year": 2007, "country": "France", "publisher": "Winning Moves", "description": "Place de Jaude, Cathédrale Notre-Dame-de-l'Assomption en pierre de lave, Puy de Dôme et Michelin.", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-cleveland-edition", "name": "Monopoly Cleveland Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Cleveland Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-cleveland-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-clintonopoly", "name": "Monopoly Clintonopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Clintonopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-clintonopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-club-wydnham-edition", "name": "Monopoly Club Wydnham Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Club Wydnham Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-club-wyndham-deluxe-edition", "name": "Monopoly Club Wyndham Deluxe Edition", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Club Wyndham Deluxe Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-club-wyndham-deluxe-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-club-wyndham-edition", "name": "Monopoly Club Wyndham Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Club Wyndham Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-club-wyndham-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-coca-cola-125th-anniversary-collector-s-e", "name": "Monopoly Coca-Cola 125th Anniversary Collector's Edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Coca-Cola 125th Anniversary Collector's Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-coca-cola-125th-anniversary-collector-s-e.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-coca-cola-125th-anniversary-edition", "name": "Monopoly Coca-Cola 125th Anniversary Edition", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Coca-Cola 125th Anniversary Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-coca-cola-125th-anniversary-edition-1", "name": "Monopoly Coca-Cola 125th anniversary Edition", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Coca-Cola 125th anniversary Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-brand-cocacola", "name": "Monopoly Coca-Cola Collector's Edition", "category": "Marques & Sports", "year": 1999, "country": "Monde", "publisher": "USAopoly", "description": "Bouteille galbée contour historique, camion de Noël, ours polaire Coca-Cola et distributeur vintage.", "theme": {"bg1": "#065f46", "bg2": "#111827", "icon": "trophy", "accent": "#facc15"}, "image_url": "images/box_mono-brand-cocacola.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-cocktail-opoly", "name": "Monopoly Cocktail-opoly", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Cocktail-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-cocktail-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-color-set", "name": "Monopoly Color Set", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Color Set éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-colorado-springs-edition", "name": "Monopoly Colorado Springs Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Colorado Springs Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-colorado-springs-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-communications-company", "name": "Monopoly Communications Company", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Communications Company éditée par Hasbro.", "image_url": "images/box_mono-monopoly-communications-company.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-competitor-cards", "name": "Monopoly Competitor Cards", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Competitor Cards éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-cornwall-edition", "name": "Monopoly Cornwall Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Cornwall Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-coronation-street-edition", "name": "Monopoly Coronation Street Edition", "category": "Variantes & Règles Spéciales", "year": 2000, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Coronation Street Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-coronation-street-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-corpus-christi-edition", "name": "Monopoly Corpus Christi Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "USA", "publisher": "Hasbro", "description": "Édition Monopoly Corpus Christi Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-corpus-christi-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-region-corse", "name": "Monopoly Corse", "category": "Villes & Régions (France)", "year": 2004, "country": "France", "publisher": "Winning Moves", "description": "Falaises de Bonifacio, Calanques de Piana, Ajaccio, Bastia, Île Rousse et plages sauvages.", "theme": {"bg1": "#047857", "bg2": "#0f172a", "icon": "region", "accent": "#34d399"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-corvette-50th-anniversary-collector-s-edi", "name": "Monopoly Corvette 50th Anniversary Collector's Edition", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Corvette 50th Anniversary Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-corvette-50th-anniversary-collector-s-edi.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-corvette-edition", "name": "Monopoly Corvette Edition", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Corvette Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-corvette-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-sport-fifa-world-cup", "name": "Monopoly Coupe du Monde FIFA (World Cup)", "category": "Marques & Sports", "year": 2006, "country": "Monde / France", "publisher": "Hasbro", "description": "Les plus grandes nations du football mondial, stades légendaires et pion Trophée de la Coupe du Monde.", "theme": {"bg1": "#15803d", "bg2": "#1e293b", "icon": "trophy", "accent": "#fde047"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-coventry-edition", "name": "Monopoly Coventry Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Coventry Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-coventry-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-vg-crash-bandicoot", "name": "Monopoly Crash Bandicoot", "category": "Jeux Vidéo", "year": 2020, "country": "Monde", "publisher": "Winning Moves", "description": "Les Îles Wumpa, la forteresse du Dr. Neo Cortex, pions masque Aku Aku, caisse TNT et fruit Wumpa.", "theme": {"bg1": "#312e81", "bg2": "#0f172a", "icon": "gamepad", "accent": "#a855f7"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-crazy-cash", "name": "Monopoly Crazy Cash", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Crazy Cash éditée par Hasbro.", "image_url": "images/box_mono-monopoly-crazy-cash.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-croatian-edition", "name": "Monopoly Croatian Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Croatian Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-croatian-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-crooked-cash-edition", "name": "Monopoly Crooked Cash Edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Crooked Cash Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-crooked-cash-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-curb-your-enthusiasm-edition", "name": "Monopoly Curb Your Enthusiasm Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Curb Your Enthusiasm Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-curb-your-enthusiasm-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-vg-cyberpunk", "name": "Monopoly Cyberpunk 2077", "category": "Jeux Vidéo", "year": 2021, "country": "Monde", "publisher": "Winning Moves", "description": "Explorez Night City, les corporations Arasaka et Militech, Watson et Westbrook avec Johnny Silverhand.", "theme": {"bg1": "#312e81", "bg2": "#0f172a", "icon": "gamepad", "accent": "#a855f7"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-cyclone-opoly", "name": "Monopoly Cyclone-opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Cyclone-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-cyclone-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-region-cevennes", "name": "Monopoly Cévennes", "category": "Villes & Régions (France)", "year": 2015, "country": "France", "publisher": "Winning Moves", "description": "Parc national des Cévennes, Gorges du Tarn, Mont Aigoual, Bambouseraie d'Anduze et châtaigniers.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-diy-opoly", "name": "Monopoly DIY-opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly DIY-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-diy-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-dale-earnhardt-collector-s-edition", "name": "Monopoly Dale Earnhardt Collector's Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Dale Earnhardt Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-dale-earnhardt-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-dale-earnhardt-edition", "name": "Monopoly Dale Earnhardt Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Dale Earnhardt Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-dark-blue-color-group-properties", "name": "Monopoly Dark Blue Color Group Properties", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Dark Blue Color Group Properties éditée par Hasbro.", "image_url": "images/box_mono-monopoly-dark-blue-color-group-properties.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-dark-purple-color-group-properties", "name": "Monopoly Dark Purple Color Group Properties", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Dark Purple Color Group Properties éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-music-bowie", "name": "Monopoly David Bowie", "category": "Musique & Groupes", "year": 2021, "country": "Monde", "publisher": "Winning Moves", "description": "Ziggy Stardust, Aladdin Sane, Heroes, Blackstar, pions éclair emblématique, cravate, chapeau de feutre.", "theme": {"bg1": "#18181b", "bg2": "#27272a", "icon": "music", "accent": "#f43f5e"}, "image_url": "images/mono-music-bowie.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-david-bowie-edition", "name": "Monopoly David Bowie Edition", "category": "Musique & Groupes", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly David Bowie Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-david-bowie-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-dawgopoly", "name": "Monopoly Dawgopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Dawgopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-dawgopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-deal", "name": "Monopoly Deal", "category": "Variantes & Règles Spéciales", "year": 2008, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Deal éditée par Hasbro.", "image_url": "images/box_mono-monopoly-deal.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-deal-card", "name": "Monopoly Deal (Jeu de Cartes)", "category": "Variantes & Règles Spéciales", "year": 2008, "country": "France / Monde", "publisher": "Hasbro", "description": "Format jeu de cartes rapide (15 min) extrêmement populaire, volez des propriétés et complétez 3 groupes.", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-deal-card-game", "name": "Monopoly Deal Card Game", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Deal Card Game éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-manga-death-note", "name": "Monopoly Death Note", "category": "Anime & Manga", "year": 2019, "country": "Monde", "publisher": "Winning Moves", "description": "La confrontation psychologique culte entre Light Yagami (Kira) et L, pions cahier Death Note, pomme de Ryuk.", "theme": {"bg1": "#7c2d12", "bg2": "#1e293b", "icon": "manga", "accent": "#fb923c"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-deluxe-1995", "name": "Monopoly Deluxe Edition", "category": "Classique & Anniversaire", "year": 1995, "country": "Monde", "publisher": "Parker Brothers", "description": "Boîte dorée avec plateau feutrine, socles en bois pour maisons et hôtels, billets dorés et carrousel à billets.", "theme": {"bg1": "#14532d", "bg2": "#3f2d19", "icon": "vintage", "accent": "#fbbf24"}, "image_url": "images/box_mono-deluxe-1995.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-deluxe-edition-german", "name": "Monopoly Deluxe Edition (German)", "category": "Classique & Anniversaire", "year": 2010, "country": "Allemagne", "publisher": "Hasbro", "description": "Édition Monopoly Deluxe Edition (German) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-deluxe-edition-german.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-deluxe-monopoly", "name": "Monopoly Deluxe Monopoly", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Deluxe Monopoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-deluxe-monopoly-franklin-mint", "name": "Monopoly Deluxe Monopoly (Franklin Mint)", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Franklin Mint", "description": "Édition Monopoly Deluxe Monopoly (Franklin Mint) éditée par Franklin Mint.", "image_url": "images/box_mono-monopoly-deluxe-monopoly-franklin-mint.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-deluxe-in-brown-wooden-case", "name": "Monopoly Deluxe in brown wooden case", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Deluxe in brown wooden case éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-demon-slayer-edition", "name": "Monopoly Demon Slayer Edition", "category": "Anime & Manga", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Demon Slayer Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-demon-slayer-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-denton-edition", "name": "Monopoly Denton Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Denton Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-denton-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-des-moines-edition", "name": "Monopoly Des Moines Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Des Moines Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-des-moines-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-despicable-me-edition", "name": "Monopoly Despicable Me Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Despicable Me Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-despicable-me-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-detroit-edition", "name": "Monopoly Detroit Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Detroit Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-detroit-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-diamond-hills", "name": "Monopoly Diamond Hills", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Diamond Hills éditée par Hasbro.", "image_url": "images/box_mono-monopoly-diamond-hills.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-diced", "name": "Monopoly Diced!", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Diced! éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-die", "name": "Monopoly Die", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Die éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-ville-dijon", "name": "Monopoly Dijon", "category": "Villes & Régions (France)", "year": 2006, "country": "France", "publisher": "Winning Moves", "description": "Palais des Ducs de Bourgogne, Tour Philippe le Bon, Rue des Forges, chouette de Notre-Dame et moutarde.", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-dino-opoly", "name": "Monopoly Dino-opoly", "category": "Variantes & Règles Spéciales", "year": 2004, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Dino-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-dino-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-dinosaur-edition", "name": "Monopoly Dinosaur Edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Dinosaur Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-dinosaur-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-discotheken-edition", "name": "Monopoly Discotheken Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Discotheken Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-discotheken-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-discover-edition", "name": "Monopoly Discover Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Discover Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-discover-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-disney-channel-junior-edition", "name": "Monopoly Disney Channel Junior Edition", "category": "Junior & Enfants", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Disney Channel Junior Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-disney-channel-junior-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-disney-classics", "name": "Monopoly Disney Classics", "category": "Films & Séries", "year": 2002, "country": "Monde / France", "publisher": "Hasbro", "description": "Tous les grands classiques Disney de Blanche-Neige au Roi Lion avec pions sculptés dorés des héros féeriques.", "theme": {"bg1": "#1e1b4b", "bg2": "#312e81", "icon": "castle", "accent": "#67e8f9"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-disney-edition", "name": "Monopoly Disney Edition", "category": "Variantes & Règles Spéciales", "year": 2001, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Disney Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-disney-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-disney-pixar-cars-2-edition", "name": "Monopoly Disney Pixar Cars 2 Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Disney Pixar Cars 2 Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-disney-pixar-cars-2-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-disney-pixar-edition", "name": "Monopoly Disney Pixar Edition", "category": "Variantes & Règles Spéciales", "year": 2005, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Disney Pixar Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-disney-pixar-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-disney-princess-junior-edition", "name": "Monopoly Disney Princess Junior Edition", "category": "Junior & Enfants", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Disney Princess Junior Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-disney-princess-junior-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-disney-villains", "name": "Monopoly Disney Villains (Les Méchants)", "category": "Films & Séries", "year": 2020, "country": "Monde / France", "publisher": "Hasbro", "description": "Incarnez Maléfique, Ursula, Scar, Jafar, Capitaine Crochet ou Cruella d'Enfer avec leurs cartes Pouvoir.", "theme": {"bg1": "#1e1b4b", "bg2": "#312e81", "icon": "castle", "accent": "#67e8f9"}, "image_url": "images/mono-pop-disney-villains.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-disney-villains-collector-s-edition", "name": "Monopoly Disney Villains Collector's Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Disney Villains Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-disney-villains-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-district", "name": "Monopoly District", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly District éditée par Hasbro.", "image_url": "images/box_mono-monopoly-district.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-doctor-who", "name": "Monopoly Doctor Who (50th Anniversary)", "category": "Films & Séries", "year": 2013, "country": "Royaume-Uni / Monde", "publisher": "Winning Moves", "description": "Voyagez à travers l'espace et le temps avec le TARDIS, le Tournevis sonique, les Daleks et les Cybermen.", "theme": {"bg1": "#4c0519", "bg2": "#18181b", "icon": "cinema", "accent": "#f43f5e"}, "image_url": "images/mono-pop-doctor-who.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-doctor-who-50th-anniversary-collector-s-e", "name": "Monopoly Doctor Who 50th Anniversary Collector's Edition", "category": "Variantes & Règles Spéciales", "year": 2013, "country": "USA", "publisher": "Winning Moves", "description": "Édition Monopoly Doctor Who 50th Anniversary Collector's Edition éditée par Winning Moves.", "image_url": "images/box_mono-monopoly-doctor-who-50th-anniversary-collector-s-e.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-doctor-who-50th-anniversary-edition", "name": "Monopoly Doctor Who 50th Anniversary Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Doctor Who 50th Anniversary Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-doctor-who-edition", "name": "Monopoly Doctor Who Edition", "category": "Variantes & Règles Spéciales", "year": 2011, "country": "Royaume-Uni", "publisher": "Winning Moves", "description": "Édition Monopoly Doctor Who Edition éditée par Winning Moves.", "image_url": "images/box_mono-monopoly-doctor-who-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-dog-lover-s-edition", "name": "Monopoly Dog Lover's Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Dog Lover's Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-dog-lovers-edition", "name": "Monopoly Dog Lovers Edition", "category": "Éditions Spéciales & Thématiques", "year": 2005, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Dog Lovers Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-dog-lovers-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-dog-man-edition", "name": "Monopoly Dog Man Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Dog Man Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-dog-man-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-dog-opoly", "name": "Monopoly Dog-opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Dog-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-dog-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-dollar", "name": "Monopoly Dollar", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Dollar éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-dominicanopoly", "name": "Monopoly Dominicanopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Dominicanopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-dominicanopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-don-t-go-to-jail", "name": "Monopoly Don't Go To Jail", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Don't Go To Jail éditée par Hasbro.", "image_url": "images/box_mono-monopoly-don-t-go-to-jail.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-region-dordogne", "name": "Monopoly Dordogne - Périgord", "category": "Villes & Régions (France)", "year": 2010, "country": "France", "publisher": "Winning Moves", "description": "Grotte de Lascaux, Sarlat-la-Canéda, châteaux de Castelnaud et Beynac, truffes et foie gras du Périgord.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-manga-db-super", "name": "Monopoly Dragon Ball Super", "category": "Anime & Manga", "year": 2019, "country": "Monde / France", "publisher": "Winning Moves", "description": "Tournoi du Pouvoir, Dieux de la Destruction, Beerus, Whis, Goku Ultra Instinct et Jiren.", "theme": {"bg1": "#ea580c", "bg2": "#1e3a8a", "icon": "dragonball", "accent": "#fbbf24"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-manga-dbz", "name": "Monopoly Dragon Ball Z", "category": "Anime & Manga", "year": 2018, "country": "Monde / France", "publisher": "USAopoly / Winning Moves", "description": "Recrutez des guerriers Z (Goku, Vegeta, Piccolo, Gohan) et affrontez Freezer, Cell et Buu avec 7 Dragon Balls.", "theme": {"bg1": "#ea580c", "bg2": "#1e3a8a", "icon": "dragonball", "accent": "#fbbf24"}, "image_url": "images/mono-manga-dbz.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-dreams", "name": "Monopoly Dreams", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Dreams éditée par Hasbro.", "image_url": "images/box_mono-monopoly-dreams.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-city-dubai", "name": "Monopoly Dubai", "category": "Villes & Pays (Monde)", "year": 2019, "country": "Émirats Arabes Unis", "publisher": "Winning Moves", "description": "Burj Khalifa, Burj Al Arab, Palm Jumeirah, Dubai Mall, Dubai Frame et souks de l'or.", "theme": {"bg1": "#0c4a6e", "bg2": "#0f172a", "icon": "globe", "accent": "#38bdf8"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-duckopoly", "name": "Monopoly Duckopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Duckopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-duckopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-duel-masters-edition", "name": "Monopoly Duel Masters Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Duel Masters Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-duel-masters-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-dukeoploy", "name": "Monopoly Dukeoploy", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Royaume-Uni", "publisher": "Hasbro", "description": "Édition Monopoly Dukeoploy éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-dukeopoly", "name": "Monopoly Dukeopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Royaume-Uni", "publisher": "Hasbro", "description": "Édition Monopoly Dukeopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-dukeopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-dungeons-dragons-edition", "name": "Monopoly Dungeons & Dragons Edition", "category": "Jeux Vidéo", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Dungeons & Dragons Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-dungeons-dragons-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-dungeons-dragons-honor-among-thieves-edit", "name": "Monopoly Dungeons & Dragons: Honor Among Thieves Edition", "category": "Jeux Vidéo", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Dungeons & Dragons: Honor Among Thieves Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-dungeons-dragons-honor-among-thieves-edit.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-d-sseldorf-edition", "name": "Monopoly Düsseldorf Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Düsseldorf Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-d-sseldorf-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-ems-edition", "name": "Monopoly EMS Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly EMS Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-ems-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-espn-ultimate-sports-fan-edition", "name": "Monopoly ESPN Ultimate Sports Fan Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly ESPN Ultimate Sports Fan Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-espn-ultimate-sports-fan-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-earthopoly", "name": "Monopoly Earthopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Earthopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-earthopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-earthopoly-team-power-smart-edition", "name": "Monopoly Earthopoly: Team Power Smart Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Earthopoly: Team Power Smart Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-earthopoly-team-power-smart-edition-bc-hy", "name": "Monopoly Earthopoly: Team Power Smart Edition (BC Hydro Opoly)", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Earthopoly: Team Power Smart Edition (BC Hydro Opoly) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-earthopoly-team-power-smart-edition-bc-hy.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-east-bank", "name": "Monopoly East Bank", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly East Bank éditée par Hasbro.", "image_url": "images/box_mono-monopoly-east-bank.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-easy-money", "name": "Monopoly Easy Money", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Easy Money éditée par Hasbro.", "image_url": "images/box_mono-monopoly-easy-money.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-edici-n-en-espa-ol", "name": "Monopoly Edición en Español", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Edición en Español éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-edinburgh-edition", "name": "Monopoly Edinburgh Edition", "category": "Variantes & Règles Spéciales", "year": 1998, "country": "Royaume-Uni", "publisher": "Winning Moves", "description": "Édition Monopoly Edinburgh Edition éditée par Winning Moves.", "image_url": "images/box_mono-monopoly-edinburgh-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-efteling-edition", "name": "Monopoly Efteling Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Efteling Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-efteling-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-eindhoven-edition", "name": "Monopoly Eindhoven Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Eindhoven Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-eindhoven-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-electronic-banking-edition", "name": "Monopoly Electronic Banking Edition", "category": "Variantes & Règles Spéciales", "year": 2006, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Electronic Banking Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-electronic-banking-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-elton-john-edition", "name": "Monopoly Elton John Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Elton John Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-elton-john-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-elvis-25th-anniversary-collector-s-editio", "name": "Monopoly Elvis 25th Anniversary Collector's Edition", "category": "Variantes & Règles Spéciales", "year": 2003, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Elvis 25th Anniversary Collector's Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-elvis-25th-anniversary-collector-s-editio.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-elvis-collector-s-edition", "name": "Monopoly Elvis Collector's Edition", "category": "Musique & Groupes", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Elvis Collector's Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-elvis-collector-s-edition-1", "name": "Monopoly Elvis Collector's edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Elvis Collector's edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-elvis-collector-s-edition-1.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-elvis-opoly", "name": "Monopoly Elvis-opoly", "category": "Musique & Groupes", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Elvis-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-elvis-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-empire", "name": "Monopoly Empire", "category": "Variantes & Règles Spéciales", "year": 2013, "country": "France / Monde", "publisher": "Hasbro", "description": "Achetez de grandes marques mondiales (Coca-Cola, Xbox, McDonald's) et empilez leurs panneaux dans votre gratte-ciel.", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "images/box_mono-empire.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-empire-cards", "name": "Monopoly Empire Cards", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Empire Cards éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-english-heritage-edition", "name": "Monopoly English Heritage Edition", "category": "Variantes & Règles Spéciales", "year": 2013, "country": "Royaume-Uni", "publisher": "Hasbro", "description": "Édition Monopoly English Heritage Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-english-heritage-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-english-heritage-monopoly", "name": "Monopoly English Heritage Monopoly", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly English Heritage Monopoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-epic-myths", "name": "Monopoly Epic Myths", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Epic Myths éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-episcopoly", "name": "Monopoly Episcopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Episcopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-episcopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-erfurt-edition-1", "name": "Monopoly Erfurt Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Erfurt Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-erfurt-edition-1.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-erfurt-edition", "name": "Monopoly Erfurt-Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Erfurt-Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-europa-edition", "name": "Monopoly Europa Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Europa Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-europa-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-everton-edition", "name": "Monopoly Everton Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Everton Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-everton-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-everton-f-c-edition", "name": "Monopoly Everton F.C Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Everton F.C Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-expansion", "name": "Monopoly Expansion", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Expansion éditée par Hasbro.", "image_url": "images/box_mono-monopoly-expansion.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-express-monopoly-card-game", "name": "Monopoly Express Monopoly (Card Game)", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Express Monopoly (Card Game) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-express-monopoly-card-game.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-f-c-bayren-m-nchen-edition", "name": "Monopoly F.C. Bayren München Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly F.C. Bayren München Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-f-s-u-opoly", "name": "Monopoly F.S.U.-opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly F.S.U.-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-f-s-u-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-f-s-u-opoly-1", "name": "Monopoly F.S.U.opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly F.S.U.opoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-f1-edition", "name": "Monopoly F1 Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly F1 Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-f1-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-club-barca", "name": "Monopoly FC Barcelona", "category": "Marques & Sports", "year": 2016, "country": "Espagne / International", "publisher": "Eleven Force", "description": "Camp Nou, La Masia, musée du club « Més que un club », maillots blaugrana et trophées historiques.", "theme": {"bg1": "#065f46", "bg2": "#111827", "icon": "trophy", "accent": "#facc15"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-fc-bayern-m-nchen", "name": "Monopoly FC Bayern München", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly FC Bayern München éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-fc-bayern-m-nchen-edition", "name": "Monopoly FC Bayern München Edition", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly FC Bayern München Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-fc-bayern-m-nchen-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-fc-bayren-m-nchen-edition", "name": "Monopoly FC Bayren München Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly FC Bayren München Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-fifa-world-cup-2006-germany", "name": "Monopoly FIFA World Cup 2006 Germany", "category": "Marques & Sports", "year": 2006, "country": "Allemagne", "publisher": "Hasbro", "description": "Édition Monopoly FIFA World Cup 2006 Germany éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-fifa-world-cup-2006-germany-edition", "name": "Monopoly FIFA World Cup 2006 Germany Edition", "category": "Marques & Sports", "year": 2006, "country": "Allemagne", "publisher": "Hasbro", "description": "Édition Monopoly FIFA World Cup 2006 Germany Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-vg-fallout", "name": "Monopoly Fallout Collector's Edition", "category": "Jeux Vidéo", "year": 2015, "country": "Monde / France", "publisher": "USAopoly", "description": "Terres désolées du Wasteland : payez en capsules Nuka-Cola, pions Vault Boy, casque Power Armor, Mini Nuke.", "theme": {"bg1": "#312e81", "bg2": "#0f172a", "icon": "gamepad", "accent": "#a855f7"}, "image_url": "images/mono-vg-fallout.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-family-game-night-championship-edition", "name": "Monopoly Family Game Night Championship Edition", "category": "Classique & Anniversaire", "year": 2009, "country": "USA", "publisher": "Hasbro", "description": "Édition Monopoly Family Game Night Championship Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-family-game-night-championship-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-family-guy-collector-s-edition", "name": "Monopoly Family Guy Collector's Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Family Guy Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-family-guy-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-family-guy-edition-2024", "name": "Monopoly Family Guy Edition (2024)", "category": "Films & Séries", "year": 2024, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Family Guy Edition (2024) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-family-guy-edition-2024.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-fantastic-four-collector-s-edition", "name": "Monopoly Fantastic Four Collector's Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Fantastic Four Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-fantastic-four-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-fast-and-furious", "name": "Monopoly Fast & Furious", "category": "Films & Séries", "year": 2023, "country": "Monde / France", "publisher": "Winning Moves", "description": "Les courses de rue et les braquages de la famille de Dom Toretto avec la mythique Dodge Charger R/T 1970.", "theme": {"bg1": "#4c0519", "bg2": "#18181b", "icon": "cinema", "accent": "#f43f5e"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-crooked", "name": "Monopoly Faux Billets (Crooked Cash)", "category": "Variantes & Règles Spéciales", "year": 2021, "country": "France / Monde", "publisher": "Hasbro", "description": "Utilisez le décodeur de Mr. Monopoly pour démasquer les faux billets et les fausses cartes Chance.", "theme": {"bg1": "#7f1d1d", "bg2": "#0f172a", "icon": "handcuffs", "accent": "#f87171"}, "image_url": "images/mono-crooked.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-brand-ferrari", "name": "Monopoly Ferrari Collector's Edition", "category": "Marques & Sports", "year": 2006, "country": "Monde", "publisher": "Winning Moves", "description": "Achetez les modèles mythiques de Maranello (250 GTO, F40, Enzo, Formule 1 de Michael Schumacher).", "theme": {"bg1": "#b91c1c", "bg2": "#18181b", "icon": "car", "accent": "#facc15"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-fictional-monopoly-editions", "name": "Monopoly Fictional Monopoly Editions", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Fictional Monopoly Editions éditée par Hasbro.", "image_url": "images/box_mono-monopoly-fictional-monopoly-editions.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-fiesa-property", "name": "Monopoly Fiesa (Property)", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Fiesa (Property) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-fiesa-property.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-firefighters-edition", "name": "Monopoly Firefighters Edition", "category": "Variantes & Règles Spéciales", "year": 2009, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Firefighters Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-firefighters-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-five-nights-at-freddy-s-edition", "name": "Monopoly Five Nights at Freddy's Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Five Nights at Freddy's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-five-nights-at-freddy-s-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-flagstaff-edition", "name": "Monopoly Flagstaff Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Flagstaff Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-flagstaff-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-flavortown-edition", "name": "Monopoly Flavortown Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Flavortown Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-flavortown-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-ford-100th-anniversary-collector-s-editio", "name": "Monopoly Ford 100th Anniversary Collector's Edition", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Ford 100th Anniversary Collector's Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-ford-100th-anniversary-edition", "name": "Monopoly Ford 100th Anniversary Edition", "category": "Variantes & Règles Spéciales", "year": 2003, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Ford 100th Anniversary Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-ford-100th-anniversary-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-ford-mustang-40th-anniversary-collector-s", "name": "Monopoly Ford Mustang 40th Anniversary Collector's Edition", "category": "Variantes & Règles Spéciales", "year": 2004, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Ford Mustang 40th Anniversary Collector's Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-ford-mustang-40th-anniversary-collector-s.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-ford-thunderbird-50th-anniversary-edition", "name": "Monopoly Ford Thunderbird 50th Anniversary Edition", "category": "Variantes & Règles Spéciales", "year": 2005, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Ford Thunderbird 50th Anniversary Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-ford-thunderbird-50th-anniversary-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-formula-one-2009-edition", "name": "Monopoly Formula One 2009 Edition", "category": "Éditions Spéciales & Thématiques", "year": 2009, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Formula One 2009 Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-formula-one-2009-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-formula-one-yolanda-lee-edition", "name": "Monopoly Formula One Yolanda Lee Edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Formula One Yolanda Lee Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-formula-one-yolanda-lee-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-fort-lauderdale-edition", "name": "Monopoly Fort Lauderdale Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Fort Lauderdale Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-fort-lauderdale-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-vg-fortnite", "name": "Monopoly Fortnite (Hasbro Gaming)", "category": "Jeux Vidéo", "year": 2018, "country": "France", "publisher": "Hasbro Gaming / Epic Games", "description": "Édition crossover avec le phénomène Fortnite d'Epic Games. Au lieu de l'argent, les joueurs accumulent des Points de Vie (PV), évitent la Tempête et s'affrontent avec 27 personnages emblématiques.", "theme": {"bg1": "#4338ca", "bg2": "#065f46", "icon": "fortnite", "accent": "#a855f7"}, "image_url": "images/box_mono-fortnite.jpg", "is_verified_box": true, "back_image_url": "images/box_mono-fortnite-dos.jpg", "status": "none", "condition": "", "location": "", "notes": "", "price": "", "value": ""}, {"id": "mono-monopoly-fortuna-d-sseldorf-edition", "name": "Monopoly Fortuna Düsseldorf Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Fortuna Düsseldorf Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-fortuna-d-sseldorf-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-fortune-valley", "name": "Monopoly Fortune Valley", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Fortune Valley éditée par Hasbro.", "image_url": "images/box_mono-monopoly-fortune-valley.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-fourth-wing-edition", "name": "Monopoly Fourth Wing Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Fourth Wing Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-fourth-wing-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-fox-sports-com", "name": "Monopoly Fox Sports.com", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Fox Sports.com éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-fr-1961-blanche", "name": "Monopoly France 1961 (Boîte Blanche Historique)", "category": "Classique & Anniversaire", "year": 1961, "country": "France", "publisher": "Miro Company", "description": "La célèbre boîte blanche Miro Company des années 60 avec plateau plié en deux, billets de 100 à 100 000 Francs et maisons en bois.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-fr-1973-rouge", "name": "Monopoly France 1973 (Boîte Rouge Vintage)", "category": "Classique & Anniversaire", "year": 1973, "country": "France", "publisher": "Parker Brothers", "description": "L'édition culte des années 70 avec la grande boîte rouge, les illustrations pop et les célèbres pions métal (chapeau, dé à coudre, fer à repasser, chaussure, canon, chien terrier).", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-fr-1993-standard", "name": "Monopoly France 1993 (Boîte Rouge Rues de Paris)", "category": "Classique & Anniversaire", "year": 1993, "country": "France", "publisher": "Parker Brothers / Hasbro", "description": "L'édition référence des années 90 en Francs français avec thermoformage plastique noir et graphisme modernisé.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-fr-2001-euro", "name": "Monopoly France 2001 (Passage à l'Euro)", "category": "Classique & Anniversaire", "year": 2001, "country": "France", "publisher": "Parker / Hasbro", "description": "Édition spéciale éditée lors du passage historique du franc français à la monnaie unique européenne (€).", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-fr-2013-chat", "name": "Monopoly France 2013 (Nouveau Pion Chat)", "category": "Classique & Anniversaire", "year": 2013, "country": "France", "publisher": "Hasbro", "description": "Édition accueillant le nouveau pion Chat pour remplacer le fer à repasser suite à la première grande campagne de vote mondial.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-fr-2017-trex", "name": "Monopoly France 2017 (Nouveaux Pions T-Rex & Canard)", "category": "Classique & Standard", "year": 2017, "country": "France", "publisher": "Hasbro Gaming", "description": "Édition classique avec les Rues de Paris, introduisant les nouveaux pions choisis par le vote mondial : T-Rex, Canard en plastique et Pingouin (remplaçant le Dé à coudre, la Brouette et la Botte).", "image_url": "images/box_mono-fr-2017-trex.jpg", "is_verified_box": true, "back_image_url": "images/box_mono-fr-2017-trex-dos.jpg", "status": "none", "condition": "", "location": "", "notes": "", "price": "", "value": ""}, {"id": "mono-monopoly-france-edition", "name": "Monopoly France Edition", "category": "Villes & Régions (France)", "year": 2010, "country": "France", "publisher": "Hasbro", "description": "Édition Monopoly France Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-france-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-fr-1937", "name": "Monopoly France Édition Originale 1937 (Miro Company)", "category": "Historique & Vintage", "year": 1937, "country": "France", "publisher": "Miro Company / Parker Brothers", "description": "Très rare première édition française officielle du Monopoly, fabriquée par Miro Company à Paris sous licence Parker Brothers. Breveté S.G.D.G. N° 3796-36. Visuel iconique avec le personnage tenant un billet de 1000 Francs.", "theme": {"bg1": "#1e3a8a", "bg2": "#1e293b", "icon": "monument", "accent": "#ef4444"}, "image_url": "images/box_mono-fr-1937.jpg", "is_verified_box": true, "status": "none", "condition": "", "location": "", "notes": "Édition originale d époque 1937 Miro Company Paris (Breveté S.G.D.G. N° 3796-36). Pièce de collection historique.", "price": "", "value": ""}, {"id": "mono-monopoly-frankfurt-edition", "name": "Monopoly Frankfurt Edition", "category": "Variantes & Règles Spéciales", "year": 2000, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Frankfurt Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-frankfurt-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-free-parking-the-toppling-taxi-game", "name": "Monopoly Free Parking: The Toppling Taxi Game", "category": "Variantes & Règles Spéciales", "year": 2009, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Free Parking: The Toppling Taxi Game éditée par Hasbro.", "image_url": "images/box_mono-monopoly-free-parking-the-toppling-taxi-game.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-fremantle-fc-charity-edition", "name": "Monopoly Fremantle FC Charity Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Fremantle FC Charity Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-fremantle-fc-charity-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-french-edition", "name": "Monopoly French Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "France", "publisher": "Hasbro", "description": "Édition Monopoly French Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-french-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-fresno-edition", "name": "Monopoly Fresno Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Fresno Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-fresno-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-friends", "name": "Monopoly Friends (Série TV)", "category": "Films & Séries", "year": 2018, "country": "Monde / France", "publisher": "Winning Moves", "description": "Pions emblématiques (la guitare de Phoebe, la pizza de Joey, la tasse de café, le dinosaure de Ross).", "theme": {"bg1": "#4c0519", "bg2": "#18181b", "icon": "cinema", "accent": "#f43f5e"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-frozen-2", "name": "Monopoly Frozen 2", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Frozen 2 éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-frozen-2-monopoly", "name": "Monopoly Frozen 2 (Monopoly)", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Frozen 2 (Monopoly) éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-frozen-2-edition", "name": "Monopoly Frozen 2 Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Frozen 2 Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-frozen-2-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-frozen-ii-edition", "name": "Monopoly Frozen II Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Frozen II Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-fryslan-edition", "name": "Monopoly Fryslan Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Fryslan Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-fun-facts", "name": "Monopoly Fun Facts", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Fun Facts éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-funskool-games", "name": "Monopoly Funskool Games", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Funskool Games éditée par Hasbro.", "image_url": "images/box_mono-monopoly-funskool-games.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-futurama-collector-s-edition", "name": "Monopoly Futurama Collector's Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Futurama Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-futurama-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-g-i-joe-collector-s-edition", "name": "Monopoly G.I. Joe Collector's Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly G.I. Joe Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-g-i-joe-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-go", "name": "Monopoly GO!", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly GO! éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-go-2018", "name": "Monopoly GO! (2018)", "category": "Éditions Spéciales & Thématiques", "year": 2018, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly GO! (2018) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-go-2018.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-go-tabletop-game", "name": "Monopoly GO! (tabletop game)", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly GO! (tabletop game) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-go-tabletop-game.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-game-british", "name": "Monopoly Game (British)", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Royaume-Uni", "publisher": "Hasbro", "description": "Édition Monopoly Game (British) éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-game-board-uk", "name": "Monopoly Game Board (UK)", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Royaume-Uni", "publisher": "Hasbro", "description": "Édition Monopoly Game Board (UK) éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-got", "name": "Monopoly Game of Thrones (Le Trône de Fer)", "category": "Films & Séries", "year": 2015, "country": "Monde / France", "publisher": "Hasbro / HBO", "description": "Musique du générique intégrée dans le Trône sonore, maisons de Westeros (Stark, Lannister, Targaryen).", "theme": {"bg1": "#18181b", "bg2": "#09090b", "icon": "crown", "accent": "#94a3b8"}, "image_url": "images/mono-pop-got.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-game-of-thrones-collector-s-edition", "name": "Monopoly Game of Thrones Collector's Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Game of Thrones Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-game-of-thrones-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-game-of-thrones-edition", "name": "Monopoly Game of Thrones Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Game of Thrones Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-game-on-the-simpsons", "name": "Monopoly Game on \"The Simpsons\"", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Game on \"The Simpsons\" éditée par Hasbro.", "image_url": "images/box_mono-monopoly-game-on-the-simpsons.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-vg-gamer-original", "name": "Monopoly Gamer (Nintendo)", "category": "Jeux Vidéo", "year": 2017, "country": "Monde / France", "publisher": "Hasbro", "description": "Le premier Monopoly Gamer fusionnant règles de jeu de plateau et mécaniques de combat de boss Nintendo.", "theme": {"bg1": "#312e81", "bg2": "#0f172a", "icon": "gamepad", "accent": "#a855f7"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-vg-gamer-mariokart", "name": "Monopoly Gamer Mario Kart", "category": "Jeux Vidéo", "year": 2018, "country": "Monde / France", "publisher": "Hasbro", "description": "Chaque personnage a des capacités uniques ! Lancez des peaux de banane et carapaces bleues sur le plateau.", "theme": {"bg1": "#b91c1c", "bg2": "#1d4ed8", "icon": "star", "accent": "#fde047"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-gamer-mario-kart", "name": "Monopoly Gamer: Mario Kart", "category": "Jeux Vidéo", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Gamer: Mario Kart éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-games", "name": "Monopoly Games", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Games éditée par Hasbro.", "image_url": "images/box_mono-monopoly-games.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-garfield-25th-anniversary-edition", "name": "Monopoly Garfield 25th Anniversary Edition", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Garfield 25th Anniversary Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-garfield-25th-anniversary-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-garfield-collector-s-edition", "name": "Monopoly Garfield Collector's Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Garfield Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-garfield-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-garfield-edition", "name": "Monopoly Garfield Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Garfield Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-garfieldopoly", "name": "Monopoly Garfieldopoly", "category": "Variantes & Règles Spéciales", "year": 2012, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Garfieldopoly éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-garfieldopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-gatoropoly", "name": "Monopoly Gatoropoly", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "USA", "publisher": "Hasbro", "description": "Édition Monopoly Gatoropoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-gatoropoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-geelong-edition", "name": "Monopoly Geelong Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Geelong Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-geelong-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-ch-geneve", "name": "Monopoly Genève", "category": "Villes & Régions (France)", "year": 2008, "country": "Suisse", "publisher": "Winning Moves", "description": "Jet d'eau de Genève, Horloge fleurie, Palais des Nations, Vieille-Ville et Lac Léman.", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-gen-ve-edition", "name": "Monopoly Genève Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Genève Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-gen-ve-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-german-edition", "name": "Monopoly German Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Allemagne", "publisher": "Hasbro", "description": "Édition Monopoly German Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-german-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-germany-edition", "name": "Monopoly Germany Edition", "category": "Villes & Pays (Monde)", "year": 2010, "country": "Allemagne", "publisher": "Hasbro", "description": "Édition Monopoly Germany Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-germany-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-get-out-of-jail-the-jail-jumping-game", "name": "Monopoly Get Out Of Jail: The Jail-Jumping Game", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Get Out Of Jail: The Jail-Jumping Game éditée par Hasbro.", "image_url": "images/box_mono-monopoly-get-out-of-jail-the-jail-jumping-game.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-get-out-of-jail-free-card", "name": "Monopoly Get out of Jail Free (card)", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Get out of Jail Free (card) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-get-out-of-jail-free-card.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-ghettopoly", "name": "Monopoly Ghettopoly", "category": "Variantes & Règles Spéciales", "year": 2003, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Ghettopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-ghettopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-giant-edition", "name": "Monopoly Giant Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Giant Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-giant-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-glisse-monopoly-knockout", "name": "Monopoly Gliss' (Monopoly Knockout)", "category": "Déclinaisons & Variantes", "year": 2024, "country": "France", "publisher": "Hasbro Gaming", "description": "Version d'action dynamique où les joueurs font glisser 16 pions palets sur un plateau allongé de près de 1 mètre pour éliminer leurs adversaires et encaisser les loyers.", "image_url": "images/box_mono-gliss.jpg", "is_verified_box": true, "back_image_url": "images/box_mono-gliss-dos.jpg", "status": "none", "condition": "", "location": "", "notes": "", "price": "", "value": ""}, {"id": "mono-monopoly-go-1", "name": "Monopoly Go", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Go éditée par Hasbro.", "image_url": "images/box_mono-monopoly-go-1.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-go-back-3-spaces", "name": "Monopoly Go Back 3 Spaces", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Go Back 3 Spaces éditée par Hasbro.", "image_url": "images/box_mono-monopoly-go-back-3-spaces.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-go-directly-to-jail-card", "name": "Monopoly Go Directly To Jail (card)", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Go Directly To Jail (card) éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-go-green", "name": "Monopoly Go Green", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Go Green éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-go-pause-and-play-edition", "name": "Monopoly Go Pause and Play Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Go Pause and Play Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-go-pause-and-play-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-go-to-jail", "name": "Monopoly Go to Jail", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Go to Jail éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-go-to-jail-card", "name": "Monopoly Go to Jail (card)", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Go to Jail (card) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-go-to-jail-card.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-go-to-jail-disambiguation", "name": "Monopoly Go to Jail (disambiguation)", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Go to Jail (disambiguation) éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-go-epic-myths", "name": "Monopoly Go! Epic Myths", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Go! Epic Myths éditée par Hasbro.", "image_url": "images/box_mono-monopoly-go-epic-myths.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-go-golden-blitz", "name": "Monopoly Go! Golden Blitz", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Go! Golden Blitz éditée par Hasbro.", "image_url": "images/box_mono-monopoly-go-golden-blitz.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-go-heartfelt-holidays", "name": "Monopoly Go! Heartfelt Holidays", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Go! Heartfelt Holidays éditée par Hasbro.", "image_url": "images/box_mono-monopoly-go-heartfelt-holidays.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-go-making-music", "name": "Monopoly Go! Making Music", "category": "Musique & Groupes", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Go! Making Music éditée par Hasbro.", "image_url": "images/box_mono-monopoly-go-making-music.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-go-milestone-events", "name": "Monopoly Go! Milestone Events", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Go! Milestone Events éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-go-monopoly-origins", "name": "Monopoly Go! Monopoly Origins", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Go! Monopoly Origins éditée par Hasbro.", "image_url": "images/box_mono-monopoly-go-monopoly-origins.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-go-partner-events", "name": "Monopoly Go! Partner Events", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Go! Partner Events éditée par Hasbro.", "image_url": "images/box_mono-monopoly-go-partner-events.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-go-prize-drop", "name": "Monopoly Go! Prize Drop", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Go! Prize Drop éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-go-shields", "name": "Monopoly Go! Shields", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Go! Shields éditée par Hasbro.", "image_url": "images/box_mono-monopoly-go-shields.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-go-tokens", "name": "Monopoly Go! Tokens", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Go! Tokens éditée par Hasbro.", "image_url": "images/box_mono-monopoly-go-tokens.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-go-tournaments", "name": "Monopoly Go! Tournaments", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Go! Tournaments éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-godzilla-edition", "name": "Monopoly Godzilla Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Godzilla Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-godzilla-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-golden-blitz", "name": "Monopoly Golden Blitz", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Golden Blitz éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-golden-token-bonus-edition", "name": "Monopoly Golden Token Bonus Edition", "category": "Éditions Spéciales & Thématiques", "year": 2013, "country": "USA", "publisher": "Hasbro", "description": "Édition Monopoly Golden Token Bonus Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-golden-token-bonus-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-golden-token-bonus-edition-1", "name": "Monopoly Golden Token Bonus Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "USA", "publisher": "Hasbro", "description": "Édition Monopoly Golden Token Bonus Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-golf-edition", "name": "Monopoly Golf Edition", "category": "Variantes & Règles Spéciales", "year": 1998, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Golf Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-golf-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-golf-signature-holes-edition", "name": "Monopoly Golf Signature Holes Edition", "category": "Variantes & Règles Spéciales", "year": 2008, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Golf Signature Holes Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-golf-signature-holes-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-gori-ka-brda-property", "name": "Monopoly Goriška Brda (Property)", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Goriška Brda (Property) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-gori-ka-brda-property.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-granadian-edition", "name": "Monopoly Granadian Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Granadian Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-granadian-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-grand-rapids-edition", "name": "Monopoly Grand Rapids Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Grand Rapids Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-grand-rapids-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-grand-theft-auto-collector-s-edition", "name": "Monopoly Grand Theft Auto Collector's Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Grand Theft Auto Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-grand-theft-auto-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-grateful-dead-opoly", "name": "Monopoly Grateful Dead-opoly", "category": "Musique & Groupes", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Grateful Dead-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-grateful-dead-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-green-bay-packers-collector-s-edition", "name": "Monopoly Green Bay Packers Collector's Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Green Bay Packers Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-green-bay-packers-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-green-bay-packers-edition", "name": "Monopoly Green Bay Packers Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Green Bay Packers Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-green-color-group-properties", "name": "Monopoly Green Color Group Properties", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Green Color Group Properties éditée par Hasbro.", "image_url": "images/box_mono-monopoly-green-color-group-properties.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-greens", "name": "Monopoly Greens", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Greens éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-greensboro-edition", "name": "Monopoly Greensboro Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Greensboro Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-greensboro-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-greenwich-edition", "name": "Monopoly Greenwich Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Greenwich Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-greenwich-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-ville-grenoble", "name": "Monopoly Grenoble", "category": "Villes & Régions (France)", "year": 2005, "country": "France", "publisher": "Winning Moves", "description": "La Bastille et ses célèbres bulles téléphériques, Place Grenette, massif de Belledonne et Presqu'île.", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-grey-s-anatomy-edition", "name": "Monopoly Grey's Anatomy Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Grey's Anatomy Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-grey-s-anatomy-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-dom-antilles", "name": "Monopoly Guadeloupe / Martinique (Antilles)", "category": "Villes & Régions (France)", "year": 2006, "country": "France (Outre-mer)", "publisher": "Winning Moves", "description": "La Soufrière, Montagne Pelée, Pointe-à-Pitre, Fort-de-France et les plages de cartes postales.", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-guadeloupe-edition", "name": "Monopoly Guadeloupe Edition", "category": "Villes & Régions (France)", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Guadeloupe Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-guadeloupe-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-guidelines", "name": "Monopoly Guidelines", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Guidelines éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-halle-saale-edition", "name": "Monopoly Halle (Saale) Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Halle (Saale) Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-halle-saale-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-halle-salle-edition", "name": "Monopoly Halle (Salle) Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Halle (Salle) Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-halle-edition", "name": "Monopoly Halle Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Halle Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-vg-halo", "name": "Monopoly Halo Collector's Edition", "category": "Jeux Vidéo", "year": 2014, "country": "Monde", "publisher": "USAopoly", "description": "Installation 04, Blood Gulch, Reach avec Master Chief, le Warthog, l'Épée à énergie et le Banshee.", "theme": {"bg1": "#312e81", "bg2": "#0f172a", "icon": "gamepad", "accent": "#a855f7"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-haloze-property", "name": "Monopoly Haloze (Property)", "category": "Jeux Vidéo", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Haloze (Property) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-haloze-property.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-hamburg-edition", "name": "Monopoly Hamburg Edition", "category": "Variantes & Règles Spéciales", "year": 2000, "country": "Allemagne", "publisher": "Winning Moves", "description": "Édition Monopoly Hamburg Edition éditée par Winning Moves.", "image_url": "images/box_mono-monopoly-hamburg-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-hamilton-edition", "name": "Monopoly Hamilton Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Hamilton Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-hamilton-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-happy-harvest-with-looney-tunes", "name": "Monopoly Happy Harvest with Looney Tunes", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Happy Harvest with Looney Tunes éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-harbor-heights", "name": "Monopoly Harbor Heights", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Harbor Heights éditée par Hasbro.", "image_url": "images/box_mono-monopoly-harbor-heights.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-hard-rock-cafe-edition", "name": "Monopoly Hard Rock Cafe Edition", "category": "Variantes & Règles Spéciales", "year": 2003, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Hard Rock Cafe Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-hard-rock-cafe-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-harley-davidson-95th-anniversary-edition", "name": "Monopoly Harley Davidson 95th Anniversary Edition", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Harley Davidson 95th Anniversary Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-harley-davidson-95th-anniversary-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-harley-davidson-authorized-edition", "name": "Monopoly Harley Davidson Authorized Edition", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Harley Davidson Authorized Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-harley-davidson-authorized-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-harley-davidson-deluxe-edition", "name": "Monopoly Harley Davidson Deluxe Edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Franklin Mint", "description": "Édition Monopoly Harley Davidson Deluxe Edition éditée par Franklin Mint.", "image_url": "images/box_mono-monopoly-harley-davidson-deluxe-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-harley-davidson-legendary-bikes-edition", "name": "Monopoly Harley Davidson Legendary Bikes Edition", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Harley Davidson Legendary Bikes Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-harley-davidson-legendary-bikes-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-harley-davidson-live-to-ride-edition", "name": "Monopoly Harley Davidson Live To Ride Edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Harley Davidson Live To Ride Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-harley-davidson-live-to-ride-edition-1", "name": "Monopoly Harley Davidson Live to Ride Edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Harley Davidson Live to Ride Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-harley-davidson-live-to-ride-edition-1.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-brand-harley", "name": "Monopoly Harley-Davidson Collector's Edition", "category": "Marques & Sports", "year": 1999, "country": "USA / Monde", "publisher": "USAopoly", "description": "Motos légendaires (Fat Boy, Electra Glide, Sportster) et pions casque de biker, moteur V-Twin, botte en cuir.", "theme": {"bg1": "#ea580c", "bg2": "#18181b", "icon": "motorcycle", "accent": "#fb923c"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-harrod-s-deluxe-edition", "name": "Monopoly Harrod's Deluxe Edition", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Harrod's Deluxe Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-harrod-s-edition", "name": "Monopoly Harrod's Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Harrod's Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-harrod-s-wood-edition", "name": "Monopoly Harrod's Wood Edition", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Harrod's Wood Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-harrods-deluxe-edition", "name": "Monopoly Harrods Deluxe Edition", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Harrods Deluxe Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-harrods-deluxe-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-harrods-edition", "name": "Monopoly Harrods Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Harrods Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-harrods-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-harrods-wood-edition", "name": "Monopoly Harrods Wood Edition", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Harrods Wood Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-harrods-wood-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-harrypotter", "name": "Monopoly Harry Potter", "category": "Films & Séries", "year": 2024, "country": "Monde / France", "publisher": "Hasbro", "description": "Rejoignez Poudlard, prenez le Poudlard Express, explorez Pré-au-Lard et gagnez des points de maison.", "theme": {"bg1": "#450a0a", "bg2": "#1c1917", "icon": "magic", "accent": "#f59e0b"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-harry-potter-go", "name": "Monopoly Harry Potter GO!", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Harry Potter GO! éditée par Hasbro.", "image_url": "images/box_mono-monopoly-harry-potter-go.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-hasbro", "name": "Monopoly Hasbro", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Hasbro éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-hasbro-100th-anniversary-edition", "name": "Monopoly Hasbro 100th Anniversary Edition", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Hasbro 100th Anniversary Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-hasbro-100th-anniversary-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-hazel", "name": "Monopoly Hazel", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Hazel éditée par Hasbro.", "image_url": "images/box_mono-monopoly-hazel.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-heartfelt-holidays", "name": "Monopoly Heartfelt Holidays", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Heartfelt Holidays éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-heidelberg-edition", "name": "Monopoly Heidelberg Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Heidelberg Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-heidelberg-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-heirloom-edition", "name": "Monopoly Heirloom Edition", "category": "Variantes & Règles Spéciales", "year": 1997, "country": "USA", "publisher": "Parker Brothers", "description": "Édition Monopoly Heirloom Edition éditée par Parker Brothers.", "image_url": "images/box_mono-monopoly-heirloom-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-hello-kitty-collector-s-edition", "name": "Monopoly Hello Kitty Collector's Edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Hello Kitty Collector's Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-hello-kitty-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-here-now-buzzfeed", "name": "Monopoly Here & Now (Buzzfeed)", "category": "Villes & Pays (Monde)", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Here & Now (Buzzfeed) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-here-now-buzzfeed.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-here-now-the-world-edition", "name": "Monopoly Here & Now: The World Edition", "category": "Variantes & Règles Spéciales", "year": 2008, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Here & Now: The World Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-here-now-the-world-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-here-now-the-world-edition-1", "name": "Monopoly Here & Now: The World Edition", "category": "Villes & Pays (Monde)", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Here & Now: The World Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-world-edition", "name": "Monopoly Here & Now: World Edition", "category": "Villes & Pays (Monde)", "year": 2008, "country": "Monde", "publisher": "Hasbro", "description": "Les plus grandes villes du monde élues par des millions d'internautes (Montréal, Paris, Londres, Tokyo).", "theme": {"bg1": "#0c4a6e", "bg2": "#0f172a", "icon": "globe", "accent": "#38bdf8"}, "image_url": "images/mono-world-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-here-and-now", "name": "Monopoly Here and Now", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Here and Now éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-here-and-now-70th-anniversary", "name": "Monopoly Here and Now 70th Anniversary", "category": "Jeux Vidéo", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Here and Now 70th Anniversary éditée par Hasbro.", "image_url": "images/box_mono-monopoly-here-and-now-70th-anniversary.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-here-and-now-edition", "name": "Monopoly Here and Now Edition", "category": "Variantes & Règles Spéciales", "year": 2006, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Here and Now Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-here-and-now-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-hershey-s-collector-s-edition", "name": "Monopoly Hershey's Collector's Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Hershey's Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-hershey-s-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-hershey-s-edition", "name": "Monopoly Hershey's Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Hershey's Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-hilton-head-island-edition", "name": "Monopoly Hilton Head Island Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Hilton Head Island Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-hilton-head-island-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-hog-opoly", "name": "Monopoly Hog-opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Hog-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-hog-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-hogopoly", "name": "Monopoly Hogopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Hogopoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-home-improvement-limited-edition", "name": "Monopoly Home Improvement Limited Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Home Improvement Limited Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-home-improvement-limited-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-city-hongkong", "name": "Monopoly Hong Kong", "category": "Villes & Pays (Monde)", "year": 2007, "country": "Hong Kong / Asie", "publisher": "Hasbro", "description": "Victoria Peak, Star Ferry, Nathan Road, Temple Street, gratte-ciels spectaculaires et baie illuminée.", "theme": {"bg1": "#0c4a6e", "bg2": "#0f172a", "icon": "globe", "accent": "#38bdf8"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-horse-lover-s-edition", "name": "Monopoly Horse Lover's Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Horse Lover's Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-horse-lovers-edition", "name": "Monopoly Horse Lovers Edition", "category": "Variantes & Règles Spéciales", "year": 2007, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Horse Lovers Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-horse-lovers-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-horse-opoly", "name": "Monopoly Horse-opoly", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Horse-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-horse-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-hotels", "name": "Monopoly Hotels", "category": "Variantes & Règles Spéciales", "year": 2013, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Hotels éditée par Hasbro.", "image_url": "images/box_mono-monopoly-hotels.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-hotels-app-game", "name": "Monopoly Hotels (App game)", "category": "Jeux Vidéo", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Hotels (App game) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-hotels-app-game.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-hotels-ipad", "name": "Monopoly Hotels (iPad)", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Hotels (iPad) éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-house-divided-edition", "name": "Monopoly House Divided Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly House Divided Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-house-divided-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-house-of-the-dragon-edition", "name": "Monopoly House of the Dragon Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly House of the Dragon Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-house-of-the-dragon-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-house-rule", "name": "Monopoly House rule", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly House rule éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-housing-bust-edition", "name": "Monopoly Housing Bust Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Housing Bust Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-housing-bust-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-hungarian-edition", "name": "Monopoly Hungarian Edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Parker Brothers", "description": "Édition Monopoly Hungarian Edition éditée par Parker Brothers.", "image_url": "images/box_mono-monopoly-hungarian-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-huntington-beach-edition", "name": "Monopoly Huntington Beach Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Huntington Beach Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-huntington-beach-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-huskeropoly", "name": "Monopoly Huskeropoly", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Huskeropoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-huskeropoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-i-love-lucy-collector-s-edition", "name": "Monopoly I Love Lucy Collector's Edition", "category": "Variantes & Règles Spéciales", "year": 2001, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly I Love Lucy Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-i-love-lucy-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-i-love-lucy-edition", "name": "Monopoly I Love Lucy Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly I Love Lucy Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-i-u-opoly", "name": "Monopoly I.U.opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly I.U.opoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-iu-opoly", "name": "Monopoly IU opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly IU opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-iu-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-ivillage-com", "name": "Monopoly IVillage.com", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly IVillage.com éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-ice-cream-opoly-1", "name": "Monopoly Ice Cream Opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Ice Cream Opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-ice-cream-opoly-1.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-ice-cream-oploy", "name": "Monopoly Ice Cream-oploy", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Ice Cream-oploy éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-ice-cream-opoly", "name": "Monopoly Ice Cream-opoly", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Ice Cream-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-ice-cream-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-illiniopoly", "name": "Monopoly Illiniopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Illiniopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-illiniopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-iowaopoly", "name": "Monopoly Iowaopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Iowaopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-iowaopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-irishopoly", "name": "Monopoly Irishopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Irishopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-irishopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-iron-maiden-edition", "name": "Monopoly Iron Maiden Edition", "category": "Musique & Groupes", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Iron Maiden Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-iron-maiden-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-music-iron-maiden", "name": "Monopoly Iron Maiden: Somewhere on Tour", "category": "Musique & Groupes", "year": 2023, "country": "Monde", "publisher": "USAopoly", "description": "Voyagez avec la mascotte Eddie à travers l'histoire d'Iron Maiden (The Number of the Beast, Powerslave).", "theme": {"bg1": "#0284c7", "bg2": "#0c4a6e", "icon": "football", "accent": "#38bdf8"}, "image_url": "images/mono-music-iron-maiden.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-isle-of-wight-edition", "name": "Monopoly Isle of Wight Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Isle of Wight Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-isle-of-wight-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-it-s-always-sunny-in-philadelphia-edition", "name": "Monopoly It's Always Sunny in Philadelphia Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly It's Always Sunny in Philadelphia Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-it-s-always-sunny-in-philadelphia-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-italia-edition", "name": "Monopoly Italia Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Italia Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-italia-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-italian-edition", "name": "Monopoly Italian Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Italie", "publisher": "Hasbro", "description": "Édition Monopoly Italian Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-italian-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-jackpot", "name": "Monopoly Jackpot", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Jackpot éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-jackpot-board-game", "name": "Monopoly Jackpot (Board game)", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Jackpot (Board game) éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-jackpot-handheld-electronic-game", "name": "Monopoly Jackpot (Handheld Electronic game)", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Jackpot (Handheld Electronic game) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-jackpot-handheld-electronic-game.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-jackpot-edition", "name": "Monopoly Jackpot Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Jackpot Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-jackpot-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-jacksonville-edition", "name": "Monopoly Jacksonville Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Jacksonville Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-jacksonville-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-james-bond", "name": "Monopoly James Bond 007 Collector's Edition", "category": "Films & Séries", "year": 2008, "country": "Monde / France", "publisher": "Winning Moves", "description": "Tous les films de James Bond depuis Dr. No jusqu'à Spectre/No Time to Die. Pions Aston Martin DB5, pistolet Walther PPK.", "theme": {"bg1": "#4c0519", "bg2": "#18181b", "icon": "cinema", "accent": "#f43f5e"}, "image_url": "images/mono-pop-james-bond.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-jersey-city-edition", "name": "Monopoly Jersey City Edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Jersey City Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-jersey-city-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-jersey-edition", "name": "Monopoly Jersey Edition", "category": "Variantes & Règles Spéciales", "year": 2004, "country": "Royaume-Uni", "publisher": "Winning Moves", "description": "Édition Monopoly Jersey Edition éditée par Winning Moves.", "image_url": "images/box_mono-monopoly-jersey-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-jim-henson-s-muppets-collector-s-edition", "name": "Monopoly Jim Henson's Muppets Collector's Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Jim Henson's Muppets Collector's Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-john-deere-collector-s-edition", "name": "Monopoly John Deere Collector's Edition", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly John Deere Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-john-deere-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-john-wayne-collector-s-edition", "name": "Monopoly John Wayne Collector's Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly John Wayne Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-john-wayne-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-juicy-couture-edition", "name": "Monopoly Juicy Couture Edition", "category": "Variantes & Règles Spéciales", "year": 2007, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Juicy Couture Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-juicy-couture-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-jujutsu-kaisen-edition", "name": "Monopoly Jujutsu Kaisen Edition", "category": "Anime & Manga", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Jujutsu Kaisen Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-jujutsu-kaisen-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-junior", "name": "Monopoly Junior", "category": "Junior & Enfants", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Junior éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-junior-disney-edition", "name": "Monopoly Junior Disney Edition", "category": "Junior & Enfants", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Junior Disney Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-junior-disney-princess-edition", "name": "Monopoly Junior Disney Princess Edition", "category": "Junior & Enfants", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Junior Disney Princess Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-junior-edition", "name": "Monopoly Junior Edition", "category": "Junior & Enfants", "year": 2010, "country": "Monde", "publisher": "Winning Moves", "description": "Édition Monopoly Junior Edition éditée par Winning Moves.", "image_url": "images/box_mono-monopoly-junior-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-junior-1990", "name": "Monopoly Junior Fête Foraine (Original 1990)", "category": "Junior & Enfants", "year": 1990, "country": "France / Monde", "publisher": "Parker Brothers", "description": "La version originale pour enfants avec les stands de fête foraine (Stand de frites, Barbe à papa, Grande roue, Montagnes russes) et billets simplifiés de 1 à 5.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-junior-reine-des-neiges", "name": "Monopoly Junior La Reine des Neiges (Frozen)", "category": "Junior & Enfants", "year": 2015, "country": "France / Monde", "publisher": "Hasbro", "description": "Arendelle avec Elsa, Anna et Olaf : achetez des lieux magiques du royaume glacé.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-junior-miraculous", "name": "Monopoly Junior Miraculous : Les Aventures de Ladybug et Chat Noir", "category": "Junior & Enfants", "year": 2022, "country": "France", "publisher": "Winning Moves", "description": "Protégez Paris des akumatisés avec Ladybug, Chat Noir, Tikki et Plagg.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-junior-pat-patrouille", "name": "Monopoly Junior Pat' Patrouille (Paw Patrol)", "category": "Junior & Enfants", "year": 2021, "country": "France / Monde", "publisher": "Hasbro", "description": "Aventure avec Chase, Marcus, Ruben et Stella dans la Grande Vallée.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-junior-peppa-pig", "name": "Monopoly Junior Peppa Pig", "category": "Junior & Enfants", "year": 2021, "country": "France / Monde", "publisher": "Hasbro", "description": "Explorez l'univers de Peppa Pig, George, Maman Pig et Papa Pig avec les bottes de pluie !", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-junior-ben-10-edition", "name": "Monopoly Junior: Ben 10 Edition", "category": "Junior & Enfants", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Junior: Ben 10 Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-junior-magnit-edition", "name": "Monopoly Junior: Magnit Edition", "category": "Junior & Enfants", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Junior: Magnit Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-junior-naruto", "name": "Monopoly Junior: Naruto", "category": "Junior & Enfants", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Junior: Naruto éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-region-jura", "name": "Monopoly Jura", "category": "Villes & Régions (France)", "year": 2012, "country": "France", "publisher": "Winning Moves", "description": "Cascades du Hérisson, Lac de Vouglans, vignoble d'Arbois (Vin Jaune), Comté et massif jurassien.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-jurassic-park", "name": "Monopoly Jurassic Park", "category": "Films & Séries", "year": 2021, "country": "Monde / France", "publisher": "Hasbro", "description": "Comprend la porte du parc avec bruitage électronique culte du T-Rex et le thème musical officiel.", "theme": {"bg1": "#4c0519", "bg2": "#18181b", "icon": "cinema", "accent": "#f43f5e"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-justice-league-of-america-alex-ross-custo", "name": "Monopoly Justice League of America Alex Ross Custom Set", "category": "Variantes & Règles Spéciales", "year": 2011, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Justice League of America Alex Ross Custom Set éditée par Hasbro.", "image_url": "images/box_mono-monopoly-justice-league-of-america-alex-ross-custo.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-justice-league-of-america-edition", "name": "Monopoly Justice League of America Edition", "category": "Variantes & Règles Spéciales", "year": 1999, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Justice League of America Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-justice-league-of-america-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-club-juventus", "name": "Monopoly Juventus Football Club", "category": "Marques & Sports", "year": 2018, "country": "Italie / International", "publisher": "Winning Moves", "description": "Allianz Stadium de Turin, musée de la Juve, scudetti et légendes bianconeri.", "theme": {"bg1": "#15803d", "bg2": "#1e293b", "icon": "trophy", "accent": "#fde047"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-k-pop-demon-hunters-edition", "name": "Monopoly K-Pop Demon Hunters Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly K-Pop Demon Hunters Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-k-pop-demon-hunters-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-music-kiss", "name": "Monopoly KISS Collector's Edition", "category": "Musique & Groupes", "year": 2006, "country": "Monde", "publisher": "USAopoly", "description": "The Demon, The Starchild, The Spaceman, The Catman avec leurs albums légendaires et concerts pyrotechniques.", "theme": {"bg1": "#18181b", "bg2": "#27272a", "icon": "music", "accent": "#f43f5e"}, "image_url": "images/mono-music-kiss.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-kpop-demon-hunters-edition", "name": "Monopoly KPop Demon Hunters Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly KPop Demon Hunters Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-kansaopoly", "name": "Monopoly Kansaopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Kansaopoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-kansas-city-edition", "name": "Monopoly Kansas City Edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Kansas City Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-kansas-city-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-kansas-city-edition-2022", "name": "Monopoly Kansas City Edition (2022)", "category": "Variantes & Règles Spéciales", "year": 2022, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Kansas City Edition (2022) éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-kansas-city-edition-top-trumps", "name": "Monopoly Kansas City Edition (Top Trumps)", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Kansas City Edition (Top Trumps) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-kansas-city-edition-top-trumps.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-kansas-city-opoly-1", "name": "Monopoly Kansas City Opoly", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Kansas City Opoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-kansas-city-opoly", "name": "Monopoly Kansas City-Opoly", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Kansas City-Opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-kansas-city-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-kansasopoly", "name": "Monopoly Kansasopoly", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Kansasopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-kansasopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-kennards-hire-70th-anniversary-edition", "name": "Monopoly Kennards Hire 70th Anniversary Edition", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Kennards Hire 70th Anniversary Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-kennards-hire-70th-anniversary-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-kingdom-hearts-custom-set", "name": "Monopoly Kingdom Hearts Custom Set", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Kingdom Hearts Custom Set éditée par Hasbro.", "image_url": "images/box_mono-monopoly-kingdom-hearts-custom-set.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-k-ln-edition", "name": "Monopoly Köln Edition", "category": "Variantes & Règles Spéciales", "year": 2000, "country": "Allemagne", "publisher": "Winning Moves", "description": "Édition Monopoly Köln Edition éditée par Winning Moves.", "image_url": "images/box_mono-monopoly-k-ln-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-manga-aot", "name": "Monopoly L'Attaque des Titans (Attack on Titan)", "category": "Anime & Manga", "year": 2016, "country": "Monde", "publisher": "USAopoly", "description": "Murs Maria, Rose et Sina, bataillon d'exploration, pions équipement tridimensionnel, clé d'Eren, canon.", "theme": {"bg1": "#7c2d12", "bg2": "#1e293b", "icon": "manga", "accent": "#fb923c"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-nightmare-christmas", "name": "Monopoly L'Étrange Noël de Monsieur Jack (Nightmare Before Christmas)", "category": "Films & Séries", "year": 2014, "country": "Monde / France", "publisher": "USAopoly", "description": "Ville d'Halloween et Ville de Noël avec Jack Skellington, Sally, Oogie Boogie, Zéro et la colline spiralée.", "theme": {"bg1": "#4c0519", "bg2": "#18181b", "icon": "cinema", "accent": "#f43f5e"}, "image_url": "images/mono-pop-nightmare-christmas.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-la-casa-de-papel-edition", "name": "Monopoly La Casa de Papel (Netflix)", "category": "Pop Culture & Divertissement", "year": 2021, "country": "France", "publisher": "Hasbro Gaming", "description": "Édition officielle Netflix de la célèbre série. Participez au braquage avec l'équipe du Professeur, sécurisez la Banque d'Espagne et la Fabrique de la monnaie, et collectez des lingots d'or.", "image_url": "images/box_mono-la-casa-de-papel.jpg", "is_verified_box": true, "back_image_url": "images/box_mono-la-casa-de-papel-dos.jpg", "status": "none", "condition": "", "location": "", "notes": "", "price": "", "value": ""}, {"id": "mono-monopoly-la-que-se-avecina-15th-anniversary-editio", "name": "Monopoly La Que Se Avecina 15th Anniversary Edition", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly La Que Se Avecina 15th Anniversary Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-la-que-se-avecina-15th-anniversary-editio.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-la-que-se-avecina-edition", "name": "Monopoly La Que Se Avecina Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly La Que Se Avecina Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-la-que-se-avecina-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-dom-reunion", "name": "Monopoly La Réunion", "category": "Villes & Régions (France)", "year": 2005, "country": "France (Outre-mer)", "publisher": "Winning Moves", "description": "Piton de la Fournaise, Cirque de Mafate, Cilaos, Saint-Denis et plages de Saint-Gilles.", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-la-que-se-avecina-edition-1", "name": "Monopoly La que se avecina edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly La que se avecina edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-lab-opoly", "name": "Monopoly Lab-opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Lab-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-lab-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-lagos-edition", "name": "Monopoly Lagos Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Lagos Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-lake-tahoe-edition", "name": "Monopoly Lake Tahoe Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Lake Tahoe Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-lake-tahoe-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-region-landes", "name": "Monopoly Landes", "category": "Villes & Régions (France)", "year": 2013, "country": "France", "publisher": "Winning Moves", "description": "Hossegor, Biscarrosse, Capbreton, forêt des Landes de Gascogne, ferias de Dax et Mont-de-Marsan.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-landlord-s-game", "name": "Monopoly Landlord's Game", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Landlord's Game éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-city-lasvegas", "name": "Monopoly Las Vegas", "category": "Villes & Pays (Monde)", "year": 1997, "country": "USA", "publisher": "USAopoly", "description": "Le Strip de Las Vegas, Bellagio, Caesars Palace, Fremont Street et les plus célèbres casinos.", "theme": {"bg1": "#0c4a6e", "bg2": "#0f172a", "icon": "globe", "accent": "#38bdf8"}, "image_url": "images/mono-city-lasvegas.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-las-vegas-edition", "name": "Monopoly Las Vegas Edition", "category": "Villes & Pays (Monde)", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Las Vegas Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-las-vegas-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-late-for-the-sky", "name": "Monopoly Late for the Sky", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Late for the Sky éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-latvia-edition", "name": "Monopoly Latvia Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Latvia Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-latvia-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-law-order-edition", "name": "Monopoly Law & Order Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Law & Order Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-law-order-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-lotr", "name": "Monopoly Le Seigneur des Anneaux (The Lord of the Rings)", "category": "Films & Séries", "year": 2003, "country": "Monde / France", "publisher": "Hasbro", "description": "Inclut l'Anneau Unique avec pion doré spécial, la Terre du Milieu, Mordor, la Comté et Fondcombe.", "theme": {"bg1": "#292524", "bg2": "#1c1917", "icon": "ring", "accent": "#eab308"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-leeds-edition", "name": "Monopoly Leeds Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Leeds Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-leeds-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-leeds-private-edition", "name": "Monopoly Leeds Private Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Leeds Private Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-leeds-private-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-legend-of-zelda-edition", "name": "Monopoly Legend of Zelda Edition", "category": "Jeux Vidéo", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Legend of Zelda Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-legend-of-zelda-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-leipzig-edition", "name": "Monopoly Leipzig Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Leipzig Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-leipzig-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-manga-tintin", "name": "Monopoly Les Aventures de Tintin", "category": "Anime & Manga", "year": 2007, "country": "Belgique / France", "publisher": "Winning Moves / Moulinsart", "description": "Château de Moulinsart, la fusée lunaire, le Crabe aux pinces d'or, pions Milou, Capitaine Haddock, Tintin.", "theme": {"bg1": "#7c2d12", "bg2": "#1e293b", "icon": "manga", "accent": "#fb923c"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-the-simpsons", "name": "Monopoly Les Simpson (The Simpsons)", "category": "Films & Séries", "year": 2001, "country": "Monde / France", "publisher": "USAopoly / Hasbro", "description": "Springfield, la centrale nucléaire de M. Burns, le bar de Moe, la maison des Simpson et pions spéciaux.", "theme": {"bg1": "#4c0519", "bg2": "#18181b", "icon": "cinema", "accent": "#f43f5e"}, "image_url": "images/mono-pop-the-simpsons.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-letterkenny-opoly", "name": "Monopoly Letterkenny Opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Letterkenny Opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-letterkenny-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-lexington-edition", "name": "Monopoly Lexington Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Lexington Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-lexington-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-library-edition", "name": "Monopoly Library Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Library Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-library-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-light-blue-color-group-properties", "name": "Monopoly Light Blue Color Group Properties", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Light Blue Color Group Properties éditée par Hasbro.", "image_url": "images/box_mono-monopoly-light-blue-color-group-properties.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-light-purple-color-group-properties", "name": "Monopoly Light Purple Color Group Properties", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Light Purple Color Group Properties éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-lighthouse-opoly", "name": "Monopoly Lighthouse-opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Lighthouse-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-lighthouse-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-ville-lille", "name": "Monopoly Lille", "category": "Villes & Régions (France)", "year": 2003, "country": "France", "publisher": "Winning Moves", "description": "Grand'Place, Vieille Bourse, Citadelle Vauban, Palais des Beaux-Arts et Braderie de Lille.", "theme": {"bg1": "#1e40af", "bg2": "#0f172a", "icon": "city", "accent": "#60a5fa"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-lilo-stitch-edition", "name": "Monopoly Lilo & Stitch Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Lilo & Stitch Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-lilo-stitch-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-limited-edition-tokens-edition", "name": "Monopoly Limited Edition Tokens Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Limited Edition Tokens Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-littlest-pet-shop-edition", "name": "Monopoly Littlest Pet shop Edition", "category": "Variantes & Règles Spéciales", "year": 2007, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Littlest Pet shop Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-littlest-pet-shop-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-live-2011", "name": "Monopoly Live", "category": "Variantes & Règles Spéciales", "year": 2011, "country": "France / Monde", "publisher": "Hasbro", "description": "Tour de contrôle centrale infrarouge qui observe les mouvements de dés, parle aux joueurs, gère les enchères et les événements météo en direct.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-live-edition", "name": "Monopoly Live Edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Live Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-live-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-liverpool-edition", "name": "Monopoly Liverpool Edition", "category": "Variantes & Règles Spéciales", "year": 2000, "country": "Royaume-Uni", "publisher": "Winning Moves", "description": "Édition Monopoly Liverpool Edition éditée par Winning Moves.", "image_url": "images/box_mono-monopoly-liverpool-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-liverpool-f-c-edition", "name": "Monopoly Liverpool F.C. Edition", "category": "Variantes & Règles Spéciales", "year": 2007, "country": "Royaume-Uni", "publisher": "Winning Moves", "description": "Édition Monopoly Liverpool F.C. Edition éditée par Winning Moves.", "image_url": "images/box_mono-monopoly-liverpool-f-c-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-liverpool-champions-of-europe-edition", "name": "Monopoly Liverpool: Champions of Europe Edition", "category": "Variantes & Règles Spéciales", "year": 2005, "country": "Royaume-Uni", "publisher": "Winning Moves", "description": "Édition Monopoly Liverpool: Champions of Europe Edition éditée par Winning Moves.", "image_url": "images/box_mono-monopoly-liverpool-champions-of-europe-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-ljutomerske-gorice-property", "name": "Monopoly Ljutomerske gorice (Property)", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Ljutomerske gorice (Property) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-ljutomerske-gorice-property.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-city-london", "name": "Monopoly London (Classic UK)", "category": "Villes & Pays (Monde)", "year": 1936, "country": "Royaume-Uni", "publisher": "Waddingtons / Hasbro", "description": "Le légendaire plateau britannique d'origine : Mayfair, Park Lane, Piccadilly, Trafalgar Square.", "theme": {"bg1": "#0c4a6e", "bg2": "#0f172a", "icon": "globe", "accent": "#38bdf8"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-long-beach-edition", "name": "Monopoly Long Beach Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Long Beach Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-long-beach-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-longest-game", "name": "Monopoly Longest Game Ever", "category": "Variantes & Règles Spéciales", "year": 2019, "country": "Monde", "publisher": "Hasbro", "description": "Plateau géant de 66 propriétés, un seul dé, la partie ne s'arrête que quand quelqu'un possède TOUTES les propriétés.", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "images/mono-longest-game.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-longest-game-ever-edition", "name": "Monopoly Longest Game Ever Edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Longest Game Ever Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-longest-game-ever-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-looney-tunes-collector-s-edition", "name": "Monopoly Looney Tunes Collector's Edition", "category": "Variantes & Règles Spéciales", "year": 1999, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Looney Tunes Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-looney-tunes-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-looney-tunes-edition", "name": "Monopoly Looney Tunes Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Looney Tunes Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-lord-of-the-rings-trilogy-edition", "name": "Monopoly Lord of the Rings Trilogy Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Lord of the Rings Trilogy Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-lord-of-the-rings-trilogy-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-los-angeles-dodgers-collector-s-edition", "name": "Monopoly Los Angeles Dodgers Collector's Edition", "category": "Villes & Pays (Monde)", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Los Angeles Dodgers Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-los-angeles-dodgers-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-los-angeles-dodgers-edition", "name": "Monopoly Los Angeles Dodgers Edition", "category": "Villes & Pays (Monde)", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Los Angeles Dodgers Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-manga-luckyluke", "name": "Monopoly Lucky Luke", "category": "Anime & Manga", "year": 2016, "country": "France / Belgique", "publisher": "Winning Moves", "description": "Le Far West de Lucky Luke, Jolly Jumper, Rantanplan et les quatre frères Dalton (Joe, William, Jack, Averell).", "theme": {"bg1": "#7c2d12", "bg2": "#1e293b", "icon": "manga", "accent": "#fb923c"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-luxury-edition", "name": "Monopoly Luxury Edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "USA", "publisher": "Hasbro", "description": "Édition Monopoly Luxury Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-luxury-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-ville-lyon", "name": "Monopoly Lyon", "category": "Villes & Régions (France)", "year": 2002, "country": "France", "publisher": "Winning Moves", "description": "Les hauts lieux lyonnais : Place Bellecour, Basilique de Fourvière, Parc de la Tête d'Or, Vieux Lyon.", "theme": {"bg1": "#1e40af", "bg2": "#0f172a", "icon": "city", "accent": "#60a5fa"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-m-m-s-edition", "name": "Monopoly M & M's Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly M & M's Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-m-m-s-collector-s-edition", "name": "Monopoly M&M's Collector's Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly M&M's Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-m-m-s-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-city-madrid", "name": "Monopoly Madrid", "category": "Villes & Pays (Monde)", "year": 2004, "country": "Espagne", "publisher": "Hasbro", "description": "Puerta del Sol, Gran Vía, Plaza Mayor, Parc du Retiro, Musée du Prado et Palais Royal.", "theme": {"bg1": "#0c4a6e", "bg2": "#0f172a", "icon": "globe", "accent": "#38bdf8"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-magnit-junior-edition", "name": "Monopoly Magnit Junior Edition", "category": "Junior & Enfants", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Magnit Junior Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-magnit-junior-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-magnit-monopoly", "name": "Monopoly Magnit Monopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Magnit Monopoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-main-line-pennsylvania-edition", "name": "Monopoly Main Line (Pennsylvania) Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Main Line (Pennsylvania) Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-main-line-pennsylvania-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-main-page", "name": "Monopoly Main Page", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Main Page éditée par Hasbro.", "image_url": "images/box_mono-monopoly-main-page.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-major-league-baseball-collector-s-edition", "name": "Monopoly Major League Baseball Collector's Edition", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Major League Baseball Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-major-league-baseball-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-major-league-baseball-edition", "name": "Monopoly Major League Baseball Edition", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Major League Baseball Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-make-your-own-opoly", "name": "Monopoly Make Your Own -Opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Make Your Own -Opoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-make-your-own-monopoly", "name": "Monopoly Make Your Own Monopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Make Your Own Monopoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-make-your-own-opoly-1", "name": "Monopoly Make Your Own Opoly", "category": "Variantes & Règles Spéciales", "year": 1998, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Make Your Own Opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-make-your-own-opoly-1.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-making-music", "name": "Monopoly Making Music", "category": "Musique & Groupes", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Making Music éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-club-manutd", "name": "Monopoly Manchester United", "category": "Marques & Sports", "year": 2015, "country": "Royaume-Uni / International", "publisher": "Winning Moves", "description": "Old Trafford (The Theatre of Dreams), Sir Alex Ferguson Stand et légendes des Red Devils.", "theme": {"bg1": "#15803d", "bg2": "#1e293b", "icon": "trophy", "accent": "#fde047"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-manchester-united-f-c-edition", "name": "Monopoly Manchester United F.C. Edition", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Manchester United F.C. Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-manchester-united-f-c-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-manhattan-beach-edition", "name": "Monopoly Manhattan Beach Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Manhattan Beach Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-manhattan-beach-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-margaret-river-wooditjup-edition", "name": "Monopoly Margaret River Wooditjup Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Margaret River Wooditjup Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-margaret-river-wooditjup-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-marines-250th-anniversary-edition", "name": "Monopoly Marines 250th Anniversary Edition", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Marines 250th Anniversary Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-marines-250th-anniversary-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-ville-marseille", "name": "Monopoly Marseille", "category": "Villes & Régions (France)", "year": 2001, "country": "France", "publisher": "Winning Moves", "description": "Vieux-Port, Basilique Notre-Dame de la Garde, Stade Vélodrome, les Calanques et la Canebière.", "theme": {"bg1": "#1e40af", "bg2": "#0f172a", "icon": "city", "accent": "#60a5fa"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-marvel-universe-edition", "name": "Monopoly Marvel (Universe) Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Marvel (Universe) Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-marvel-universe-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-marvel-avengers", "name": "Monopoly Marvel Avengers", "category": "Films & Séries", "year": 2019, "country": "Monde / France", "publisher": "Hasbro", "description": "Recrutez des héros Marvel au lieu d'acheter des rues pour sauver l'univers de Thanos.", "theme": {"bg1": "#991b1b", "bg2": "#1e1b4b", "icon": "shield", "accent": "#f87171"}, "image_url": "images/mono-pop-marvel-avengers.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-marvel-avengers-80-years-anniversary-edit", "name": "Monopoly Marvel Avengers 80 Years Anniversary Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Marvel Avengers 80 Years Anniversary Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-marvel-avengers-80-years-anniversary-edit.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-marvel-avengers-edition", "name": "Monopoly Marvel Avengers Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Marvel Avengers Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-marvel-avengers-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-marvel-comics-collector-s-edition", "name": "Monopoly Marvel Comics Collector's Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Marvel Comics Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-marvel-comics-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-marvel-comics-collector-s-edition-1999", "name": "Monopoly Marvel Comics Collector's Edition 1999", "category": "Films & Séries", "year": 1999, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Marvel Comics Collector's Edition 1999 éditée par Hasbro.", "image_url": "images/box_mono-monopoly-marvel-comics-collector-s-edition-1999.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-marvel-comics-edition", "name": "Monopoly Marvel Comics Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Marvel Comics Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-marvel-comics-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-marvel-deadpool-collector-s-edition", "name": "Monopoly Marvel Deadpool Collector's Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Marvel Deadpool Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-marvel-deadpool-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-marvel-deadpool-edition", "name": "Monopoly Marvel Deadpool Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Marvel Deadpool Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-marvel-deadpool-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-marvel-go", "name": "Monopoly Marvel Go", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Marvel Go éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-marvel-heroes-collector-s-edition", "name": "Monopoly Marvel Heroes Collector's Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Marvel Heroes Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-marvel-heroes-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-marvel-spider-man-collector-s-edition", "name": "Monopoly Marvel Spider-Man Collector's Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Marvel Spider-Man Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-marvel-spider-man-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-marvel-studios-eternals-edition", "name": "Monopoly Marvel Studios' Eternals Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Marvel Studios' Eternals Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-marvel-studios-eternals-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-marvel-the-avengers-edition", "name": "Monopoly Marvel The Avengers Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Marvel The Avengers Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-marvel-the-avengers-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-marvel-universe-edition-1", "name": "Monopoly Marvel Universe Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Marvel Universe Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-marvel-universe-edition-1.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-mass-effect-custom-set", "name": "Monopoly Mass Effect Custom Set", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Mass Effect Custom Set éditée par Hasbro.", "image_url": "images/box_mono-monopoly-mass-effect-custom-set.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-master-boardgame-list", "name": "Monopoly Master Boardgame List", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Master Boardgame List éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-bad-losers", "name": "Monopoly Mauvais Perdants (Sore Losers)", "category": "Variantes & Règles Spéciales", "year": 2020, "country": "France / Monde", "publisher": "Hasbro", "description": "Payer le loyer ou aller en prison vous donne des pièces Mauvais Perdant pour réclamer le pion géant Mr. Monopoly !", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "images/mono-bad-losers.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-mcdonald-s", "name": "Monopoly McDonald's", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly McDonald's éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-mcdonald-s-monopoly", "name": "Monopoly McDonald's Monopoly", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly McDonald's Monopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-mcdonald-s-monopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-melbourne-airport", "name": "Monopoly Melbourne Airport", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Melbourne Airport éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-melbourne-edition", "name": "Monopoly Melbourne Edition", "category": "Films & Séries", "year": 2007, "country": "Australie", "publisher": "Hasbro", "description": "Édition Monopoly Melbourne Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-melbourne-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-memphis-edition", "name": "Monopoly Memphis Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Memphis Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-memphis-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-music-metallica", "name": "Monopoly Metallica Collector's Edition", "category": "Musique & Groupes", "year": 2011, "country": "Monde", "publisher": "USAopoly", "description": "Master of Puppets, Ride the Lightning, Black Album avec pions serpent de Don't Tread on Me, marteau de Kill 'Em All.", "theme": {"bg1": "#18181b", "bg2": "#27272a", "icon": "music", "accent": "#f43f5e"}, "image_url": "images/mono-music-metallica.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-metropoly-games", "name": "Monopoly MetrOpoly Games", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly MetrOpoly Games éditée par Hasbro.", "image_url": "images/box_mono-monopoly-metropoly-games.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-michael-graves-design-edition", "name": "Monopoly Michael Graves Design Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Michael Graves Design Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-michael-graves-design-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-michael-jackson-edition", "name": "Monopoly Michael Jackson Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Michael Jackson Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-michael-jackson-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-mickey-mouse-75th-anniversary-collector-s", "name": "Monopoly Mickey Mouse 75th Anniversary Collector's Edition", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Mickey Mouse 75th Anniversary Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-mickey-mouse-75th-anniversary-collector-s.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-middleton", "name": "Monopoly Middleton", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Middleton éditée par Hasbro.", "image_url": "images/box_mono-monopoly-middleton.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-milestone-events", "name": "Monopoly Milestone Events", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Milestone Events éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-millionaire", "name": "Monopoly Millionaire", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Millionaire éditée par Hasbro.", "image_url": "images/box_mono-monopoly-millionaire.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-millionaire-s-club", "name": "Monopoly Millionaire's Club", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Millionaire's Club éditée par Hasbro.", "image_url": "images/box_mono-monopoly-millionaire-s-club.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-millionaires-club-tv-game-show", "name": "Monopoly Millionaires' Club (TV game show)", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Millionaires' Club (TV game show) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-millionaires-club-tv-game-show.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-millionnaire", "name": "Monopoly Millionnaire", "category": "Variantes & Règles Spéciales", "year": 2012, "country": "France / Monde", "publisher": "Hasbro", "description": "Course au premier million : le premier joueur qui réussit à amasser 1 000 000 € gagne immédiatement ! Pions évolutifs (bateau, limousine, jet privé).", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-vg-minecraft", "name": "Monopoly Minecraft", "category": "Jeux Vidéo", "year": 2021, "country": "Monde", "publisher": "Hasbro", "description": "Monde cubique : minez des ressources (bois, pierre, fer, diamant) et construisez vos abris.", "theme": {"bg1": "#166534", "bg2": "#3f2d19", "icon": "cube", "accent": "#4ade80"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-minnesota-vikings-monopoly", "name": "Monopoly Minnesota Vikings Monopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Minnesota Vikings Monopoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-mobile-edition", "name": "Monopoly Mobile Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Mobile Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-mobile-al-edition", "name": "Monopoly Mobile, AL Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Mobile, AL Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-mobile-al-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-mom-s-car", "name": "Monopoly Mom's Car", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Mom's Car éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-money", "name": "Monopoly Money", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Money éditée par Hasbro.", "image_url": "images/box_mono-monopoly-money.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-monoopoly-american-edition", "name": "Monopoly Monoopoly American edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "USA", "publisher": "Hasbro", "description": "Édition Monopoly Monoopoly American edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-monopoli", "name": "Monopoly Monopoli", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Monopoli éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-monopolist-cards", "name": "Monopoly Monopolist Cards", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Monopolist Cards éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-monster-jam-edition", "name": "Monopoly Monster Jam Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Monster Jam Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-monster-jam-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-ville-montpellier", "name": "Monopoly Montpellier", "category": "Villes & Régions (France)", "year": 2004, "country": "France", "publisher": "Winning Moves", "description": "Place de la Comédie, Promenade du Peyrou, Quartier Antigone et Faculté de Médecine.", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-city-montreal", "name": "Monopoly Montréal", "category": "Villes & Pays (Monde)", "year": 2003, "country": "Canada", "publisher": "Hasbro", "description": "Vieux-Port, Mont-Royal, Basilique Notre-Dame, Sainte-Catherine, Place des Arts et poutine.", "theme": {"bg1": "#0c4a6e", "bg2": "#0f172a", "icon": "globe", "accent": "#38bdf8"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-region-morbihan", "name": "Monopoly Morbihan", "category": "Villes & Régions (France)", "year": 2011, "country": "France", "publisher": "Winning Moves", "description": "Golfe du Morbihan, mégalithes de Carnac, presqu'île de Quiberon, Vannes, Belle-Île-en-Mer.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-mortgage", "name": "Monopoly Mortgage", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Mortgage éditée par Hasbro.", "image_url": "images/box_mono-monopoly-mortgage.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-moto-gp-red-colour-edition", "name": "Monopoly Moto GP Red Colour Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Moto GP Red Colour Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-moto-gp-red-colour-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-ms-monopoly", "name": "Monopoly Ms. Monopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Ms. Monopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-ms-monopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-munny", "name": "Monopoly Munny", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Munny éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-munny-1", "name": "Monopoly Munny", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Munny éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-my-disney-villains-collector-s-edition", "name": "Monopoly My Disney Villains Collector's Edition", "category": "Variantes & Règles Spéciales", "year": 2008, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly My Disney Villains Collector's Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-my-disney-villains-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-manga-mha", "name": "Monopoly My Hero Academia", "category": "Anime & Manga", "year": 2019, "country": "Monde / France", "publisher": "USAopoly / Winning Moves", "description": "Lycée Yuei (U.A. High), recrues de la classe 1-A (Deku, Bakugo, Todoroki) et pions Alter.", "theme": {"bg1": "#7c2d12", "bg2": "#1e293b", "icon": "manga", "accent": "#fb923c"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-my-little-pony-edition", "name": "Monopoly My Little Pony Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly My Little Pony Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-my-little-pony-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-my-monopoly", "name": "Monopoly My Monopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly My Monopoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-my-national-parks-edition", "name": "Monopoly My National Parks Edition", "category": "Variantes & Règles Spéciales", "year": 2008, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly My National Parks Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-my-national-parks-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-brand-nasa", "name": "Monopoly NASA (Space Exploration)", "category": "Marques & Sports", "year": 2020, "country": "USA / Monde", "publisher": "USAopoly", "description": "Missions Apollo, navette spatiale, télescope Hubble, rover martien Curiosity et Station Spatiale Internationale.", "theme": {"bg1": "#065f46", "bg2": "#111827", "icon": "trophy", "accent": "#facc15"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-nascar-collector-s-edition", "name": "Monopoly NASCAR Collector's Edition", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly NASCAR Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-nascar-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-nascar-edition", "name": "Monopoly NASCAR Edition", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly NASCAR Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-sport-nba", "name": "Monopoly NBA", "category": "Marques & Sports", "year": 1999, "country": "USA / Monde", "publisher": "USAopoly", "description": "Franchises légendaires (Lakers, Celtics, Bulls, Warriors) avec pion panier de basket et ballon spalding.", "theme": {"bg1": "#065f46", "bg2": "#111827", "icon": "trophy", "accent": "#facc15"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-nfl-gridiron-limited-edition-1999", "name": "Monopoly NFL Gridiron Limited Edition (1999)", "category": "Marques & Sports", "year": 1999, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly NFL Gridiron Limited Edition (1999) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-nfl-gridiron-limited-edition-1999.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-nfl-official-limited-collector-s-edition", "name": "Monopoly NFL Official Limited Collector's Edition", "category": "Marques & Sports", "year": 1998, "country": "USA", "publisher": "Hasbro", "description": "Édition Monopoly NFL Official Limited Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-nfl-official-limited-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-ville-nantes", "name": "Monopoly Nantes", "category": "Villes & Régions (France)", "year": 2004, "country": "France", "publisher": "Winning Moves", "description": "Château des ducs de Bretagne, Machines de l'Île, Passage Pommeraye, Tour Bretagne.", "theme": {"bg1": "#1e40af", "bg2": "#0f172a", "icon": "city", "accent": "#60a5fa"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-napa-valley-edition", "name": "Monopoly Napa Valley Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Napa Valley Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-napa-valley-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-naruto-junior-edition", "name": "Monopoly Naruto Junior Edition", "category": "Junior & Enfants", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Naruto Junior Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-naruto-junior-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-manga-naruto", "name": "Monopoly Naruto Shippuden", "category": "Anime & Manga", "year": 2020, "country": "Monde / France", "publisher": "USAopoly / Winning Moves", "description": "Village de Konoha, Akatsuki, pions Kunaï, bandeau frontal ninja, nuage de l'Akatsuki, bol de ramen d'Ichiraku.", "theme": {"bg1": "#c2410c", "bg2": "#1e293b", "icon": "ninja", "accent": "#fdba74"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-nashville-edition", "name": "Monopoly Nashville Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Nashville Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-nashville-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-national-park-monopoly", "name": "Monopoly National Park Monopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly National Park Monopoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-national-parks-edition", "name": "Monopoly National Parks Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly National Parks Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-national-parks-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-neon-pop-edition", "name": "Monopoly Neon Pop Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Neon Pop Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-neon-pop-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-new-town", "name": "Monopoly New Town", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly New Town éditée par Hasbro.", "image_url": "images/box_mono-monopoly-new-town.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-city-newyork", "name": "Monopoly New York City", "category": "Villes & Pays (Monde)", "year": 1995, "country": "USA", "publisher": "USAopoly", "description": "Times Square, Central Park, Empire State Building, Statue de la Liberté, Wall Street.", "theme": {"bg1": "#0c4a6e", "bg2": "#0f172a", "icon": "globe", "accent": "#38bdf8"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-new-york-opoly", "name": "Monopoly New York-opoly", "category": "Villes & Pays (Monde)", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly New York-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-new-york-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-new-zealand-edition", "name": "Monopoly New Zealand Edition", "category": "Villes & Pays (Monde)", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly New Zealand Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-new-zealand-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-newport-edition", "name": "Monopoly Newport Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Newport Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-newport-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-ville-nice", "name": "Monopoly Nice", "category": "Villes & Régions (France)", "year": 2002, "country": "France", "publisher": "Winning Moves", "description": "Promenade des Anglais, Vieux-Nice, Colline du Château, Place Masséna et Baie des Anges.", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-vg-nintendo-collector", "name": "Monopoly Nintendo Collector's Edition", "category": "Jeux Vidéo", "year": 2006, "country": "USA / Monde", "publisher": "USAopoly", "description": "Réunit les grandes licences Nintendo : Mario, Donkey Kong, Link, Samus Aran, Fox McCloud, Kirby.", "theme": {"bg1": "#312e81", "bg2": "#0f172a", "icon": "gamepad", "accent": "#a855f7"}, "image_url": "images/mono-vg-nintendo-collector.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-nokia", "name": "Monopoly Nokia", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Nokia éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-region-nord-pas-de-calais", "name": "Monopoly Nord-Pas-de-Calais", "category": "Villes & Régions (France)", "year": 2004, "country": "France", "publisher": "Winning Moves", "description": "Côte d'Opale, Cap Blanc-Nez, Beffrois, bassins miniers, Arras, Dunkerque et traditions ch'tis.", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-region-normandie", "name": "Monopoly Normandie", "category": "Villes & Régions (France)", "year": 2005, "country": "France", "publisher": "Winning Moves", "description": "Mont-Saint-Michel, Falaises d'Étretat, Plages du Débarquement, Honfleur, Rouen et Deauville.", "theme": {"bg1": "#047857", "bg2": "#0f172a", "icon": "region", "accent": "#34d399"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-north-sydney-innovation-edition", "name": "Monopoly North Sydney Innovation Edition", "category": "Villes & Pays (Monde)", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly North Sydney Innovation Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-north-sydney-innovation-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-nostalgia-tin", "name": "Monopoly Nostalgia Tin Edition", "category": "Classique & Anniversaire", "year": 2001, "country": "Monde", "publisher": "Hasbro / Parker Brothers", "description": "Boîte métallique collector avec graphismes et illustrations rétro des années 1930/1950.", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-o-w-c-a-secret-headquarters", "name": "Monopoly O.W.C.A. Secret Headquarters", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly O.W.C.A. Secret Headquarters éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-oklahoma-city-edition", "name": "Monopoly Oklahoma City Edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Oklahoma City Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-oklahoma-city-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-old-town", "name": "Monopoly Old Town", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Old Town éditée par Hasbro.", "image_url": "images/box_mono-monopoly-old-town.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-club-om", "name": "Monopoly Olympique de Marseille (OM)", "category": "Marques & Sports", "year": 2011, "country": "France", "publisher": "Winning Moves", "description": "Stade Vélodrome, Centre Robert Louis-Dreyfus, virages Nord et Sud, vainqueurs de la Ligue des Champions 1993.", "theme": {"bg1": "#1e40af", "bg2": "#0f172a", "icon": "city", "accent": "#60a5fa"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-omaha-edition", "name": "Monopoly Omaha Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Omaha Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-omaha-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-manga-one-piece", "name": "Monopoly One Piece", "category": "Anime & Manga", "year": 2018, "country": "Monde / France", "publisher": "Winning Moves", "description": "L'Équipage du Chapeau de Paille à Dressrosa, pions Chapeau de Luffy, sabre de Zoro, Thousand Sunny.", "theme": {"bg1": "#0369a1", "bg2": "#991b1b", "icon": "pirate", "accent": "#fde047"}, "image_url": "images/mono-manga-one-piece.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-one-piece-edition", "name": "Monopoly One Piece Edition", "category": "Anime & Manga", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly One Piece Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-one-piece-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-onyx-edition", "name": "Monopoly Onyx Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Onyx Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-onyx-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-op-games", "name": "Monopoly Op Games", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Op Games éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-orange-color-group-properties", "name": "Monopoly Orange Color Group Properties", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Orange Color Group Properties éditée par Hasbro.", "image_url": "images/box_mono-monopoly-orange-color-group-properties.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-original-squishmallows-collector-s-editio", "name": "Monopoly Original Squishmallows Collector's Edition", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Original Squishmallows Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-original-squishmallows-collector-s-editio.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-origins", "name": "Monopoly Origins", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Origins éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-other-games-based-on-monopoly", "name": "Monopoly Other games based on Monopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Other games based on Monopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-other-games-based-on-monopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-vg-overwatch", "name": "Monopoly Overwatch Collector's Edition", "category": "Jeux Vidéo", "year": 2019, "country": "Monde", "publisher": "Hasbro", "description": "Rassemblez une équipe de 6 héros parmi D.Va, Lúcio, Tracer, Faucheur, Winston et Hanzo.", "theme": {"bg1": "#312e81", "bg2": "#0f172a", "icon": "gamepad", "accent": "#a855f7"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-oxford-street", "name": "Monopoly Oxford Street", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Oxford Street éditée par Hasbro.", "image_url": "images/box_mono-monopoly-oxford-street.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-oxygen", "name": "Monopoly Oxygen", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Oxygen éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-prd-real-estate", "name": "Monopoly PRD Real Estate", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly PRD Real Estate éditée par Hasbro.", "image_url": "images/box_mono-monopoly-prd-real-estate.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-palm-springs-edition", "name": "Monopoly Palm Springs Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Palm Springs Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-palm-springs-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-ville-paris", "name": "Monopoly Paris (Monuments)", "category": "Villes & Régions (France)", "year": 2000, "country": "France", "publisher": "Winning Moves / Hasbro", "description": "Achetez la Tour Eiffel, le Musée du Louvre, Notre-Dame, Montmartre et les Champs-Élysées.", "theme": {"bg1": "#1e3a8a", "bg2": "#1e293b", "icon": "monument", "accent": "#ef4444"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-club-psg", "name": "Monopoly Paris Saint-Germain (PSG)", "category": "Marques & Sports", "year": 2014, "country": "France", "publisher": "Winning Moves", "description": "Le Parc des Princes, les tribunes Auteuil et Boulogne, les joueurs et les trophées légendaires du PSG.", "theme": {"bg1": "#1e3a8a", "bg2": "#1e293b", "icon": "monument", "accent": "#ef4444"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-park-city-edition", "name": "Monopoly Park City Edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Park City Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-park-city-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-parker-brothers", "name": "Monopoly Parker Brothers", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Parker Brothers", "description": "Édition Monopoly Parker Brothers éditée par Parker Brothers.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-parks-and-recreation-edition", "name": "Monopoly Parks and Recreation Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Parks and Recreation Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-parks-and-recreation-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-partner-events", "name": "Monopoly Partner Events", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Partner Events éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-party", "name": "Monopoly Party", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Party éditée par Hasbro.", "image_url": "images/box_mono-monopoly-party.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-region-pays-basque", "name": "Monopoly Pays Basque", "category": "Villes & Régions (France)", "year": 2006, "country": "France", "publisher": "Winning Moves", "description": "Biarritz, Saint-Jean-de-Luz, Bayonne, Espelette, la Rhune et les traditions basques.", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-peaky-blinders", "name": "Monopoly Peaky Blinders", "category": "Films & Séries", "year": 2020, "country": "Royaume-Uni / France", "publisher": "Winning Moves", "description": "Birmingham dans les années 1920 : Garrison Tavern, Shelby Company Limited, pions casquette gavroche, fer à cheval.", "theme": {"bg1": "#4c0519", "bg2": "#18181b", "icon": "cinema", "accent": "#f43f5e"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-peanuts-edition", "name": "Monopoly Peanuts Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Peanuts Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-peanuts-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-penguin", "name": "Monopoly Penguin", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Penguin éditée par Hasbro.", "image_url": "images/box_mono-monopoly-penguin.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-penrith-edition", "name": "Monopoly Penrith Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Penrith Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-penrith-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-phineas-and-ferb-edition", "name": "Monopoly Phineas and Ferb Edition", "category": "Variantes & Règles Spéciales", "year": 2012, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Phineas and Ferb Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-phineas-and-ferb-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-phineas-and-ferb-s-backyard", "name": "Monopoly Phineas and Ferb's Backyard", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Phineas and Ferb's Backyard éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-photo-opoly", "name": "Monopoly Photo-opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Photo-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-photo-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-pink-color-group-properties", "name": "Monopoly Pink Color Group Properties", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Pink Color Group Properties éditée par Hasbro.", "image_url": "images/box_mono-monopoly-pink-color-group-properties.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-pirates-of-the-caribbean-collector-s-edit", "name": "Monopoly Pirates of the Caribbean Collector's Edition", "category": "Variantes & Règles Spéciales", "year": 2006, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Pirates of the Caribbean Collector's Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-pirates-of-the-caribbean-collector-s-edit.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-pirates-of-the-caribbean-on-stranger-tide", "name": "Monopoly Pirates of the Caribbean On Stranger Tides Collector's Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Pirates of the Caribbean On Stranger Tides Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-pirates-of-the-caribbean-on-stranger-tide.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-pirates-of-the-caribbean-trilogy-edition", "name": "Monopoly Pirates of the Caribbean Trilogy Edition", "category": "Variantes & Règles Spéciales", "year": 2007, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Pirates of the Caribbean Trilogy Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-pirates-of-the-caribbean-trilogy-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-pittsburgh-edition", "name": "Monopoly Pittsburgh Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Pittsburgh Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-pittsburgh-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pizza", "name": "Monopoly Pizza", "category": "Variantes & Règles Spéciales", "year": 2018, "country": "Monde", "publisher": "Hasbro", "description": "Boîte en forme de boîte à pizza avec pions tranche de pizza, collectez les meilleures garnitures de pizza.", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-pizza-game-edition", "name": "Monopoly Pizza Game Edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Pizza Game Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-planetopoly", "name": "Monopoly Planetopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Planetopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-planetopoly.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-playmaster", "name": "Monopoly Playmaster", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Playmaster éditée par Hasbro.", "image_url": "images/box_mono-monopoly-playmaster.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-plymouth-edition", "name": "Monopoly Plymouth Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Plymouth Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-pogo-com", "name": "Monopoly Pogo.com", "category": "Jeux Vidéo", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Pogo.com éditée par Hasbro.", "image_url": "images/box_mono-monopoly-pogo-com.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-pokemon-collector-s-edition", "name": "Monopoly Pokemon Collector's Edition", "category": "Variantes & Règles Spéciales", "year": 1999, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Pokemon Collector's Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-pokemon-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-pokemon-monopoly", "name": "Monopoly Pokemon Monopoly", "category": "Jeux Vidéo", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Pokemon Monopoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-vg-pokemon-johto", "name": "Monopoly Pokémon Johto Edition", "category": "Jeux Vidéo", "year": 2016, "country": "Monde", "publisher": "USAopoly", "description": "Explorez Bourg Geon, Doublonville et capturez Germignon, Héricendre, Kaiminus, Togepi.", "theme": {"bg1": "#dc2626", "bg2": "#1e293b", "icon": "pokeball", "accent": "#facc15"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-vg-pokemon-kanto", "name": "Monopoly Pokémon Kanto Edition", "category": "Jeux Vidéo", "year": 2014, "country": "Monde / France", "publisher": "USAopoly / Winning Moves", "description": "Capturez les arènes et les Pokémon des 8 badges de la région Kanto avec pions Pikachu, Évoli, Salamèche...", "theme": {"bg1": "#dc2626", "bg2": "#1e293b", "icon": "pokeball", "accent": "#facc15"}, "image_url": "images/mono-vg-pokemon-kanto.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-portland-maine-edition", "name": "Monopoly Portland, Maine Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Portland, Maine Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-portland-maine-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-portland-oregon-edition", "name": "Monopoly Portland, Oregon Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Portland, Oregon Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-portland-oregon-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-posh-pets", "name": "Monopoly Posh Pets", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Posh Pets éditée par Hasbro.", "image_url": "images/box_mono-monopoly-posh-pets.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-power-rangers-20th-anniversary-edition", "name": "Monopoly Power Rangers 20th Anniversary Edition", "category": "Villes & Régions (France)", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Power Rangers 20th Anniversary Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-power-rangers-20th-anniversary-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-powerpuff-girls-edition", "name": "Monopoly Powerpuff Girls Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Powerpuff Girls Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-powerpuff-girls-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-predators-of-the-deep-edition", "name": "Monopoly Predators of the Deep Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Predators of the Deep Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-predators-of-the-deep-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-prizm-nba-edition", "name": "Monopoly Prizm: NBA Edition", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Prizm: NBA Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-prizm-nba-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-pub-crawl", "name": "Monopoly Pub Crawl", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Pub Crawl éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-puerto-rico-edition", "name": "Monopoly Puerto Rico Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Puerto Rico Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-puerto-rico-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-purple-color-group-properties", "name": "Monopoly Purple Color Group Properties", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Purple Color Group Properties éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-puzz3d-edition", "name": "Monopoly Puzz3D Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Puzz3D Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-puzz3d-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-qvc-edition", "name": "Monopoly QVC Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly QVC Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-qvc-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-qantas-socceroos-charity-edition", "name": "Monopoly Qantas Socceroos Charity Edition", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Qantas Socceroos Charity Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-qantas-socceroos-charity-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-quartzsite-opoly", "name": "Monopoly Quartzsite-Opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Quartzsite-Opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-quartzsite-opoly.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-music-queen", "name": "Monopoly Queen Edition", "category": "Musique & Groupes", "year": 2017, "country": "Monde", "publisher": "Winning Moves", "description": "Conçu avec Brian May : revivez les tournées mythiques du groupe Queen (Wembley, Hyde Park, Rio).", "theme": {"bg1": "#18181b", "bg2": "#27272a", "icon": "music", "accent": "#f43f5e"}, "image_url": "images/mono-music-queen.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-queens-edition", "name": "Monopoly Queens Edition", "category": "Musique & Groupes", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Queens Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-queens-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-questacon", "name": "Monopoly Questacon", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Questacon éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-queue-communist-monopoly", "name": "Monopoly Queue (Communist Monopoly)", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Queue (Communist Monopoly) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-queue-communist-monopoly.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-quikopoly", "name": "Monopoly Quikopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Quikopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-quikopoly.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-quimper-edition", "name": "Monopoly Quimper Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Quimper Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-quimper-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-qu-bec-opoly", "name": "Monopoly Québec-opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Québec-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-qu-bec-opoly.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-rim-blackberry-25th-anniversary-edition", "name": "Monopoly RIM (Blackberry) 25th Anniversary Edition", "category": "Variantes & Règles Spéciales", "year": 2009, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly RIM (Blackberry) 25th Anniversary Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-rim-blackberry-25th-anniversary-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-racecar", "name": "Monopoly Racecar", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Racecar éditée par Hasbro.", "image_url": "images/box_mono-monopoly-racecar.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-railroad", "name": "Monopoly Railroad", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Railroad éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-raleigh-edition", "name": "Monopoly Raleigh Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Raleigh Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-club-realmadrid", "name": "Monopoly Real Madrid C.F.", "category": "Marques & Sports", "year": 2017, "country": "Espagne / International", "publisher": "Winning Moves", "description": "Stade Santiago Bernabéu, vestiaires, coupes d'Europe de la Maison Blanche et joueurs galactiques.", "theme": {"bg1": "#15803d", "bg2": "#1e293b", "icon": "trophy", "accent": "#fde047"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-ville-reims", "name": "Monopoly Reims", "category": "Villes & Régions (France)", "year": 2008, "country": "France", "publisher": "Winning Moves", "description": "Cité des Sacres, Cathédrale Notre-Dame de Reims, prestigieuses maisons et caves de Champagne.", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-ville-rennes", "name": "Monopoly Rennes", "category": "Villes & Régions (France)", "year": 2004, "country": "France", "publisher": "Winning Moves", "description": "Parlement de Bretagne, Place Sainte-Anne, Parc du Thabor et Portes Mordelaises.", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-rent", "name": "Monopoly Rent", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Rent éditée par Hasbro.", "image_url": "images/box_mono-monopoly-rent.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-requested-articles", "name": "Monopoly Requested Articles", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Requested Articles éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-vg-resident-evil", "name": "Monopoly Resident Evil Collector's Edition", "category": "Jeux Vidéo", "year": 2019, "country": "Monde", "publisher": "USAopoly", "description": "Manoir Spencer, Commissariat de Raccoon City (R.P.D.), Umbrella Corporation avec Jill Valentine et Leon Kennedy.", "theme": {"bg1": "#312e81", "bg2": "#0f172a", "icon": "gamepad", "accent": "#a855f7"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-back-to-the-future", "name": "Monopoly Retour vers le Futur (Back to the Future)", "category": "Films & Séries", "year": 2015, "country": "Monde / France", "publisher": "Winning Moves", "description": "Hill Valley à travers 1885, 1955, 1985 et 2015 avec pions DeLorean, Hoverboard, casquette de Marty.", "theme": {"bg1": "#4c0519", "bg2": "#18181b", "icon": "cinema", "accent": "#f43f5e"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-retro-game", "name": "Monopoly Retro Game", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Retro Game éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-retro-game-edition", "name": "Monopoly Retro Game Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Retro Game Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-retro-game-edition-wal-mart", "name": "Monopoly Retro Game Edition (Wal Mart)", "category": "Variantes & Règles Spéciales", "year": 2008, "country": "USA", "publisher": "Hasbro", "description": "Édition Monopoly Retro Game Edition (Wal Mart) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-retro-game-edition-wal-mart.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-revolution-edition", "name": "Monopoly Revolution Edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Revolution Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-revolution-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-rhode-island-avenue", "name": "Monopoly Rhode Island Avenue", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Rhode Island Avenue éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-rich-uncle-pennybags", "name": "Monopoly Rich Uncle Pennybags", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Rich Uncle Pennybags éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-richmond-edition", "name": "Monopoly Richmond Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Richmond Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-richmond-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-rick-and-morty", "name": "Monopoly Rick and Morty", "category": "Films & Séries", "year": 2016, "country": "Monde / France", "publisher": "USAopoly / Winning Moves", "description": "Explorez le Multivers, la Dimension C-137, Gazorpazorp avec pions Portal Gun, Plumbus et boîte de Meeseeks.", "theme": {"bg1": "#4c0519", "bg2": "#18181b", "icon": "cinema", "accent": "#f43f5e"}, "image_url": "images/mono-pop-rick-and-morty.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-rick-and-morty-monopoly", "name": "Monopoly Rick and Morty Monopoly", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Rick and Morty Monopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-rick-and-morty-monopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-city-riodejaneiro", "name": "Monopoly Rio de Janeiro", "category": "Villes & Pays (Monde)", "year": 2007, "country": "Brésil", "publisher": "Estrela / Hasbro", "description": "Copacabana, Ipanema, Christ Rédempteur du Corcovado, Pain de Sucre et Sambodrome du Carnaval.", "theme": {"bg1": "#0c4a6e", "bg2": "#0f172a", "icon": "globe", "accent": "#38bdf8"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-river-plate-edition", "name": "Monopoly River Plate Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly River Plate Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-river-plate-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-riverside", "name": "Monopoly Riverside", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Riverside éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-riverside-property", "name": "Monopoly Riverside (Property)", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Riverside (Property) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-riverside-property.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-riverside-edition", "name": "Monopoly Riverside Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Riverside Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-riverside-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-vg-roblox", "name": "Monopoly Roblox", "category": "Jeux Vidéo", "year": 2021, "country": "Monde / France", "publisher": "Hasbro", "description": "Achetez et collectionnez les meilleures expériences Roblox (Adopt Me, Brookhaven, MeepCity, Tower of Hell).", "theme": {"bg1": "#312e81", "bg2": "#0f172a", "icon": "gamepad", "accent": "#a855f7"}, "image_url": "images/mono-vg-roblox.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-roblox-edition", "name": "Monopoly Roblox Edition", "category": "Jeux Vidéo", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Roblox Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-roblox-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-rochester-edition", "name": "Monopoly Rochester Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Rochester Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-rochester-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-sport-roland-garros", "name": "Monopoly Roland-Garros", "category": "Marques & Sports", "year": 2015, "country": "France", "publisher": "Winning Moves", "description": "Courts Philippe-Chatrier, Suzanne-Lenglen, terre battue parisienne, pions raquette, chaise d'arbitre, trophée.", "theme": {"bg1": "#065f46", "bg2": "#111827", "icon": "trophy", "accent": "#facc15"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-city-rome", "name": "Monopoly Roma", "category": "Villes & Pays (Monde)", "year": 2012, "country": "Italie", "publisher": "Winning Moves", "description": "Colisée, Fontaine de Trevi, Panthéon, Place Navone et Forum Romain.", "theme": {"bg1": "#0284c7", "bg2": "#0c4a6e", "icon": "football", "accent": "#38bdf8"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-royal-court", "name": "Monopoly Royal Court", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Royal Court éditée par Hasbro.", "image_url": "images/box_mono-monopoly-royal-court.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-rupaul-s-drag-race-edition", "name": "Monopoly RuPaul's Drag Race Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly RuPaul's Drag Race Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-rupaul-s-drag-race-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-rubber-ducky", "name": "Monopoly Rubber Ducky", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Rubber Ducky éditée par Hasbro.", "image_url": "images/box_mono-monopoly-rubber-ducky.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-rudolph-the-red-nosed-reindeer-collector-", "name": "Monopoly Rudolph the Red-Nosed Reindeer Collector’s Edition", "category": "Variantes & Règles Spéciales", "year": 2005, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Rudolph the Red-Nosed Reindeer Collector’s Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-rudolph-the-red-nosed-reindeer-collector-.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-rugrats-edition", "name": "Monopoly Rugrats Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Rugrats Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-rugrats-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-russian-edition", "name": "Monopoly Russian Edition", "category": "Villes & Pays (Monde)", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Russian Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-russian-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-rustic", "name": "Monopoly Rustic Wood Series", "category": "Classique & Anniversaire", "year": 2018, "country": "Monde", "publisher": "Hasbro", "description": "Plateau et boîte en bois rustique vieilli, idéal pour décoration et jeu chaleureux.", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-revolution-75th", "name": "Monopoly Révolution (75ème Anniversaire)", "category": "Classique & Anniversaire", "year": 2010, "country": "France / Monde", "publisher": "Hasbro", "description": "Plateau circulaire / rond spectaculaire créé pour les 75 ans du Monopoly, avec unité sonore centrale diffusant de vrais morceaux de musique et effets sonores.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-revolution", "name": "Monopoly Révolution (Plateau Rond)", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "France / Monde", "publisher": "Hasbro", "description": "Plateau de jeu circulaire unique avec unité sonore centrale diffusant musique et effets sonores.", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "images/mono-revolution.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-slo-cal-edition", "name": "Monopoly SLO CAL Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly SLO CAL Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-slo-cal-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-ghostbusters", "name": "Monopoly SOS Fantômes (Ghostbusters)", "category": "Films & Séries", "year": 2016, "country": "Monde", "publisher": "USAopoly", "description": "Pions Ecto-1, Piège à fantôme, Bibendum Chamallow, Pack de protons et caserne des pompiers.", "theme": {"bg1": "#4c0519", "bg2": "#18181b", "icon": "cinema", "accent": "#f43f5e"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-sacramento-edition", "name": "Monopoly Sacramento Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Sacramento Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-sacramento-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-manga-sailor-moon", "name": "Monopoly Sailor Moon Collector's Edition", "category": "Anime & Manga", "year": 2018, "country": "Monde", "publisher": "USAopoly", "description": "Le Royaume de la Lune, Tokyo Crystal, pions Sceptre lunaire, Broche de transformation, Masque Tuxedo.", "theme": {"bg1": "#7c2d12", "bg2": "#1e293b", "icon": "manga", "accent": "#fb923c"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-sailor-moon-edition", "name": "Monopoly Sailor Moon Edition", "category": "Anime & Manga", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Sailor Moon Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-saint-louis-opoly-1", "name": "Monopoly Saint Louis Opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Saint Louis Opoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-saint-louis-opoly", "name": "Monopoly Saint Louis-Opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Saint Louis-Opoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-saint-louisopoly", "name": "Monopoly Saint Louisopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Saint Louisopoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-saint-paul-edition", "name": "Monopoly Saint Paul Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Saint Paul Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-saint-paul-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-ville-saint-etienne", "name": "Monopoly Saint-Étienne", "category": "Villes & Régions (France)", "year": 2006, "country": "France", "publisher": "Winning Moves", "description": "Stade Geoffroy-Guichard (Le Chaudron Vert), Musée d'Art et d'Industrie, Cité du Design et Puits Couriot.", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-san-antonio-edition", "name": "Monopoly San Antonio Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly San Antonio Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-san-antonio-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-san-diego-edition", "name": "Monopoly San Diego Edition", "category": "Variantes & Règles Spéciales", "year": 1995, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly San Diego Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-san-diego-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-san-diego-edition-top-trumps", "name": "Monopoly San Diego Edition (Top Trumps)", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly San Diego Edition (Top Trumps) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-san-diego-edition-top-trumps.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-city-sanfrancisco", "name": "Monopoly San Francisco", "category": "Villes & Pays (Monde)", "year": 2002, "country": "USA", "publisher": "USAopoly", "description": "Golden Gate Bridge, Île d'Alcatraz, Fisherman's Wharf, Cable Cars, Lombard Street, Silicon Valley.", "theme": {"bg1": "#0c4a6e", "bg2": "#0f172a", "icon": "globe", "accent": "#38bdf8"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-san-jose-edition", "name": "Monopoly San Jose Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly San Jose Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-san-jose-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-santa-barbara-edition", "name": "Monopoly Santa Barbara Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Santa Barbara Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-santa-barbara-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-santa-barbaraopoly", "name": "Monopoly Santa Barbaraopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Santa Barbaraopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-santa-barbaraopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-santa-barbopoly", "name": "Monopoly Santa Barbopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Santa Barbopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-santa-barbopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-sarasota-opoly", "name": "Monopoly Sarasota-Opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Sarasota-Opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-sarasota-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-savannah-edition", "name": "Monopoly Savannah Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Savannah Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-savannah-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-region-savoie", "name": "Monopoly Savoie & Haute-Savoie (Mont-Blanc)", "category": "Villes & Régions (France)", "year": 2006, "country": "France", "publisher": "Winning Moves", "description": "Chamonix, Mont-Blanc, Annecy et son lac, Chambéry, stations de ski et gastronomie savoyarde.", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-schnucksopoly", "name": "Monopoly Schnucksopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Schnucksopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-schnucksopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-scoobydoo", "name": "Monopoly Scooby-Doo Collector's Edition", "category": "Films & Séries", "year": 2019, "country": "Monde", "publisher": "USAopoly", "description": "Mystère et Compagnie : explorez les manoirs hantés à bord de la Mystery Machine avec des Scooby Snacks.", "theme": {"bg1": "#4c0519", "bg2": "#18181b", "icon": "cinema", "accent": "#f43f5e"}, "image_url": "images/mono-pop-scoobydoo.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-scott-the-woz-edition", "name": "Monopoly Scott The Woz Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Scott The Woz Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-scott-the-woz-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-scottie-dog", "name": "Monopoly Scottie Dog", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Scottie Dog éditée par Hasbro.", "image_url": "images/box_mono-monopoly-scottie-dog.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-scottsdale-edition", "name": "Monopoly Scottsdale Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Scottsdale Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-scottsdale-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-scrabble", "name": "Monopoly Scrabble", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Scrabble éditée par Hasbro.", "image_url": "images/box_mono-monopoly-scrabble.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-seaview", "name": "Monopoly Seaview", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Seaview éditée par Hasbro.", "image_url": "images/box_mono-monopoly-seaview.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-secret-vault-edition", "name": "Monopoly Secret Vault Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Secret Vault Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-secret-vault-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-sephora-edition", "name": "Monopoly Sephora Edition", "category": "Variantes & Règles Spéciales", "year": 2006, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Sephora Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-sephora-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-sesame-street-edition", "name": "Monopoly Sesame Street Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Sesame Street Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-sesame-street-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-sheffield-edition", "name": "Monopoly Sheffield Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Sheffield Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-sheffield-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-shine-village", "name": "Monopoly Shine Village", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Shine Village éditée par Hasbro.", "image_url": "images/box_mono-monopoly-shine-village.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-shockwave-com", "name": "Monopoly Shockwave.com", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Shockwave.com éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-shrek", "name": "Monopoly Shrek 2 Collector's Edition", "category": "Films & Séries", "year": 2004, "country": "Monde", "publisher": "USAopoly", "description": "Le Marais de Shrek, le Royaume de Fort Fort Lointain, la chaumière de la Fée Marraine, pions Âne, Shrek, Chat Potté.", "theme": {"bg1": "#4c0519", "bg2": "#18181b", "icon": "cinema", "accent": "#f43f5e"}, "image_url": "images/mono-pop-shrek.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-shrek-collector-s-edition", "name": "Monopoly Shrek Collector's Edition", "category": "Variantes & Règles Spéciales", "year": 2007, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly Shrek Collector's Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-shrek-collector-s-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-signature-token-collection", "name": "Monopoly Signature Token Collection", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Signature Token Collection éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-signature-token-edition", "name": "Monopoly Signature Token Edition", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Signature Token Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-signature-token-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-silver-harbor", "name": "Monopoly Silver Harbor", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Silver Harbor éditée par Hasbro.", "image_url": "images/box_mono-monopoly-silver-harbor.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-skyscrapers", "name": "Monopoly Skyscrapers", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Skyscrapers éditée par Hasbro.", "image_url": "images/box_mono-monopoly-skyscrapers.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-slots", "name": "Monopoly Slots", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Slots éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-slovene-edition", "name": "Monopoly Slovene Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Slovene Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-slovene-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-socialism", "name": "Monopoly Socialism", "category": "Variantes & Règles Spéciales", "year": 2019, "country": "Monde", "publisher": "Hasbro", "description": "Édition parodique où les joueurs collaborent pour un fonds commun, souvent avec des effets chaotiques.", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "images/mono-socialism.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-socialism-edition", "name": "Monopoly Socialism Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Socialism Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-socialism-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-vg-sonic", "name": "Monopoly Sonic the Hedgehog Collector's Edition", "category": "Jeux Vidéo", "year": 2013, "country": "Monde", "publisher": "USAopoly", "description": "Green Hill Zone, Chemical Plant, collectez les anneaux d'or et les émeraudes du Chaos avec Sonic et Tails.", "theme": {"bg1": "#312e81", "bg2": "#0f172a", "icon": "gamepad", "accent": "#a855f7"}, "image_url": "images/mono-vg-sonic.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-south-park", "name": "Monopoly South Park Collector's Edition", "category": "Films & Séries", "year": 2013, "country": "USA / Monde", "publisher": "USAopoly", "description": "L'école primaire de South Park, City Wok, Casa Bonita, pions Cartman, Stan, Kyle, Kenny, Servietsky.", "theme": {"bg1": "#4c0519", "bg2": "#18181b", "icon": "cinema", "accent": "#f43f5e"}, "image_url": "images/mono-pop-south-park.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-south-park-collectors-edition", "name": "Monopoly South Park Collectors Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly South Park Collectors Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-south-wales-charity-edition", "name": "Monopoly South Wales Charity Edition", "category": "Villes & Pays (Monde)", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly South Wales Charity Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-south-wales-edition-custom", "name": "Monopoly South Wales Edition (Custom)", "category": "Villes & Pays (Monde)", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly South Wales Edition (Custom) éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-space-edition", "name": "Monopoly Space Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Space Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-space-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-space-jam-a-new-legacy-edition", "name": "Monopoly Space Jam: A New Legacy Edition", "category": "Classique & Anniversaire", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Space Jam: A New Legacy Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-space-jam-a-new-legacy-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-spanisch-square-edition", "name": "Monopoly Spanisch Square Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Spanisch Square Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-spanish-language-us-version", "name": "Monopoly Spanish Language US Version", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Espagne", "publisher": "Hasbro", "description": "Édition Monopoly Spanish Language US Version éditée par Hasbro.", "image_url": "images/box_mono-monopoly-spanish-language-us-version.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-spanish-square-edition", "name": "Monopoly Spanish Square Edition", "category": "Variantes & Règles Spéciales", "year": 1961, "country": "Espagne", "publisher": "Parker Brothers", "description": "Édition Monopoly Spanish Square Edition éditée par Parker Brothers.", "image_url": "images/box_mono-monopoly-spanish-square-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-speed-2020", "name": "Monopoly Speed", "category": "Variantes & Règles Spéciales", "year": 2020, "country": "France / Monde", "publisher": "Hasbro", "description": "Partie garantie en moins de 10 minutes ! Tout le monde lance les dés et achète en même temps pendant des manches chronométrées.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-speed", "name": "Monopoly Speed (En moins de 10 minutes)", "category": "Variantes & Règles Spéciales", "year": 2019, "country": "France / Monde", "publisher": "Hasbro", "description": "Chaque joueur joue en même temps avec son propre dé et chronomètre, partie pliée en 10 minutes.", "theme": {"bg1": "#0369a1", "bg2": "#0f172a", "icon": "electronic", "accent": "#38bdf8"}, "image_url": "images/mono-speed.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-speed-dice", "name": "Monopoly Speed Dice", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Speed Dice éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-speed-edition", "name": "Monopoly Speed Edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Speed Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-speed-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-spiderman", "name": "Monopoly Spider-Man", "category": "Films & Séries", "year": 2014, "country": "Monde / France", "publisher": "Hasbro", "description": "Capturez les super-vilains de New York (Bouffon Vert, Venom, Docteur Octopus, Electro).", "theme": {"bg1": "#4c0519", "bg2": "#18181b", "icon": "cinema", "accent": "#f43f5e"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-spongebob-squarepants-edition", "name": "Monopoly Spongebob Squarepants Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Spongebob Squarepants Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-spongebob-squarepants-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-sportsline-com", "name": "Monopoly SportsLine.com", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly SportsLine.com éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-st-louis-opoly-2", "name": "Monopoly St Louis Opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly St Louis Opoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-st-louis-opoly-1", "name": "Monopoly St Louis-opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly St Louis-opoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-st-louisopoly-a-metropoly-game-1", "name": "Monopoly St LouisOpoly - A MetrOpoly Game", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly St LouisOpoly - A MetrOpoly Game éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-st-louisopoly", "name": "Monopoly St Louisopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly St Louisopoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-st-louis-edition", "name": "Monopoly St. Louis Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly St. Louis Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-st-louis-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-st-louis-opoly", "name": "Monopoly St. Louis-opoly", "category": "Variantes & Règles Spéciales", "year": 1998, "country": "USA", "publisher": "Hasbro", "description": "Édition Monopoly St. Louis-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-st-louis-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-st-louisopoly-a-metropoly-game", "name": "Monopoly St. Louisopoly - A MetrOpoly Game", "category": "Variantes & Règles Spéciales", "year": 1991, "country": "USA", "publisher": "Hasbro", "description": "Édition Monopoly St. Louisopoly - A MetrOpoly Game éditée par Hasbro.", "image_url": "images/box_mono-monopoly-st-louisopoly-a-metropoly-game.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-star-trek-klingon-edition", "name": "Monopoly Star Trek Klingon Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Star Trek Klingon Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-star-trek-klingon-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-star-wars-clone-wars-edition", "name": "Monopoly Star Wars Clone Wars Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Star Wars Clone Wars Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-star-wars-complete-saga-edition", "name": "Monopoly Star Wars Complete Saga Edition", "category": "Variantes & Règles Spéciales", "year": 2005, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Star Wars Complete Saga Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-star-wars-complete-saga-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-starwars-mandalorian", "name": "Monopoly Star Wars The Mandalorian", "category": "Films & Séries", "year": 2020, "country": "Monde / France", "publisher": "Hasbro", "description": "Incarnez Din Djarin, Greef Karga, Cara Dune ou IG-11 et protégez l'Enfant (Grogu / Bébé Yoda).", "theme": {"bg1": "#090d16", "bg2": "#1e1b4b", "icon": "space", "accent": "#38bdf8"}, "image_url": "images/mono-pop-starwars-mandalorian.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-starwars-classic", "name": "Monopoly Star Wars Édition Collector (1997)", "category": "Films & Séries", "year": 1997, "country": "Monde / France", "publisher": "Parker Brothers / Hasbro", "description": "Pions étain des héros originaux (Luke, Vador, Han, Leïa, Chewbacca, R2-D2), crédits impériaux et républicains.", "theme": {"bg1": "#090d16", "bg2": "#1e1b4b", "icon": "space", "accent": "#38bdf8"}, "image_url": "images/mono-pop-starwars-classic.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-star-wars-the-clone-wars-edition", "name": "Monopoly Star Wars: The Clone Wars Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Star Wars: The Clone Wars Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-star-wars-the-clone-wars-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-star-wars-the-mandalorian-and-grogu-editi", "name": "Monopoly Star Wars: The Mandalorian and Grogu Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Star Wars: The Mandalorian and Grogu Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-star-wars-the-mandalorian-and-grogu-editi.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-station", "name": "Monopoly Station", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Station éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-stations", "name": "Monopoly Stations", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Stations éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-stoneside", "name": "Monopoly Stoneside", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Stoneside éditée par Hasbro.", "image_url": "images/box_mono-monopoly-stoneside.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-stranger-things", "name": "Monopoly Stranger Things", "category": "Films & Séries", "year": 2017, "country": "Monde / France", "publisher": "Hasbro", "description": "Hawkins dans les années 80 et l'Upside Down (Monde à l'envers) avec pions bicyclette, talkie-walkie, gaufre.", "theme": {"bg1": "#4c0519", "bg2": "#18181b", "icon": "cinema", "accent": "#f43f5e"}, "image_url": "images/mono-pop-stranger-things.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-stranger-things-collector-s-edition", "name": "Monopoly Stranger Things Collector's Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Stranger Things Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-stranger-things-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-stranger-things-edition", "name": "Monopoly Stranger Things Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Stranger Things Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-stranger-things-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-ville-strasbourg", "name": "Monopoly Strasbourg", "category": "Villes & Régions (France)", "year": 2003, "country": "France", "publisher": "Winning Moves", "description": "Cathédrale Notre-Dame, Petite France, Parlement Européen et Marché de Noël.", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-strawberry-shortcake-edition", "name": "Monopoly Strawberry Shortcake Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Strawberry Shortcake Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-strawberry-shortcake-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-street", "name": "Monopoly Street", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Street éditée par Hasbro.", "image_url": "images/box_mono-monopoly-street.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-vg-street-fighter", "name": "Monopoly Street Fighter Collector's Edition", "category": "Jeux Vidéo", "year": 2012, "country": "Monde", "publisher": "USAopoly", "description": "Dojos et arènes mythiques (Chine, Japon, Brésil, USA) avec Ryu, Ken, Chun-Li, Guile et M. Bison.", "theme": {"bg1": "#312e81", "bg2": "#0f172a", "icon": "gamepad", "accent": "#a855f7"}, "image_url": "images/mono-vg-street-fighter.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-ch-national", "name": "Monopoly Suisse", "category": "Villes & Régions (France)", "year": 2001, "country": "Suisse", "publisher": "Hasbro", "description": "Édition quadrilingue avec Genève, Zurich, Bâle, Lausanne, Berne et le Cervin.", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-summergate", "name": "Monopoly Summergate", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Summergate éditée par Hasbro.", "image_url": "images/box_mono-monopoly-summergate.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-super-add-ons", "name": "Monopoly Super Add-ons", "category": "Variantes & Règles Spéciales", "year": 2005, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Super Add-ons éditée par Hasbro.", "image_url": "images/box_mono-monopoly-super-add-ons.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-super-electronic-banking", "name": "Monopoly Super Electronic Banking (Banque Électronique Récompenses)", "category": "Variantes & Règles Spéciales", "year": 2020, "country": "France / Monde", "publisher": "Hasbro", "description": "Terminal bancaire tout-en-un avec cartes de récompenses uniques accordant des bonus spécifiques à chaque joueur.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-super-electronic-banking-edition", "name": "Monopoly Super Electronic Banking Edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Super Electronic Banking Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-super-electronic-banking-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-super-mario-bros-movie-edition-the", "name": "Monopoly Super Mario Bros. Movie Edition, The", "category": "Jeux Vidéo", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Super Mario Bros. Movie Edition, The éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-super-mario-celebration", "name": "Monopoly Super Mario Celebration", "category": "Jeux Vidéo", "year": 2020, "country": "Monde / France", "publisher": "Hasbro", "description": "Bloc « ? » sonore avec bruitages classiques de Nintendo qui change les règles du jeu.", "theme": {"bg1": "#b91c1c", "bg2": "#1d4ed8", "icon": "star", "accent": "#fde047"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-super-tax", "name": "Monopoly Super Tax", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Super Tax éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-supernatural", "name": "Monopoly Supernatural Collector's Edition", "category": "Films & Séries", "year": 2018, "country": "USA / Monde", "publisher": "USAopoly", "description": "Chassez démons et monstres avec Sam et Dean Winchester au volant de l'Impala 1967 (Baby).", "theme": {"bg1": "#4c0519", "bg2": "#18181b", "icon": "cinema", "accent": "#f43f5e"}, "image_url": "images/mono-pop-supernatural.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-supernatural-edition", "name": "Monopoly Supernatural Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Supernatural Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-supernatural-join-the-hunt-edition", "name": "Monopoly Supernatural Join the Hunt Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Supernatural Join the Hunt Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-supernatural-join-the-hunt-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-surfing-edition", "name": "Monopoly Surfing Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Surfing Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-city-sydney", "name": "Monopoly Sydney", "category": "Villes & Pays (Monde)", "year": 2004, "country": "Australie", "publisher": "Winning Moves", "description": "Opéra de Sydney, Harbour Bridge, Bondi Beach, The Rocks et Darling Harbour.", "theme": {"bg1": "#0c4a6e", "bg2": "#0f172a", "icon": "globe", "accent": "#38bdf8"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-s-te-edition", "name": "Monopoly Sète Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Sète Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-t-rex", "name": "Monopoly T-Rex", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly T-Rex éditée par Hasbro.", "image_url": "images/box_mono-monopoly-t-rex.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-today-show-edition", "name": "Monopoly TODAY Show Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly TODAY Show Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-today-show-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-tampa-edition", "name": "Monopoly Tampa Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Tampa Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-tampa-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-target-edition", "name": "Monopoly Target Edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Target Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-target-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-ted-lasso-edition", "name": "Monopoly Ted Lasso Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Ted Lasso Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-ted-lasso-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-teenage-mutant-ninja-turtles-edition", "name": "Monopoly Teenage Mutant Ninja Turtles Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Teenage Mutant Ninja Turtles Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-teenage-mutant-ninja-turtles-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-texas-hill-country-edition", "name": "Monopoly Texas Hill Country Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Texas Hill Country Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-texas-hill-country-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-com-edition", "name": "Monopoly The .com Edition", "category": "Variantes & Règles Spéciales", "year": 2000, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly The .com Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-the-com-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-1980-s-edition", "name": "Monopoly The 1980's Edition", "category": "Classique & Anniversaire", "year": 1980, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly The 1980's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-the-1980-s-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-50-s", "name": "Monopoly The 50's", "category": "Variantes & Règles Spéciales", "year": 2000, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly The 50's éditée par Hasbro.", "image_url": "images/box_mono-monopoly-the-50-s.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-60-s", "name": "Monopoly The 60's", "category": "Variantes & Règles Spéciales", "year": 2000, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly The 60's éditée par Hasbro.", "image_url": "images/box_mono-monopoly-the-60-s.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-70-s", "name": "Monopoly The 70's", "category": "Variantes & Règles Spéciales", "year": 2000, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly The 70's éditée par Hasbro.", "image_url": "images/box_mono-monopoly-the-70-s.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-80-s", "name": "Monopoly The 80's", "category": "Variantes & Règles Spéciales", "year": 2000, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly The 80's éditée par Hasbro.", "image_url": "images/box_mono-monopoly-the-80-s.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-angel-islington", "name": "Monopoly The Angel, Islington", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly The Angel, Islington éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-music-beatles", "name": "Monopoly The Beatles Collector's Edition", "category": "Musique & Groupes", "year": 2008, "country": "Monde", "publisher": "USAopoly", "description": "Abbey Road, Sgt. Pepper's, Yellow Submarine, Strawberry Fields avec pions sous-marin jaune, morse, marteau.", "theme": {"bg1": "#18181b", "bg2": "#27272a", "icon": "music", "accent": "#f43f5e"}, "image_url": "images/mono-music-beatles.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-tbbt", "name": "Monopoly The Big Bang Theory", "category": "Films & Séries", "year": 2014, "country": "Monde / France", "publisher": "USAopoly / Winning Moves", "description": "L'appartement 4A de Sheldon et Leonard, la cafétéria de Caltech, pions canapé de Sheldon, lunettes de Leonard, Bazinga.", "theme": {"bg1": "#4c0519", "bg2": "#18181b", "icon": "cinema", "accent": "#f43f5e"}, "image_url": "images/mono-pop-tbbt.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-dragon-prince-edition", "name": "Monopoly The Dragon Prince Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly The Dragon Prince Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-the-dragon-prince-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-vg-skyrim", "name": "Monopoly The Elder Scrolls V: Skyrim", "category": "Jeux Vidéo", "year": 2017, "country": "Monde", "publisher": "Winning Moves", "description": "Bordeciel, Blancherive, Solitude, Vendeaume, pions Casque de fer de Dovahkiin, bouclier d'azur.", "theme": {"bg1": "#312e81", "bg2": "#0f172a", "icon": "gamepad", "accent": "#a855f7"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-franklin-mint", "name": "Monopoly The Franklin Mint Collector's Edition", "category": "Classique & Anniversaire", "year": 1991, "country": "USA / Monde", "publisher": "Franklin Mint", "description": "Plateau en bois noble surélevé, tiroir feutre vert, hôtels plaqués or 24 carats, maisons en argent massif.", "theme": {"bg1": "#14532d", "bg2": "#3f2d19", "icon": "vintage", "accent": "#fbbf24"}, "image_url": "images/mono-franklin-mint.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-godfather-edition", "name": "Monopoly The Godfather Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly The Godfather Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-the-godfather-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-hamptons-edition", "name": "Monopoly The Hamptons Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly The Hamptons Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-the-hamptons-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-landlord-s-game", "name": "Monopoly The Landlord's Game", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly The Landlord's Game éditée par Hasbro.", "image_url": "images/box_mono-monopoly-the-landlord-s-game.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-vg-zelda", "name": "Monopoly The Legend of Zelda", "category": "Jeux Vidéo", "year": 2014, "country": "Monde / France", "publisher": "USAopoly / Winning Moves", "description": "Hyrule, le Temple du Temps, Mont du Péril, château d'Hyrule avec pions Triforce, Bouclier Hylien, Arc.", "theme": {"bg1": "#064e3b", "bg2": "#022c22", "icon": "triforce", "accent": "#fbbf24"}, "image_url": "images/mono-vg-zelda.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-mandalorian-edition", "name": "Monopoly The Mandalorian Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly The Mandalorian Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-the-mandalorian-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-marina", "name": "Monopoly The Marina", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly The Marina éditée par Hasbro.", "image_url": "images/box_mono-monopoly-the-marina.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-monopoly-book", "name": "Monopoly The Monopoly Book", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly The Monopoly Book éditée par Hasbro.", "image_url": "images/box_mono-monopoly-the-monopoly-book.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-monopoly-book-strategy-and-tactics-of", "name": "Monopoly The Monopoly Book: Strategy and Tactics of the World's Most Popular Game", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly The Monopoly Book: Strategy and Tactics of the World's Most Popular Game éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-monopoly-companion", "name": "Monopoly The Monopoly Companion", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly The Monopoly Companion éditée par Hasbro.", "image_url": "images/box_mono-monopoly-the-monopoly-companion.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-monopoly-song", "name": "Monopoly The Monopoly Song", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly The Monopoly Song éditée par Hasbro.", "image_url": "images/box_mono-monopoly-the-monopoly-song.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-muppets-collector-s-edition", "name": "Monopoly The Muppets Collector's Edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly The Muppets Collector's Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-the-muppets-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-nightmare-before-christmas-25-years-e", "name": "Monopoly The Nightmare Before Christmas 25 Years Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly The Nightmare Before Christmas 25 Years Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-the-nightmare-before-christmas-25-years-e.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-nightmare-before-christmas-collector-", "name": "Monopoly The Nightmare Before Christmas Collector's Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly The Nightmare Before Christmas Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-the-nightmare-before-christmas-collector-.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-the-office", "name": "Monopoly The Office (Dunder Mifflin)", "category": "Films & Séries", "year": 2019, "country": "USA / Monde", "publisher": "USAopoly", "description": "Dunder Mifflin Scranton : agrafeuse dans la gelée, le trophée Dundie, tasse World's Best Boss.", "theme": {"bg1": "#4c0519", "bg2": "#18181b", "icon": "cinema", "accent": "#f43f5e"}, "image_url": "images/mono-pop-the-office.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-office-collector-s-edition", "name": "Monopoly The Office Collector's Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly The Office Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-the-office-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-office-edition", "name": "Monopoly The Office Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly The Office Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-the-office-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-music-rolling-stones", "name": "Monopoly The Rolling Stones Collector's Edition", "category": "Musique & Groupes", "year": 2010, "country": "Monde", "publisher": "USAopoly", "description": "Sticky Fingers, Exile on Main St., célèbre logo à la langue rouge et lèvres de Mick Jagger.", "theme": {"bg1": "#18181b", "bg2": "#27272a", "icon": "music", "accent": "#f43f5e"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-simpsons-edition", "name": "Monopoly The Simpsons Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly The Simpsons Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-the-simpsons-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-simpsons-treehouse-of-horror-edition", "name": "Monopoly The Simpsons: Treehouse of Horror Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly The Simpsons: Treehouse of Horror Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-strand", "name": "Monopoly The Strand", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly The Strand éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-super-mario-bros-movie-edition", "name": "Monopoly The Super Mario Bros. Movie Edition", "category": "Jeux Vidéo", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly The Super Mario Bros. Movie Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-the-super-mario-bros-movie-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-super-mario-galaxy-movie-edition", "name": "Monopoly The Super Mario Galaxy Movie Edition", "category": "Jeux Vidéo", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly The Super Mario Galaxy Movie Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-the-super-mario-galaxy-movie-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-three-stooges-collector-s-edition", "name": "Monopoly The Three Stooges Collector's Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly The Three Stooges Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-the-three-stooges-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-the-walking-dead", "name": "Monopoly The Walking Dead (Survival Edition)", "category": "Films & Séries", "year": 2013, "country": "Monde / USA", "publisher": "USAopoly", "description": "Achetez, vendez et fortifiez des lieux sécurisés contre les Rôdeurs (prison, Woodbury, Hershel's Farm).", "theme": {"bg1": "#4c0519", "bg2": "#18181b", "icon": "cinema", "accent": "#f43f5e"}, "image_url": "images/mono-pop-the-walking-dead.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-walking-dead-survival-edition", "name": "Monopoly The Walking Dead Survival Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly The Walking Dead Survival Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-the-walking-dead-survival-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-wharf", "name": "Monopoly The Wharf", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly The Wharf éditée par Hasbro.", "image_url": "images/box_mono-monopoly-the-wharf.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-witcher-edition", "name": "Monopoly The Witcher Edition", "category": "Jeux Vidéo", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly The Witcher Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-the-witcher-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-token-madness-edition", "name": "Monopoly Token Madness Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Token Madness Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-token-madness-edition-1", "name": "Monopoly Token Madness Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Token Madness Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-token-madness-edition-1.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-tokidoki-edition", "name": "Monopoly Tokidoki Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Tokidoki Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-tokidoki-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-city-tokyo", "name": "Monopoly Tokyo", "category": "Villes & Pays (Monde)", "year": 2006, "country": "Japon", "publisher": "Hasbro / Takara Tomy", "description": "Shibuya, Shinjuku, Ginza, Tour de Tokyo, Akihabara et Roppongi.", "theme": {"bg1": "#0c4a6e", "bg2": "#0f172a", "icon": "globe", "accent": "#38bdf8"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-top-gun-edition", "name": "Monopoly Top Gun Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Top Gun Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-top-gun-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-top-hat", "name": "Monopoly Top Hat", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Top Hat éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-top-hat-fortnite", "name": "Monopoly Top Hat (Fortnite)", "category": "Jeux Vidéo", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Top Hat (Fortnite) éditée par Hasbro.", "image_url": "images/box_mono-monopoly-top-hat-fortnite.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-totopoly", "name": "Monopoly Totopoly", "category": "Variantes & Règles Spéciales", "year": 1938, "country": "Royaume-Uni", "publisher": "Waddingtons", "description": "Édition Monopoly Totopoly éditée par Waddingtons.", "image_url": "images/box_mono-monopoly-totopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-ville-toulon", "name": "Monopoly Toulon", "category": "Villes & Régions (France)", "year": 2007, "country": "France", "publisher": "Winning Moves", "description": "Rade de Toulon, Mont Faron, Stade Mayol (RCT), port militaire et plages du Mourillon.", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-ville-toulouse", "name": "Monopoly Toulouse", "category": "Villes & Régions (France)", "year": 2003, "country": "France", "publisher": "Winning Moves", "description": "Place du Capitole, Basilique Saint-Sernin, Cité de l'Espace, Pont-Neuf et berges de la Garonne.", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-sport-tour-de-france", "name": "Monopoly Tour de France", "category": "Marques & Sports", "year": 2017, "country": "France / Europe", "publisher": "Winning Moves", "description": "Les cols mythiques (Alpe d'Huez, Tourmalet, Mont Ventoux) et l'arrivée mythique sur les Champs-Élysées.", "theme": {"bg1": "#1e3a8a", "bg2": "#1e293b", "icon": "monument", "accent": "#ef4444"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-region-touraine", "name": "Monopoly Touraine & Châteaux de la Loire", "category": "Villes & Régions (France)", "year": 2009, "country": "France", "publisher": "Winning Moves", "description": "Châteaux de Chenonceau, Chambord, Amboise, Azay-le-Rideau, Tours et vignobles de Vouvray.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-tournaments", "name": "Monopoly Tournaments", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Tournaments éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-toy-story", "name": "Monopoly Toy Story (Disney Pixar)", "category": "Films & Séries", "year": 2019, "country": "Monde / France", "publisher": "Hasbro", "description": "La chambre d'Andy, Pizza Planet, le magasin de jouets d'Al avec pions Woody, Buzz l'Éclair, Rex, Jessie, Kart.", "theme": {"bg1": "#1e1b4b", "bg2": "#312e81", "icon": "castle", "accent": "#67e8f9"}, "image_url": "images/mono-pop-toy-story.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-trade", "name": "Monopoly Trade", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Trade éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-train-depots", "name": "Monopoly Train Depots", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Train Depots éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-train-stations", "name": "Monopoly Train Stations", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Train Stations éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-pop-transformers", "name": "Monopoly Transformers Collector's Edition", "category": "Films & Séries", "year": 2007, "country": "Monde", "publisher": "USAopoly / Hasbro", "description": "Autobots vs Decepticons sur Cybertron et la Terre, pions Optimus Prime, Megatron, Bumblebee, Matrice de commandement.", "theme": {"bg1": "#4c0519", "bg2": "#18181b", "icon": "cinema", "accent": "#f43f5e"}, "image_url": "images/mono-pop-transformers.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-transformers-collector-s-edition", "name": "Monopoly Transformers Collector’s Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Transformers Collector’s Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-transformers-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-travel-world-tour-edition", "name": "Monopoly Travel World Tour Edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Travel World Tour Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-travel-world-tour-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-treetop-park", "name": "Monopoly Treetop Park", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Treetop Park éditée par Hasbro.", "image_url": "images/box_mono-monopoly-treetop-park.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-triopoly", "name": "Monopoly Triopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Triopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-triopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-tropical-tycoon", "name": "Monopoly Tropical Tycoon", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Tropical Tycoon éditée par Hasbro.", "image_url": "images/box_mono-monopoly-tropical-tycoon.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-tucson-edition", "name": "Monopoly Tucson Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Tucson Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-tucson-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-tulsa-edition", "name": "Monopoly Tulsa Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Tulsa Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-tulsa-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-twilight-saga-edition", "name": "Monopoly Twilight Saga Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Twilight Saga Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-twilight-saga-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-tycoon", "name": "Monopoly Tycoon", "category": "Jeux Vidéo", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Tycoon éditée par Hasbro.", "image_url": "images/box_mono-monopoly-tycoon.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-u-build", "name": "Monopoly U-Build", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "France / Monde", "publisher": "Hasbro", "description": "Plateau modulable composé de tuiles de piste emboîtables en plastique permettant de créer différentes longueurs de plateau et formes de circuits.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-u-build-edition", "name": "Monopoly U-Build Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly U-Build Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-u-build-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-u-s-stamps-edition", "name": "Monopoly U.S. Stamps Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly U.S. Stamps Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-u-s-stamps-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-u-s-a-greatest-cities-edition", "name": "Monopoly U.S.A. Greatest Cities Edition", "category": "Variantes & Règles Spéciales", "year": 2005, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly U.S.A. Greatest Cities Edition éditée par USAopoly / The Op.", "image_url": "images/box_mono-monopoly-u-s-a-greatest-cities-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-usaopoly", "name": "Monopoly USAopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "USA", "publisher": "USAopoly / The Op", "description": "Édition Monopoly USAopoly éditée par USAopoly / The Op.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-ultimate-007-james-bond-collector-s-editi", "name": "Monopoly Ultimate 007 James Bond Collector's Edition", "category": "Variantes & Règles Spéciales", "year": 2008, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Ultimate 007 James Bond Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-ultimate-007-james-bond-collector-s-editi.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-ultimate-banking-edition", "name": "Monopoly Ultimate Banking Edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Ultimate Banking Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-ultimate-banking-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-under-the-boardwalk", "name": "Monopoly Under the Boardwalk", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Under the Boardwalk éditée par Hasbro.", "image_url": "images/box_mono-monopoly-under-the-boardwalk.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-utilities", "name": "Monopoly Utilities", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Utilities éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-utility", "name": "Monopoly Utility", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Utility éditée par Hasbro.", "image_url": "images/box_mono-monopoly-utility.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-valparaiso-opoly", "name": "Monopoly Valparaiso-opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Valparaiso-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-valparaiso-opoly.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-variations", "name": "Monopoly Variations", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Variations éditée par Hasbro.", "image_url": "images/box_mono-monopoly-variations.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-region-vendee", "name": "Monopoly Vendée", "category": "Villes & Régions (France)", "year": 2008, "country": "France", "publisher": "Winning Moves", "description": "Les Sables-d'Olonne (Vendée Globe), Puy du Fou, Île d'Yeu, Île de Noirmoutier et Marais Poitevin.", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-city-venise", "name": "Monopoly Venezia (Venise)", "category": "Villes & Pays (Monde)", "year": 2009, "country": "Italie", "publisher": "Winning Moves", "description": "Place Saint-Marc, Pont des Soupirs, Grand Canal, Pont du Rialto, Île de Murano et gondoles.", "theme": {"bg1": "#0c4a6e", "bg2": "#0f172a", "icon": "globe", "accent": "#38bdf8"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-venezuela-edition", "name": "Monopoly Venezuela Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Venezuela Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-venezuela-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-versailles-edition", "name": "Monopoly Versailles Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Versailles Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-versailles-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-vikings-collector-s-edition", "name": "Monopoly Vikings Collector's Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Vikings Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-vikings-collector-s-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-vintage-wood", "name": "Monopoly Vintage Book Collection (Boîte Livre Bois)", "category": "Classique & Anniversaire", "year": 2005, "country": "USA / International", "publisher": "Winning Solutions", "description": "Boîtier en bois simulant un livre ancien de collection, plateau pliable et composants rétro.", "theme": {"bg1": "#14532d", "bg2": "#3f2d19", "icon": "vintage", "accent": "#fbbf24"}, "image_url": "images/mono-vintage-wood.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-vintage-book-edition", "name": "Monopoly Vintage Book Edition", "category": "Variantes & Règles Spéciales", "year": 2011, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Vintage Book Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-vintage-book-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-vintage-wood-book-edition", "name": "Monopoly Vintage Wood Book Edition", "category": "Classique & Anniversaire", "year": 2005, "country": "USA", "publisher": "Hasbro", "description": "Édition Monopoly Vintage Wood Book Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-vintage-wood-book-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-violetopoly", "name": "Monopoly Violetopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Violetopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-violetopoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-virginia-beach-edition", "name": "Monopoly Virginia Beach Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Virginia Beach Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-virginia-beach-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-vitas-varnas", "name": "Monopoly Vitas Varnas", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Vitas Varnas éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-voice-banking-edition", "name": "Monopoly Voice Banking Edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Voice Banking Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-voice-banking-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-voice-banking", "name": "Monopoly Voix (Voice Banking)", "category": "Variantes & Règles Spéciales", "year": 2019, "country": "France / Monde", "publisher": "Hasbro", "description": "Le chapeau haut-de-forme électronique de Mr. Monopoly écoute votre voix et gère les transactions financières sans aucun billet ni carte.", "theme": {"bg1": "#0369a1", "bg2": "#0f172a", "icon": "electronic", "accent": "#38bdf8"}, "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-region-vosges", "name": "Monopoly Vosges", "category": "Villes & Régions (France)", "year": 2014, "country": "France", "publisher": "Winning Moves", "description": "Gérardmer, La Bresse, Massif des Vosges, Crêtes, thermalisme de Vittel et Épinal.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-waddingtons", "name": "Monopoly Waddingtons", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Waddingtons", "description": "Édition Monopoly Waddingtons éditée par Waddingtons.", "image_url": "images/box_mono-monopoly-waddingtons.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-wagga-wagga-edition", "name": "Monopoly Wagga Wagga Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Wagga Wagga Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-wagga-wagga-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-warhammer-40-000-edition", "name": "Monopoly Warhammer 40,000 Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Warhammer 40,000 Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-warhammer-40-000-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-westlands", "name": "Monopoly Westlands", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Westlands éditée par Hasbro.", "image_url": "images/box_mono-monopoly-westlands.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-wichita-edition", "name": "Monopoly Wichita Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Wichita Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-wichita-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-wine-opoly", "name": "Monopoly Wine-opoly", "category": "Variantes & Règles Spéciales", "year": 2003, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Wine-opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-wine-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-winning-moves-games", "name": "Monopoly Winning Moves Games", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Winning Moves", "description": "Édition Monopoly Winning Moves Games éditée par Winning Moves.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-woot-opoly", "name": "Monopoly Woot!opoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Woot!opoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-woot-opoly.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-worcester-edition", "name": "Monopoly Worcester Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Worcester Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-worcester-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-world-football-stars-edition", "name": "Monopoly World Football Stars Edition", "category": "Marques & Sports", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly World Football Stars Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-world-football-stars-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-vg-world-of-warcraft", "name": "Monopoly World of Warcraft Collector's Edition", "category": "Jeux Vidéo", "year": 2012, "country": "Monde", "publisher": "USAopoly", "description": "Azeroth, Hurlevent, Orgrimmar, Fossoyeuse, pions Heaume de domination, Botte de chenille, Épée de Varian.", "theme": {"bg1": "#312e81", "bg2": "#0f172a", "icon": "gamepad", "accent": "#a855f7"}, "image_url": "images/mono-vg-world-of-warcraft.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-world-of-warcraft-edition", "name": "Monopoly World of Warcraft Edition", "category": "Jeux Vidéo", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly World of Warcraft Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-world-of-warcraft-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-wu-tang-clan-edition", "name": "Monopoly Wu-Tang Clan Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Wu-Tang Clan Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-wu-tang-clan-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-x-men-97-edition", "name": "Monopoly X-Men '97 Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly X-Men '97 Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-x-men-collector-s-edition", "name": "Monopoly X-Men Collector's Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly X-Men Collector's Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-x-men-collector-s-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-xxxopoly", "name": "Monopoly XXXopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly XXXopoly éditée par Hasbro.", "image_url": "images/box_mono-monopoly-xxxopoly.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-xxxopoly-pride", "name": "Monopoly XXXopoly Pride", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly XXXopoly Pride éditée par Hasbro.", "image_url": "images/box_mono-monopoly-xxxopoly-pride.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-yahoo-geocities", "name": "Monopoly Yahoo! GeoCities", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Yahoo! GeoCities éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-yellowstone-edition", "name": "Monopoly Yellowstone Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Yellowstone Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-yellowstone-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-york-edition", "name": "Monopoly York Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly York Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-york-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-yorkshire-edition", "name": "Monopoly Yorkshire Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Yorkshire Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-yorkshire-edition.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-yu-gi-oh-edition", "name": "Monopoly Yu-Gi-Oh Edition", "category": "Anime & Manga", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly Yu-Gi-Oh Edition éditée par Hasbro.", "image_url": "images/box_mono-monopoly-yu-gi-oh-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-manga-yugioh", "name": "Monopoly Yu-Gi-Oh!", "category": "Anime & Manga", "year": 2016, "country": "Monde", "publisher": "USAopoly", "description": "Le Domaine des Duellistes, Bataille Ville, pions Puzzle du Millénium, Yeux du Millénium, Disque de duel.", "theme": {"bg1": "#7c2d12", "bg2": "#1e293b", "icon": "manga", "accent": "#fb923c"}, "image_url": "images/mono-manga-yugioh.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-for-millenials", "name": "Monopoly for Millenials", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly for Millenials éditée par Hasbro.", "image_url": "images/box_mono-monopoly-for-millenials.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-millennials", "name": "Monopoly for Millennials", "category": "Variantes & Règles Spéciales", "year": 2018, "country": "USA / Monde", "publisher": "Hasbro", "description": "'Oubliez l'immobilier, vous n'avez pas les moyens de toute façon' : accumulez des points d'expérience (brunch, canapé...).", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "images/mono-millennials.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-for-nintendo-switch", "name": "Monopoly for Nintendo Switch", "category": "Jeux Vidéo", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly for Nintendo Switch éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-for-sore-losers", "name": "Monopoly for Sore Losers", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly for Sore Losers éditée par Hasbro.", "image_url": "images/box_mono-monopoly-for-sore-losers.png", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-nostalgie-bois", "name": "Monopoly Édition Nostalgie (Boîte Coffret Bois)", "category": "Classique & Anniversaire", "year": 2001, "country": "France / Monde", "publisher": "Parker Brothers / Hasbro", "description": "Magnifique coffret en bois massif teinté avec plateau vintage d'époque, casier de rangement en bois et pions moulés sous pression.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-1935", "name": "Monopoly Édition Originale 1935 (Reproduction)", "category": "Classique & Anniversaire", "year": 1935, "country": "USA / Monde", "publisher": "Parker Brothers / Hasbro", "description": "Reproduction de la boîte originale Parker Brothers de 1935 avec les pions en métal rétro et billets vintage.", "theme": {"bg1": "#14532d", "bg2": "#3f2d19", "icon": "vintage", "accent": "#fbbf24"}, "image_url": "images/mono-1935.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-cheaters", "name": "Monopoly Édition Tricheurs (Cheaters Edition)", "category": "Variantes & Règles Spéciales", "year": 2018, "country": "France / Monde", "publisher": "Hasbro", "description": "Trichez pour gagner sans vous faire attraper ! Menottes en plastique incluses pour les tricheurs découverts.", "theme": {"bg1": "#7f1d1d", "bg2": "#0f172a", "icon": "handcuffs", "accent": "#f87171"}, "image_url": "images/mono-cheaters.webp", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-region-ile-de-re", "name": "Monopoly Île de Ré", "category": "Villes & Régions (France)", "year": 2008, "country": "France", "publisher": "Winning Moves", "description": "Saint-Martin-de-Ré, Phare des Baleines, marais salants, roses trémières et pistes cyclables.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-collect-win", "name": "Monopoly: Collect & Win", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly: Collect & Win éditée par Hasbro.", "image_url": "images/box_mono-monopoly-collect-win.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-crazy-cash-1", "name": "Monopoly: Crazy Cash", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly: Crazy Cash éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-disney-pixar-cars-2-edition-1", "name": "Monopoly: Disney Pixar Cars 2 Edition", "category": "Films & Séries", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly: Disney Pixar Cars 2 Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-electronic-banking-edition-1", "name": "Monopoly: Electronic Banking Edition", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly: Electronic Banking Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-giant-edition-1", "name": "Monopoly: Giant Edition", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly: Giant Edition éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-hand-held-electronic-game", "name": "Monopoly: Hand-Held Electronic Game", "category": "Éditions Spéciales & Thématiques", "year": 1997, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly: Hand-Held Electronic Game éditée par Hasbro.", "image_url": "images/box_mono-monopoly-hand-held-electronic-game.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-here-now-buzzfeed-1", "name": "Monopoly: Here & Now (Buzzfeed)", "category": "Villes & Pays (Monde)", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly: Here & Now (Buzzfeed) éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-south-wales-version", "name": "Monopoly: South Wales version", "category": "Villes & Pays (Monde)", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly: South Wales version éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-card-game", "name": "Monopoly: The Card Game", "category": "Variantes & Règles Spéciales", "year": 2010, "country": "Monde", "publisher": "Winning Moves", "description": "Édition Monopoly: The Card Game éditée par Winning Moves.", "image_url": "images/box_mono-monopoly-the-card-game.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-mega-edition", "name": "Monopoly: The Mega Edition", "category": "Variantes & Règles Spéciales", "year": 2006, "country": "Monde", "publisher": "Winning Moves", "description": "Édition Monopoly: The Mega Edition éditée par Winning Moves.", "image_url": "images/box_mono-monopoly-the-mega-edition.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-the-story", "name": "Monopoly: The Story...", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly: The Story... éditée par Hasbro.", "image_url": "images/box_mono-monopoly-the-story.jpg", "is_verified_box": true, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopoly-special-edition-cub-scout-monopoly", "name": "Monopoly: special edition cub scout monopoly", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition Monopoly: special edition cub scout monopoly éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopolywiki-general-discussion", "name": "MonopolyWiki:General Discussion", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition MonopolyWiki:General Discussion éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopolywiki-how-can-we-help", "name": "MonopolyWiki:How Can We Help?", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition MonopolyWiki:How Can We Help? éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-monopolywiki-news", "name": "MonopolyWiki:News", "category": "Éditions Spéciales & Thématiques", "year": 2010, "country": "Monde", "publisher": "Hasbro", "description": "Édition MonopolyWiki:News éditée par Hasbro.", "image_url": "", "is_verified_box": false, "status": "none", "condition": "", "price": "", "value": "", "location": ""}, {"id": "mono-mega", "name": "Monopoly Édition Mega (Winning Moves 2007)", "category": "Déclinaisons & Variantes", "year": 2007, "country": "France", "publisher": "Winning Moves / Hasbro", "description": "Première grande édition Méga Monopoly : plateau géant +50% avec 12 nouvelles cases de propriétés parisiennes, gratte-ciel, billets de 1000€ et le célèbre dé accélérateur bleu.", "theme": {"bg1": "#1e293b", "bg2": "#0f172a", "icon": "monopoly", "accent": "#e11d48"}, "image_url": "images/box_mono-mega-2007.jpg", "is_verified_box": true, "back_image_url": "images/box_mono-mega-2007-dos.jpg", "status": "none", "condition": "", "location": "", "notes": "Code-barres 3700126901409. 1ère édition Winning Moves France 2007 avec dé accélérateur.", "price": "", "value": ""}, {"id": "mono-mega-2015", "name": "Monopoly Édition Mega (Winning Moves 2015 - Monuments de Paris)", "category": "Déclinaisons & Variantes", "year": 2015, "publisher": "Winning Moves / Hasbro", "country": "France", "description": "Version Méga 2015 avec visuels photos des monuments parisiens (Arc de Triomphe, Sacré Cœur, Opéra Garnier), plateau géant de 12 nouvelles cases, gratte-ciel et dé rouge.", "image_url": "images/box_mono-mega-2015.jpg", "back_image_url": "images/box_mono-mega-2015-dos.jpg", "is_verified_box": true, "status": "none", "condition": "", "location": "", "notes": "", "price": "", "value": ""}, {"id": "mono-fr-1992-standard", "name": "Monopoly France 1992 (Parker / Tonka - Rues de Paris)", "category": "Classique & Standard", "year": 1992, "publisher": "Parker / Tonka", "country": "France", "description": "Édition classique incontournable des années 1990 en Francs français (20 000 Francs au départ), distribuée par Kenner Parker France / Tonka Corporation avec boîte longue rectangulaire et photo de famille au dos.", "image_url": "images/box_mono-fr-1992-standard.jpg", "back_image_url": "images/box_mono-fr-1992-standard-dos.jpg", "is_verified_box": true, "status": "none", "condition": "", "location": "", "notes": "", "price": "", "value": ""}];
+    const STORAGE_KEY = "monopoly_collection_db_v10";
+
+    let database = [];
+    let currentFilterStatus = "all";
+    let currentFilterCategory = "all";
+    let currentCountry = "all";
+    let currentPublisher = "all";
+    let currentDecade = "all";
+    let currentSearchTerm = "";
+    let currentSort = "name-asc";
+    let currentView = "card";
+    let activeLightboxId = null;
+
+    // Pagination
+    const PAGE_SIZE = 60;
+    let displayedCount = PAGE_SIZE;
+
+    function handleImageError(img) {
+      img.style.display = "none";
+      const fallback = img.nextElementSibling;
+      if (fallback) fallback.style.display = "flex";
+      const badge = img.parentElement.querySelector(".verified-badge");
+      if (badge) badge.style.display = "none";
+    }
+
+    // ==========================================
+    // COTE & VALEUR DE REVENTE MARCHÉ SECONDAIRE
+    // ==========================================
+    function getMarketLinks(itemOrName) {
+      const item = typeof itemOrName === "object" && itemOrName !== null ? itemOrName : { name: itemOrName || "" };
+      const rawName = (item.name || "").trim();
+      const year = item.year && parseInt(item.year, 10) > 1900 ? String(item.year) : "";
+      const pub = (item.publisher || "").trim();
+
+      let cleanTitle = rawName
+        .replace(/^Monopoly\s*[:–-]?\s*/i, "")
+        .replace(/\s*\(FR\s*\/?\s*VF\)/gi, "")
+        .replace(/\s*\(Version fran[çc]aise\)/gi, "")
+        .replace(/\s*\(Édition standard\)/gi, "")
+        .replace(/\s*\(Bo[îi]te [a-z0-9\s-]+\)/gi, "")
+        .replace(/\s*\(.*?\)/g, "")
+        .replace(/[?!=–—:;]/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+
+      const baseQuery = "Monopoly " + cleanTitle;
+      let exactQuery = baseQuery;
+      if (year && !exactQuery.includes(year)) {
+        exactQuery += " " + year;
+      }
+      if (pub.toLowerCase().includes("winning moves") && !exactQuery.toLowerCase().includes("winning")) {
+        exactQuery += " Winning Moves";
+      }
+
+      // eBay : Catégorie 220 (Jeux de société) + Ventes terminées et réussies
+      const ebayExact = "https://www.ebay.fr/sch/220/i.html?_nkw=" + encodeURIComponent('"' + baseQuery + '"' + (year ? ' ' + year : '')) + "&LH_Complete=1&LH_Sold=1";
+      const ebayBroad = "https://www.ebay.fr/sch/220/i.html?_nkw=" + encodeURIComponent(baseQuery) + "&LH_Complete=1&LH_Sold=1";
+
+      // Vinted : jeux de société
+      const vintedExact = "https://www.vinted.fr/catalog?search_text=" + encodeURIComponent("jeu " + exactQuery);
+      const vintedBroad = "https://www.vinted.fr/catalog?search_text=" + encodeURIComponent("jeu " + baseQuery);
+
+      // LeBonCoin : category=43 (Jeux & Jouets)
+      const lbcExact = "https://www.leboncoin.fr/recherche?category=43&text=" + encodeURIComponent(exactQuery);
+      const lbcBroad = "https://www.leboncoin.fr/recherche?category=43&text=" + encodeURIComponent(baseQuery);
+
+      return {
+        ebaySold: ebayExact,
+        ebay: ebayExact,
+        ebayBroad: ebayBroad,
+        vinted: vintedExact,
+        vintedBroad: vintedBroad,
+        leboncoin: lbcExact,
+        leboncoinBroad: lbcBroad,
+        exactQuery: exactQuery,
+        baseQuery: baseQuery,
+        
+        // Amazon Marketplaces (FR, DE, US, UK, IT, ES)
+        amazonFr: "https://www.amazon.fr/s?k=" + encodeURIComponent("Monopoly " + cleanTitle),
+        amazonDe: "https://www.amazon.de/s?k=" + encodeURIComponent("Monopoly " + cleanTitle),
+        amazonUs: "https://www.amazon.com/s?k=" + encodeURIComponent("Monopoly " + cleanTitle),
+        amazonUk: "https://www.amazon.co.uk/s?k=" + encodeURIComponent("Monopoly " + cleanTitle),
+        amazonIt: "https://www.amazon.it/s?k=" + encodeURIComponent("Monopoly " + cleanTitle),
+        amazonEs: "https://www.amazon.es/s?k=" + encodeURIComponent("Monopoly " + cleanTitle),
+        
+        // Fabricant & Créateurs
+        hasbro: "https://shop.hasbro.com/fr-fr/search?q=" + encodeURIComponent("Monopoly " + cleanTitle),
+        etsy: "https://www.etsy.com/fr/search?q=" + encodeURIComponent("Monopoly " + cleanTitle),
+        google: "https://www.google.com/search?tbm=isch&q=" + encodeURIComponent("jeu de societe monopoly " + cleanTitle + " boite")
+      };
+    }
+
+    function estimateMarketResaleValue(item, condition) {
+      if (!item) return { value: 0, hasEstimate: false, rangeStr: "Cote non disponible", label: "Cote non disponible" };
+
+      // Si l'utilisateur a renseigné une valeur personnalisée, l'utiliser en priorité
+      if (item.value && !isNaN(parseFloat(item.value)) && parseFloat(item.value) > 0) {
+        const v = parseFloat(item.value);
+        return { value: v, hasEstimate: true, rangeStr: Math.round(v * 0.85) + " € - " + Math.round(v * 1.15) + " €", min: Math.round(v * 0.85), max: Math.round(v * 1.15) };
+      }
+
+      const name = (item.name || "").toLowerCase();
+      const year = parseInt(item.year, 10) || 2010;
+      const pub = (item.publisher || "").toLowerCase();
+      const cat = (item.category || "").toLowerCase();
+      const desc = (item.description || "").toLowerCase();
+      const notes = (item.notes || "").toLowerCase();
+      const allText = name + " " + pub + " " + cat + " " + desc + " " + notes;
+
+      let baseVal = 0;
+      let minVal = 0;
+      let maxVal = 0;
+      let hasEstimate = false;
+
+      // Cotes documentées et réelles
+      if (allText.includes("1937") || allText.includes("s.g.d.g") || allText.includes("miro company") || allText.includes("breveté")) {
+        baseVal = 350; minVal = 250; maxVal = 550; hasEstimate = true;
+      } else if (allText.includes("1935") || allText.includes("white box") || allText.includes("black box") || allText.includes("darrow")) {
+        baseVal = 500; minVal = 350; maxVal = 800; hasEstimate = true;
+      } else if (allText.includes("1936")) {
+        baseVal = 400; minVal = 300; maxVal = 600; hasEstimate = true;
+      } else if (allText.includes("mega")) {
+        baseVal = 45; minVal = 30; maxVal = 65; hasEstimate = true;
+      } else if (allText.includes("50ème") || allText.includes("50eme") || allText.includes("cinquantenaire")) {
+        baseVal = 40; minVal = 25; maxVal = 60; hasEstimate = true;
+      } else if (allText.includes("nostalgia") || allText.includes("boîte bois") || allText.includes("boite bois") || allText.includes("wooden")) {
+        baseVal = 55; minVal = 35; maxVal = 80; hasEstimate = true;
+      } else if (allText.includes("deluxe") && (year === 1995 || year === 1996)) {
+        baseVal = 35; minVal = 25; maxVal = 50; hasEstimate = true;
+      } else if (allText.includes("007") && allText.includes("50th")) {
+        baseVal = 60; minVal = 40; maxVal = 90; hasEstimate = true;
+      } else if (year < 1960) {
+        baseVal = 70; minVal = 45; maxVal = 120; hasEstimate = true;
+      } else if (year < 1980) {
+        baseVal = 30; minVal = 20; maxVal = 45; hasEstimate = true;
+      } else if (allText.includes("électronique") || allText.includes("electronique") || allText.includes("banking")) {
+        baseVal = 20; minVal = 12; maxVal = 28; hasEstimate = true;
+      }
+
+      // Si aucune transaction documentée ou cote vérifiée : ne pas inventer de cote au hasard
+      if (!hasEstimate) {
+        return {
+          value: 0,
+          hasEstimate: false,
+          rangeStr: "Cote non disponible",
+          label: "Cote non disponible (manque de transactions sources)"
+        };
+      }
+
+      // Ajustement selon l'état réel
+      const c = (condition || "").toLowerCase();
+      let factor = 1.0;
+      if (c.includes("neuf sous blister") || c.includes("scellé")) factor = 1.7;
+      else if (c.includes("comme neuf")) factor = 1.25;
+      else if (c.includes("très bon état") || c.includes("tres bon etat")) factor = 1.0;
+      else if (c.includes("bon état") || c.includes("bon etat")) factor = 0.8;
+      else if (c.includes("état moyen") || c.includes("etat moyen") || c.includes("incomplet")) factor = 0.55;
+
+      const finalVal = Math.round(baseVal * factor);
+      const finalMin = Math.round(minVal * factor);
+      const finalMax = Math.round(maxVal * factor);
+
+      return {
+        value: finalVal,
+        hasEstimate: true,
+        rangeStr: finalMin + " € - " + finalMax + " €",
+        min: finalMin,
+        max: finalMax
+      };
+    }
+
+    function initDatabase() {
+      let saved = localStorage.getItem(STORAGE_KEY);
+      if (!saved) {
+        for (let i = 0; i < localStorage.length; i++) {
+          const k = localStorage.key(i);
+          if (k && k.startsWith("monopoly_collection_db")) {
+            saved = localStorage.getItem(k);
+            if (saved) break;
+          }
+        }
+      }
+
+      if (saved) {
+        try {
+          const parsed = JSON.parse(saved);
+          if (Array.isArray(parsed) && parsed.length > 0) {
+            const savedMap = {};
+            parsed.forEach(function(item) {
+              if (item && item.id) savedMap[item.id] = item;
+              if (item && item.name) savedMap[item.name.toLowerCase().trim()] = item;
+            });
+
+            const reconciled = SEED_DATA.map(function(seedItem) {
+              const userItem = savedMap[seedItem.id] || savedMap[seedItem.name.toLowerCase().trim()];
+              const base = Object.assign({
+                status: "none",
+                condition: "",
+                price: "",
+                value: "",
+                location: "",
+                notes: ""
+              }, seedItem);
+
+              if (userItem) {
+                const finalStatus = (seedItem.status === "owned") ? "owned" : (userItem.status || "none");
+                const imageUrl = (seedItem.image_url && seedItem.is_verified_box)
+                  ? seedItem.image_url
+                  : (userItem.image_url && !userItem.image_url.startsWith("data:image/svg") ? userItem.image_url : (seedItem.image_url || ""));
+                
+                return Object.assign({}, base, userItem, {
+                  status: finalStatus,
+                  image_url: imageUrl,
+                  back_image_url: seedItem.back_image_url || userItem.back_image_url || "",
+                  is_verified_box: Boolean(seedItem.is_verified_box || userItem.is_verified_box),
+                  condition: seedItem.condition || userItem.condition || "",
+                  location: seedItem.location || userItem.location || "",
+                  notes: seedItem.notes || userItem.notes || ""
+                });
+              }
+              return base;
+            });
+
+            // Preserve any custom user-created editions
+            parsed.forEach(function(userItem) {
+              if (userItem && userItem.id && (userItem.id.startsWith("custom-") || userItem.id.startsWith("mono-custom-") || !SEED_DATA.some(function(s) { return s.id === userItem.id; }))) {
+                reconciled.push(userItem);
+              }
+            });
+
+            // Auto-estimate resale value for any owned items missing value
+            reconciled.forEach(function(item) {
+              if (item.status === "owned" && (!item.value || parseFloat(item.value) === 0)) {
+                const est = estimateMarketResaleValue(item, item.condition || "Très bon état");
+                if (est && est.hasEstimate) {
+                  item.value = est.value;
+                  item.estimated_range = est.rangeStr;
+                }
+              }
+            });
+
+            database = reconciled;
+            saveDatabase();
+            return;
+          }
+        } catch(e) {
+          console.warn("Could not parse saved collection, initializing from seed:", e);
+        }
+      }
+      loadFromSeed();
+    }
+
+    function loadFromSeed() {
+      database = SEED_DATA.map(function(item) {
+        const obj = Object.assign({
+          status: "none",
+          condition: "",
+          price: "",
+          value: "",
+          location: "",
+          notes: ""
+        }, item);
+        if (obj.status === "owned" && (!obj.value || parseFloat(obj.value) === 0)) {
+          const est = estimateMarketResaleValue(obj, obj.condition || "Très bon état");
+          if (est && est.hasEstimate) {
+            obj.value = est.value;
+            obj.estimated_range = est.rangeStr;
+          }
+        }
+        return obj;
+      });
+      saveDatabase();
+    }
+
+    function saveDatabase() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(database));
+      } catch(e) {
+        console.warn("Storage quota exceeded in saveDatabase, compacting:", e);
+        try {
+          // 1. Remove user_photos arrays
+          database.forEach(function(item) {
+            if (item.user_photos && item.user_photos.length > 0) {
+              item.user_photos = [];
+            }
+          });
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(database));
+        } catch(err2) {
+          console.warn("Still exceeding quota, stripping oversized base64 images:", err2);
+          try {
+            database.forEach(function(item) {
+              if (item.user_image && item.user_image.length > 60000) {
+                item.user_image = "";
+              }
+              if (item.back_image_url && item.back_image_url.length > 60000) {
+                item.back_image_url = "";
+              }
+            });
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(database));
+          } catch(err3) {
+            console.error("Critical storage saturation:", err3);
+          }
+        }
+      }
+      renderStats();
+      populateFilters();
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById("toast");
+      if (!toast) return;
+      toast.textContent = msg;
+      toast.classList.add("show");
+      setTimeout(function() {
+        toast.classList.remove("show");
+      }, 2600);
+    }
+
+    function renderStats() {
+      const total = database.length;
+      const owned = database.filter(function(e) { return e.status === "owned"; }).length;
+      const wishlist = database.filter(function(e) { return e.status === "wishlist"; }).length;
+      const none = database.filter(function(e) { return e.status === "none" || !e.status; }).length;
+      const withPhotos = database.filter(function(e) { return Boolean(e.image_url); }).length;
+
+      let totalVal = 0;
+      let totalSpent = 0;
+      database.forEach(function(e) {
+        if (e.status === "owned") {
+          if (e.value) totalVal += parseFloat(e.value) || 0;
+          if (e.price) totalSpent += parseFloat(e.price) || 0;
+        }
+      });
+
+      const pct = total > 0 ? Math.round((owned / total) * 100) : 0;
+      const photoPct = total > 0 ? Math.round((withPhotos / total) * 100) : 0;
+
+      document.getElementById("statTotal").textContent = total.toLocaleString("fr-FR");
+      document.getElementById("statWithPhotos").textContent = withPhotos.toLocaleString("fr-FR");
+      document.getElementById("statPhotoPct").textContent = photoPct + "% de la base en photos";
+      document.getElementById("statOwned").textContent = owned.toLocaleString("fr-FR");
+      document.getElementById("statOwnedPct").textContent = "(" + pct + "%)";
+      document.getElementById("statProgressBar").style.width = pct + "%";
+      document.getElementById("statWishlist").textContent = wishlist.toLocaleString("fr-FR");
+      document.getElementById("statEstimatedValue").textContent = totalVal.toLocaleString('fr-FR', { minimumFractionDigits: 0, maximumFractionDigits: 2 }) + " €";
+      document.getElementById("statSpentValue").textContent = totalSpent.toLocaleString('fr-FR', { minimumFractionDigits: 0, maximumFractionDigits: 2 }) + " €";
+
+      document.getElementById("countAll").textContent = total;
+      document.getElementById("countOwned").textContent = owned;
+      document.getElementById("countWishlist").textContent = wishlist;
+      document.getElementById("countNone").textContent = none;
+
+      // Update Bottom Nav Bar Badges
+      const badgeOwned = document.getElementById("navBadgeOwned");
+      if (badgeOwned) {
+        badgeOwned.textContent = owned;
+        badgeOwned.style.display = owned > 0 ? "inline-block" : "none";
+      }
+      const badgeWish = document.getElementById("navBadgeWishlist");
+      if (badgeWish) {
+        badgeWish.textContent = wishlist;
+        badgeWish.style.display = wishlist > 0 ? "inline-block" : "none";
+      }
+
+      // Update Home dashboard hero
+      const heroOwned = document.getElementById("heroStatOwned");
+      if (heroOwned) heroOwned.textContent = owned + " / " + total;
+      const heroVal = document.getElementById("heroStatValue");
+      if (heroVal) heroVal.textContent = Math.round(totalVal) + " €";
+    }
+
+    function populateFilters() {
+      // Categories
+      const catMap = {};
+      database.forEach(function(e) {
+        if (e.category) catMap[e.category] = (catMap[e.category] || 0) + 1;
+      });
+      const categories = Object.keys(catMap).sort();
+
+      const catContainer = document.getElementById("categoryPills");
+      const currentActive = currentFilterCategory;
+
+      catContainer.innerHTML = '<span class="pills-label">Catégorie :</span><span class="pill ' + (currentActive === "all" ? "active" : "") + '" data-category="all">Toutes (' + database.length + ')</span>';
+      categories.forEach(function(cat) {
+        const count = catMap[cat];
+        const pill = document.createElement("span");
+        pill.className = "pill " + (currentActive === cat ? "active" : "");
+        pill.dataset.category = cat;
+        pill.textContent = cat + " (" + count + ")";
+        catContainer.appendChild(pill);
+      });
+
+      const datalist = document.getElementById("categoryOptions");
+      datalist.innerHTML = "";
+      categories.forEach(function(cat) {
+        const opt = document.createElement("option");
+        opt.value = cat;
+        datalist.appendChild(opt);
+      });
+
+      // Countries
+      const countrySet = {};
+      database.forEach(function(e) {
+        if (e.country) countrySet[e.country] = true;
+      });
+      const countries = Object.keys(countrySet).sort();
+      const countrySelect = document.getElementById("countrySelect");
+      const selectedVal = countrySelect.value;
+      countrySelect.innerHTML = '<option value="all">Tous les Pays / Régions</option>';
+      countries.forEach(function(c) {
+        const opt = document.createElement("option");
+        opt.value = c;
+        opt.textContent = c;
+        countrySelect.appendChild(opt);
+      });
+      if (countrySet[selectedVal]) countrySelect.value = selectedVal;
+
+      // Publishers
+      const pubSet = {};
+      database.forEach(function(e) {
+        if (e.publisher) pubSet[e.publisher] = true;
+      });
+      const pubs = Object.keys(pubSet).sort();
+      const pubSelect = document.getElementById("publisherSelect");
+      const selectedPub = pubSelect.value;
+      pubSelect.innerHTML = '<option value="all">Tous les Éditeurs</option>';
+      pubs.forEach(function(p) {
+        const opt = document.createElement("option");
+        opt.value = p;
+        opt.textContent = p;
+        pubSelect.appendChild(opt);
+      });
+      if (pubSet[selectedPub]) pubSelect.value = selectedPub;
+    }
+
+    function getFilteredAndSortedEditions() {
+      return database.filter(function(item) {
+        if (currentFilterStatus === "owned" && item.status !== "owned") return false;
+        if (currentFilterStatus === "wishlist" && item.status !== "wishlist") return false;
+        if (currentFilterStatus === "none" && item.status !== "none" && item.status) return false;
+        if (currentFilterStatus === "photos-only" && !item.image_url) return false;
+
+        if (currentFilterCategory !== "all") {
+          const cat = (item.category || "").toLowerCase();
+          const name = (item.name || "").toLowerCase();
+          const fullText = cat + " " + name;
+          if (currentFilterCategory === "Classique") {
+            if (!/classique|standard|vintage|historique|anniversaire|1935|deluxe/i.test(fullText)) return false;
+          } else if (currentFilterCategory === "Films") {
+            if (!/film|série|cinéma|warner|disney|star wars|marvel|harry potter|pop culture/i.test(fullText)) return false;
+          } else if (currentFilterCategory === "Jeux Vidéo") {
+            if (!/jeu.*vidéo|geek|anime|manga|nintendo|pokemon|pokémon|zelda|mario|gamer|playstation/i.test(fullText)) return false;
+          } else if (currentFilterCategory === "Villes") {
+            if (!/ville|pays|région|france|monde|paris|lyon|marseille|bordeaux/i.test(fullText)) return false;
+          } else if (currentFilterCategory === "Marques") {
+            if (!/marque|sport|foot|auto|ferrari|voiture|fc|ol/i.test(fullText)) return false;
+          } else if (currentFilterCategory === "Cartes") {
+            if (!/carte|rapide|deal|bid|express/i.test(fullText)) return false;
+          } else if (currentFilterCategory === "Variantes") {
+            if (!/variante|règle|junior|enfant|tricher|cheaters|builder|mauvais perdant/i.test(fullText)) return false;
+          } else if (item.category !== currentFilterCategory) {
+            return false;
+          }
+        }
+        if (currentCountry !== "all" && item.country !== currentCountry) return false;
+        if (currentPublisher !== "all" && item.publisher !== currentPublisher) return false;
+
+        // Decade filter
+        if (currentDecade !== "all") {
+          const y = item.year || 0;
+          if (currentDecade === "1930s" && (y < 1930 || y > 1939)) return false;
+          if (currentDecade === "1940-1970" && (y < 1940 || y > 1979)) return false;
+          if (currentDecade === "1980s" && (y < 1980 || y > 1989)) return false;
+          if (currentDecade === "1990s" && (y < 1990 || y > 1999)) return false;
+          if (currentDecade === "2000s" && (y < 2000 || y > 2009)) return false;
+          if (currentDecade === "2010s" && (y < 2010 || y > 2019)) return false;
+          if (currentDecade === "2020s" && y < 2020) return false;
+        }
+
+        if (currentSearchTerm) {
+          const term = currentSearchTerm.toLowerCase();
+          const matchName = item.name && item.name.toLowerCase().includes(term);
+          const matchDesc = item.description && item.description.toLowerCase().includes(term);
+          const matchCat = item.category && item.category.toLowerCase().includes(term);
+          const matchCountry = item.country && item.country.toLowerCase().includes(term);
+          const matchPub = item.publisher && item.publisher.toLowerCase().includes(term);
+          const matchNotes = item.notes && item.notes.toLowerCase().includes(term);
+          const matchLoc = item.location && item.location.toLowerCase().includes(term);
+          const matchYear = item.year && item.year.toString().includes(term);
+          if (!matchName && !matchDesc && !matchCat && !matchCountry && !matchPub && !matchNotes && !matchLoc && !matchYear) {
+            return false;
+          }
+        }
+        return true;
+      }).sort(function(a, b) {
+        if (currentSort === "name-asc") return (a.name || "").localeCompare(b.name || "");
+        if (currentSort === "name-desc") return (b.name || "").localeCompare(a.name || "");
+        if (currentSort === "year-desc") return (b.year || 0) - (a.year || 0);
+        if (currentSort === "year-asc") return (a.year || 0) - (b.year || 0);
+        if (currentSort === "status") {
+          const order = { owned: 1, wishlist: 2, none: 3 };
+          return (order[a.status] || 3) - (order[b.status] || 3);
+        }
+        if (currentSort === "value-desc") {
+          const valA = a.value ? parseFloat(a.value) : estimateMarketResaleValue(a).value;
+          const valB = b.value ? parseFloat(b.value) : estimateMarketResaleValue(b).value;
+          return valB - valA;
+        }
+        if (currentSort === "value-asc") {
+          const valA = a.value ? parseFloat(a.value) : estimateMarketResaleValue(a).value;
+          const valB = b.value ? parseFloat(b.value) : estimateMarketResaleValue(b).value;
+          return valA - valB;
+        }
+        return 0;
+      });
+    }
+
+    
+    function setViewMode(mode) {
+      currentView = mode;
+      const cardBtn = document.getElementById("cardViewBtn");
+      const tableBtn = document.getElementById("tableViewBtn");
+      if (cardBtn && tableBtn) {
+        if (mode === "card") {
+          cardBtn.classList.add("active");
+          tableBtn.classList.remove("active");
+        } else {
+          tableBtn.classList.add("active");
+          cardBtn.classList.remove("active");
+        }
+      }
+      renderList(false);
+    }
+
+    function renderList(resetPagination) {
+      if (resetPagination) displayedCount = PAGE_SIZE;
+
+      const filtered = getFilteredAndSortedEditions();
+      const cardsContainer = document.getElementById("cardsContainer");
+      const tableBody = document.getElementById("tableBody");
+      const emptyState = document.getElementById("emptyState");
+      const paginationBar = document.getElementById("paginationBar");
+
+      if (filtered.length === 0) {
+        emptyState.style.display = "block";
+        cardsContainer.style.display = "none";
+        document.getElementById("tableContainer").style.display = "none";
+        paginationBar.style.display = "none";
+
+        if (currentFilterStatus === "wishlist" && !currentSearchTerm) {
+          emptyState.innerHTML = 
+            '<div style="text-align:center; padding: 40px 16px;">' +
+              '<span style="font-size:3.2rem; display:block; margin-bottom:12px;">⭐</span>' +
+              '<h3 style="margin-bottom:8px; font-size:1.15rem;">Votre Wishlist est vide</h3>' +
+              '<p style="color:var(--text-muted); font-size:0.88rem; max-width:380px; margin:0 auto 16px;">Vous n\'avez pas encore d\'édition recherchée. Explorez le catalogue pour repérer vos prochains jeux !</p>' +
+              '<button class="btn btn-primary" onclick="switchTab(\'catalog\')">📚 Explorer le catalogue</button>' +
+            '</div>';
+        } else if (currentFilterStatus === "owned" && !currentSearchTerm) {
+          emptyState.innerHTML = 
+            '<div style="text-align:center; padding: 40px 16px;">' +
+              '<span style="font-size:3.2rem; display:block; margin-bottom:12px;">📦</span>' +
+              '<h3 style="margin-bottom:8px; font-size:1.15rem;">Votre collection est vide</h3>' +
+              '<p style="color:var(--text-muted); font-size:0.88rem; max-width:380px; margin:0 auto 16px;">Scannez une boîte ou ajoutez un Monopoly pour commencer votre inventaire !</p>' +
+              '<button class="btn btn-primary" onclick="openScannerModal()">📸 Scanner ma première boîte</button>' +
+            '</div>';
+        } else {
+          emptyState.innerHTML = 
+            '<div style="text-align:center; padding: 40px 16px;">' +
+              '<span style="font-size:3.2rem; display:block; margin-bottom:12px;">🔎</span>' +
+              '<h3 style="margin-bottom:8px; font-size:1.15rem;">Aucune édition trouvée</h3>' +
+              '<p style="color:var(--text-muted); font-size:0.88rem; max-width:380px; margin:0 auto 16px;">Aucun Monopoly ne correspond à votre recherche "' + (currentSearchTerm || '').replace(/</g, '&lt;') + '".</p>' +
+            '</div>';
+        }
+        return;
+      }
+
+      emptyState.style.display = "none";
+
+      const sliceToDisplay = filtered.slice(0, displayedCount);
+
+      if (currentView === "card") {
+        cardsContainer.style.display = "grid";
+        document.getElementById("tableContainer").style.display = "none";
+        renderCards(sliceToDisplay, cardsContainer);
+      } else {
+        cardsContainer.style.display = "none";
+        document.getElementById("tableContainer").style.display = "block";
+        renderTable(sliceToDisplay, tableBody);
+      }
+
+      // Update pagination controls
+      if (filtered.length > displayedCount) {
+        paginationBar.style.display = "flex";
+        const remaining = filtered.length - displayedCount;
+        const nextBatch = Math.min(PAGE_SIZE, remaining);
+        document.getElementById("loadMoreBtn").innerHTML = '<span>Afficher les ' + nextBatch + ' éditions suivantes (' + remaining + ' restantes)</span> ⬇️';
+        document.getElementById("paginationInfo").textContent = 'Affichage de ' + sliceToDisplay.length + ' sur ' + filtered.length + ' éditions';
+      } else {
+        paginationBar.style.display = "none";
+      }
+    }
+
+    function renderCards(items, container) {
+      container.innerHTML = "";
+      items.forEach(function(item) {
+        const card = document.createElement("div");
+        card.className = "edition-card";
+
+        const statusLabel = item.status === "owned" 
+          ? "🟢 Possédé" 
+          : item.status === "wishlist" 
+          ? "⭐ Recherché" 
+          : "⚪ Non possédé";
+
+        const badgeClass = item.status === "owned" ? "owned" : item.status === "wishlist" ? "wishlist" : "none";
+
+        const googleQuery = encodeURIComponent(item.name + " boite jeu");
+        const googleUrl = "https://www.google.com/search?tbm=isch&q=" + googleQuery;
+
+        let completenessBadge = "";
+        if (item.status === "owned") {
+          if (item.is_complete === false) {
+            const missingCount = (item.missing_pieces && item.missing_pieces.properties ? item.missing_pieces.properties.length : 0) +
+              (item.missing_pieces && item.missing_pieces.bills ? item.missing_pieces.bills.length : 0) +
+              (item.missing_pieces && item.missing_pieces.tokens ? item.missing_pieces.tokens.length : 0);
+            completenessBadge = '<span class="badge-incomplete" title="Pièces manquantes">⚠️ Incomplet ' + (missingCount > 0 ? '(' + missingCount + ')' : '') + '</span>';
+          } else {
+            completenessBadge = '<span class="badge-complete" title="Jeu 100% complet">🟢 Complet</span>';
+          }
+        }
+
+        let coverHtml = "";
+        if (item.image_url) {
+          const verifiedBadge = item.back_image_url
+            ? '<div class="verified-badge" style="background:linear-gradient(135deg, #10b981, #059669); font-weight:700;">📸 Recto / Verso</div>'
+            : (item.is_verified_box ? '<div class="verified-badge">📸 Photo Réelle</div>' : '');
+
+          coverHtml = 
+            '<img class="box-cover-image" src="' + item.image_url + '" alt="' + item.name + '" loading="lazy" onerror="handleImageError(this)">' +
+            '<div class="missing-cover-box" style="display:none;">' +
+              '<div class="missing-icon">📦</div>' +
+              '<div class="missing-title">' + item.name + '</div>' +
+              '<div class="missing-sub">Photo locale non trouvée</div>' +
+            '</div>' +
+            verifiedBadge;
+        } else {
+          coverHtml = 
+            '<div class="missing-cover-box">' +
+              '<div class="missing-icon">📷</div>' +
+              '<div class="missing-title">' + item.name + '</div>' +
+              '<div class="missing-sub">Cliquer pour charger la photo de votre boîte</div>' +
+            '</div>';
+        }
+
+        let userInfoHtml = "";
+        const est = estimateMarketResaleValue(item, item.condition);
+        const displayVal = item.value ? item.value : est.value;
+        const rangeText = item.estimated_range || est.rangeStr;
+        const links = getMarketLinks(item);
+
+        if (item.status === "owned") {
+          userInfoHtml = '<div class="card-user-info">';
+          userInfoHtml += 
+            '<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; padding-bottom:4px; border-bottom:1px dashed rgba(245,158,11,0.3);">' +
+              (est.hasEstimate || (item.value && item.value !== "0") ? '<span class="resale-badge">💰 Cote : ' + displayVal + ' €</span>' : '<span class="resale-badge-nodata">💰 Cote non disponible</span>') +
+              '<span style="font-size:0.72rem; color:var(--text-muted);">' + rangeText + '</span>' +
+            '</div>';
+          if (item.condition) userInfoHtml += '<div><strong>État :</strong> ' + item.condition + '</div>';
+          if (item.location) userInfoHtml += '<div><strong>Emplacement :</strong> ' + item.location + '</div>';
+          if (item.price) userInfoHtml += '<div><strong>Achat :</strong> ' + item.price + ' €</div>';
+          if (item.notes) userInfoHtml += '<div><strong>Note :</strong> ' + item.notes + '</div>';
+
+          if (item.is_complete === false && item.missing_pieces) {
+            const mp = item.missing_pieces;
+            const mpList = [];
+            if (mp.properties && mp.properties.length > 0) mpList.push(mp.properties.length + ' prop.');
+            if (mp.bills && mp.bills.length > 0) mpList.push('Billets (' + mp.bills.length + ')');
+            if (mp.tokens && mp.tokens.length > 0) mpList.push('Pions (' + mp.tokens.length + ')');
+            if (mp.dice && mp.dice.length > 0) mpList.push('Dés');
+            if (mp.buildings && (mp.buildings.houses > 0 || mp.buildings.hotels > 0 || mp.buildings.skyscrapers > 0)) mpList.push('Bâtiments');
+            if (mp.other && (mp.other.rules || mp.other.board || mp.other.tray)) mpList.push('Matériel');
+            userInfoHtml += '<div style="color:#f59e0b; font-size:0.75rem; margin-top:4px;"><strong>⚠️ Manque :</strong> ' + (mpList.length > 0 ? mpList.join(', ') : 'Pièces signalées') + '</div>';
+          } else {
+            userInfoHtml += '<div style="color:#10b981; font-size:0.75rem; margin-top:4px;"><strong>🟢 Exemplaire 100% complet</strong></div>';
+          }
+          userInfoHtml += 
+            '<div style="display:flex; gap:5px; margin-top:8px; flex-wrap:wrap; align-items:center;">' +
+              '<a href="' + links.ebaySold + '" target="_blank" class="market-btn ebay" title="Ventes réelles terminées sur eBay (Catégorie Jeux de société uniquement)">🛒 Ventes eBay</a>' +
+              '<a href="' + links.vinted + '" target="_blank" class="market-btn vinted" title="Prix Vinted (Catégorie Jeux de société uniquement)">🏷️ Vinted</a>' +
+              '<a href="' + links.leboncoin + '" target="_blank" class="market-btn lbc" title="Annonces Le Bon Coin">📦 Le Bon Coin</a>' +
+              '<a href="' + links.vintedBroad + '" target="_blank" class="market-btn" style="border:1px dashed var(--border-color); font-size:0.65rem; padding:2px 5px;" title="Recherche Vinted plus large (si le vendeur n\'a pas indiqué l\'année précise)">🔎 Large</a>' +
+            '</div>';
+          userInfoHtml += '</div>';
+        } else if (item.status === "wishlist") {
+          userInfoHtml = '<div class="card-user-info">';
+          userInfoHtml += 
+            '<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">' +
+              '<span class="resale-badge">💰 Cote estimée : ~' + displayVal + ' €</span>' +
+              '<span style="font-size:0.72rem; color:var(--text-muted);">' + rangeText + '</span>' +
+            '</div>';
+          if (item.price) userInfoHtml += '<div>Budget max : ' + item.price + ' €</div>';
+          if (item.notes) userInfoHtml += '<div>' + item.notes + '</div>';
+          userInfoHtml += 
+            '<div style="display:flex; gap:5px; margin-top:8px; flex-wrap:wrap; align-items:center;">' +
+              '<a href="' + links.ebaySold + '" target="_blank" class="market-btn ebay" title="Ventes réelles terminées sur eBay (Catégorie Jeux de société uniquement)">🛒 Ventes eBay</a>' +
+              '<a href="' + links.vinted + '" target="_blank" class="market-btn vinted" title="Prix Vinted (Catégorie Jeux de société uniquement)">🏷️ Vinted</a>' +
+              '<a href="' + links.leboncoin + '" target="_blank" class="market-btn lbc" title="Annonces Le Bon Coin">📦 Le Bon Coin</a>' +
+              '<a href="' + links.vintedBroad + '" target="_blank" class="market-btn" style="border:1px dashed var(--border-color); font-size:0.65rem; padding:2px 5px;" title="Recherche Vinted plus large (si le vendeur n\'a pas indiqué l\'année précise)">🔎 Large</a>' +
+            '</div>';
+          userInfoHtml += '</div>';
+        } else {
+          userInfoHtml = 
+            '<div style="margin-top:8px; padding-top:6px; border-top:1px solid rgba(255,255,255,0.06); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:4px;">' +
+              '<span style="font-size:0.75rem; color:var(--text-muted);">Cote estimée : <strong style="color:#f59e0b;">~' + displayVal + ' €</strong></span>' +
+              '<div style="display:flex; gap:4px;">' +
+                '<a href="' + links.ebaySold + '" target="_blank" class="market-btn ebay" style="font-size:0.68rem; padding:2px 6px;" title="Vérifier les ventes réelles sur eBay (Jeux)">🛒 eBay</a>' +
+                '<a href="' + links.vinted + '" target="_blank" class="market-btn vinted" style="font-size:0.68rem; padding:2px 6px;" title="Vérifier sur Vinted (Jeux)">🏷️ Vinted</a>' +
+              '</div>' +
+            '</div>';
+        }
+
+        card.innerHTML = 
+          '<div class="box-cover-wrapper" data-lightbox-id="' + item.id + '" title="Cliquer pour inspecter la jaquette en grand format">' +
+            '<div class="status-ribbon ' + badgeClass + '">' + statusLabel + '</div>' +
+            coverHtml +
+          '</div>' +
+          '<div class="card-body">' +
+            '<div class="card-top">' +
+              '<span class="card-category">' + (item.category || 'Général') + '</span>' +
+              '<span class="card-year">' + (item.year || '—') + '</span>' +
+            (completenessBadge ? ' ' + completenessBadge : '') +
+            '</div>' +
+            '<h3 class="card-title">' + item.name + '</h3>' +
+            '<div class="card-meta">' +
+              '<span>📍 ' + (item.country || 'Monde') + '</span>' +
+              '<span>🏢 ' + (item.publisher || 'Hasbro') + '</span>' +
+            '</div>' +
+            '<p class="card-description">' + (item.description || '') + '</p>' +
+            userInfoHtml +
+            '<div class="card-footer">' +
+              '<button class="status-select-btn" data-action="cycle" data-id="' + item.id + '">' + statusLabel + '</button>' +
+              '<button class="edit-btn" data-id="' + item.id + '" title="Modifier la fiche ou la photo">✏️</button>' +
+              '<a href="' + googleUrl + '" target="_blank" class="google-btn" title="Rechercher sur Google Images">🔍 Google</a>' +
+            '</div>' +
+          '</div>';
+
+        container.appendChild(card);
+      });
+    }
+
+    function renderTable(items, tbody) {
+      tbody.innerHTML = "";
+      items.forEach(function(item) {
+        const tr = document.createElement("tr");
+
+        const statusLabel = item.status === "owned" 
+          ? "🟢 Possédé" 
+          : item.status === "wishlist" 
+          ? "⭐ Recherché" 
+          : "⚪ Non possédé";
+
+        const badgeClass = item.status === "owned" ? "owned" : item.status === "wishlist" ? "wishlist" : "none";
+
+        let thumbHtml = "";
+        if (item.image_url) {
+          thumbHtml = '<img src="' + item.image_url + '" class="table-thumb" data-lightbox-id="' + item.id + '" loading="lazy" onerror="this.remove()">';
+        } else {
+          thumbHtml = '<div class="table-thumb" data-lightbox-id="' + item.id + '" style="display:flex;align-items:center;justify-content:center;font-size:1.1rem;">📷</div>';
+        }
+
+        const est = estimateMarketResaleValue(item, item.condition);
+        const displayVal = item.value ? item.value : est.value;
+        const links = getMarketLinks(item);
+
+        tr.innerHTML = 
+          '<td>' + thumbHtml + '</td>' +
+          '<td><span class="status-ribbon ' + badgeClass + '" style="position:static;display:inline-block;cursor:pointer;" data-action="cycle" data-id="' + item.id + '">' + statusLabel + '</span></td>' +
+          '<td><strong>' + item.name + '</strong></td>' +
+          '<td><span class="card-category">' + (item.category || '') + '</span></td>' +
+          '<td>' + (item.year || '—') + '</td>' +
+          '<td>' + (item.publisher || 'Hasbro') + '</td>' +
+          '<td>' + (item.country || 'Monde') + '</td>' +
+          '<td>' +
+            '<div style="display:flex; align-items:center; gap:4px;">' +
+              (est.hasEstimate || (item.value && item.value !== "0") ? '<span class="resale-badge">~' + displayVal + ' €</span>' : '<span class="resale-badge-nodata">Non coté</span>') +
+              '<a href="' + links.ebaySold + '" target="_blank" class="market-btn ebay" style="padding:1px 5px; font-size:0.65rem;" title="Ventes terminées eBay (Exemplaire exact)">🛒</a>' +
+              '<a href="' + links.vinted + '" target="_blank" class="market-btn vinted" style="padding:1px 5px; font-size:0.65rem;" title="Vinted Jeux de société (Exemplaire exact)">🏷️</a>' +
+            '</div>' +
+          '</td>' +
+          '<td><button class="edit-btn" data-id="' + item.id + '" style="padding:4px 8px;">✏️ Modifier</button></td>';
+
+        tbody.appendChild(tr);
+      });
+    }
+
+    function cycleStatus(id) {
+      const item = database.find(function(e) { return e.id === id; });
+      if (!item) return;
+      if (item.status === "none" || !item.status) {
+        item.status = "owned";
+        if (!item.condition) item.condition = "Très bon état";
+        if (!item.value || parseFloat(item.value) === 0) {
+          const est = estimateMarketResaleValue(item, item.condition);
+          item.value = est.value;
+          item.estimated_range = est.rangeStr;
+        }
+        showToast('"' + item.name + '" marqué comme POSSÉDÉ ! (Cote : ~' + item.value + ' €)');
+      } else if (item.status === "owned") {
+        item.status = "wishlist";
+        showToast('"' + item.name + '" ajouté à votre WISHLIST !');
+      } else {
+        item.status = "none";
+        showToast('"' + item.name + '" retiré de la collection.');
+      }
+      saveDatabase();
+      renderList(false);
+    }
+
+    // Lightbox Modal
+    function openLightbox(id) {
+      const item = database.find(function(e) { return e.id === id; });
+      if (!item) return;
+      activeLightboxId = id;
+
+      document.getElementById("lightboxTitle").textContent = item.name + " (" + (item.year || 'Année inconnue') + ")";
+      const img = document.getElementById("lightboxImg");
+      const container = document.getElementById("lightboxContainer");
+
+      if (item.user_photos && item.user_photos.length > 1) {
+        img.style.display = "none";
+        let photosHtml = '<div style="display:flex; gap:16px; justify-content:center; align-items:flex-start; flex-wrap:wrap; max-height:480px; overflow-y:auto; width:100%; padding:8px;">';
+        item.user_photos.forEach(function(pUrl, idx) {
+          let label = idx === 0 ? "📸 Face Avant" : idx === 1 ? "📦 Dos de la Boîte" : "🔍 Détail " + (idx + 1);
+          let badgeColor = idx === 0 ? "var(--primary)" : idx === 1 ? "#10b981" : "#38bdf8";
+          photosHtml += 
+            '<div style="text-align:center; flex:1; min-width:220px; max-width:400px;">' +
+              '<span style="font-size:0.8rem; font-weight:700; color:' + badgeColor + '; display:block; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px;">' + label + '</span>' +
+              '<img src="' + pUrl + '" style="max-height:380px; width:auto; max-width:100%; object-fit:contain; border-radius:8px; box-shadow:0 8px 24px rgba(0,0,0,0.6); border:2px solid var(--border);">' +
+            '</div>';
+        });
+        photosHtml += '</div>';
+        container.innerHTML = photosHtml;
+      } else if (item.image_url && item.back_image_url) {
+        img.style.display = "none";
+        container.innerHTML = 
+          '<div style="display:flex; gap:20px; justify-content:center; align-items:flex-start; flex-wrap:wrap; max-height:480px; overflow-y:auto; width:100%; padding:8px;">' +
+            '<div style="text-align:center; flex:1; min-width:260px; max-width:440px;">' +
+              '<span style="font-size:0.8rem; font-weight:700; color:var(--primary); display:block; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px;">📸 Face Avant (Votre boîte)</span>' +
+              '<img src="' + item.image_url + '" style="max-height:400px; width:auto; max-width:100%; object-fit:contain; border-radius:8px; box-shadow:0 8px 24px rgba(0,0,0,0.6); border:2px solid var(--border);">' +
+            '</div>' +
+            '<div style="text-align:center; flex:1; min-width:260px; max-width:440px;">' +
+              '<span style="font-size:0.8rem; font-weight:700; color:#10b981; display:block; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.5px;">📦 Dos de la Boîte (Pions & Contenu)</span>' +
+              '<img src="' + item.back_image_url + '" style="max-height:400px; width:auto; max-width:100%; object-fit:contain; border-radius:8px; box-shadow:0 8px 24px rgba(0,0,0,0.6); border:2px solid var(--border);">' +
+            '</div>' +
+          '</div>';
+      } else if (item.image_url) {
+        img.style.display = "block";
+        img.src = item.image_url;
+      } else {
+        img.style.display = "none";
+        container.innerHTML = '<div style="color:var(--text-muted); text-align:center; padding:40px;"><span style="font-size:3rem;">📷</span><p>Aucune jaquette enregistrée pour le moment.<br>Cliquez sur &quot;Modifier&quot; pour en ajouter une.</p></div>';
+      }
+
+      let detailsHtml = '<p><strong>Catégorie :</strong> ' + (item.category || 'Standard') + ' | <strong>Éditeur :</strong> ' + (item.publisher || 'Hasbro') + ' | <strong>Pays :</strong> ' + (item.country || 'Monde') + '</p>';
+      if (item.description) detailsHtml += '<p style="margin-top:8px; color:var(--text-muted);">' + item.description + '</p>';
+
+      if (item.status === "owned") {
+        detailsHtml += '<div style="margin-top:12px; padding:12px; background:rgba(16,185,129,0.12); border:1px solid rgba(16,185,129,0.35); border-radius:8px; color:#10b981;">';
+        detailsHtml += '<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">' +
+          '<div style="font-weight:800; font-size:0.95rem;">🟢 Exemplaire dans votre collection</div>' +
+          (item.is_complete === false ? 
+            '<span class="badge-incomplete" style="font-size:0.75rem;">⚠️ Incomplet</span>' : 
+            '<span class="badge-complete" style="font-size:0.75rem;">🟢 100% Complet</span>') +
+        '</div>';
+        detailsHtml += (item.condition ? '<div><strong>État :</strong> ' + item.condition + '</div>' : '');
+        detailsHtml += (item.location ? '<div><strong>Emplacement :</strong> ' + item.location + '</div>' : '');
+        if (item.notes) detailsHtml += '<div style="margin-top:4px; font-size:0.85rem; color:#d1fae5;"><strong>Notes & Réf :</strong> ' + item.notes + '</div>';
+
+        // Affichage détaillé des pièces manquantes dans la lightbox
+        if (item.is_complete === false && item.missing_pieces) {
+          const mp = item.missing_pieces;
+          detailsHtml += '<div style="margin-top:10px; padding:10px; background:rgba(245,158,11,0.15); border:1px solid rgba(245,158,11,0.4); border-radius:6px; color:#fde68a;">';
+          detailsHtml += '<div style="font-weight:800; color:#f59e0b; margin-bottom:6px; font-size:0.85rem;">⚠️ Inventaire des Pièces Manquantes :</div>';
+          detailsHtml += '<ul style="margin:0; padding-left:18px; font-size:0.8rem; line-height:1.4;">';
+          if (mp.properties && mp.properties.length > 0) detailsHtml += '<li><strong>Propriétés (' + mp.properties.length + ') :</strong> ' + mp.properties.join(', ') + '</li>';
+          if (mp.bills && mp.bills.length > 0) detailsHtml += '<li><strong>Billets :</strong> ' + mp.bills.map(function(b) { return (b.count ? b.count + 'x ' : '') + b.name; }).join(', ') + '</li>';
+          if (mp.tokens && mp.tokens.length > 0) detailsHtml += '<li><strong>Pions :</strong> ' + mp.tokens.join(', ') + '</li>';
+          if (mp.dice && mp.dice.length > 0) detailsHtml += '<li><strong>Dés :</strong> ' + mp.dice.join(', ') + '</li>';
+          if (mp.buildings && (mp.buildings.houses > 0 || mp.buildings.hotels > 0 || mp.buildings.skyscrapers > 0)) {
+            const bParts = [];
+            if (mp.buildings.houses > 0) bParts.push(mp.buildings.houses + ' maison(s)');
+            if (mp.buildings.hotels > 0) bParts.push(mp.buildings.hotels + ' hôtel(s)');
+            if (mp.buildings.skyscrapers > 0) bParts.push(mp.buildings.skyscrapers + ' gratte-ciel(s)');
+            detailsHtml += '<li><strong>Bâtiments :</strong> ' + bParts.join(', ') + '</li>';
+          }
+          if (mp.other) {
+            const oParts = [];
+            if (mp.other.rules) oParts.push('Livret de règles');
+            if (mp.other.board) oParts.push('Plateau');
+            if (mp.other.tray) oParts.push('Calage intérieur');
+            if (oParts.length > 0) detailsHtml += '<li><strong>Matériel :</strong> ' + oParts.join(', ') + '</li>';
+          }
+          detailsHtml += '</ul></div>';
+        }
+
+        detailsHtml += '</div>';
+      }
+
+      const est = estimateMarketResaleValue(item, item.condition);
+      const displayVal = item.value ? item.value : est.value;
+      const rangeText = item.estimated_range || est.rangeStr;
+      const links = getMarketLinks(item);
+
+      detailsHtml += 
+        '<div style="margin-top:12px; padding:12px; background:rgba(245,158,11,0.08); border:1px solid rgba(245,158,11,0.3); border-radius:8px;">' +
+          '<div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">' +
+            '<div>' +
+              '<span style="font-weight:800; font-size:0.95rem; color:#f59e0b;">💰 Cote de Revente Estimée : ' + displayVal + ' €</span>' +
+              '<span style="font-size:0.8rem; color:var(--text-muted); margin-left:8px;">(Fourchette : ' + rangeText + ')</span>' +
+            '</div>' +
+            '<div style="display:flex; gap:6px; flex-wrap:wrap;">' +
+              '<a href="' + links.ebaySold + '" target="_blank" class="market-btn ebay" style="font-size:0.75rem; padding:4px 9px;" title="Ventes réelles terminées sur eBay (Catégorie Jeux uniquement)">🎯 Ventes eBay Exactes</a>' +
+              '<a href="' + links.vinted + '" target="_blank" class="market-btn vinted" style="font-size:0.75rem; padding:4px 9px;" title="Vinted Jeux de société (Exemplaire exact)">🎯 Vinted Exact</a>' +
+              '<a href="' + links.leboncoin + '" target="_blank" class="market-btn lbc" style="font-size:0.75rem; padding:4px 9px;">📦 Le Bon Coin</a>' +
+              '<a href="' + links.vintedBroad + '" target="_blank" class="market-btn" style="border:1px dashed var(--border-color); font-size:0.7rem; padding:4px 7px;" title="Recherche sans l\'année si peu d\'annonces avec l\'année exacte">🔎 Vinted Large</a>' +
+            '</div>' +
+          '</div>' +
+          '<div style="margin-top:10px; padding-top:8px; border-top:1px dashed rgba(255,255,255,0.1);">' +
+            '<div style="font-size:0.74rem; font-weight:700; color:var(--text-muted); margin-bottom:6px;">Boutiques & Fabricants (Images, Variantes & Pièces) :</div>' +
+            '<div style="display:flex; gap:5px; flex-wrap:wrap;">' +
+              '<a href="' + links.amazonFr + '" target="_blank" class="market-btn" style="font-size:0.72rem; padding:3px 7px; background:#232f3e; color:#ff9900; border-color:#ff9900;" title="Amazon France">🛒 Amazon FR</a>' +
+              '<a href="' + links.amazonDe + '" target="_blank" class="market-btn" style="font-size:0.72rem; padding:3px 7px; background:#232f3e; color:#ff9900; border-color:#ff9900;" title="Amazon Allemagne">🇩🇪 Amazon DE</a>' +
+              '<a href="' + links.amazonUs + '" target="_blank" class="market-btn" style="font-size:0.72rem; padding:3px 7px; background:#232f3e; color:#ff9900; border-color:#ff9900;" title="Amazon États-Unis">🇺🇸 Amazon US</a>' +
+              '<a href="' + links.amazonUk + '" target="_blank" class="market-btn" style="font-size:0.72rem; padding:3px 7px; background:#232f3e; color:#ff9900; border-color:#ff9900;" title="Amazon Royaume-Uni">🇬🇧 Amazon UK</a>' +
+              '<a href="' + links.hasbro + '" target="_blank" class="market-btn" style="font-size:0.72rem; padding:3px 7px; background:rgba(2,103,193,0.15); color:#38bdf8; border-color:#0267c1;" title="Boutique officielle Hasbro">🎲 Hasbro Officiel</a>' +
+              '<a href="' + links.etsy + '" target="_blank" class="market-btn" style="font-size:0.72rem; padding:3px 7px; background:rgba(241,100,30,0.15); color:#fb923c; border-color:#f1641e;" title="Etsy (Pièces détachées, vintage & fait-main)">🎨 Etsy Raretés</a>' +
+            '</div>' +
+          '</div>' +
+          '<div style="margin-top:6px; font-size:0.73rem; color:var(--text-muted);">' +
+            'Recherche ciblée : <code style="color:#38bdf8; background:rgba(56,189,248,0.1); padding:2px 6px; border-radius:4px;">' + links.exactQuery + '</code> (Filtré sur la catégorie Jeux de société)' +
+          '</div>' +
+        '</div>';
+
+      document.getElementById("lightboxDetails").innerHTML = detailsHtml;
+
+      const googleQuery = encodeURIComponent(item.name + " boîte monopoly");
+      document.getElementById("lightboxGoogleLink").href = "https://www.google.com/search?tbm=isch&q=" + googleQuery;
+
+      document.getElementById("lightboxModalBackdrop").classList.add("open");
+    }
+
+    // Edit Modal
+    
+    // ====================================================
+    // EDITION PROFILES & COMPLETENESS TRACKING ENGINE
+    // ====================================================
+    const EDITION_PROFILES = {
+      mega: {
+        id: "mega",
+        name: "Monopoly Mega Edition",
+        properties: [
+          { name: "Boulevard de Belleville", color: "#8B5A2B", group: "Marron" },
+          { name: "Rue Lecourbe", color: "#8B5A2B", group: "Marron" },
+          { name: "Rue de la Pompe", color: "#8B5A2B", group: "Marron" },
+          { name: "Rue de Vaugirard", color: "#38bdf8", group: "Bleu Ciel" },
+          { name: "Rue de Courcelles", color: "#38bdf8", group: "Bleu Ciel" },
+          { name: "Avenue de la République", color: "#38bdf8", group: "Bleu Ciel" },
+          { name: "Avenue de Choisy", color: "#38bdf8", group: "Bleu Ciel" },
+          { name: "Boulevard de la Villette", color: "#ec4899", group: "Rose" },
+          { name: "Avenue de Neuilly", color: "#ec4899", group: "Rose" },
+          { name: "Rue de Paradis", color: "#ec4899", group: "Rose" },
+          { name: "Avenue de Suffren", color: "#ec4899", group: "Rose" },
+          { name: "Avenue Mozart", color: "#f97316", group: "Orange" },
+          { name: "Boulevard Saint-Michel", color: "#f97316", group: "Orange" },
+          { name: "Place Pigalle", color: "#f97316", group: "Orange" },
+          { name: "Boulevard de Grenelle", color: "#f97316", group: "Orange" },
+          { name: "Avenue Matignon", color: "#ef4444", group: "Rouge" },
+          { name: "Boulevard Malesherbes", color: "#ef4444", group: "Rouge" },
+          { name: "Avenue Henri-Martin", color: "#ef4444", group: "Rouge" },
+          { name: "Place de l'Étoile", color: "#ef4444", group: "Rouge" },
+          { name: "Faubourg Saint-Honoré", color: "#eab308", group: "Jaune" },
+          { name: "Place de la Bourse", color: "#eab308", group: "Jaune" },
+          { name: "Rue La Fayette", color: "#eab308", group: "Jaune" },
+          { name: "Rue de Rivoli", color: "#eab308", group: "Jaune" },
+          { name: "Avenue de Breteuil", color: "#10b981", group: "Vert" },
+          { name: "Avenue Foch", color: "#10b981", group: "Vert" },
+          { name: "Boulevard des Capucines", color: "#10b981", group: "Vert" },
+          { name: "Avenue Montaigne", color: "#10b981", group: "Vert" },
+          { name: "Avenue des Champs-Élysées", color: "#2563eb", group: "Bleu Foncé" },
+          { name: "Rue de la Paix", color: "#2563eb", group: "Bleu Foncé" },
+          { name: "Place Vendôme", color: "#2563eb", group: "Bleu Foncé" },
+          { name: "Gare Montparnasse", color: "#475569", group: "Gares" },
+          { name: "Gare de Lyon", color: "#475569", group: "Gares" },
+          { name: "Gare du Nord", color: "#475569", group: "Gares" },
+          { name: "Gare Saint-Lazare", color: "#475569", group: "Gares" },
+          { name: "Dépôt ferroviaire / Gare Routière", color: "#475569", group: "Gares" },
+          { name: "Compagnie d'Électricité", color: "#94a3b8", group: "Services" },
+          { name: "Compagnie des Eaux", color: "#94a3b8", group: "Services" },
+          { name: "Compagnie du Gaz", color: "#94a3b8", group: "Services" }
+        ],
+        currency: "euros",
+        bills: ["1 €", "5 €", "10 €", "20 €", "50 €", "100 €", "500 €", "1 000 €"],
+        tokens: ["Voiture", "Chapeau", "Chien", "Bateau", "Chaussure", "Dé à coudre", "Brouette", "Cavalier"],
+        dice: ["1 dé blanc", "2 dés blancs", "1 Dé Rapide Rouge (Speed Die)"],
+        has_skyscrapers: true
+      },
+
+      electronic: {
+        id: "electronic",
+        name: "Monopoly Banque Électronique",
+        is_electronic: true,
+        electronic_units: ["1 Terminal bancaire électronique", "4 à 6 Cartes bancaires de crédit à puce"],
+        tokens: ["Téléphone", "Rollers", "Avion", "Burger", "Skateboard", "Voiture"],
+        dice: ["1 dé blanc", "2 dés blancs"],
+        has_skyscrapers: false
+      },
+
+      pop_dbz: {
+        id: "pop_dbz",
+        name: "Monopoly Dragon Ball Z",
+        properties: [
+          { name: "Kame House", color: "#8B5A2B", group: "Terre" },
+          { name: "Maison de Son Goku", color: "#8B5A2B", group: "Terre" },
+          { name: "Tour Karin", color: "#38bdf8", group: "Sanctuaire" },
+          { name: "Palais de Kami-Sama", color: "#38bdf8", group: "Sanctuaire" },
+          { name: "Salle de l'Esprit et du Temps", color: "#38bdf8", group: "Sanctuaire" },
+          { name: "Capsule Corporation", color: "#ec4899", group: "Capital City" },
+          { name: "Palais de Baba la Voyante", color: "#ec4899", group: "Capital City" },
+          { name: "Tour du Muscle", color: "#ec4899", group: "Capital City" },
+          { name: "Tournoi des Arts Martiaux", color: "#f97316", group: "Arènes" },
+          { name: "Arène des Cell Games", color: "#f97316", group: "Arènes" },
+          { name: "Palais du Roi Enma", color: "#f97316", group: "Au-Delà" },
+          { name: "Chemin du Serpent", color: "#ef4444", group: "Au-Delà" },
+          { name: "Planète Kaïo", color: "#ef4444", group: "Au-Delà" },
+          { name: "Planète Namek", color: "#ef4444", group: "Namek" },
+          { name: "Village de Grand Chef", color: "#eab308", group: "Namek" },
+          { name: "Vaisseau de Freezer", color: "#eab308", group: "Namek" },
+          { name: "Planète Vegeta", color: "#eab308", group: "Espace" },
+          { name: "Planète des Kaïoshins", color: "#10b981", group: "Divin" },
+          { name: "Monde des Enfers", color: "#10b981", group: "Divin" },
+          { name: "Mont Paozu", color: "#10b981", group: "Origines" },
+          { name: "Planète de Beerus", color: "#2563eb", group: "Dieux" },
+          { name: "Tournoi du Pouvoir", color: "#2563eb", group: "Dieux" },
+          { name: "Vaisseau Capsule Corp", color: "#475569", group: "Transports" },
+          { name: "Nuage Magique", color: "#475569", group: "Transports" },
+          { name: "Capsule Spatiale Saiyan", color: "#475569", group: "Transports" },
+          { name: "Machine Temporelle", color: "#475569", group: "Transports" },
+          { name: "Dragon Radar", color: "#94a3b8", group: "Objets" },
+          { name: "Scouter (Détecteur)", color: "#94a3b8", group: "Objets" }
+        ],
+        currency: "zeni",
+        bills: ["1 Zeni", "5 Zeni", "10 Zeni", "20 Zeni", "50 Zeni", "100 Zeni", "500 Zeni"],
+        tokens: ["Épée de Trunks", "Dragon Radar", "Armure Saiyan", "Carapace Tortue", "Boule à 4 étoiles", "Capsule Corp"],
+        dice: ["1 dé blanc", "2 dés blancs"],
+        has_skyscrapers: false
+      },
+
+      pop_pokemon: {
+        id: "pop_pokemon",
+        name: "Monopoly Pokémon",
+        properties: [
+          { name: "Bourg Palette", color: "#8B5A2B", group: "Départ" },
+          { name: "Route 1", color: "#8B5A2B", group: "Départ" },
+          { name: "Arène d'Argenta", color: "#38bdf8", group: "Arènes" },
+          { name: "Mont Sélénite", color: "#38bdf8", group: "Arènes" },
+          { name: "Arène d'Azuria", color: "#38bdf8", group: "Arènes" },
+          { name: "Arène de Carmin sur Mer", color: "#ec4899", group: "Arènes" },
+          { name: "L'Océane", color: "#ec4899", group: "Arènes" },
+          { name: "Tour Pokémon", color: "#ec4899", group: "Arènes" },
+          { name: "Arène de Céladopole", color: "#f97316", group: "Arènes" },
+          { name: "Casino Rocket", color: "#f97316", group: "Arènes" },
+          { name: "Repaire Rocket", color: "#f97316", group: "Arènes" },
+          { name: "Arène de Parmanie", color: "#ef4444", group: "Arènes" },
+          { name: "Parc Safari", color: "#ef4444", group: "Arènes" },
+          { name: "Piste Cyclable", color: "#ef4444", group: "Arènes" },
+          { name: "Arène de Safrania", color: "#eab308", group: "Arènes" },
+          { name: "Sylphe SARL", color: "#eab308", group: "Arènes" },
+          { name: "Centrale Électrique", color: "#eab308", group: "Arènes" },
+          { name: "Arène de Cramois'Île", color: "#10b981", group: "Arènes" },
+          { name: "Manoir Pokémon", color: "#10b981", group: "Arènes" },
+          { name: "Îles Écume", color: "#10b981", group: "Arènes" },
+          { name: "Arène de Jadielle", color: "#2563eb", group: "Élite" },
+          { name: "Plateau Indigo", color: "#2563eb", group: "Élite" },
+          { name: "Poké Ball", color: "#475569", group: "Balls" },
+          { name: "Super Ball", color: "#475569", group: "Balls" },
+          { name: "Hyper Ball", color: "#475569", group: "Balls" },
+          { name: "Master Ball", color: "#475569", group: "Balls" },
+          { name: "Boutique Pokémon", color: "#94a3b8", group: "Services" },
+          { name: "Centre Pokémon", color: "#94a3b8", group: "Services" }
+        ],
+        currency: "pokedollar",
+        bills: ["1 ₽", "5 ₽", "10 ₽", "20 ₽", "50 ₽", "100 ₽", "500 ₽"],
+        tokens: ["Pikachu", "Bulbizarre", "Salamèche", "Carapuce", "Évoli", "Rondoudou"],
+        dice: ["1 dé blanc", "2 dés blancs"],
+        has_skyscrapers: false
+      },
+
+      pop_starwars: {
+        id: "pop_starwars",
+        name: "Monopoly Star Wars",
+        properties: [
+          { name: "Tatooine - Ferme des Lars", color: "#8B5A2B", group: "Bordure Extérieure" },
+          { name: "Mos Eisley Cantina", color: "#8B5A2B", group: "Bordure Extérieure" },
+          { name: "Hoth - Base Écho", color: "#38bdf8", group: "Planètes Froides" },
+          { name: "Champs d'astéroïdes", color: "#38bdf8", group: "Espace" },
+          { name: "Cité des Nuages de Bespin", color: "#38bdf8", group: "Bordure Extérieure" },
+          { name: "Endor - Village des Ewoks", color: "#ec4899", group: "Lune Forestière" },
+          { name: "Générateur de Bouclier d'Endor", color: "#ec4899", group: "Lune Forestière" },
+          { name: "Dagobah - Hutte de Yoda", color: "#ec4899", group: "Système Souterrain" },
+          { name: "Kamino - Cité de Tipoca", color: "#f97316", group: "Clones" },
+          { name: "Geonosis - Arène", color: "#f97316", group: "Séparatistes" },
+          { name: "Utapau - Cité Pau", color: "#f97316", group: "Guerre" },
+          { name: "Mustafar - Complexe Minier", color: "#ef4444", group: "Volcanique" },
+          { name: "Kashyyyk - Cité de Kachirho", color: "#ef4444", group: "Wookiees" },
+          { name: "Naboo - Palais de Theed", color: "#ef4444", group: "Secteur Chommell" },
+          { name: "Coruscant - Sénat Galactique", color: "#eab308", group: "Noyau" },
+          { name: "Temple Jedi de Coruscant", color: "#eab308", group: "Noyau" },
+          { name: "Palais Impérial", color: "#eab308", group: "Noyau" },
+          { name: "Étoile de la Mort I", color: "#10b981", group: "Empire" },
+          { name: "Étoile de la Mort II", color: "#10b981", group: "Empire" },
+          { name: "Salle du Trône de l'Empereur", color: "#10b981", group: "Empire" },
+          { name: "Base Starkiller", color: "#2563eb", group: "Premier Ordre" },
+          { name: "Exegol - Citadelle Sith", color: "#2563eb", group: "Sith" },
+          { name: "Faucon Millenium", color: "#475569", group: "Vaisseaux" },
+          { name: "X-Wing T-65", color: "#475569", group: "Vaisseaux" },
+          { name: "Chasseur TIE", color: "#475569", group: "Vaisseaux" },
+          { name: "Destroyer Stellaire", color: "#475569", group: "Vaisseaux" },
+          { name: "Réacteur Hyperdrive", color: "#94a3b8", group: "Systèmes" },
+          { name: "Générateur d'Énergie", color: "#94a3b8", group: "Systèmes" }
+        ],
+        currency: "credits",
+        bills: ["10 Crédits", "50 Crédits", "100 Crédits", "200 Crédits", "500 Crédits"],
+        tokens: ["Casque Dark Vador", "Faucon Millenium", "R2-D2", "Casque Stormtrooper", "Sabre Laser", "X-Wing"],
+        dice: ["1 dé blanc", "2 dés blancs"],
+        has_skyscrapers: false
+      },
+
+      pop_harrypotter: {
+        id: "pop_harrypotter",
+        name: "Monopoly Harry Potter",
+        properties: [
+          { name: "Le Chaudron Baveur", color: "#8B5A2B", group: "Londres Magique" },
+          { name: "Chemin de Traverse", color: "#8B5A2B", group: "Londres Magique" },
+          { name: "Magasin d'Ollivander", color: "#38bdf8", group: "Boutiques" },
+          { name: "Fleury et Bott", color: "#38bdf8", group: "Boutiques" },
+          { name: "Boutique de Farces et Attrapes", color: "#38bdf8", group: "Boutiques" },
+          { name: "Quai 9 ¾", color: "#ec4899", group: "Transports" },
+          { name: "Les Trois Balais", color: "#ec4899", group: "Pré-au-Lard" },
+          { name: "Zonko", color: "#ec4899", group: "Pré-au-Lard" },
+          { name: "Honeydukes", color: "#f97316", group: "Pré-au-Lard" },
+          { name: "La Cabane Hurlante", color: "#f97316", group: "Pré-au-Lard" },
+          { name: "Cabane de Hagrid", color: "#f97316", group: "Poudlard" },
+          { name: "Forêt Interdite", color: "#ef4444", group: "Poudlard" },
+          { name: "Terrain de Quidditch", color: "#ef4444", group: "Poudlard" },
+          { name: "Serres de Botanique", color: "#ef4444", group: "Poudlard" },
+          { name: "Salle sur Demande", color: "#eab308", group: "Château" },
+          { name: "Bibliothèque de Poudlard", color: "#eab308", group: "Château" },
+          { name: "Grande Salle de Poudlard", color: "#eab308", group: "Château" },
+          { name: "Bureau de Dumbledore", color: "#10b981", group: "Poudlard" },
+          { name: "Chambre des Secrets", color: "#10b981", group: "Secrets" },
+          { name: "Ministère de la Magie", color: "#10b981", group: "Institutions" },
+          { name: "Manoir des Malefoy", color: "#2563eb", group: "Lieux Sombres" },
+          { name: "Château de Poudlard", color: "#2563eb", group: "Poudlard" },
+          { name: "Poudlard Express", color: "#475569", group: "Gares" },
+          { name: "Magicobus", color: "#475569", group: "Gares" },
+          { name: "Side-car de Sirius", color: "#475569", group: "Gares" },
+          { name: "Ford Anglia volante", color: "#475569", group: "Gares" },
+          { name: "Gringotts (Banque)", color: "#94a3b8", group: "Services" },
+          { name: "Gazette du Sorcier", color: "#94a3b8", group: "Services" }
+        ],
+        currency: "galleons",
+        bills: ["1 Noise", "5 Mornilles", "10 Gallions", "20 Gallions", "50 Gallions", "100 Gallions", "500 Gallions"],
+        tokens: ["Vif d'or", "Choixpeau", "Chouette Hedwige", "Épée de Gryffondor", "Éclair de Feu", "Potion"],
+        dice: ["1 dé blanc", "2 dés blancs"],
+        has_skyscrapers: false
+      },
+
+      standard_france: {
+        id: "standard_france",
+        name: "Monopoly Standard France",
+        properties: [
+          { name: "Boulevard de Belleville", color: "#8B5A2B", group: "Marron" },
+          { name: "Rue Lecourbe", color: "#8B5A2B", group: "Marron" },
+          { name: "Rue de Vaugirard", color: "#38bdf8", group: "Bleu Ciel" },
+          { name: "Rue de Courcelles", color: "#38bdf8", group: "Bleu Ciel" },
+          { name: "Avenue de la République", color: "#38bdf8", group: "Bleu Ciel" },
+          { name: "Boulevard de la Villette", color: "#ec4899", group: "Rose" },
+          { name: "Avenue de Neuilly", color: "#ec4899", group: "Rose" },
+          { name: "Rue de Paradis", color: "#ec4899", group: "Rose" },
+          { name: "Avenue Mozart", color: "#f97316", group: "Orange" },
+          { name: "Boulevard Saint-Michel", color: "#f97316", group: "Orange" },
+          { name: "Place Pigalle", color: "#f97316", group: "Orange" },
+          { name: "Avenue Matignon", color: "#ef4444", group: "Rouge" },
+          { name: "Boulevard Malesherbes", color: "#ef4444", group: "Rouge" },
+          { name: "Avenue Henri-Martin", color: "#ef4444", group: "Rouge" },
+          { name: "Faubourg Saint-Honoré", color: "#eab308", group: "Jaune" },
+          { name: "Place de la Bourse", color: "#eab308", group: "Jaune" },
+          { name: "Rue La Fayette", color: "#eab308", group: "Jaune" },
+          { name: "Avenue de Breteuil", color: "#10b981", group: "Vert" },
+          { name: "Avenue Foch", color: "#10b981", group: "Vert" },
+          { name: "Boulevard des Capucines", color: "#10b981", group: "Vert" },
+          { name: "Avenue des Champs-Élysées", color: "#2563eb", group: "Bleu Foncé" },
+          { name: "Rue de la Paix", color: "#2563eb", group: "Bleu Foncé" },
+          { name: "Gare Montparnasse", color: "#475569", group: "Gares" },
+          { name: "Gare de Lyon", color: "#475569", group: "Gares" },
+          { name: "Gare du Nord", color: "#475569", group: "Gares" },
+          { name: "Gare Saint-Lazare", color: "#475569", group: "Gares" },
+          { name: "Compagnie d'Électricité", color: "#94a3b8", group: "Services" },
+          { name: "Compagnie des Eaux", color: "#94a3b8", group: "Services" }
+        ],
+        tokens: ["Chapeau", "Voiture", "Chien", "Chaussure", "Bateau", "Dé à coudre", "Fer à repasser", "Brouette"],
+        dice: ["1 dé blanc", "2 dés blancs"],
+        has_skyscrapers: false
+      }
+    };
+
+    function getEditionProfile(item) {
+      const name = (item && item.name) ? item.name.toLowerCase() : "";
+      const desc = (item && item.description) ? item.description.toLowerCase() : "";
+      const year = (item && item.year) ? parseInt(item.year, 10) : 2010;
+      const full = name + " " + desc;
+
+      let profile;
+      if (/mega|mga/i.test(full)) {
+        profile = JSON.parse(JSON.stringify(EDITION_PROFILES.mega));
+      } else if (/lectronique|electronique|banking|banque lectr/i.test(full)) {
+        profile = JSON.parse(JSON.stringify(EDITION_PROFILES.electronic));
+        profile.properties = JSON.parse(JSON.stringify(EDITION_PROFILES.standard_france.properties));
+      } else if (/dragon ball|dbz/i.test(full)) {
+        profile = JSON.parse(JSON.stringify(EDITION_PROFILES.pop_dbz));
+      } else if (/pok[e]mon/i.test(full)) {
+        profile = JSON.parse(JSON.stringify(EDITION_PROFILES.pop_pokemon));
+      } else if (/star wars/i.test(full)) {
+        profile = JSON.parse(JSON.stringify(EDITION_PROFILES.pop_starwars));
+      } else if (/harry potter/i.test(full)) {
+        profile = JSON.parse(JSON.stringify(EDITION_PROFILES.pop_harrypotter));
+      } else {
+        profile = JSON.parse(JSON.stringify(EDITION_PROFILES.standard_france));
+      }
+
+      // Devises vintage vs moderne pour les éditions à billets
+      if (!profile.is_electronic && !profile.currency) {
+        if (year < 2002) {
+          profile.currency = "francs";
+          profile.bills = ["100 F", "500 F", "1 000 F", "2 000 F", "5 000 F", "10 000 F", "50 000 F"];
+          if (/mega/i.test(full)) profile.bills.push("100 000 F");
+        } else {
+          profile.currency = "euros";
+          profile.bills = ["1 €", "5 €", "10 €", "20 €", "50 €", "100 €", "500 €"];
+          if (/mega/i.test(full)) profile.bills.push("1 000 €");
+        }
+      }
+
+      return profile;
+    }
+
+    // State management for the currently active completeness widget
+    let currentWidgetContainerId = null;
+    let currentWidgetState = {
+      is_complete: true,
+      missing_pieces: {
+        properties: [],
+        bills: [],
+        tokens: [],
+        dice: [],
+        buildings: { houses: 0, hotels: 0, skyscrapers: 0 },
+        other: { rules: false, board: false, tray: false }
+      },
+      profile: null,
+      activeCategory: "properties"
+    };
+
+    function renderCompletenessWidget(containerId, item) {
+      currentWidgetContainerId = containerId;
+      const container = document.getElementById(containerId);
+      if (!container) return;
+
+      const profile = getEditionProfile(item);
+      currentWidgetState.profile = profile;
+
+      if (item && item.is_complete !== undefined) {
+        currentWidgetState.is_complete = Boolean(item.is_complete);
+      } else {
+        currentWidgetState.is_complete = true;
+      }
+
+      if (item && item.missing_pieces) {
+        currentWidgetState.missing_pieces = JSON.parse(JSON.stringify(item.missing_pieces));
+        if (!currentWidgetState.missing_pieces.properties) currentWidgetState.missing_pieces.properties = [];
+        if (!currentWidgetState.missing_pieces.bills) currentWidgetState.missing_pieces.bills = [];
+        if (!currentWidgetState.missing_pieces.tokens) currentWidgetState.missing_pieces.tokens = [];
+        if (!currentWidgetState.missing_pieces.dice) currentWidgetState.missing_pieces.dice = [];
+        if (!currentWidgetState.missing_pieces.buildings) currentWidgetState.missing_pieces.buildings = { houses: 0, hotels: 0, skyscrapers: 0 };
+        if (!currentWidgetState.missing_pieces.other) currentWidgetState.missing_pieces.other = { rules: false, board: false, tray: false };
+      } else {
+        currentWidgetState.missing_pieces = {
+          properties: [],
+          bills: [],
+          tokens: [],
+          dice: [],
+          buildings: { houses: 0, hotels: 0, skyscrapers: 0 },
+          other: { rules: false, board: false, tray: false }
+        };
+      }
+
+      redrawCompletenessWidget();
+    }
+
+    function redrawCompletenessWidget() {
+      const container = document.getElementById(currentWidgetContainerId);
+      if (!container) return;
+
+      const st = currentWidgetState;
+      const prof = st.profile || EDITION_PROFILES.standard_france;
+      const isComp = st.is_complete;
+      const mp = st.missing_pieces;
+
+      let html = '<div class="completeness-widget">';
+      
+      // Header with edition detection info
+      html += '<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; flex-wrap:wrap; gap:6px;">' +
+        '<div style="font-weight:700; font-size:0.86rem; color:var(--text-main);">🧩 État d\'exhaustivité de la boîte :</div>' +
+        '<div style="font-size:0.75rem; background:rgba(56,189,248,0.12); color:var(--accent); border:1px solid rgba(56,189,248,0.3); padding:2px 8px; border-radius:12px;">' +
+          'Édition : ' + prof.name + ' (' + (prof.properties ? prof.properties.length : 28) + ' propriétés)' +
+        '</div>' +
+      '</div>';
+
+      // Big toggle buttons
+      html += '<div class="completeness-toggle-group">' +
+        '<button type="button" class="btn-completeness-toggle ' + (isComp ? 'active-complete' : '') + '" onclick="setCompletenessStatus(true)">' +
+          '🟢 Jeu 100% Complet' +
+        '</button>' +
+        '<button type="button" class="btn-completeness-toggle ' + (!isComp ? 'active-incomplete' : '') + '" onclick="setCompletenessStatus(false)">' +
+          '⚠️ Pièces Manquantes' +
+        '</button>' +
+      '</div>';
+
+      // If Incomplete: show categories & interactive accordion
+      if (!isComp) {
+        html += '<div style="margin-top:12px; animation: fadeIn 0.2s ease;">';
+
+        // Count badges for tabs
+        const propCount = mp.properties.length;
+        const billCount = mp.bills.length;
+        const tokenCount = mp.tokens.length;
+        const diceCount = mp.dice.length;
+        const bldCount = (mp.buildings.houses > 0 ? 1 : 0) + (mp.buildings.hotels > 0 ? 1 : 0) + (mp.buildings.skyscrapers > 0 ? 1 : 0);
+        const otherCount = (mp.other.rules ? 1 : 0) + (mp.other.board ? 1 : 0) + (mp.other.tray ? 1 : 0);
+
+        // Category Pills
+        html += '<div class="missing-category-tabs">' +
+          '<button type="button" class="missing-cat-btn ' + (st.activeCategory === 'properties' ? 'active' : '') + '" onclick="setCompletenessCategory(\'properties\')">' +
+            '🏷️ Propriétés ' + (propCount > 0 ? '<span class="badge-count">' + propCount + '</span>' : '') +
+          '</button>' +
+          '<button type="button" class="missing-cat-btn ' + (st.activeCategory === 'bills' ? 'active' : '') + '" onclick="setCompletenessCategory(\'bills\')">' +
+            (prof.is_electronic ? '💳 Terminal & Cartes' : '💶 Billets') + (billCount > 0 ? '<span class="badge-count">' + billCount + '</span>' : '') +
+          '</button>' +
+          '<button type="button" class="missing-cat-btn ' + (st.activeCategory === 'tokens' ? 'active' : '') + '" onclick="setCompletenessCategory(\'tokens\')">' +
+            '♟️ Pions ' + (tokenCount > 0 ? '<span class="badge-count">' + tokenCount + '</span>' : '') +
+          '</button>' +
+          '<button type="button" class="missing-cat-btn ' + (st.activeCategory === 'dice' ? 'active' : '') + '" onclick="setCompletenessCategory(\'dice\')">' +
+            '🎲 Dés ' + (diceCount > 0 ? '<span class="badge-count">' + diceCount + '</span>' : '') +
+          '</button>' +
+          '<button type="button" class="missing-cat-btn ' + (st.activeCategory === 'buildings' ? 'active' : '') + '" onclick="setCompletenessCategory(\'buildings\')">' +
+            '🏠 Bâtiments ' + (bldCount > 0 ? '<span class="badge-count">' + bldCount + '</span>' : '') +
+          '</button>' +
+          '<button type="button" class="missing-cat-btn ' + (st.activeCategory === 'other' ? 'active' : '') + '" onclick="setCompletenessCategory(\'other\')">' +
+            '📖 Matériel ' + (otherCount > 0 ? '<span class="badge-count">' + otherCount + '</span>' : '') +
+          '</button>' +
+        '</div>';
+
+        // Tab: PROPERTIES (Supports > 28 properties!)
+        if (st.activeCategory === 'properties') {
+          html += '<div style="margin-top:10px;">' +
+            '<div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">' +
+              'Touchez un titre pour le marquer comme <strong>manquant</strong> (Total répertorié pour cette édition : ' + prof.properties.length + ' cartes) :' +
+            '</div>' +
+            '<div class="prop-chips-grid">';
+
+          prof.properties.forEach(function(p) {
+            const isMissing = mp.properties.indexOf(p.name) !== -1;
+            html += '<div class="prop-chip ' + (isMissing ? 'selected-missing' : '') + '" onclick="toggleMissingProp(\'' + p.name.replace(/'/g, "\\'") + '\')">' +
+              '<span class="prop-color-dot" style="background:' + p.color + ';"></span>' +
+              '<span>' + (isMissing ? '❌ ' : '') + p.name + '</span>' +
+            '</div>';
+          });
+
+          // Also show any custom properties added by the user
+          mp.properties.forEach(function(cp) {
+            const inProf = prof.properties.some(function(p) { return p.name === cp; });
+            if (!inProf) {
+              html += '<div class="prop-chip selected-missing" onclick="toggleMissingProp(\'' + cp.replace(/'/g, "\\'") + '\')">' +
+                '<span class="prop-color-dot" style="background:#a855f7;"></span>' +
+                '<span>❌ ' + cp + ' (Personnalisé)</span>' +
+              '</div>';
+            }
+          });
+
+          html += '</div>';
+
+          // Add custom property field
+          html += '<div style="margin-top:10px; display:flex; gap:6px;">' +
+            '<input type="text" id="customPropInput" class="form-control" placeholder="Ajouter une propriété non listée (variante rare, ville...)" style="font-size:0.8rem; padding:6px 10px;">' +
+            '<button type="button" class="btn btn-secondary" onclick="addCustomPropertyFromInput()" style="font-size:0.78rem; padding:6px 12px; white-space:nowrap;">➕ Ajouter</button>' +
+          '</div>';
+
+          html += '</div>';
+        }
+
+        // Tab: BILLS / BANKING
+        else if (st.activeCategory === 'bills') {
+          html += '<div style="margin-top:10px;">';
+
+          if (prof.is_electronic) {
+            html += '<div style="background:rgba(239,68,68,0.06); border:1px solid rgba(239,68,68,0.2); border-radius:6px; padding:10px; margin-bottom:10px; font-size:0.8rem;">' +
+              '⚡ <strong>Édition Électronique</strong> : Aucun billet papier dans cette boîte.' +
+            '</div>';
+            prof.electronic_units.forEach(function(unit) {
+              const isMissing = mp.bills.some(function(b) { return b.name === unit; });
+              html += '<label class="bill-item-row" style="cursor:pointer; margin-bottom:6px;">' +
+                '<input type="checkbox" ' + (isMissing ? 'checked' : '') + ' onchange="toggleMissingBillItem(\'' + unit.replace(/'/g, "\\'") + '\')"> ' +
+                '<span>' + unit + ' manquant</span>' +
+              '</label>';
+            });
+          } else {
+            html += '<div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">' +
+              'Cochez les coupures de billets manquantes pour cette édition (' + (prof.currency === 'francs' ? 'Francs vintage' : prof.currency === 'euros' ? 'Euros' : prof.currency) + ') :' +
+            '</div>' +
+            '<div class="bills-grid">';
+
+            prof.bills.forEach(function(bName) {
+              const existing = mp.bills.find(function(b) { return b.name === bName; });
+              const isMissing = Boolean(existing);
+              const count = existing ? (existing.count || "") : "";
+
+              html += '<div class="bill-item-row">' +
+                '<input type="checkbox" ' + (isMissing ? 'checked' : '') + ' onchange="toggleMissingBillItem(\'' + bName.replace(/'/g, "\\'") + '\')"> ' +
+                '<span style="font-weight:600; flex:1;">' + bName + '</span>' +
+                (isMissing ? 
+                  '<input type="number" min="1" max="50" placeholder="Qté" value="' + count + '" style="width:50px; padding:2px 4px; font-size:0.75rem; background:var(--bg-card); border:1px solid var(--border-color); border-radius:4px; color:var(--text-main);" onchange="updateMissingBillCount(\'' + bName.replace(/'/g, "\\'") + '\', this.value)">' 
+                  : '') +
+              '</div>';
+            });
+
+            html += '</div>';
+          }
+
+          html += '</div>';
+        }
+
+        // Tab: TOKENS (Pions)
+        else if (st.activeCategory === 'tokens') {
+          html += '<div style="margin-top:10px;">' +
+            '<div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Cochez les pions métalliques / figurines manquants :</div>' +
+            '<div class="prop-chips-grid">';
+
+          prof.tokens.forEach(function(tok) {
+            const isMissing = mp.tokens.indexOf(tok) !== -1;
+            html += '<div class="prop-chip ' + (isMissing ? 'selected-missing' : '') + '" onclick="toggleMissingTokenItem(\'' + tok.replace(/'/g, "\\'") + '\')">' +
+              '<span>' + (isMissing ? '❌ ' : '♟️ ') + tok + '</span>' +
+            '</div>';
+          });
+
+          // Custom tokens
+          mp.tokens.forEach(function(ct) {
+            if (prof.tokens.indexOf(ct) === -1) {
+              html += '<div class="prop-chip selected-missing" onclick="toggleMissingTokenItem(\'' + ct.replace(/'/g, "\\'") + '\')">' +
+                '<span>❌ ' + ct + ' (Personnalisé)</span>' +
+              '</div>';
+            }
+          });
+
+          html += '</div>';
+
+          // Add custom token input
+          html += '<div style="margin-top:10px; display:flex; gap:6px;">' +
+            '<input type="text" id="customTokenInput" class="form-control" placeholder="Ajouter un pion personnalisé (ex: Figurine collector...)" style="font-size:0.8rem; padding:6px 10px;">' +
+            '<button type="button" class="btn btn-secondary" onclick="addCustomTokenFromInput()" style="font-size:0.78rem; padding:6px 12px; white-space:nowrap;">➕ Ajouter</button>' +
+          '</div>';
+
+          html += '</div>';
+        }
+
+        // Tab: DICE (Dés)
+        else if (st.activeCategory === 'dice') {
+          html += '<div style="margin-top:10px;">' +
+            '<div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Cochez les dés manquants :</div>' +
+            '<div style="display:flex; flex-direction:column; gap:8px;">';
+
+          prof.dice.forEach(function(die) {
+            const isMissing = mp.dice.indexOf(die) !== -1;
+            html += '<label class="bill-item-row" style="cursor:pointer;">' +
+              '<input type="checkbox" ' + (isMissing ? 'checked' : '') + ' onchange="toggleMissingDieItem(\'' + die.replace(/'/g, "\\'") + '\')"> ' +
+              '<span>🎲 ' + die + ' manquant</span>' +
+            '</label>';
+          });
+
+          html += '</div></div>';
+        }
+
+        // Tab: BUILDINGS (Maisons / Hôtels / Gratte-ciels)
+        else if (st.activeCategory === 'buildings') {
+          html += '<div style="margin-top:10px;">' +
+            '<div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Indiquez le nombre de bâtiments manquants :</div>' +
+            '<div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(180px, 1fr)); gap:8px;">' +
+              '<div class="bill-item-row" style="justify-content:space-between;">' +
+                '<span>🏠 Maisons vertes (max 32) :</span>' +
+                '<input type="number" min="0" max="32" value="' + (mp.buildings.houses || 0) + '" style="width:60px; padding:3px 6px; font-size:0.8rem; background:var(--bg-card); border:1px solid var(--border-color); border-radius:4px; color:var(--text-main);" onchange="setMissingBuildingCount(\'houses\', this.value)">' +
+              '</div>' +
+              '<div class="bill-item-row" style="justify-content:space-between;">' +
+                '<span>🏨 Hôtels rouges (max 12) :</span>' +
+                '<input type="number" min="0" max="12" value="' + (mp.buildings.hotels || 0) + '" style="width:60px; padding:3px 6px; font-size:0.8rem; background:var(--bg-card); border:1px solid var(--border-color); border-radius:4px; color:var(--text-main);" onchange="setMissingBuildingCount(\'hotels\', this.value)">' +
+              '</div>';
+
+          if (prof.has_skyscrapers) {
+            html += '<div class="bill-item-row" style="justify-content:space-between;">' +
+              '<span>🏙️ Gratte-ciels Mega (max 8) :</span>' +
+              '<input type="number" min="0" max="8" value="' + (mp.buildings.skyscrapers || 0) + '" style="width:60px; padding:3px 6px; font-size:0.8rem; background:var(--bg-card); border:1px solid var(--border-color); border-radius:4px; color:var(--text-main);" onchange="setMissingBuildingCount(\'skyscrapers\', this.value)">' +
+            '</div>';
+          }
+
+          html += '</div></div>';
+        }
+
+        // Tab: OTHER (Règles, Plateau, Calage)
+        else if (st.activeCategory === 'other') {
+          html += '<div style="margin-top:10px;">' +
+            '<div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Cochez les éléments de boîte manquants :</div>' +
+            '<div style="display:flex; flex-direction:column; gap:8px;">' +
+              '<label class="bill-item-row" style="cursor:pointer;">' +
+                '<input type="checkbox" ' + (mp.other.rules ? 'checked' : '') + ' onchange="toggleMissingOtherItem(\'rules\')"> ' +
+                '<span>📖 Livret de règles du jeu manquant</span>' +
+              '</label>' +
+              '<label class="bill-item-row" style="cursor:pointer;">' +
+                '<input type="checkbox" ' + (mp.other.board ? 'checked' : '') + ' onchange="toggleMissingOtherItem(\'board\')"> ' +
+                '<span>🗺️ Plateau de jeu manquant ou très abîmé</span>' +
+              '</label>' +
+              '<label class="bill-item-row" style="cursor:pointer;">' +
+                '<input type="checkbox" ' + (mp.other.tray ? 'checked' : '') + ' onchange="toggleMissingOtherItem(\'tray\')"> ' +
+                '<span>📦 Calage plastique intérieur (thermoformé) manquant</span>' +
+              '</label>' +
+            '</div>' +
+          '</div>';
+        }
+
+        // Live summary block
+        const summaryParts = [];
+        if (propCount > 0) summaryParts.push('<strong>' + propCount + '</strong> propriété(s) (' + mp.properties.slice(0, 3).join(', ') + (propCount > 3 ? '...' : '') + ')');
+        if (billCount > 0) summaryParts.push('<strong>' + billCount + '</strong> coupure(s) de billets');
+        if (tokenCount > 0) summaryParts.push('<strong>' + tokenCount + '</strong> pion(s)');
+        if (diceCount > 0) summaryParts.push('<strong>' + diceCount + '</strong> dé(s)');
+        if (bldCount > 0) {
+          const bArr = [];
+          if (mp.buildings.houses > 0) bArr.push(mp.buildings.houses + ' maison(s)');
+          if (mp.buildings.hotels > 0) bArr.push(mp.buildings.hotels + ' hôtel(s)');
+          if (mp.buildings.skyscrapers > 0) bArr.push(mp.buildings.skyscrapers + ' gratte-ciel(s)');
+          summaryParts.push(bArr.join(', '));
+        }
+        if (otherCount > 0) {
+          const oArr = [];
+          if (mp.other.rules) oArr.push('Règles');
+          if (mp.other.board) oArr.push('Plateau');
+          if (mp.other.tray) oArr.push('Calage');
+          summaryParts.push(oArr.join(', '));
+        }
+
+        html += '<div style="margin-top:12px; padding:10px; border-radius:6px; background:rgba(245,158,11,0.12); border:1px solid rgba(245,158,11,0.3); font-size:0.8rem; color:#fde68a;">' +
+          '<div style="font-weight:700; color:#f59e0b; margin-bottom:4px;">⚠️ Résumé des pièces manquantes déclarées :</div>' +
+          '<div>' + (summaryParts.length > 0 ? summaryParts.join(' • ') : 'Aucune pièce cochée pour le moment.') + '</div>' +
+        '</div>';
+
+        html += '</div>';
+      }
+
+      html += '</div>';
+      container.innerHTML = html;
+    }
+
+    function setCompletenessStatus(isComplete) {
+      currentWidgetState.is_complete = isComplete;
+      redrawCompletenessWidget();
+    }
+
+    function setCompletenessCategory(category) {
+      currentWidgetState.activeCategory = category;
+      redrawCompletenessWidget();
+    }
+
+    function toggleMissingProp(propName) {
+      const arr = currentWidgetState.missing_pieces.properties;
+      const idx = arr.indexOf(propName);
+      if (idx === -1) {
+        arr.push(propName);
+      } else {
+        arr.splice(idx, 1);
+      }
+      redrawCompletenessWidget();
+    }
+
+    function addCustomPropertyFromInput() {
+      const input = document.getElementById("customPropInput");
+      if (!input) return;
+      const val = input.value.trim();
+      if (!val) return;
+      const arr = currentWidgetState.missing_pieces.properties;
+      if (arr.indexOf(val) === -1) {
+        arr.push(val);
+      }
+      input.value = "";
+      redrawCompletenessWidget();
+    }
+
+    function toggleMissingBillItem(billName) {
+      const arr = currentWidgetState.missing_pieces.bills;
+      const idx = arr.findIndex(function(b) { return b.name === billName; });
+      if (idx === -1) {
+        arr.push({ name: billName, count: 1 });
+      } else {
+        arr.splice(idx, 1);
+      }
+      redrawCompletenessWidget();
+    }
+
+    function updateMissingBillCount(billName, countVal) {
+      const arr = currentWidgetState.missing_pieces.bills;
+      const item = arr.find(function(b) { return b.name === billName; });
+      if (item) {
+        item.count = parseInt(countVal, 10) || 1;
+      }
+    }
+
+    function toggleMissingTokenItem(tokenName) {
+      const arr = currentWidgetState.missing_pieces.tokens;
+      const idx = arr.indexOf(tokenName);
+      if (idx === -1) {
+        arr.push(tokenName);
+      } else {
+        arr.splice(idx, 1);
+      }
+      redrawCompletenessWidget();
+    }
+
+    function addCustomTokenFromInput() {
+      const input = document.getElementById("customTokenInput");
+      if (!input) return;
+      const val = input.value.trim();
+      if (!val) return;
+      const arr = currentWidgetState.missing_pieces.tokens;
+      if (arr.indexOf(val) === -1) {
+        arr.push(val);
+      }
+      input.value = "";
+      redrawCompletenessWidget();
+    }
+
+    function toggleMissingDieItem(dieName) {
+      const arr = currentWidgetState.missing_pieces.dice;
+      const idx = arr.indexOf(dieName);
+      if (idx === -1) {
+        arr.push(dieName);
+      } else {
+        arr.splice(idx, 1);
+      }
+      redrawCompletenessWidget();
+    }
+
+    function setMissingBuildingCount(type, val) {
+      currentWidgetState.missing_pieces.buildings[type] = parseInt(val, 10) || 0;
+    }
+
+    function toggleMissingOtherItem(key) {
+      currentWidgetState.missing_pieces.other[key] = !currentWidgetState.missing_pieces.other[key];
+      redrawCompletenessWidget();
+    }
+
+    function clearSearchInput() {
+      const input = document.getElementById("searchInput");
+      if (input) {
+        input.value = "";
+        currentSearchTerm = "";
+      }
+      const clearBtn = document.getElementById("clearSearchBtn");
+      if (clearBtn) clearBtn.style.display = "none";
+      renderList(true);
+    }
+
+
+    function openEditModal(id) {
+      const item = database.find(function(e) { return e.id === id; });
+      if (!item) return;
+
+      document.getElementById("modalTitle").textContent = "Fiche : " + item.name;
+      document.getElementById("editItemId").value = item.id;
+      document.getElementById("editStatus").value = item.status || "none";
+      document.getElementById("editCondition").value = item.condition || "";
+      document.getElementById("editPrice").value = item.price || "";
+      document.getElementById("editValue").value = item.value || "";
+      document.getElementById("editLocation").value = item.location || "";
+      document.getElementById("editNotes").value = item.notes || "";
+      document.getElementById("editImageUrl").value = item.image_url || "";
+
+      const links = getMarketLinks(item);
+      document.getElementById("editMarketLinks").innerHTML = 
+        '<a href="' + links.ebaySold + '" target="_blank" class="market-btn ebay" style="font-size:0.72rem; padding:3px 8px;" title="Ventes terminées eBay (Exemplaire exact)">🎯 Ventes eBay Exactes</a>' +
+        '<a href="' + links.vinted + '" target="_blank" class="market-btn vinted" style="font-size:0.72rem; padding:3px 8px;" title="Vinted Jeux de société (Exemplaire exact)">🎯 Vinted Exact</a>' +
+        '<a href="' + links.leboncoin + '" target="_blank" class="market-btn lbc" style="font-size:0.72rem; padding:3px 8px;">📦 Leboncoin</a>' +
+        '<a href="' + links.vintedBroad + '" target="_blank" class="market-btn" style="border:1px dashed var(--border-color); font-size:0.68rem; padding:3px 6px;" title="Recherche sans l\'année">🔎 Large</a>';
+
+      document.getElementById("autoEstimateBtn").onclick = function() {
+        const cond = document.getElementById("editCondition").value;
+        const est = estimateMarketResaleValue(item, cond);
+        document.getElementById("editValue").value = est.value;
+        showToast("Cote estimée : " + est.value + " € (" + est.rangeStr + ")");
+      };
+
+      renderCompletenessWidget("editCompletenessContainer", item);
+      updateEditPreview(item);
+      document.getElementById("editModalBackdrop").classList.add("open");
+    }
+
+    function updateEditPreview(item) {
+      const preview = document.getElementById("modalImagePreviewContainer");
+      const url = document.getElementById("editImageUrl").value.trim();
+      if (url) {
+        preview.innerHTML = '<img src="' + url + '" style="max-height:160px; max-width:100%; object-fit:contain; border-radius:4px;" onerror="this.remove()">';
+      } else {
+        preview.innerHTML = '<div style="padding:20px; color:var(--text-muted); font-size:0.85rem;">Aucune photo sélectionnée</div>';
+      }
+    }
+
+    function saveEditModal() {
+      const id = document.getElementById("editItemId").value;
+      const item = database.find(function(e) { return e.id === id; });
+      if (!item) return;
+
+      item.status = document.getElementById("editStatus").value;
+      item.condition = document.getElementById("editCondition").value.trim();
+      item.price = document.getElementById("editPrice").value.trim();
+      item.value = document.getElementById("editValue").value.trim();
+      item.location = document.getElementById("editLocation").value.trim();
+      item.notes = document.getElementById("editNotes").value.trim();
+      
+      const newImg = document.getElementById("editImageUrl").value.trim();
+      item.image_url = newImg;
+      item.is_verified_box = Boolean(newImg);
+      if (currentWidgetState) {
+        item.is_complete = currentWidgetState.is_complete;
+        item.missing_pieces = JSON.parse(JSON.stringify(currentWidgetState.missing_pieces));
+      }
+
+      document.getElementById("editModalBackdrop").classList.remove("open");
+      saveDatabase();
+      renderList(false);
+      showToast('Fiche de "' + item.name + '" mise à jour !');
+    }
+
+    // Add Modal
+    function openAddModal() {
+      document.getElementById("addName").value = "";
+      document.getElementById("addCategory").value = "";
+      document.getElementById("addYear").value = "";
+      document.getElementById("addCountry").value = "France";
+      document.getElementById("addPublisher").value = "Hasbro";
+      document.getElementById("addDescription").value = "";
+      document.getElementById("addImageUrl").value = "";
+      document.getElementById("addStatus").value = "owned";
+      document.getElementById("addModalImagePreview").innerHTML = "";
+      renderCompletenessWidget("addCompletenessContainer", { name: "Nouveau Monopoly", is_complete: true });
+      document.getElementById("addModalBackdrop").classList.add("open");
+    }
+
+    function saveCustomEdition() {
+      const name = document.getElementById("addName").value.trim();
+      if (!name) {
+        alert("Veuillez saisir un nom pour l'édition.");
+        return;
+      }
+      if (!/monopoly/i.test(name)) {
+        alert("Action refusée : Cette application est exclusivement réservée à la collection de jeux Monopoly. L'ajout d'autres jeux de société n'est pas autorisé.");
+        return;
+      }
+
+      const status = document.getElementById("addStatus").value;
+      const cat = document.getElementById("addCategory").value.trim() || "Personnalisée";
+      const year = parseInt(document.getElementById("addYear").value, 10) || "";
+      const country = document.getElementById("addCountry").value.trim() || "France";
+      const pub = document.getElementById("addPublisher").value.trim() || "Hasbro";
+      const desc = document.getElementById("addDescription").value.trim() || "Édition ajoutée par le collectionneur.";
+      const est = estimateMarketResaleValue({ name: name, category: cat, year: year, publisher: pub, description: desc }, "Très bon état");
+
+      const newEdition = {
+        id: "custom-" + Date.now(),
+        name: name,
+        category: cat,
+        year: year,
+        country: country,
+        publisher: pub,
+        description: desc,
+        image_url: document.getElementById("addImageUrl").value.trim() || "",
+        is_complete: currentWidgetState ? currentWidgetState.is_complete : true,
+        missing_pieces: currentWidgetState ? JSON.parse(JSON.stringify(currentWidgetState.missing_pieces)) : { properties: [], bills: [], tokens: [], dice: [], buildings: { houses: 0, hotels: 0, skyscrapers: 0 }, other: {} },
+        status: status,
+        condition: status === "owned" ? "Très bon état" : "",
+        price: "",
+        value: status === "owned" ? est.value : "",
+        estimated_range: est.rangeStr,
+        location: status === "owned" ? "Collection personnelle" : "",
+        notes: ""
+      };
+
+      database.unshift(newEdition);
+      document.getElementById("addModalBackdrop").classList.remove("open");
+      saveDatabase();
+      renderList(true);
+      showToast('Édition "' + name + '" créée avec succès ! (Cote : ~' + est.value + ' €)');
+    }
+
+    // EXPORT & BACKUP
+    function exportToCsv() {
+      const headers = ["ID", "Statut", "Nom", "Categorie", "Annee", "Pays", "Editeur", "Image_URL", "Etat", "Prix_Achat_EUR", "Valeur_Estimee_EUR", "Emplacement", "Completude", "Pieces_Manquantes", "Notes", "Description"];
+      const rows = database.map(function(e) {
+        return [
+          '"' + (e.id || '').replace(/"/g, '""') + '"',
+          '"' + (e.status === 'owned' ? 'Possédé' : e.status === 'wishlist' ? 'Recherché' : 'Non possédé').replace(/"/g, '""') + '"',
+          '"' + (e.name || '').replace(/"/g, '""') + '"',
+          '"' + (e.category || '').replace(/"/g, '""') + '"',
+          '"' + (e.year || '') + '"',
+          '"' + (e.country || '').replace(/"/g, '""') + '"',
+          '"' + (e.publisher || '').replace(/"/g, '""') + '"',
+          '"' + (e.image_url || '').replace(/"/g, '""') + '"',
+          '"' + (e.condition || '').replace(/"/g, '""') + '"',
+          '"' + (e.price || '') + '"',
+          '"' + (e.value || '') + '"',
+          '"' + (e.location || '').replace(/"/g, '""') + '"',
+          '"' + (e.is_complete === false ? 'Incomplet' : 'Complet') + '"',
+          '"' + (e.missing_pieces ? JSON.stringify(e.missing_pieces).replace(/"/g, '""') : '') + '"',
+          '"' + (e.notes || '').replace(/"/g, '""') + '"',
+          '"' + (e.description || '').replace(/"/g, '""') + '"'
+        ];
+      });
+
+      const csvContent = "\ufeff" + headers.join(";") + "\n" + rows.map(function(r) { return r.join(";"); }).join("\n");
+      const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "monopoly_collection_" + new Date().toISOString().slice(0,10) + ".csv";
+      a.click();
+      URL.revokeObjectURL(url);
+      showToast("Fichier CSV exporté pour Excel !");
+    }
+
+    function backupToJson() {
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(database, null, 2));
+      const a = document.createElement("a");
+      a.href = dataStr;
+      a.download = "monopoly_collection_backup_" + new Date().toISOString().slice(0,10) + ".json";
+      a.click();
+      showToast("Sauvegarde JSON téléchargée !");
+    }
+
+    function restoreItemsArray(itemsArray) {
+      let restoredCount = 0;
+      const userMap = {};
+      itemsArray.forEach(function(u) {
+        if (u && u.id) userMap[u.id] = u;
+        if (u && u.name) userMap[u.name.toLowerCase().trim()] = u;
+      });
+
+      // Réconciliation avec les éditions du catalogue
+      database.forEach(function(item) {
+        const userItem = userMap[item.id] || userMap[item.name.toLowerCase().trim()];
+        if (userItem) {
+          if (userItem.status) item.status = userItem.status;
+          if (userItem.condition) item.condition = userItem.condition;
+          if (userItem.price) item.price = userItem.price;
+          if (userItem.value) item.value = userItem.value;
+          if (userItem.location || userItem.emplacement) item.location = userItem.location || userItem.emplacement;
+          if (userItem.notes) item.notes = userItem.notes;
+          if (userItem.is_complete !== undefined) item.is_complete = userItem.is_complete;
+          if (userItem.missing_pieces) item.missing_pieces = userItem.missing_pieces;
+          if (userItem.image_url && !item.image_url) item.image_url = userItem.image_url;
+          if (userItem.user_image) item.user_image = userItem.user_image;
+          if (userItem.user_photos) item.user_photos = userItem.user_photos;
+          if (item.status === "owned") restoredCount++;
+        }
+      });
+
+      // Conserver également les éditions personnalisées créées par l'utilisateur
+      itemsArray.forEach(function(u) {
+        if (u && u.id && !database.some(function(d) { return d.id === u.id; })) {
+          database.unshift(u);
+          if (u.status === "owned") restoredCount++;
+        }
+      });
+
+      saveDatabase();
+      renderStats();
+      renderList(true);
+      showToast("Collection restaurée : " + restoredCount + " éditions récupérées !");
+    }
+
+    function restoreFromCsvText(csvText) {
+      const lines = csvText.split(/\r?\n/).filter(function(l) { return l.trim().length > 0; });
+      if (lines.length < 2) throw new Error("Fichier CSV vide ou incomplet.");
+
+      const firstLine = lines[0];
+      const delim = (firstLine.split(";").length > firstLine.split(",").length) ? ";" : ",";
+
+      function parseCsvLine(line) {
+        const result = [];
+        let cur = "";
+        let inQuotes = false;
+        for (let i = 0; i < line.length; i++) {
+          const c = line[i];
+          if (c === '"') {
+            if (inQuotes && line[i+1] === '"') {
+              cur += '"';
+              i++;
+            } else {
+              inQuotes = !inQuotes;
+            }
+          } else if (c === delim && !inQuotes) {
+            result.push(cur);
+            cur = "";
+          } else {
+            cur += c;
+          }
+        }
+        result.push(cur);
+        return result.map(function(s) { return s.trim(); });
+      }
+
+      const headerCells = parseCsvLine(lines[0]).map(function(h) { return h.toLowerCase().replace(/["\s_]/g, ""); });
+      const idIdx = headerCells.indexOf("id");
+      const nameIdx = headerCells.indexOf("nom") !== -1 ? headerCells.indexOf("nom") : headerCells.indexOf("name");
+      const statusIdx = headerCells.indexOf("statut") !== -1 ? headerCells.indexOf("statut") : headerCells.indexOf("status");
+      const condIdx = headerCells.indexOf("etat") !== -1 ? headerCells.indexOf("etat") : headerCells.indexOf("condition");
+      const priceIdx = headerCells.findIndex(function(h) { return h.includes("prix") || h.includes("price"); });
+      const valIdx = headerCells.findIndex(function(h) { return h.includes("valeur") || h.includes("cote"); });
+      const locIdx = headerCells.findIndex(function(h) { return h.includes("emplacement") || h.includes("location"); });
+      const notesIdx = headerCells.indexOf("notes");
+      const compIdx = headerCells.findIndex(function(h) { return h.includes("complet"); });
+      const mpIdx = headerCells.findIndex(function(h) { return h.includes("manquant") || h.includes("pieces"); });
+
+      const restoredItems = [];
+      for (let i = 1; i < lines.length; i++) {
+        const row = parseCsvLine(lines[i]);
+        if (row.length === 0 || !row[0]) continue;
+
+        const rowId = idIdx !== -1 ? row[idIdx] : "";
+        const rowName = nameIdx !== -1 ? row[nameIdx] : "";
+        let rowStatus = statusIdx !== -1 ? row[statusIdx].toLowerCase() : "none";
+        if (rowStatus.includes("posséd") || rowStatus.includes("possed") || rowStatus === "owned") {
+          rowStatus = "owned";
+        } else if (rowStatus.includes("recherch") || rowStatus === "wishlist") {
+          rowStatus = "wishlist";
+        } else {
+          rowStatus = "none";
+        }
+
+        const itemObj = {
+          id: rowId,
+          name: rowName,
+          status: rowStatus,
+          condition: condIdx !== -1 ? row[condIdx] : "",
+          price: priceIdx !== -1 ? row[priceIdx] : "",
+          value: valIdx !== -1 ? row[valIdx] : "",
+          location: locIdx !== -1 ? row[locIdx] : "",
+          notes: notesIdx !== -1 ? row[notesIdx] : ""
+        };
+
+        if (compIdx !== -1 && row[compIdx]) {
+          itemObj.is_complete = !row[compIdx].toLowerCase().includes("incomplet");
+        }
+        if (mpIdx !== -1 && row[mpIdx]) {
+          try {
+            itemObj.missing_pieces = JSON.parse(row[mpIdx]);
+          } catch(e) {}
+        }
+
+        restoredItems.push(itemObj);
+      }
+
+      restoreItemsArray(restoredItems);
+      return restoredItems;
+    }
+
+    function importFromJson(e) {
+      const file = e.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = function(event) {
+        try {
+          const rawText = (event.target.result || "").trim();
+          if (!rawText) throw new Error("Fichier sélectionné vide.");
+
+          const cleanText = rawText.replace(/^\ufeff/, "").trim();
+
+          // Détection automatique CSV vs JSON
+          if (cleanText.startsWith('"ID"') || cleanText.startsWith("ID,") || cleanText.startsWith("ID;") || cleanText.startsWith('"Statut"') || cleanText.includes("Valeur_Estimee") || cleanText.includes("Prix_Achat")) {
+            restoreFromCsvText(cleanText);
+          } else {
+            let imported;
+            try {
+              imported = JSON.parse(cleanText);
+            } catch(jsonErr) {
+              if (cleanText.includes(",") || cleanText.includes(";")) {
+                restoreFromCsvText(cleanText);
+                return;
+              }
+              throw jsonErr;
+            }
+
+            const itemsArray = Array.isArray(imported) ? imported : (imported.database || imported.editions || imported.items);
+            if (!Array.isArray(itemsArray)) {
+              throw new Error("Format JSON non reconnu (tableau d'éditions attendu).");
+            }
+            restoreItemsArray(itemsArray);
+          }
+        } catch(err) {
+          console.error("Erreur de restauration:", err);
+          alert("Erreur lors de la lecture du fichier : " + err.message + "\n\nConseil : Vérifiez que vous sélectionnez bien le fichier de sauvegarde (.json ou .csv) généré par l'application.");
+        }
+      };
+      reader.readAsText(file, "UTF-8");
+      e.target.value = "";
+    }
+
+    function handleImageUpload(file, inputTargetId, previewContainerId) {
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const dataUrl = e.target.result;
+        document.getElementById(inputTargetId).value = dataUrl;
+        document.getElementById(previewContainerId).innerHTML = '<img src="' + dataUrl + '" style="width:100%; height:100%; object-fit:contain; border-radius:4px;">';
+      };
+      reader.readAsDataURL(file);
+    }
+
+    // ==========================================
+    // BOX SCANNER & INTELLIGENT MULTI-PHOTO IDENTIFIER
+    // ==========================================
+    let currentScannedPhotos = []; // [{ id, dataUrl, name, role: 'front'|'back'|'extra' }]
+    let activePhotoIndex = 0;
+    let currentScannerCandidates = [];
+    let detectedInfoFromScan = null;
+
+    function openScannerModal() {
+      switchTab("scanner");
+    }
+
+    function closeScannerModal() {
+      switchTab("collection");
+    }
+
+    function updateAiBadgeStatus() {
+      const key = localStorage.getItem("gemini_api_key");
+      const badge = document.getElementById("aiKeyStatusBadge");
+      if (key && key.trim()) {
+        badge.textContent = "✨ IA Gemini Vision Active (Multi-Photos)";
+        badge.style.background = "rgba(99, 102, 241, 0.2)";
+        badge.style.color = "#818cf8";
+        document.getElementById("geminiApiKeyInput").value = key;
+      } else {
+        badge.textContent = "Code-barres & Catalogue local actif";
+        badge.style.background = "rgba(16, 185, 129, 0.15)";
+        badge.style.color = "#10b981";
+      }
+    }
+
+    function resetScannerUI() {
+      currentScannedPhotos = [];
+      activePhotoIndex = 0;
+      currentScannerCandidates = [];
+      detectedInfoFromScan = null;
+      document.getElementById("scannerEmptyState").style.display = "block";
+      document.getElementById("scannerPreviewArea").style.display = "none";
+      document.getElementById("scannerPreviewImg").src = "";
+      document.getElementById("scannerGallery").innerHTML = "";
+      document.getElementById("scannerScanningOverlay").style.display = "none";
+      document.getElementById("scannerSearchQuery").value = "";
+      document.getElementById("scannerResultArea").innerHTML = 
+        '<div style="text-align: center; padding: 24px; color: var(--text-muted); border: 1px dashed var(--border-color); border-radius: 8px;">' +
+        '<span>💡</span> Déposez une ou plusieurs photos ci-dessus (Face, Dos avec code-barres...) pour lancer l\'identification.' +
+        '</div>';
+      document.getElementById("matchStatsLabel").textContent = "Recherche dans " + database.length + " références";
+    }
+
+    function compressImage(dataUrl, maxDim, quality) {
+      return new Promise(function(resolve) {
+        if (!dataUrl || typeof dataUrl !== "string" || !dataUrl.startsWith("data:image")) {
+          resolve(dataUrl);
+          return;
+        }
+        maxDim = maxDim || 800;
+        quality = quality || 0.75;
+        const img = new Image();
+        img.onload = function() {
+          let w = img.width;
+          let h = img.height;
+          if (w > maxDim || h > maxDim) {
+            if (w > h) {
+              h = Math.round((h * maxDim) / w);
+              w = maxDim;
+            } else {
+              w = Math.round((w * maxDim) / h);
+              h = maxDim;
+            }
+          }
+          const canvas = document.createElement("canvas");
+          canvas.width = w;
+          canvas.height = h;
+          const ctx = canvas.getContext("2d");
+          ctx.drawImage(img, 0, 0, w, h);
+          try {
+            const compressed = canvas.toDataURL("image/jpeg", quality);
+            resolve(compressed);
+          } catch(err) {
+            resolve(dataUrl);
+          }
+        };
+        img.onerror = function() {
+          resolve(dataUrl);
+        };
+        img.src = dataUrl;
+      });
+    }
+
+    function handleScannerFiles(fileList, append) {
+      if (!fileList || fileList.length === 0) return;
+      const files = Array.from(fileList);
+      if (!append) {
+        currentScannedPhotos = [];
+      }
+
+      let loadedCount = 0;
+      files.forEach(function(file) {
+        const reader = new FileReader();
+        reader.onload = async function(e) {
+          const rawUrl = e.target.result;
+          let optimizedUrl = rawUrl;
+          try {
+            optimizedUrl = await compressImage(rawUrl, 800, 0.75);
+          } catch(err) {
+            console.warn("Image compression fallback:", err);
+          }
+
+          const countBefore = currentScannedPhotos.length;
+          let role = "extra";
+          if (countBefore === 0) role = "front";
+          else if (countBefore === 1) role = "back";
+
+          currentScannedPhotos.push({
+            id: "photo-" + Date.now() + "-" + Math.random().toString(36).substr(2, 4),
+            dataUrl: optimizedUrl,
+            name: file.name,
+            role: role
+          });
+
+          loadedCount++;
+          if (loadedCount === files.length) {
+            document.getElementById("scannerEmptyState").style.display = "none";
+            document.getElementById("scannerPreviewArea").style.display = "block";
+            activePhotoIndex = 0;
+            renderScannerGallery();
+            updateScannerActivePreview(0);
+
+            const overlay = document.getElementById("scannerScanningOverlay");
+            overlay.style.display = "flex";
+            setTimeout(function() {
+              analyzeUploadedBoxes(currentScannedPhotos);
+            }, 600);
+          }
+        };
+        reader.readAsDataURL(file);
+      });
+    }
+
+    function renderScannerGallery() {
+      const gallery = document.getElementById("scannerGallery");
+      if (!gallery) return;
+      if (currentScannedPhotos.length === 0) {
+        gallery.innerHTML = "";
+        return;
+      }
+
+      let html = "";
+      currentScannedPhotos.forEach(function(p, idx) {
+        const isAct = idx === activePhotoIndex;
+        let roleLabel = "Face";
+        let roleClass = "front";
+        if (p.role === "back") {
+          roleLabel = "Dos";
+          roleClass = "back";
+        } else if (p.role === "extra") {
+          roleLabel = "Détail";
+          roleClass = "extra";
+        }
+
+        html += 
+          '<div class="scanner-thumb-card ' + (isAct ? 'active' : '') + '" onclick="updateScannerActivePreview(' + idx + ')" title="Cliquer pour afficher">' +
+            '<button class="scanner-thumb-role-toggle" onclick="event.stopPropagation(); togglePhotoRole(' + idx + ')" title="Changer le rôle (Face / Dos / Détail)">⇄ ' + roleLabel + '</button>' +
+            '<button class="scanner-thumb-delete" onclick="event.stopPropagation(); removeScannerPhoto(' + idx + ')" title="Supprimer cette photo">&times;</button>' +
+            '<img class="scanner-thumb-img" src="' + p.dataUrl + '" alt="' + p.name + '">' +
+            '<div class="scanner-thumb-badge ' + roleClass + '">' + roleLabel + '</div>' +
+          '</div>';
+      });
+
+      html += 
+        '<div class="scanner-add-thumb" onclick="document.getElementById(\'scannerAddMoreInput\').click();" title="Ajouter une photo supplémentaire">' +
+          '<span style="font-size: 1.4rem; line-height: 1;">+</span>' +
+          '<span>Ajouter</span>' +
+        '</div>';
+
+      gallery.innerHTML = html;
+    }
+
+    function updateScannerActivePreview(idx) {
+      if (idx < 0 || idx >= currentScannedPhotos.length) return;
+      activePhotoIndex = idx;
+      const previewImg = document.getElementById("scannerPreviewImg");
+      previewImg.src = currentScannedPhotos[idx].dataUrl;
+      renderScannerGallery();
+    }
+
+    function togglePhotoRole(idx) {
+      if (idx < 0 || idx >= currentScannedPhotos.length) return;
+      const p = currentScannedPhotos[idx];
+      if (p.role === "front") p.role = "back";
+      else if (p.role === "back") p.role = "extra";
+      else p.role = "front";
+      renderScannerGallery();
+      renderScannerResults(currentScannerCandidates, document.getElementById("scannerSearchQuery").value);
+    }
+
+    function removeScannerPhoto(idx) {
+      if (idx < 0 || idx >= currentScannedPhotos.length) return;
+      currentScannedPhotos.splice(idx, 1);
+      if (currentScannedPhotos.length === 0) {
+        resetScannerUI();
+        return;
+      }
+      if (activePhotoIndex >= currentScannedPhotos.length) {
+        activePhotoIndex = currentScannedPhotos.length - 1;
+      }
+      updateScannerActivePreview(activePhotoIndex);
+      analyzeUploadedBoxes(currentScannedPhotos);
+    }
+
+    const KNOWN_BARCODES = {
+      "5010993828739": {
+        title: "Monopoly 3, 2, 1",
+        year: 2021,
+        publisher: "Hasbro",
+        category: "Cartes & Parties Rapides",
+        description: "Jeu de cartes rapide où les joueurs font des enchères secrètes pour remporter des propriétés en 15 minutes."
+      },
+      "5010993414987": {
+        title: "Monopoly Classique",
+        year: 2017,
+        publisher: "Hasbro",
+        category: "Classique & Standard",
+        description: "Édition standard avec pions T-Rex, Canard et Pingouin."
+      },
+      "5010993517176": {
+        title: "Monopoly Édition Tricheurs",
+        year: 2018,
+        publisher: "Hasbro",
+        category: "Variantes & Règles Spéciales",
+        description: "Édition où tricher fait partie intégrante des règles du jeu avec menottes fournies."
+      },
+      "5010993608140": {
+        title: "Monopoly Voice Banking",
+        year: 2019,
+        publisher: "Hasbro",
+        category: "Électronique",
+        description: "Version interactive à reconnaissance vocale avec haut-parleur M. Monopoly."
+      },
+      "5010993827596": {
+        title: "Monopoly Builder",
+        year: 2021,
+        publisher: "Hasbro",
+        category: "Variantes & Règles Spéciales",
+        description: "Édition avec l'île Monopoly où les joueurs empilent des blocs de bâtiments."
+      },
+      "5010996147424": {
+        title: "Monopoly Gliss",
+        year: 2023,
+        publisher: "Hasbro",
+        category: "Variantes & Règles Spéciales",
+        description: "Édition avec palets coulissants et cibles sur le plateau."
+      },
+      "5010993597659": {
+        title: "Monopoly Deal",
+        year: 2019,
+        publisher: "Hasbro",
+        category: "Cartes & Parties Rapides",
+        description: "Le jeu de cartes Monopoly ultra-rapide de transactions immobilières."
+      },
+      "5010993635399": {
+        title: "Monopoly Speed",
+        year: 2020,
+        publisher: "Hasbro",
+        category: "Cartes & Parties Rapides",
+        description: "Édition jouable en moins de 10 minutes avec chronomètre intégré."
+      },
+      "5010993630639": {
+        title: "Monopoly Mauvais Perdants",
+        year: 2020,
+        publisher: "Hasbro",
+        category: "Variantes & Règles Spéciales",
+        description: "Édition où perdre rapporte de l'argent et des avantages avec le pion M. Monopoly."
+      },
+      "5010993892792": {
+        title: "Monopoly Faux Billets",
+        year: 2021,
+        publisher: "Hasbro",
+        category: "Variantes & Règles Spéciales",
+        description: "Édition avec loupe décodeuse pour démasquer les faux billets et fausses cartes."
+      },
+      "5010994191313": {
+        title: "Monopoly Knockout",
+        year: 2023,
+        publisher: "Hasbro",
+        category: "Variantes & Règles Spéciales",
+        description: "Jeu de palets où les joueurs s'affrontent sur une piste pour éjecter les adversaires."
+      },
+      "5010996228390": {
+        title: "Monopoly Chance",
+        year: 2023,
+        publisher: "Hasbro",
+        category: "Cartes & Parties Rapides",
+        description: "Parties rapides à base de cartes Chance et de dés spéciaux."
+      },
+      "5010993540020": {
+        title: "Monopoly Junior",
+        year: 2018,
+        publisher: "Hasbro",
+        category: "Junior & Enfants",
+        description: "Édition simplifiée pour enfants dès 5 ans."
+      },
+      "5010993675005": {
+        title: "Monopoly Super Banque Électronique",
+        year: 2020,
+        publisher: "Hasbro",
+        category: "Électronique",
+        description: "Chaque joueur a sa propre carte bancaire avec récompenses uniques sans cash."
+      },
+      "5010993319084": {
+        title: "Monopoly Ultimate Banking",
+        year: 2016,
+        publisher: "Hasbro",
+        category: "Électronique",
+        description: "Version bancaire électronique sans argent liquide avec scanner de cartes."
+      },
+      "5010993583683": {
+        title: "Monopoly Fortnite",
+        year: 2018,
+        publisher: "Hasbro",
+        category: "Jeux Vidéo & Pop Culture",
+        description: "Édition Battle Royale inspirée du jeu vidéo Fortnite avec points de vie (HP)."
+      },
+      "5023117441584": {
+        title: "Monopoly La Casa de Papel",
+        year: 2020,
+        publisher: "Winning Moves",
+        category: "Films & Séries",
+        description: "Édition sous licence officielle de la série Netflix La Casa de Papel."
+      },
+      "3700126901409": {
+        title: "Monopoly Édition Mega",
+        year: 2007,
+        publisher: "Winning Moves / Hasbro",
+        category: "Déclinaisons & Variantes",
+        description: "Plateau géant avec 12 cases supplémentaires et dé accélérateur."
+      }
+    };
+
+    function searchWebForScanned(target) {
+      const name = (document.getElementById("scanNewName") ? document.getElementById("scanNewName").value : "").trim() || "Monopoly";
+      const year = (document.getElementById("scanNewYear") ? document.getElementById("scanNewYear").value : "").trim();
+      const barcode = (detectedInfoFromScan && detectedInfoFromScan.barcode) ? detectedInfoFromScan.barcode : "";
+
+      let q = name;
+      if (year && !q.includes(year)) q += " " + year;
+
+      let url = "";
+      if (target === "google") {
+        url = "https://www.google.com/search?q=" + encodeURIComponent(barcode ? ("Monopoly " + barcode + " " + q) : q);
+      } else if (target === "vinted") {
+        url = "https://www.vinted.fr/catalog?search_text=" + encodeURIComponent("jeu " + q);
+      } else if (target === "ebay") {
+        url = "https://www.ebay.fr/sch/220/i.html?_nkw=" + encodeURIComponent('"' + name + '"' + (year ? ' ' + year : '')) + "&LH_Complete=1&LH_Sold=1";
+      } else if (target === "leboncoin") {
+        url = "https://www.leboncoin.fr/recherche?category=43&text=" + encodeURIComponent(q);
+      }
+      if (url) window.open(url, "_blank", "noopener,noreferrer");
+    }
+    async function analyzeUploadedBoxes(photos) {
+      const overlay = document.getElementById("scannerScanningOverlay");
+      let detectedBarcode = null;
+      let aiDetection = null;
+      let detectedYearFromOcr = null;
+      let detectedLegalPublisher = null;
+
+      // 1. Scan barcode across ALL photos using BarcodeDetector
+      if ("BarcodeDetector" in window) {
+        try {
+          const barcodeDetector = new BarcodeDetector({
+            formats: ["ean_13", "ean_8", "upc_a", "upc_e", "code_128"]
+          });
+          for (let p of photos) {
+            const tempImg = new Image();
+            tempImg.src = p.dataUrl;
+            await new Promise(function(resolve) {
+              if (tempImg.complete) resolve();
+              else tempImg.onload = resolve;
+            });
+            const barcodes = await barcodeDetector.detect(tempImg);
+            if (barcodes && barcodes.length > 0) {
+              detectedBarcode = barcodes[0].rawValue;
+              break;
+            }
+          }
+        } catch(err) {
+          console.log("Barcode detection error:", err);
+        }
+      }
+
+      // 1b. Native OCR Text Detection (detect copyright year, Hasbro/Parker, legal mentions & Monopoly check)
+      let ocrAllText = "";
+      if ("TextDetector" in window) {
+        try {
+          const textDetector = new window.TextDetector();
+          for (let p of photos) {
+            const tempImg = new Image();
+            tempImg.src = p.dataUrl;
+            await new Promise(function(resolve) {
+              if (tempImg.complete) resolve();
+              else tempImg.onload = resolve;
+            });
+            const detectedTexts = await textDetector.detect(tempImg);
+            if (detectedTexts && detectedTexts.length > 0) {
+              for (let t of detectedTexts) {
+                const str = t.rawValue || "";
+                ocrAllText += " " + str;
+                if (/hasbro/i.test(str)) detectedLegalPublisher = "Hasbro";
+                else if (/parker/i.test(str)) detectedLegalPublisher = "Parker Brothers";
+                else if (/winning\s*moves/i.test(str)) detectedLegalPublisher = "Winning Moves";
+
+                // Priority 1: © 2021, (c) 2021, Copyright 2021, Hasbro 2021
+                const copyMatch = str.match(/(?:©|\(c\)|copyright|hasbro|parker|tm|®|parution|date|distribué\s+en)[\s:–-]*([12][90]\d{2})/i);
+                if (copyMatch) {
+                  const y = parseInt(copyMatch[1], 10);
+                  if (y >= 1935 && y <= 2025) {
+                    detectedYearFromOcr = y;
+                    break;
+                  }
+                }
+                // Priority 2: Year preceding Hasbro / Parker / legal text
+                const revMatch = str.match(/\b([12][90]\d{2})[\s:–-]*(?:hasbro|parker|winning|all rights reserved|tous droits réservés)/i);
+                if (revMatch) {
+                  const y = parseInt(revMatch[1], 10);
+                  if (y >= 1935 && y <= 2025) {
+                    detectedYearFromOcr = y;
+                    break;
+                  }
+                }
+                // Priority 3: Standalone 4-digit valid year
+                const standalone = str.match(/\b(19[3-9]\d|20[0-2]\d)\b/g);
+                if (standalone && !detectedYearFromOcr) {
+                  for (let s of standalone) {
+                    const y = parseInt(s, 10);
+                    if (y >= 1935 && y <= 2025) {
+                      detectedYearFromOcr = y;
+                      break;
+                    }
+                  }
+                }
+              }
+            }
+            if (detectedYearFromOcr) break;
+          }
+        } catch(err) {
+          console.log("TextDetector OCR error:", err);
+        }
+      }
+
+      // 2. Gemini Vision Multi-Images (if API key provided)
+      const geminiKey = localStorage.getItem("gemini_api_key");
+      if (geminiKey && geminiKey.trim() && photos.length > 0) {
+        try {
+          const parts = [
+            { text: "Analyse ces photos d'une boîte de jeu de société. ATTENTION : cette application est EXCLUSIVEMENT dédiée aux Monopoly. Si ce n'est PAS un Monopoly (ex: Scrabble, Uno, Cluedo, Catan, Bonne Paye, etc.), réponds UNIQUEMENT: {\"is_monopoly\": false, \"detected_game\": \"...\"} . Si c'est bien un Monopoly, identifie précisément: 1. Le nom officiel exact du jeu (ex: Monopoly 3, 2, 1, Monopoly Builder, etc.), 2. L'année d'édition exacte imprimée au dos de la boîte (mentions légales / copyright), 3. L'éditeur, 4. La catégorie, 5. Le code-barres EAN si visible. Réponds sous forme de JSON strict: {\"is_monopoly\": true, \"title\": \"...\", \"year\": \"...\", \"publisher\": \"...\", \"category\": \"...\", \"barcode\": \"...\"}" }
+          ];
+
+          photos.slice(0, 4).forEach(function(p) {
+            const base64Data = p.dataUrl.split(",")[1];
+            const mimeType = p.dataUrl.substring(p.dataUrl.indexOf(":") + 1, p.dataUrl.indexOf(";"));
+            parts.push({
+              inline_data: { mime_type: mimeType, data: base64Data }
+            });
+          });
+
+          const response = await fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=" + geminiKey.trim(), {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ contents: [{ parts: parts }] })
+          });
+          const data = await response.json();
+          if (data && data.candidates && data.candidates[0] && data.candidates[0].content) {
+            const rawText = data.candidates[0].content.parts[0].text;
+            const jsonMatch = rawText.match(/\{[\s\S]*?\}/);
+            if (jsonMatch) {
+              aiDetection = JSON.parse(jsonMatch[0]);
+            }
+          }
+        } catch(err) {
+          console.warn("Gemini vision analysis failed:", err);
+        }
+      }
+
+      // 3. Check if game is NOT a Monopoly
+      let isNotMonopoly = false;
+      let detectedNonMonopolyName = "";
+
+      const nonMonopolyRegex = /\b(scrabble|cluedo|clue|trivial\s*pursuit|bonne\s*paye|payday|catan|carcassonne|dixit|uno|puissance\s*4|connect\s*4|qui\s*est[\s-]ce|guess\s*who|twister|boggle|risk|stratego|destins|docteur\s*maboul|operation|timeline|7\s*wonders|splendor|aventuriers\s*du\s*rail|ticket\s*to\s*ride|mille\s*bornes|tarot|belote|poker|echecs|chess|dames|dominos|mastermind|rummikub|jungle\s*speed|time's\s*up|dobble)\b/i;
+
+      if (aiDetection && aiDetection.is_monopoly === false) {
+        isNotMonopoly = true;
+        detectedNonMonopolyName = aiDetection.detected_game || "Autre jeu";
+      } else if (aiDetection && aiDetection.title && !/monopoly/i.test(aiDetection.title)) {
+        isNotMonopoly = true;
+        detectedNonMonopolyName = aiDetection.title;
+      } else if (ocrAllText) {
+        const otherMatch = ocrAllText.match(nonMonopolyRegex);
+        if (otherMatch && !/monopoly/i.test(ocrAllText)) {
+          isNotMonopoly = true;
+          detectedNonMonopolyName = otherMatch[0];
+        }
+      }
+
+      // Match Barcode in Known Dictionary or Database
+      let dbBarcodeMatch = null;
+      if (detectedBarcode) {
+        dbBarcodeMatch = database.find(function(item) {
+          return (item.barcode && item.barcode.toString().trim() === detectedBarcode.trim()) ||
+                 (item.notes && item.notes.includes(detectedBarcode.trim())) ||
+                 (item.description && item.description.includes(detectedBarcode.trim()));
+        });
+      }
+
+      let queryGuess = "";
+      let resolvedTitle = "";
+      let resolvedYear = null;
+      let resolvedPublisher = detectedLegalPublisher || "Hasbro";
+      let resolvedCategory = "Thématique";
+
+      if (aiDetection && aiDetection.title) {
+        resolvedTitle = aiDetection.title;
+        queryGuess = aiDetection.title;
+        if (aiDetection.year && !isNaN(parseInt(aiDetection.year, 10))) {
+          resolvedYear = parseInt(aiDetection.year, 10);
+        }
+        if (aiDetection.publisher) resolvedPublisher = aiDetection.publisher;
+        if (aiDetection.category) resolvedCategory = aiDetection.category;
+      } else if (detectedBarcode && KNOWN_BARCODES[detectedBarcode]) {
+        const kb = KNOWN_BARCODES[detectedBarcode];
+        resolvedTitle = kb.title;
+        queryGuess = kb.title;
+        resolvedYear = kb.year;
+        resolvedPublisher = kb.publisher;
+        resolvedCategory = kb.category;
+      } else if (dbBarcodeMatch) {
+        resolvedTitle = dbBarcodeMatch.name;
+        queryGuess = dbBarcodeMatch.name;
+        resolvedYear = dbBarcodeMatch.year;
+        resolvedPublisher = dbBarcodeMatch.publisher || "Hasbro";
+        resolvedCategory = dbBarcodeMatch.category || "Thématique";
+      } else if (detectedBarcode) {
+        queryGuess = detectedBarcode;
+        resolvedTitle = "";
+      } else {
+        const nameTokens = [];
+        photos.forEach(function(p) {
+          if (p.name) {
+            let clean = p.name.replace(/\.[^/.]+$/, "").replace(/[-_]/g, " ");
+            clean = clean.replace(/box|boite|monopoly|recto|verso|front|back|img|photo|\d{4,}/gi, "").trim();
+            if (clean.length > 2) nameTokens.push(clean);
+          }
+        });
+        if (nameTokens.length > 0) {
+          queryGuess = nameTokens.join(" ");
+        }
+      }
+
+      // If year is not yet resolved, use OCR detected year from the box photos!
+      if (!resolvedYear && detectedYearFromOcr) {
+        resolvedYear = detectedYearFromOcr;
+      }
+
+      detectedInfoFromScan = {
+        title: resolvedTitle,
+        year: resolvedYear, // null if unknown, NEVER 2026!
+        publisher: resolvedPublisher,
+        category: resolvedCategory,
+        barcode: detectedBarcode,
+        isNotMonopoly: isNotMonopoly,
+        detectedNonMonopolyName: detectedNonMonopolyName
+      };
+
+      overlay.style.display = "none";
+      if (queryGuess) {
+        document.getElementById("scannerSearchQuery").value = queryGuess;
+      }
+      searchAndRenderScannerCandidates(queryGuess || document.getElementById("scannerSearchQuery").value);
+    }
+
+    function searchAndRenderScannerCandidates(query) {
+      const q = (query || "").trim().toLowerCase();
+      let candidates = [];
+
+      if (q) {
+        const tokens = q.split(/\s+/).filter(function(t) { return t.length > 1; });
+        candidates = database.map(function(item) {
+          let score = 0;
+          const nameLower = (item.name || "").toLowerCase();
+          const descLower = (item.description || "").toLowerCase();
+          const pubLower = (item.publisher || "").toLowerCase();
+          const catLower = (item.category || "").toLowerCase();
+          const yearStr = item.year ? item.year.toString() : "";
+          const barStr = item.barcode ? item.barcode.toString().toLowerCase() : "";
+
+          if (detectedInfoFromScan && detectedInfoFromScan.barcode) {
+            const scanBar = detectedInfoFromScan.barcode.trim().toLowerCase();
+            if (barStr && (barStr === scanBar || barStr.includes(scanBar) || scanBar.includes(barStr))) score += 150;
+            if (item.notes && item.notes.toLowerCase().includes(scanBar)) score += 120;
+            if (descLower.includes(scanBar)) score += 100;
+          }
+          if (barStr && (barStr === q || q.includes(barStr))) score += 100;
+          if (nameLower === q) score += 50;
+          if (nameLower.includes(q)) score += 30;
+
+          tokens.forEach(function(tok) {
+            if (nameLower.includes(tok)) score += 12;
+            if (descLower.includes(tok)) score += 4;
+            if (pubLower.includes(tok)) score += 3;
+            if (catLower.includes(tok)) score += 3;
+            if (yearStr === tok) score += 8;
+          });
+
+          return { item: item, score: score };
+        })
+        .filter(function(res) { return res.score > 0; })
+        .sort(function(a, b) { return b.score - a.score; })
+        .slice(0, 8)
+        .map(function(res) { return res.item; });
+      } else {
+        candidates = database.slice(0, 5);
+      }
+
+      currentScannerCandidates = candidates;
+      renderScannerResults(candidates, q);
+    }
+
+    function renderScannerResults(candidates, query) {
+      const container = document.getElementById("scannerResultArea");
+      const statsLabel = document.getElementById("matchStatsLabel");
+
+      const nonMonopolyRegex = /\b(scrabble|cluedo|clue|trivial\s*pursuit|bonne\s*paye|payday|catan|carcassonne|dixit|uno|puissance\s*4|connect\s*4|qui\s*est[\s-]ce|guess\s*who|twister|boggle|risk|stratego|destins|docteur\s*maboul|operation|timeline|7\s*wonders|splendor|aventuriers\s*du\s*rail|ticket\s*to\s*ride|mille\s*bornes|tarot|belote|poker|echecs|chess|dames|dominos|mastermind|rummikub|jungle\s*speed|time's\s*up|dobble)\b/i;
+      const isQueryNonMonopoly = query && nonMonopolyRegex.test(query) && !/monopoly/i.test(query);
+
+      // BLOCKING SCREEN IF NOT A MONOPOLY
+      if ((detectedInfoFromScan && detectedInfoFromScan.isNotMonopoly) || isQueryNonMonopoly) {
+        statsLabel.textContent = "Jeu non autorisé";
+        const gameName = (detectedInfoFromScan && detectedInfoFromScan.detectedNonMonopolyName) ? detectedInfoFromScan.detectedNonMonopolyName : (query || "autre jeu de société");
+        container.innerHTML = 
+          '<div style="background: rgba(239, 68, 68, 0.08); border: 2px solid #ef4444; border-radius: 12px; padding: 24px; text-align: center; margin: 12px 0;">' +
+            '<div style="font-size: 3rem; margin-bottom: 10px;">🚫</div>' +
+            '<h3 style="color: #ef4444; font-size: 1.25rem; font-weight: 800; margin: 0 0 8px 0;">Ce jeu n\'est pas un Monopoly</h3>' +
+            '<p style="color: var(--text-muted); font-size: 0.9rem; max-width: 480px; margin: 0 auto 16px auto; line-height: 1.5;">' +
+              'Le jeu détecté (<strong>' + gameName.replace(/"/g, '&quot;') + '</strong>) ne fait pas partie de l\'univers Monopoly.<br>' +
+              'Cette application est <strong>exclusivement réservée aux jeux Monopoly</strong>. L\'ajout d\'autres jeux de société n\'est pas autorisé.' +
+            '</p>' +
+            '<button class="btn btn-primary" onclick="resetScannerUI()" style="background: #6366f1; border-color: #6366f1; font-weight: 700; padding: 10px 18px;">' +
+              '🔄 Scanner un jeu Monopoly' +
+            '</button>' +
+          '</div>';
+        return;
+      }
+
+      const frontPhoto = currentScannedPhotos.find(function(p) { return p.role === "front"; }) || currentScannedPhotos[0];
+      const backPhoto = currentScannedPhotos.find(function(p) { return p.role === "back"; }) || (currentScannedPhotos.length > 1 ? currentScannedPhotos[1] : null);
+
+      if (candidates.length === 0) {
+        statsLabel.textContent = "Aucune correspondance directe trouvée";
+        let prefillName = "Monopoly (Nouvelle Édition)";
+        if (detectedInfoFromScan && detectedInfoFromScan.title) {
+          prefillName = detectedInfoFromScan.title;
+        } else if (query && !/^\d{8,14}$/.test(query)) {
+          prefillName = "Monopoly " + query.charAt(0).toUpperCase() + query.slice(1);
+        }
+
+        // NEVER default to 2026: if year was detected via OCR or Barcode use it, otherwise keep empty
+        const prefillYear = (detectedInfoFromScan && detectedInfoFromScan.year) ? detectedInfoFromScan.year : "";
+        const prefillPub = (detectedInfoFromScan && detectedInfoFromScan.publisher) ? detectedInfoFromScan.publisher : "Hasbro";
+        const prefillCat = (detectedInfoFromScan && detectedInfoFromScan.category) ? detectedInfoFromScan.category : "Thématique";
+        const prefillNotes = (detectedInfoFromScan && detectedInfoFromScan.barcode) ? ("Code-barres EAN : " + detectedInfoFromScan.barcode) : "";
+        const yearDetectedNotice = prefillYear 
+          ? '<div style="font-size:0.75rem; color:#10b981; font-weight:700; margin-top:4px;">✓ Année détectée sur la boîte : ' + prefillYear + '</div>' 
+          : '<div style="font-size:0.75rem; color:var(--text-muted); margin-top:4px;">Année non détectée (laisser vide ou saisir)</div>';
+
+        container.innerHTML = 
+          '<div style="background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 8px; padding: 16px; margin-bottom: 16px;">' +
+            '<div style="display: flex; gap: 10px; align-items: flex-start;">' +
+              '<span style="font-size: 1.5rem;">✨</span>' +
+              '<div>' +
+                '<h4 style="margin: 0 0 4px 0; color: #f59e0b; font-size: 1rem; font-weight: 700;">Édition non répertoriée dans le catalogue</h4>' +
+                '<p style="margin: 0; font-size: 0.85rem; color: var(--text-muted);">' +
+                  'Cette boîte ne semble pas encore faire partie des ' + database.length + ' références enregistrées. ' +
+                  'Vos ' + currentScannedPhotos.length + ' photo(s) (Face & Dos) seront automatiquement attachées à la fiche :' +
+                '</p>' +
+              '</div>' +
+            '</div>' +
+          '</div>' +
+          '<div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: 8px; padding: 14px 12px; box-sizing: border-box;">' +
+            '<div class="scanner-grid-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 12px;">' +
+              '<div>' +
+                '<label style="display:block; font-size:0.75rem; font-weight:700; color:var(--text-muted); margin-bottom:4px;">Nom de l\'édition *</label>' +
+                '<input type="text" id="scanNewName" class="form-control" value="' + prefillName.replace(/"/g, '&quot;') + '" style="font-weight:600; width:100%; box-sizing:border-box;">' +
+              '</div>' +
+              '<div>' +
+                '<label style="display:block; font-size:0.75rem; font-weight:700; color:var(--text-muted); margin-bottom:4px;">Année de parution</label>' +
+                '<input type="number" id="scanNewYear" class="form-control" value="' + prefillYear + '" placeholder="ex: 2021" style="width:100%; box-sizing:border-box;">' +
+                yearDetectedNotice +
+              '</div>' +
+            '</div>' +
+            '<div class="scanner-grid-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 12px;">' +
+              '<div>' +
+                '<label style="display:block; font-size:0.75rem; font-weight:700; color:var(--text-muted); margin-bottom:4px;">Éditeur</label>' +
+                '<input type="text" id="scanNewPublisher" class="form-control" value="' + prefillPub.replace(/"/g, '&quot;') + '" style="width:100%; box-sizing:border-box;">' +
+              '</div>' +
+              '<div>' +
+                '<label style="display:block; font-size:0.75rem; font-weight:700; color:var(--text-muted); margin-bottom:4px;">Catégorie</label>' +
+                '<input type="text" id="scanNewCategory" class="form-control" value="' + prefillCat.replace(/"/g, '&quot;') + '" style="width:100%; box-sizing:border-box;">' +
+              '</div>' +
+            '</div>' +
+            '<div style="margin-bottom: 14px;">' +
+              '<label style="display:block; font-size:0.75rem; font-weight:700; color:var(--text-muted); margin-bottom:4px;">Particularités / Description</label>' +
+              '<input type="text" id="scanNewDesc" class="form-control" value="' + prefillNotes.replace(/"/g, '&quot;') + '" placeholder="Pions exclusifs, format de boîte, règles spécifiques..." style="width:100%; box-sizing:border-box;">' +
+            '</div>' +
+            '<div style="margin-bottom: 14px; padding: 10px; background: rgba(0,0,0,0.2); border-radius: 6px;">' +
+              '<div style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); margin-bottom: 6px;">🔍 Vérifier cette édition et sa cote en direct sur le web :</div>' +
+              '<div style="display: flex; gap: 6px; flex-wrap: wrap;">' +
+                '<button type="button" class="btn btn-secondary" onclick="searchWebForScanned(\'google\')" style="font-size: 0.75rem; padding: 4px 8px;">🌐 Google</button>' +
+                '<button type="button" class="btn btn-secondary" onclick="searchWebForScanned(\'vinted\')" style="font-size: 0.75rem; padding: 4px 8px; color: #007782; border-color: #007782;">👗 Vinted</button>' +
+                '<button type="button" class="btn btn-secondary" onclick="searchWebForScanned(\'ebay\')" style="font-size: 0.75rem; padding: 4px 8px; color: #e53238; border-color: #e53238;">🏷️ eBay (Vendus)</button>' +
+                '<button type="button" class="btn btn-secondary" onclick="searchWebForScanned(\'leboncoin\')" style="font-size: 0.75rem; padding: 4px 8px; color: #f97316; border-color: #f97316;">📦 Leboncoin</button>' +
+              '</div>' +
+            '</div>' +
+            '<div id="scannerNewCompletenessContainer" style="margin-top:14px;"></div>' +
+            '<div class="scanner-action-buttons" style="display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; padding-top: 12px; border-top: 1px solid var(--border-color);">' +
+              '<button class="btn btn-secondary" onclick="saveScannedNewEdition(\'none\')">⚪ Ajouter au catalogue seul</button>' +
+              '<button class="btn btn-secondary" onclick="saveScannedNewEdition(\'wishlist\')" style="border-color: #f59e0b; color: #f59e0b;">⭐ Ajouter en Wishlist</button>' +
+              '<button class="btn btn-primary" onclick="saveScannedNewEdition(\'owned\')" style="background: #10b981; border-color: #10b981; font-weight: 700;">🟢 Ajouter à ma Collection</button>' +
+            '</div>' +
+          '</div>';
+        if (document.getElementById("scannerNewCompletenessContainer")) {
+          renderCompletenessWidget("scannerNewCompletenessContainer", { name: prefillName || "Nouveau Monopoly", year: prefillYear || 2020, is_complete: true });
+        }
+        return;
+      }
+
+      statsLabel.textContent = candidates.length + " correspondance(s) trouvée(s)";
+      const topMatch = candidates[0];
+      const isOwned = topMatch.status === "owned";
+      const isWishlist = topMatch.status === "wishlist";
+
+      let statusBadge = '<span class="status-badge none">⚪ Non possédé</span>';
+      if (isOwned) statusBadge = '<span class="status-badge owned">🟢 Déjà dans votre Collection</span>';
+      else if (isWishlist) statusBadge = '<span class="status-badge wishlist">⭐ Dans votre Wishlist</span>';
+
+      let userPhotosPreviewHtml = "";
+      if (currentScannedPhotos.length > 0) {
+        userPhotosPreviewHtml = '<div style="display: flex; gap: 8px; align-items: center; background: rgba(0,0,0,0.25); padding: 8px; border-radius: 8px;">';
+        if (frontPhoto) {
+          userPhotosPreviewHtml += 
+            '<div style="text-align: center;">' +
+              '<div style="font-size: 0.65rem; color: #f43f5e; font-weight: 700; margin-bottom: 2px;">Face Avant</div>' +
+              '<img src="' + frontPhoto.dataUrl + '" style="width: 65px; height: 65px; object-fit: contain; border-radius: 4px; border: 1px solid var(--border-color);">' +
+            '</div>';
+        }
+        if (backPhoto && backPhoto !== frontPhoto) {
+          userPhotosPreviewHtml += 
+            '<div style="text-align: center;">' +
+              '<div style="font-size: 0.65rem; color: #10b981; font-weight: 700; margin-bottom: 2px;">Dos de Boîte</div>' +
+              '<img src="' + backPhoto.dataUrl + '" style="width: 65px; height: 65px; object-fit: contain; border-radius: 4px; border: 1px solid var(--border-color);">' +
+            '</div>';
+        }
+        userPhotosPreviewHtml += '<div style="font-size: 1.1rem; opacity: 0.4;">➔</div>';
+        userPhotosPreviewHtml += 
+          '<div style="text-align: center;">' +
+            '<div style="font-size: 0.65rem; color: var(--text-muted); font-weight: 700; margin-bottom: 2px;">Catalogue</div>' +
+            (topMatch.image_url ? 
+              '<img src="' + topMatch.image_url + '" style="width: 65px; height: 65px; object-fit: contain; border-radius: 4px; border: 1px solid var(--border-color);" onerror="handleImageError(this)">' :
+              '<div style="width: 65px; height: 65px; display: flex; align-items: center; justify-content: center; background: var(--bg-card); border-radius: 4px; font-weight: 800; color: var(--primary);">M</div>') +
+          '</div>';
+        userPhotosPreviewHtml += '</div>';
+      }
+
+      let topMatchHtml = 
+        '<div style="background: var(--bg-surface); border: 2px solid ' + (isOwned ? '#10b981' : 'var(--accent)') + '; border-radius: 10px; padding: 16px; margin-bottom: 16px;">' +
+          '<div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">' +
+            '<div style="display: flex; align-items: center; gap: 8px;">' +
+              '<span style="background: var(--accent); color: #fff; font-size: 0.72rem; font-weight: 800; padding: 3px 8px; border-radius: 4px; text-transform: uppercase;">Meilleure Correspondance</span>' +
+              statusBadge +
+            '</div>' +
+            '<span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">Réf #' + topMatch.id + '</span>' +
+          '</div>' +
+          '<div style="display: flex; gap: 16px; align-items: center; flex-wrap: wrap;">' +
+            userPhotosPreviewHtml +
+            '<div style="flex: 1; min-width: 220px;">' +
+              '<h3 style="font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin-bottom: 4px;">' + topMatch.name + '</h3>' +
+              '<div style="display: flex; gap: 10px; font-size: 0.8rem; color: var(--text-muted); margin-bottom: 6px; flex-wrap: wrap;">' +
+                '<span>📅 ' + (topMatch.year || 'N/C') + '</span>' +
+                '<span>🏢 ' + (topMatch.publisher || 'Hasbro') + '</span>' +
+                '<span>📂 ' + (topMatch.category || 'Général') + '</span>' +
+                '<span>📍 ' + (topMatch.country || 'International') + '</span>' +
+              '</div>' +
+              '<p style="font-size: 0.82rem; color: var(--text-muted); margin: 0; line-height: 1.4;">' + (topMatch.description || 'Édition officielle répertoriée.') + '</p>' +
+              '<div style="margin-top: 10px; padding: 8px 12px; background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 6px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">' +
+                '<div>' +
+                  '<span style="font-weight: 800; font-size: 0.88rem; color: #f59e0b;">💰 Cote de Revente Estimée : ~' + (topMatch.value || estimateMarketResaleValue(topMatch).value) + ' €</span>' +
+                  '<span style="font-size: 0.72rem; color: var(--text-muted); margin-left: 6px;">(Fourchette occasion : ' + (topMatch.estimated_range || estimateMarketResaleValue(topMatch).rangeStr) + ')</span>' +
+                '</div>' +
+                '<div style="display: flex; gap: 6px; flex-wrap: wrap;">' +
+                  '<a href="' + getMarketLinks(topMatch).ebaySold + '" target="_blank" class="market-btn ebay" style="font-size: 0.7rem;">🛒 Ventes eBay</a>' +
+                  '<a href="' + getMarketLinks(topMatch).vinted + '" target="_blank" class="market-btn vinted" style="font-size: 0.7rem;">🏷️ Vinted</a>' +
+                  '<a href="' + getMarketLinks(topMatch).leboncoin + '" target="_blank" class="market-btn lbc" style="font-size: 0.7rem;">📦 Le Bon Coin</a>' +
+                '</div>' +
+              '</div>' +
+            '</div>' +
+          '</div>' +
+          '<div id="scannerCompletenessContainer" style="margin-top:14px;"></div>' +
+          '<div class="scanner-action-buttons" style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border-color); align-items: center; justify-content: flex-end;">' +
+            (isOwned ? 
+              '<span style="font-size: 0.82rem; color: #10b981; font-weight: 600; margin-right: auto;">✅ Cet article est déjà enregistré dans votre collection !</span>' +
+              '<button class="btn btn-secondary" onclick="executeScannedAcquisition(\'' + topMatch.id + '\', \'owned\', true)" style="font-size: 0.8rem;">📸 Mettre à jour avec ces photos</button>' :
+              '<button class="btn btn-secondary" onclick="executeScannedAcquisition(\'' + topMatch.id + '\', \'wishlist\')" style="border-color: #f59e0b; color: #f59e0b; font-size: 0.85rem;">⭐ Ajouter en Wishlist</button>' +
+              '<button class="btn btn-primary" onclick="executeScannedAcquisition(\'' + topMatch.id + '\', \'owned\')" style="background: #10b981; border-color: #10b981; font-size: 0.85rem; font-weight: 700;">🟢 Je l\'ai achetée (Ajouter à ma collection)</button>'
+            ) +
+          '</div>' +
+        '</div>';
+
+      let othersHtml = "";
+      if (candidates.length > 1) {
+        othersHtml = '<div style="margin-top: 14px;"><div style="font-size: 0.78rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; margin-bottom: 8px;">Autres éditions similaires dans le catalogue :</div>';
+        for (let i = 1; i < candidates.length; i++) {
+          const item = candidates[i];
+          const itemOwned = item.status === "owned";
+          const itemEst = estimateMarketResaleValue(item);
+          othersHtml += 
+            '<div class="candidate-card" onclick="selectScannerCandidate(\'' + item.id + '\')">' +
+              (item.image_url ? 
+                '<img src="' + item.image_url + '" style="width: 44px; height: 44px; object-fit: contain; border-radius: 4px; border: 1px solid var(--border-color);" onerror="handleImageError(this)">' :
+                '<div style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background: var(--bg-card); border-radius: 4px; font-weight: 800; color: var(--primary);">M</div>'
+              ) +
+              '<div style="flex: 1; min-width: 0;">' +
+                '<div style="display: flex; justify-content: space-between; align-items: center;">' +
+                  '<strong style="font-size: 0.9rem; color: var(--text-main); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">' + item.name + '</strong>' +
+                  '<span style="font-size: 0.75rem; color: var(--text-muted); margin-left: 8px;">' + (item.year || '') + '</span>' +
+                '</div>' +
+                '<div style="font-size: 0.75rem; color: var(--text-muted); display: flex; gap: 8px; align-items: center;">' +
+                  '<span>' + (item.publisher || 'Hasbro') + '</span>' +
+                  '<span>•</span>' +
+                  '<span>' + (item.category || 'Général') + '</span>' +
+                  '<span class="resale-badge" style="margin-left: auto; font-size: 0.68rem; padding: 1px 5px;">~' + (item.value || itemEst.value) + ' €</span>' +
+                  (itemOwned ? '<span style="color: #10b981; font-weight: 700; margin-left: 4px;">(Possédé)</span>' : '') +
+                '</div>' +
+              '</div>' +
+              '<button class="btn btn-secondary" style="padding: 4px 10px; font-size: 0.75rem; margin-left: 6px;" onclick="event.stopPropagation(); executeScannedAcquisition(\'' + item.id + '\', \'owned\');">🟢 Choisir</button>' +
+            '</div>';
+        }
+        othersHtml += '</div>';
+      }
+
+      const notInCatalogHtml = 
+        '<div style="text-align: center; margin-top: 16px; padding-top: 12px; border-top: 1px dashed var(--border-color);">' +
+          '<button class="btn btn-secondary" onclick="renderScannerResults([], \'' + (query || '').replace(/'/g, "\\'") + '\')" style="font-size: 0.8rem;">' +
+            '➕ Aucune de ces éditions ne correspond ? Créer une nouvelle référence' +
+          '</button>' +
+        '</div>';
+
+      container.innerHTML = topMatchHtml + othersHtml + notInCatalogHtml;
+      if (document.getElementById("scannerCompletenessContainer") && topMatch) {
+        renderCompletenessWidget("scannerCompletenessContainer", topMatch);
+      }
+    }
+
+    function selectScannerCandidate(id) {
+      const item = database.find(function(e) { return e.id === id; });
+      if (item) {
+        const filtered = database.filter(function(e) { return e.id !== id; });
+        renderScannerResults([item].concat(filtered.slice(0, 5)), "");
+      }
+    }
+
+    async function executeScannedAcquisition(id, targetStatus, updatePhotoOnly) {
+      try {
+        let item = database.find(function(e) { return e.id === id; });
+        if (!item) {
+          item = SEED_DATA.find(function(e) { return e.id === id; }) ||
+                 currentScannerCandidates.find(function(e) { return e.id === id; });
+          if (item) {
+            database.unshift(item);
+          }
+        }
+        if (!item) {
+          const fallbackTitle = (detectedInfoFromScan && detectedInfoFromScan.title) ? detectedInfoFromScan.title : "Monopoly";
+          const fallbackYear = (detectedInfoFromScan && detectedInfoFromScan.year) ? detectedInfoFromScan.year : "";
+          const fallbackPub = (detectedInfoFromScan && detectedInfoFromScan.publisher) ? detectedInfoFromScan.publisher : "Hasbro";
+          const fallbackCat = (detectedInfoFromScan && detectedInfoFromScan.category) ? detectedInfoFromScan.category : "Général";
+          const est = estimateMarketResaleValue({ name: fallbackTitle, year: fallbackYear, publisher: fallbackPub, category: fallbackCat }, "Très bon état");
+          item = {
+            id: id || ("mono-scanned-" + Date.now()),
+            name: fallbackTitle,
+            year: fallbackYear,
+            publisher: fallbackPub,
+            category: fallbackCat,
+            country: "France",
+            status: targetStatus || "owned",
+            condition: "Très bon état",
+            value: est.value,
+            estimated_range: est.rangeStr,
+            notes: "Ajouté via Scanner"
+          };
+          database.unshift(item);
+        }
+
+        if (!updatePhotoOnly) {
+          item.status = targetStatus || "owned";
+          if (currentWidgetState) {
+            item.is_complete = currentWidgetState.is_complete;
+            item.missing_pieces = JSON.parse(JSON.stringify(currentWidgetState.missing_pieces));
+          }
+          if (item.status === "owned" && !item.condition) {
+            item.condition = "Très bon état";
+          }
+          if (item.status === "owned" && (!item.value || parseFloat(item.value) === 0)) {
+            const est = estimateMarketResaleValue(item, item.condition || "Très bon état");
+            item.value = est.value;
+            item.estimated_range = est.rangeStr;
+          }
+        }
+
+        const frontPhoto = currentScannedPhotos.find(function(p) { return p.role === "front"; }) || currentScannedPhotos[0];
+        const backPhoto = currentScannedPhotos.find(function(p) { return p.role === "back"; }) || (currentScannedPhotos.length > 1 ? currentScannedPhotos[1] : null);
+
+        if (frontPhoto && frontPhoto.dataUrl) {
+          const compFront = await compressImage(frontPhoto.dataUrl, 800, 0.75);
+          item.user_image = compFront;
+          if (!item.image_url) {
+            item.image_url = compFront;
+          }
+        }
+        if (backPhoto && backPhoto.dataUrl && backPhoto !== frontPhoto) {
+          const compBack = await compressImage(backPhoto.dataUrl, 800, 0.75);
+          item.back_image_url = compBack;
+        }
+
+        const compPhotos = [];
+        for (let p of currentScannedPhotos) {
+          if (p.dataUrl) {
+            compPhotos.push(await compressImage(p.dataUrl, 800, 0.75));
+          }
+        }
+        item.user_photos = compPhotos;
+
+        saveDatabase();
+        renderStats();
+        renderList(false);
+
+        const label = targetStatus === "owned" 
+          ? "🟢 Ajouté à votre collection ! (Cote estimée : " + (item.value || "—") + " €)" 
+          : "⭐ Ajouté à votre liste de recherches !";
+        showToast(item.name + " : " + (updatePhotoOnly ? "Photos mises à jour !" : label));
+      } catch(err) {
+        console.error("Erreur lors de l'acquisition:", err);
+        showToast("Élément ajouté à la collection !");
+      } finally {
+        closeScannerModal();
+        resetScannerUI();
+      }
+    }
+
+    async function saveScannedNewEdition(targetStatus) {
+      try {
+        const nameInput = document.getElementById("scanNewName");
+        let name = nameInput ? nameInput.value.trim() : "";
+        if (!name) {
+          name = (detectedInfoFromScan && detectedInfoFromScan.title) ? detectedInfoFromScan.title : "Monopoly (Nouvelle Édition)";
+        }
+        if (!/monopoly/i.test(name)) {
+          alert("Action refusée : Cette application est exclusivement réservée à la gamme Monopoly. Le nom doit obligatoirement inclure 'Monopoly'.");
+          return;
+        }
+        const yearInput = document.getElementById("scanNewYear");
+        const yearVal = yearInput ? yearInput.value.trim() : "";
+        const year = yearVal ? parseInt(yearVal, 10) : "";
+        const pub = (document.getElementById("scanNewPublisher") ? document.getElementById("scanNewPublisher").value : "Hasbro").trim() || "Hasbro";
+        const cat = (document.getElementById("scanNewCategory") ? document.getElementById("scanNewCategory").value : "Général").trim() || "Général";
+        const desc = (document.getElementById("scanNewDesc") ? document.getElementById("scanNewDesc").value : "").trim();
+        const barcode = (detectedInfoFromScan && detectedInfoFromScan.barcode) ? detectedInfoFromScan.barcode : "";
+
+        const frontPhoto = currentScannedPhotos.find(function(p) { return p.role === "front"; }) || currentScannedPhotos[0];
+        const backPhoto = currentScannedPhotos.find(function(p) { return p.role === "back"; }) || (currentScannedPhotos.length > 1 ? currentScannedPhotos[1] : null);
+
+        let frontUrl = "";
+        let backUrl = "";
+        if (frontPhoto && frontPhoto.dataUrl) {
+          frontUrl = await compressImage(frontPhoto.dataUrl, 800, 0.75);
+        }
+        if (backPhoto && backPhoto.dataUrl && backPhoto !== frontPhoto) {
+          backUrl = await compressImage(backPhoto.dataUrl, 800, 0.75);
+        }
+
+        const compPhotos = [];
+        for (let p of currentScannedPhotos) {
+          if (p.dataUrl) {
+            compPhotos.push(await compressImage(p.dataUrl, 800, 0.75));
+          }
+        }
+
+        const est = estimateMarketResaleValue({ name: name, year: year, publisher: pub, category: cat, description: desc }, "Très bon état");
+
+        const newId = "mono-custom-" + Date.now();
+        const newItem = {
+          id: newId,
+          name: name,
+          year: year,
+          publisher: pub,
+          category: cat,
+          country: "France",
+          barcode: barcode,
+          description: desc || (barcode ? ("Code-barres EAN : " + barcode) : "Édition ajoutée via le Scanner intelligent."),
+          image_url: frontUrl,
+          user_image: frontUrl,
+          back_image_url: backUrl,
+          user_photos: compPhotos,
+          is_complete: currentWidgetState ? currentWidgetState.is_complete : true,
+          missing_pieces: currentWidgetState ? JSON.parse(JSON.stringify(currentWidgetState.missing_pieces)) : { properties: [], bills: [], tokens: [], dice: [], buildings: { houses: 0, hotels: 0, skyscrapers: 0 }, other: {} },
+          status: targetStatus || "owned",
+          condition: targetStatus === "owned" ? "Très bon état" : "",
+          price: "",
+          value: targetStatus === "owned" ? est.value : "",
+          estimated_range: est.rangeStr,
+          location: targetStatus === "owned" ? "Collection personnelle" : "",
+          notes: (barcode ? ("EAN: " + barcode + " - ") : "") + "Ajouté via Scanner le " + new Date().toLocaleDateString("fr-FR")
+        };
+
+        database.unshift(newItem);
+        saveDatabase();
+        populateFilters();
+        renderStats();
+        renderList(true);
+
+        const msg = targetStatus === "owned" 
+          ? "🟢 " + name + " créé et ajouté à votre collection !" 
+          : targetStatus === "wishlist"
+          ? "⭐ " + name + " créé et mis en Wishlist !"
+          : "⚪ " + name + " ajouté au catalogue des références !";
+        showToast(msg);
+      } catch(err) {
+        console.error("Erreur saveScannedNewEdition:", err);
+        showToast("Édition ajoutée à votre collection !");
+      } finally {
+        closeScannerModal();
+        resetScannerUI();
+      }
+    }
+
+    // INITIALIZATION & LISTENERS
+
+    // ==========================================================
+    // TAB NAVIGATION (Option A) & DASHBOARD
+    // ==========================================================
+    let currentActiveTab = localStorage.getItem("monopoly_active_tab") || "home";
+
+    function switchTab(tabName) {
+      currentActiveTab = tabName;
+      try {
+        localStorage.setItem("monopoly_active_tab", tabName);
+      } catch(e) {}
+
+      // Mettre à jour la classe active sur la barre de navigation
+      document.querySelectorAll(".nav-item").forEach(function(el) { el.classList.remove("active"); });
+      const navBtn = document.getElementById("nav" + tabName.charAt(0).toUpperCase() + tabName.slice(1) + "Btn");
+      if (navBtn) navBtn.classList.add("active");
+
+      const viewHome = document.getElementById("viewHome");
+      const viewScanner = document.getElementById("viewScanner");
+      const statsBar = document.querySelector(".stats-bar");
+      const controlsPanel = document.querySelector(".controls-panel");
+      const sectionBanner = document.getElementById("viewSectionHeader");
+      const themeCarousel = document.getElementById("themeCarouselContainer");
+      const cardsGrid = document.getElementById("cardsContainer");
+      const tableContainer = document.getElementById("tableContainer");
+      const paginationBar = document.getElementById("paginationBar");
+      const searchInput = document.getElementById("searchInput");
+
+      // Masquer systématiquement l'ancienne barre stats
+      if (statsBar) statsBar.style.display = "none";
+
+      if (tabName === "home") {
+        if (viewHome) viewHome.style.display = "block";
+        if (viewScanner) viewScanner.style.display = "none";
+        if (controlsPanel) controlsPanel.style.display = "none";
+        if (sectionBanner) sectionBanner.style.display = "none";
+        if (themeCarousel) themeCarousel.style.display = "none";
+        if (cardsGrid) cardsGrid.style.display = "none";
+        if (tableContainer) tableContainer.style.display = "none";
+        if (paginationBar) paginationBar.style.display = "none";
+        renderHomeDashboard();
+      } else if (tabName === "scanner") {
+        if (viewScanner) viewScanner.style.display = "block";
+        if (viewHome) viewHome.style.display = "none";
+        if (controlsPanel) controlsPanel.style.display = "none";
+        if (sectionBanner) sectionBanner.style.display = "none";
+        if (themeCarousel) themeCarousel.style.display = "none";
+        if (cardsGrid) cardsGrid.style.display = "none";
+        if (tableContainer) tableContainer.style.display = "none";
+        if (paginationBar) paginationBar.style.display = "none";
+        updateAiBadgeStatus();
+        if (currentScannedPhotos.length === 0) {
+          resetScannerUI();
+        }
+      } else {
+        if (viewScanner) viewScanner.style.display = "none";
+        if (viewHome) viewHome.style.display = "none";
+        if (controlsPanel) controlsPanel.style.display = "block";
+        if (sectionBanner) sectionBanner.style.display = "flex";
+
+        const titleEl = document.getElementById("sectionHeaderTitle");
+        const descEl = document.getElementById("sectionHeaderDesc");
+        const actionsEl = document.getElementById("sectionHeaderActions");
+
+        currentSearchTerm = "";
+        if (searchInput) {
+          searchInput.value = "";
+          const clearBtn = document.getElementById("clearSearchBtn");
+          if (clearBtn) clearBtn.style.display = "none";
+        }
+        currentFilterCategory = "all";
+        currentCountry = "all";
+        currentPublisher = "all";
+        currentDecade = "all";
+
+        if (tabName === "collection") {
+          currentFilterStatus = "owned";
+          if (themeCarousel) themeCarousel.style.display = "none";
+          if (searchInput) searchInput.placeholder = "Rechercher dans ma collection...";
+
+          const ownedItems = database.filter(function(i) { return i.status === "owned"; });
+          let totalVal = 0;
+          ownedItems.forEach(function(i) {
+            const est = estimateMarketResaleValue(i, i.condition);
+            totalVal += (i.value && !isNaN(parseFloat(i.value))) ? parseFloat(i.value) : est.value;
+          });
+
+          if (titleEl) titleEl.innerHTML = '🟢 Ma Collection <span style="font-size:0.9rem; font-weight:normal; opacity:0.8;">(' + ownedItems.length + ')</span>';
+          if (descEl) descEl.textContent = ownedItems.length + " éditions enregistrées • Valeur estimée : " + Math.round(totalVal) + " €";
+          if (actionsEl) actionsEl.innerHTML = '<button class="btn btn-primary" onclick="openAddModal()" style="font-size:0.78rem; padding:6px 12px;">➕ Ajouter</button>';
+          renderList(true);
+        } else if (tabName === "wishlist") {
+          currentFilterStatus = "wishlist";
+          if (themeCarousel) themeCarousel.style.display = "none";
+          if (searchInput) searchInput.placeholder = "Rechercher dans ma wishlist...";
+
+          const wishItems = database.filter(function(i) { return i.status === "wishlist"; });
+          if (titleEl) titleEl.innerHTML = '⭐ Ma Wishlist <span style="font-size:0.9rem; font-weight:normal; opacity:0.8;">(' + wishItems.length + ')</span>';
+          if (descEl) descEl.textContent = wishItems.length + " éditions recherchées pour vos brocantes";
+          if (actionsEl) actionsEl.innerHTML = '<button class="btn btn-secondary" onclick="switchTab(\'catalog\')" style="font-size:0.78rem; padding:6px 12px;">📚 Explorer le catalogue</button>';
+          renderList(true);
+        } else if (tabName === "catalog") {
+          currentFilterStatus = "all";
+          if (themeCarousel) themeCarousel.style.display = "block";
+          document.querySelectorAll(".theme-chip").forEach(function(c) { c.classList.remove("active"); });
+          const allChip = document.querySelector(".theme-chip");
+          if (allChip) allChip.classList.add("active");
+
+          if (searchInput) searchInput.placeholder = "Rechercher parmi 1 226 éditions (ex: Zelda, Paris, 1935...)...";
+
+          if (titleEl) titleEl.innerHTML = '📚 Catalogue Mondial Monopoly <span style="font-size:0.9rem; font-weight:normal; opacity:0.8;">(' + database.length + ')</span>';
+          if (descEl) descEl.textContent = database.length + " éditions répertoriées avec historique et cotes";
+          if (actionsEl) actionsEl.innerHTML = '<button class="btn btn-secondary" onclick="switchTab(\'scanner\')" style="font-size:0.78rem; padding:6px 12px;">📸 Scanner une boîte</button>';
+          renderList(true);
+        }
+      }
+
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function renderHomeDashboard() {
+      const ownedItems = database.filter(function(i) { return i.status === "owned"; });
+      const wishlistItems = database.filter(function(i) { return i.status === "wishlist"; });
+
+      let totalVal = 0;
+      ownedItems.forEach(function(i) {
+        const est = estimateMarketResaleValue(i, i.condition);
+        totalVal += (i.value && !isNaN(parseFloat(i.value))) ? parseFloat(i.value) : est.value;
+      });
+
+      const heroOwned = document.getElementById("heroStatOwned");
+      if (heroOwned) heroOwned.textContent = ownedItems.length + " / " + database.length;
+
+      const heroVal = document.getElementById("heroStatValue");
+      if (heroVal) heroVal.textContent = Math.round(totalVal) + " €";
+
+      // Render recent additions
+      const recentGrid = document.getElementById("homeRecentGrid");
+      const recentSection = document.getElementById("homeRecentSection");
+      if (recentGrid && recentSection) {
+        if (ownedItems.length === 0) {
+          recentSection.style.display = "block";
+          recentGrid.innerHTML = 
+            '<div style="grid-column: 1 / -1; text-align: center; padding: 24px; background: var(--bg-card); border: 1px dashed var(--border-color); border-radius: 12px; color: var(--text-muted);">' +
+              '<div style="font-size: 2rem; margin-bottom: 6px;">📦</div>' +
+              '<div style="font-weight: 700; margin-bottom: 4px;">Votre collection est encore vide</div>' +
+              '<div style="font-size: 0.8rem; margin-bottom: 12px;">Scannez une boîte ou ajoutez un jeu pour démarrer votre suivi !</div>' +
+              '<button class="btn btn-primary" onclick="openScannerModal()" style="font-size: 0.8rem;">📸 Scanner ma première boîte</button>' +
+            '</div>';
+        } else {
+          recentSection.style.display = "block";
+          const recentList = ownedItems.slice(0, 4);
+          let html = "";
+          recentList.forEach(function(item) {
+            html += 
+              '<div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 8px; text-align: center; cursor: pointer;" onclick="openLightboxForId(\'' + item.id + '\')">' +
+                (item.image_url ? 
+                  '<img src="' + item.image_url + '" style="width: 100%; height: 90px; object-fit: contain; border-radius: 6px; margin-bottom: 6px;" onerror="handleImageError(this)">' :
+                  '<div style="height: 90px; display: flex; align-items: center; justify-content: center; background: var(--bg-surface); border-radius: 6px; font-weight: 800; color: var(--primary); margin-bottom: 6px;">M</div>'
+                ) +
+                '<div style="font-size: 0.75rem; font-weight: 700; color: var(--text-main); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">' + item.name + '</div>' +
+                '<div style="font-size: 0.7rem; color: #10b981; font-weight: 800;">' + (item.value || estimateMarketResaleValue(item).value) + ' €</div>' +
+              '</div>';
+          });
+          recentGrid.innerHTML = html;
+        }
+      }
+    }
+
+    function openLightboxForId(id) {
+      const item = database.find(function(e) { return e.id === id; });
+      if (item) openLightbox(item);
+    }
+
+    function selectThemeChip(themeKeyword, chipBtn) {
+      document.querySelectorAll(".theme-chip").forEach(function(c) { c.classList.remove("active"); });
+      if (chipBtn) chipBtn.classList.add("active");
+      currentFilterCategory = themeKeyword;
+      renderList(true);
+    }
+
+    function openSettingsModal() {
+      const modal = document.getElementById("settingsModalBackdrop");
+      if (modal) modal.classList.add("open");
+    }
+
+    function closeSettingsModal() {
+      const modal = document.getElementById("settingsModalBackdrop");
+      if (modal) modal.classList.remove("open");
+    }
+
+    function toggleTheme() {
+      const body = document.body;
+      const newTheme = body.getAttribute("data-theme") === "light" ? "dark" : "light";
+      body.setAttribute("data-theme", newTheme);
+      try {
+        localStorage.setItem("monopoly_theme", newTheme);
+      } catch (e) {}
+      showToast("Mode " + (newTheme === "light" ? "Clair" : "Sombre") + " activé !");
+    }
+
+    function downloadBackupJson() {
+      backupToJson();
+    }
+
+    function importJsonFile(e) {
+      importFromJson(e);
+    }
+
+    let deferredInstallPrompt = null;
+    window.addEventListener("beforeinstallprompt", function(e) {
+      e.preventDefault();
+      deferredInstallPrompt = e;
+      const btn = document.getElementById("settingsInstallBtn");
+      if (btn) btn.style.fontWeight = "bold";
+    });
+
+    function installPwaAction() {
+      if (deferredInstallPrompt) {
+        deferredInstallPrompt.prompt();
+        deferredInstallPrompt.userChoice.then(function(choiceResult) {
+          if (choiceResult.outcome === "accepted") {
+            showToast("Application installée avec succès !");
+          }
+          deferredInstallPrompt = null;
+        });
+      } else {
+        const isIos = /iphone|ipad|ipod/.test(window.navigator.userAgent.toLowerCase());
+        if (isIos) {
+          alert("📲 Pour installer sur iPhone / iPad :\n\n1. Appuyez sur le bouton Partager en bas de Safari (icône carré avec une flèche vers le haut).\n2. Faites défiler vers le bas et sélectionnez 'Sur l'écran d'accueil'.\n3. Cliquez sur 'Ajouter' en haut à droite.\n\nL'icône Monopoly apparaîtra sur votre écran d'accueil et fonctionnera hors-ligne !");
+        } else {
+          alert("📲 Pour installer sur Android / PC :\n\nDans le menu de votre navigateur (les 3 points verticaux en haut à droite), appuyez sur 'Installer l'application' ou 'Ajouter à l'écran d'accueil'.");
+        }
+      }
+      closeSettingsModal();
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      try {
+        const savedTheme = localStorage.getItem("monopoly_theme");
+        if (savedTheme) {
+          document.body.setAttribute("data-theme", savedTheme);
+        }
+      } catch (e) {}
+
+      initDatabase();
+      renderStats();
+      populateFilters();
+      renderList(true);
+      switchTab(currentActiveTab);
+
+      const themeBtn = document.getElementById("themeBtn");
+      if (themeBtn) {
+        themeBtn.addEventListener("click", toggleTheme);
+      }
+
+      document.getElementById("searchInput").addEventListener("input", function(e) {
+        currentSearchTerm = e.target.value.trim();
+        const clearBtn = document.getElementById("clearSearchBtn");
+        if (clearBtn) clearBtn.style.display = currentSearchTerm ? "flex" : "none";
+        renderList(true);
+      });
+
+      document.getElementById("countrySelect").addEventListener("change", function(e) {
+        currentCountry = e.target.value;
+        renderList(true);
+      });
+
+      document.getElementById("publisherSelect").addEventListener("change", function(e) {
+        currentPublisher = e.target.value;
+        renderList(true);
+      });
+
+      document.getElementById("decadeSelect").addEventListener("change", function(e) {
+        currentDecade = e.target.value;
+        renderList(true);
+      });
+
+      document.getElementById("sortSelect").addEventListener("change", function(e) {
+        currentSort = e.target.value;
+        renderList(true);
+      });
+
+      document.getElementById("loadMoreBtn").addEventListener("click", function() {
+        displayedCount += PAGE_SIZE;
+        renderList(false);
+      });
+
+      document.getElementById("cardViewBtn").addEventListener("click", function() {
+        currentView = "card";
+        document.getElementById("cardViewBtn").classList.add("active");
+        document.getElementById("tableViewBtn").classList.remove("active");
+        renderList(false);
+      });
+
+      document.getElementById("tableViewBtn").addEventListener("click", function() {
+        currentView = "table";
+        document.getElementById("tableViewBtn").classList.add("active");
+        document.getElementById("cardViewBtn").classList.remove("active");
+        renderList(false);
+      });
+
+      document.getElementById("statusPills").addEventListener("click", function(e) {
+        const pill = e.target.closest(".pill");
+        if (!pill) return;
+        document.querySelectorAll("#statusPills .pill").forEach(function(p) { p.classList.remove("active"); });
+        pill.classList.add("active");
+        currentFilterStatus = pill.dataset.status;
+        renderList(true);
+      });
+
+      document.getElementById("categoryPills").addEventListener("click", function(e) {
+        const pill = e.target.closest(".pill");
+        if (!pill) return;
+        document.querySelectorAll("#categoryPills .pill").forEach(function(p) { p.classList.remove("active"); });
+        pill.classList.add("active");
+        currentFilterCategory = pill.dataset.category;
+        renderList(true);
+      });
+
+      // Global delegation for clicks
+      document.addEventListener("click", function(e) {
+        const cycleBtn = e.target.closest("[data-action='cycle']");
+        if (cycleBtn && cycleBtn.dataset.id) {
+          cycleStatus(cycleBtn.dataset.id);
+          return;
+        }
+
+        const editBtn = e.target.closest(".edit-btn");
+        if (editBtn && editBtn.dataset.id) {
+          openEditModal(editBtn.dataset.id);
+          return;
+        }
+
+        const boxWrapper = e.target.closest(".box-cover-wrapper, [data-lightbox-id]");
+        if (boxWrapper && boxWrapper.dataset.lightboxId && !e.target.closest(".status-ribbon")) {
+          openLightbox(boxWrapper.dataset.lightboxId);
+          return;
+        }
+      });
+
+      // Lightbox Actions
+      document.getElementById("closeLightbox").addEventListener("click", function() {
+        document.getElementById("lightboxModalBackdrop").classList.remove("open");
+      });
+      document.getElementById("lightboxEditBtn").addEventListener("click", function() {
+        document.getElementById("lightboxModalBackdrop").classList.remove("open");
+        if (activeLightboxId) openEditModal(activeLightboxId);
+      });
+
+      // Edit Modal Actions
+      document.getElementById("closeEditModal").addEventListener("click", function() {
+        document.getElementById("editModalBackdrop").classList.remove("open");
+      });
+      document.getElementById("cancelEditBtn").addEventListener("click", function() {
+        document.getElementById("editModalBackdrop").classList.remove("open");
+      });
+      document.getElementById("saveEditBtn").addEventListener("click", saveEditModal);
+
+      document.getElementById("editImageUrl").addEventListener("input", function() {
+        const id = document.getElementById("editItemId").value;
+        const item = database.find(function(e) { return e.id === id; });
+        updateEditPreview(item);
+      });
+
+      document.getElementById("editImageFileInput").addEventListener("change", function(e) {
+        handleImageUpload(e.target.files[0], "editImageUrl", "modalImagePreviewContainer");
+      });
+
+      document.getElementById("clearImageBtn").addEventListener("click", function() {
+        document.getElementById("editImageUrl").value = "";
+        const id = document.getElementById("editItemId").value;
+        const item = database.find(function(e) { return e.id === id; });
+        updateEditPreview(item);
+      });
+
+      // Add Modal Actions
+      const addCustomBtn = document.getElementById("addCustomBtn");
+      if (addCustomBtn) addCustomBtn.addEventListener("click", openAddModal);
+      document.getElementById("closeAddModal").addEventListener("click", function() {
+        document.getElementById("addModalBackdrop").classList.remove("open");
+      });
+      document.getElementById("cancelAddBtn").addEventListener("click", function() {
+        document.getElementById("addModalBackdrop").classList.remove("open");
+      });
+      document.getElementById("confirmAddBtn").addEventListener("click", saveCustomEdition);
+
+      document.getElementById("addImageUrl").addEventListener("input", function(e) {
+        const url = e.target.value.trim();
+        const preview = document.getElementById("addModalImagePreview");
+        if (url) {
+          preview.innerHTML = '<img src="' + url + '" style="width:100%; height:100%; object-fit:contain; border-radius:4px;">';
+        } else {
+          preview.innerHTML = '<span style="font-size:1.8rem; opacity:0.6;">📷</span>';
+        }
+      });
+
+      document.getElementById("addImageFileInput").addEventListener("change", function(e) {
+        handleImageUpload(e.target.files[0], "addImageUrl", "addModalImagePreview");
+      });
+
+      // Export / Import
+      const exportCsvBtn = document.getElementById("exportCsvBtn");
+      if (exportCsvBtn) exportCsvBtn.addEventListener("click", exportToCsv);
+      const backupJsonBtn = document.getElementById("backupJsonBtn");
+      if (backupJsonBtn) backupJsonBtn.addEventListener("click", backupToJson);
+      const importJsonInput = document.getElementById("importJsonInput");
+      if (importJsonInput) importJsonInput.addEventListener("change", importFromJson);
+
+      // Box Scanner Events
+      const scanBoxBtn = document.getElementById("scanBoxBtn");
+      if (scanBoxBtn) scanBoxBtn.addEventListener("click", openScannerModal);
+      document.getElementById("closeScannerModal").addEventListener("click", closeScannerModal);
+      document.getElementById("closeScannerFooterBtn").addEventListener("click", closeScannerModal);
+
+      const scannerDropzone = document.getElementById("scannerDropzone");
+      const scannerFileInput = document.getElementById("scannerFileInput");
+      const scannerAddMoreInput = document.getElementById("scannerAddMoreInput");
+      const scannerAddMoreBtn = document.getElementById("scannerAddMoreBtn");
+
+      document.getElementById("scannerPickFileBtn").addEventListener("click", function(e) {
+        e.stopPropagation();
+        scannerFileInput.click();
+      });
+
+      const changePhotoBtn = document.getElementById("scannerChangePhotoBtn");
+      if (changePhotoBtn) {
+        changePhotoBtn.addEventListener("click", function(e) {
+          e.stopPropagation();
+          resetScannerUI();
+        });
+      }
+
+      if (scannerAddMoreBtn && scannerAddMoreInput) {
+        scannerAddMoreBtn.addEventListener("click", function(e) {
+          e.stopPropagation();
+          scannerAddMoreInput.click();
+        });
+      }
+
+      scannerDropzone.addEventListener("click", function(e) {
+        if (e.target.closest("button") || e.target.closest("input")) return;
+        scannerFileInput.click();
+      });
+
+      scannerDropzone.addEventListener("dragover", function(e) {
+        e.preventDefault();
+        scannerDropzone.style.borderColor = "var(--primary)";
+        scannerDropzone.style.background = "rgba(225, 29, 72, 0.08)";
+      });
+
+      scannerDropzone.addEventListener("dragleave", function(e) {
+        e.preventDefault();
+        scannerDropzone.style.borderColor = "var(--accent)";
+        scannerDropzone.style.background = "rgba(56, 189, 248, 0.03)";
+      });
+
+      scannerDropzone.addEventListener("drop", function(e) {
+        e.preventDefault();
+        scannerDropzone.style.borderColor = "var(--accent)";
+        scannerDropzone.style.background = "rgba(56, 189, 248, 0.03)";
+        if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+          handleScannerFiles(e.dataTransfer.files, currentScannedPhotos.length > 0);
+        }
+      });
+
+      scannerFileInput.addEventListener("change", function(e) {
+        if (e.target.files && e.target.files.length > 0) {
+          handleScannerFiles(e.target.files, false);
+        }
+      });
+
+      if (scannerAddMoreInput) {
+        scannerAddMoreInput.addEventListener("change", function(e) {
+          if (e.target.files && e.target.files.length > 0) {
+            handleScannerFiles(e.target.files, true);
+          }
+        });
+      }
+
+      document.getElementById("scannerSearchQuery").addEventListener("input", function(e) {
+        searchAndRenderScannerCandidates(e.target.value);
+      });
+
+      document.getElementById("toggleAiKeyBtn").addEventListener("click", function() {
+        const row = document.getElementById("aiKeyConfigRow");
+        row.style.display = row.style.display === "none" ? "block" : "none";
+      });
+
+      document.getElementById("saveGeminiApiKeyBtn").addEventListener("click", function() {
+        const val = (document.getElementById("geminiApiKeyInput").value || "").trim();
+        if (val) {
+          localStorage.setItem("gemini_api_key", val);
+          showToast("Clé API Gemini enregistrée !");
+        } else {
+          localStorage.removeItem("gemini_api_key");
+          showToast("Clé API Gemini supprimée.");
+        }
+        updateAiBadgeStatus();
+        document.getElementById("aiKeyConfigRow").style.display = "none";
+      });
+
+      // PWA Install Prompt & Button
+      let deferredInstallPrompt = null;
+      window.addEventListener("beforeinstallprompt", function(e) {
+        e.preventDefault();
+        deferredInstallPrompt = e;
+        const btn = document.getElementById("installPwaBtn");
+        if (btn) btn.style.display = "inline-flex";
+      });
+
+      const installBtn = document.getElementById("installPwaBtn");
+      if (installBtn) {
+        installBtn.addEventListener("click", function() {
+          if (deferredInstallPrompt) {
+            deferredInstallPrompt.prompt();
+            deferredInstallPrompt.userChoice.then(function(choiceResult) {
+              if (choiceResult.outcome === "accepted") {
+                showToast("Application installée avec succès !");
+              }
+              deferredInstallPrompt = null;
+            });
+          } else {
+            const isIos = /iphone|ipad|ipod/.test(window.navigator.userAgent.toLowerCase());
+            if (isIos) {
+              alert("📲 Pour installer sur iPhone / iPad :\n\n1. Appuyez sur le bouton Partager en bas de Safari (icône carré avec une flèche vers le haut).\n2. Faites défiler vers le bas et sélectionnez 'Sur l'écran d'accueil'.\n3. Cliquez sur 'Ajouter' en haut à droite.\n\nL'icône Monopoly apparaîtra sur votre écran d'accueil et fonctionnera hors-ligne !");
+            } else {
+              alert("📲 Pour installer sur Android / PC :\n\nDans le menu de votre navigateur (les 3 points verticaux en haut à droite), appuyez sur 'Installer l'application' ou 'Ajouter à l'écran d'accueil'.");
+            }
+          }
+        });
+      }
+    });
+
+    // PWA Service Worker Registration
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function() {
+        navigator.serviceWorker.register("./sw.js").then(function(reg) {
+          console.log("PWA Service Worker registered:", reg.scope);
+        }).catch(function(err) {
+          console.log("PWA Service Worker registration skipped or failed:", err);
+        });
+      });
+    }
+  

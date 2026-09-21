@@ -1879,26 +1879,69 @@
       align-items: center;
       gap: 4px;
     }
+  
+    /* Bouton Paramètres flottant discret */
+    .floating-settings-btn {
+      position: fixed;
+      top: 10px;
+      right: 12px;
+      z-index: 1100;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--bg-surface);
+      border: 1.5px solid var(--border-color);
+      color: var(--text-main);
+      font-size: 1.15rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.45);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .floating-settings-btn:hover {
+      transform: rotate(30deg) scale(1.08);
+      border-color: var(--accent);
+    }
+
+    /* Toolbar responsive fix for mobile */
+    .modern-toolbar-row {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      gap: 8px !important;
+      margin-top: 10px !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+      flex-wrap: wrap !important;
+    }
+    .modern-sort-select {
+      flex: 1 1 140px !important;
+      min-width: 130px !important;
+      max-width: 100% !important;
+    }
+    .view-toggle {
+      flex-shrink: 0 !important;
+    }
+    .resale-badge-nodata {
+      background: rgba(148, 163, 184, 0.12);
+      color: var(--text-muted);
+      border: 1px dashed rgba(148, 163, 184, 0.3);
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      font-style: italic;
+    }
+
   </style>
 </head>
 <body>
 
   <!-- Header Compact & Élégant -->
-  <header>
-    <div class="container header-content">
-      <div class="logo-area" onclick="switchTab('home')" style="cursor: pointer;">
-        <div class="logo-badge">MONOPOLY</div>
-        <div class="logo-title">
-          <h1>Collector Hub <span>🎩</span></h1>
-          <p>Suivi de Collection & Répertoire Mondial</p>
-        </div>
-      </div>
-      <div class="header-compact-actions">
-        <button class="btn btn-primary" id="addCustomBtn" onclick="openAddModal()" style="font-size: 0.82rem; padding: 6px 12px;" title="Ajouter une boîte manuellement">➕ Ajouter</button>
-        <button class="icon-btn-circle" onclick="openSettingsModal()" title="Paramètres & Sauvegardes">⚙️</button>
-      </div>
-    </div>
-  </header>
+    <!-- BOUTON PARAMÈTRES FLOTTANT DISCRET -->
+  <button class="floating-settings-btn" onclick="openSettingsModal()" title="Paramètres & Sauvegarde">⚙️</button>
 
   <main class="container">
     <!-- VUE ACCUEIL / HUB TABLEAU DE BORD -->
@@ -1979,7 +2022,7 @@
             <span style="font-size: 2.8rem; display: block; margin-bottom: 8px;">📸</span>
             <div style="font-weight: 700; font-size: 1.1rem; margin-bottom: 4px;">Prenez une photo ou déposez vos images (Face, Dos, Code-barres...)</div>
             <div style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 12px;">Vous pouvez ajouter plusieurs photos en même temps (Face avant et Dos de boîte)</div>
-            <button class="btn btn-primary" type="button" id="scannerPickFileBtn" style="background: linear-gradient(135deg, #6366f1, #4f46e5); border: none;">📸 Prendre une photo / Choisir un fichier</button>
+            <button class="btn btn-primary" type="button" id="scannerPickFileBtn" onclick="document.getElementById('scannerFileInput').click()" style="background: linear-gradient(135deg, #6366f1, #4f46e5); border: none; cursor: pointer;">📸 Prendre une photo / Choisir un fichier</button>
           </div>
           <div id="scannerPreviewArea" style="display: none; position: relative; text-align: center;">
             <div style="position: relative; display: inline-block; max-width: 100%;">
@@ -1994,7 +2037,7 @@
             <div class="scanner-gallery" id="scannerGallery"></div>
             
             <div style="display: flex; gap: 8px; justify-content: center; margin-top: 10px; flex-wrap: wrap;">
-              <button class="btn btn-secondary" id="scannerAddMoreBtn" type="button" style="padding: 5px 12px; font-size: 0.78rem; background: rgba(56, 189, 248, 0.12); color: var(--accent); border: 1px solid var(--accent);">➕ Ajouter une autre photo (Dos / Code-barres)</button>
+              <button class="btn btn-secondary" id="scannerAddMoreBtn" type="button" onclick="document.getElementById('scannerAddMoreInput').click()" style="padding: 5px 12px; font-size: 0.78rem; background: rgba(56, 189, 248, 0.12); color: var(--accent); border: 1px solid var(--accent); cursor: pointer;">➕ Ajouter une autre photo (Dos / Code-barres)</button>
               <button class="btn btn-secondary" id="scannerChangePhotoBtn" type="button" style="padding: 5px 12px; font-size: 0.78rem; background: rgba(0,0,0,0.6); color: #fff; border: 1px solid rgba(255,255,255,0.2);">Effacer les photos</button>
             </div>
           </div>
@@ -2118,8 +2161,8 @@
         </select>
 
         <div class="view-toggle">
-          <button class="view-toggle-btn active" id="cardViewBtn" title="Vue Grille">🃏 Grille</button>
-          <button class="view-toggle-btn" id="tableViewBtn" title="Vue Tableau">📋 Tableau</button>
+          <button type="button" class="view-toggle-btn active" id="cardViewBtn" onclick="setViewMode('card')" title="Vue Grille">🃏 Grille</button>
+          <button type="button" class="view-toggle-btn" id="tableViewBtn" onclick="setViewMode('table')" title="Vue Tableau">📋 Tableau</button>
         </div>
       </div>
 
@@ -2327,61 +2370,6 @@
     </div>
   </div>
 
-  
-            
-            <!-- Gallery of thumbnails -->
-            <div class="scanner-gallery" id="scannerGallery"></div>
-            
-            <div style="display: flex; gap: 8px; justify-content: center; margin-top: 10px; flex-wrap: wrap;">
-              <button class="btn btn-secondary" id="scannerAddMoreBtn" type="button" style="padding: 5px 12px; font-size: 0.78rem; background: rgba(56, 189, 248, 0.12); color: var(--accent); border: 1px solid var(--accent);">➕ Ajouter une autre photo (Dos / Code-barres)</button>
-              <button class="btn btn-secondary" id="scannerChangePhotoBtn" type="button" style="padding: 5px 12px; font-size: 0.78rem; background: rgba(0,0,0,0.6); color: #fff; border: 1px solid rgba(255,255,255,0.2);">Effacer les photos</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- AI Key Settings Bar (Optional) -->
-        <div style="margin-top: 12px; display: flex; align-items: center; justify-content: space-between; background: rgba(255,255,255,0.03); padding: 8px 14px; border-radius: 8px; border: 1px solid var(--border-color); font-size: 0.82rem;">
-          <div style="display: flex; align-items: center; gap: 8px;">
-            <span>🤖 Moteur de détection :</span>
-            <span id="aiKeyStatusBadge" style="font-size: 0.72rem; padding: 2px 8px; border-radius: 4px; background: rgba(16,185,129,0.15); color: #10b981; font-weight: 700;">Code-barres & Catalogue local actif</span>
-          </div>
-          <button type="button" id="toggleAiKeyBtn" style="background: none; border: none; color: var(--accent); cursor: pointer; text-decoration: underline; font-size: 0.8rem;">Clé IA Gemini (Optionnel)</button>
-        </div>
-        <div id="aiKeyConfigRow" style="display: none; margin-top: 8px; padding: 12px; background: var(--bg-surface); border-radius: 8px; border: 1px solid var(--border-color);">
-          <label style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); display: block; margin-bottom: 4px;">Clé API Google Gemini (Vision automatique) :</label>
-          <div style="display: flex; gap: 8px;">
-            <input type="password" id="geminiApiKeyInput" class="form-control" placeholder="Collez votre clé API Gemini ici..." style="font-size: 0.85rem;">
-            <button class="btn btn-primary" id="saveGeminiApiKeyBtn" type="button" style="padding: 6px 14px; font-size: 0.8rem;">Enregistrer</button>
-          </div>
-          <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 4px;">Gratuit sur Google AI Studio. Permet la détection automatique même sur les photos floues ou partielles.</div>
-        </div>
-
-        <!-- Real-time Assist Bar -->
-        <div style="margin-top: 14px;">
-          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px;">
-            <label style="font-size: 0.78rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">Mots-clés / Titre détecté sur la boîte :</label>
-            <span id="matchStatsLabel" style="font-size: 0.75rem; color: var(--text-muted);">Recherche dans 1 225 références</span>
-          </div>
-          <div style="position: relative;">
-            <input type="text" id="scannerSearchQuery" class="form-control" placeholder="Titre ou mots visibles sur la boîte (ex: Fortnite, Builder, Gliss, Mega, 1992...)" style="padding-left: 36px; font-weight: 600;">
-            <span style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); opacity: 0.5;">🔍</span>
-          </div>
-        </div>
-
-        <!-- Dynamic Results Container -->
-        <div id="scannerResultArea" style="margin-top: 16px;">
-          <div style="text-align: center; padding: 24px; color: var(--text-muted); border: 1px dashed var(--border-color); border-radius: 8px;">
-            <span>💡</span> Déposez une photo ci-dessus ou saisissez un mot-clé pour lancer l'identification.
-          </div>
-        </div>
-      </div>
-
-      <div class="modal-footer" style="background: var(--bg-surface);">
-        <button class="btn btn-secondary" id="closeScannerFooterBtn">Fermer</button>
-      </div>
-    </div>
-  </div>
-
   <div class="toast" id="toast">Données enregistrées</div>
 
   <script>
@@ -2417,10 +2405,9 @@
     function getMarketLinks(itemOrName) {
       const item = typeof itemOrName === "object" && itemOrName !== null ? itemOrName : { name: itemOrName || "" };
       const rawName = (item.name || "").trim();
-      const year = item.year && parseInt(item.year) > 1900 ? String(item.year) : "";
+      const year = item.year && parseInt(item.year, 10) > 1900 ? String(item.year) : "";
       const pub = (item.publisher || "").trim();
 
-      // Nettoyer les mentions parasites et la ponctuation qui perturbent les recherches
       let cleanTitle = rawName
         .replace(/^Monopoly\s*[:–-]?\s*/i, "")
         .replace(/\s*\(FR\s*\/?\s*VF\)/gi, "")
@@ -2433,8 +2420,6 @@
         .trim();
 
       const baseQuery = "Monopoly " + cleanTitle;
-      
-      // Requête ultra-ciblée (avec année et éditeur distinctif pour ne trouver QUE cet exemplaire exact)
       let exactQuery = baseQuery;
       if (year && !exactQuery.includes(year)) {
         exactQuery += " " + year;
@@ -2443,11 +2428,11 @@
         exactQuery += " Winning Moves";
       }
 
-      // eBay : Catégorie 220 (Jeux de société) + Ventes terminées et réussies (LH_Complete=1&LH_Sold=1)
+      // eBay : Catégorie 220 (Jeux de société) + Ventes terminées et réussies
       const ebayExact = "https://www.ebay.fr/sch/220/i.html?_nkw=" + encodeURIComponent('"' + baseQuery + '"' + (year ? ' ' + year : '')) + "&LH_Complete=1&LH_Sold=1";
       const ebayBroad = "https://www.ebay.fr/sch/220/i.html?_nkw=" + encodeURIComponent(baseQuery) + "&LH_Complete=1&LH_Sold=1";
 
-      // Vinted : sans catalog erroné (1058 = Petites robes noires sur Vinted !), mot-clé "jeu" pour cibler les jeux
+      // Vinted : jeux de société
       const vintedExact = "https://www.vinted.fr/catalog?search_text=" + encodeURIComponent("jeu " + exactQuery);
       const vintedBroad = "https://www.vinted.fr/catalog?search_text=" + encodeURIComponent("jeu " + baseQuery);
 
@@ -2457,108 +2442,103 @@
 
       return {
         ebaySold: ebayExact,
+        ebay: ebayExact,
         ebayBroad: ebayBroad,
         vinted: vintedExact,
         vintedBroad: vintedBroad,
         leboncoin: lbcExact,
         leboncoinBroad: lbcBroad,
         exactQuery: exactQuery,
-        baseQuery: baseQuery
+        baseQuery: baseQuery,
+        
+        // Amazon Marketplaces (FR, DE, US, UK, IT, ES)
+        amazonFr: "https://www.amazon.fr/s?k=" + encodeURIComponent("Monopoly " + cleanTitle),
+        amazonDe: "https://www.amazon.de/s?k=" + encodeURIComponent("Monopoly " + cleanTitle),
+        amazonUs: "https://www.amazon.com/s?k=" + encodeURIComponent("Monopoly " + cleanTitle),
+        amazonUk: "https://www.amazon.co.uk/s?k=" + encodeURIComponent("Monopoly " + cleanTitle),
+        amazonIt: "https://www.amazon.it/s?k=" + encodeURIComponent("Monopoly " + cleanTitle),
+        amazonEs: "https://www.amazon.es/s?k=" + encodeURIComponent("Monopoly " + cleanTitle),
+        
+        // Fabricant & Créateurs
+        hasbro: "https://shop.hasbro.com/fr-fr/search?q=" + encodeURIComponent("Monopoly " + cleanTitle),
+        etsy: "https://www.etsy.com/fr/search?q=" + encodeURIComponent("Monopoly " + cleanTitle),
+        google: "https://www.google.com/search?tbm=isch&q=" + encodeURIComponent("jeu de societe monopoly " + cleanTitle + " boite")
       };
     }
 
     function estimateMarketResaleValue(item, condition) {
-      if (!item) return { value: 15, rangeStr: "10 € - 20 €", min: 10, max: 20 };
+      if (!item) return { value: 0, hasEstimate: false, rangeStr: "Cote non disponible", label: "Cote non disponible" };
+
+      // Si l'utilisateur a renseigné une valeur personnalisée, l'utiliser en priorité
+      if (item.value && !isNaN(parseFloat(item.value)) && parseFloat(item.value) > 0) {
+        const v = parseFloat(item.value);
+        return { value: v, hasEstimate: true, rangeStr: Math.round(v * 0.85) + " € - " + Math.round(v * 1.15) + " €", min: Math.round(v * 0.85), max: Math.round(v * 1.15) };
+      }
 
       const name = (item.name || "").toLowerCase();
-      const year = parseInt(item.year) || 2010;
+      const year = parseInt(item.year, 10) || 2010;
       const pub = (item.publisher || "").toLowerCase();
       const cat = (item.category || "").toLowerCase();
       const desc = (item.description || "").toLowerCase();
       const notes = (item.notes || "").toLowerCase();
       const allText = name + " " + pub + " " + cat + " " + desc + " " + notes;
 
-      let baseVal = 18;
-      let minVal = 12;
-      let maxVal = 25;
+      let baseVal = 0;
+      let minVal = 0;
+      let maxVal = 0;
+      let hasEstimate = false;
 
-      // 1. Raretés historiques majeures et cotes établies
+      // Cotes documentées et réelles
       if (allText.includes("1937") || allText.includes("s.g.d.g") || allText.includes("miro company") || allText.includes("breveté")) {
-        baseVal = 350; minVal = 250; maxVal = 550;
+        baseVal = 350; minVal = 250; maxVal = 550; hasEstimate = true;
       } else if (allText.includes("1935") || allText.includes("white box") || allText.includes("black box") || allText.includes("darrow")) {
-        baseVal = 500; minVal = 350; maxVal = 800;
+        baseVal = 500; minVal = 350; maxVal = 800; hasEstimate = true;
       } else if (allText.includes("1936")) {
-        baseVal = 400; minVal = 300; maxVal = 600;
+        baseVal = 400; minVal = 300; maxVal = 600; hasEstimate = true;
       } else if (allText.includes("mega")) {
-        if (allText.includes("paris") || allText.includes("monuments")) {
-          baseVal = 35; minVal = 25; maxVal = 50;
-        } else {
-          baseVal = 55; minVal = 40; maxVal = 80;
-        }
-      } else if (allText.includes("nostalgia") || allText.includes("boîte bois") || allText.includes("wooden box") || allText.includes("prestige")) {
-        baseVal = 45; minVal = 35; maxVal = 65;
-      } else if (allText.includes("pokémon") || allText.includes("pokemon")) {
-        baseVal = 55; minVal = 40; maxVal = 85;
-      } else if (allText.includes("zelda")) {
-        baseVal = 40; minVal = 30; maxVal = 60;
-      } else if (allText.includes("star wars") && (allText.includes("collector") || allText.includes("1997") || allText.includes("trilogy") || allText.includes("étain"))) {
-        baseVal = 45; minVal = 30; maxVal = 65;
-      } else if (allText.includes("builder")) {
-        baseVal = 18; minVal = 14; maxVal = 24;
-      } else if (allText.includes("gliss") || allText.includes("knockout")) {
-        baseVal = 16; minVal = 12; maxVal = 22;
-      } else if (allText.includes("casa de papel")) {
-        baseVal = 20; minVal = 15; maxVal = 26;
-      } else if (allText.includes("fortnite")) {
-        baseVal = 18; minVal = 12; maxVal = 25;
-      } else if (allText.includes("et si monopoly était inventé aujourd'hui") || allText.includes("et si") || allText.includes("electronique") || allText.includes("électronique")) {
-        baseVal = 18; minVal = 12; maxVal = 24;
-      } else if (allText.includes("1992") || (year === 1992 && allText.includes("francs"))) {
-        baseVal = 20; minVal = 15; maxVal = 28;
-      } else if (year < 1950) {
-        baseVal = 220; minVal = 150; maxVal = 350;
-      } else if (year < 1970) {
-        baseVal = 55; minVal = 35; maxVal = 85;
-      } else if (year < 1985) {
-        baseVal = 30; minVal = 20; maxVal = 45;
-      } else if (year < 2000) {
-        baseVal = 22; minVal = 15; maxVal = 30;
-      } else if (year < 2010) {
-        baseVal = 18; minVal = 12; maxVal = 25;
-      } else {
-        baseVal = 15; minVal = 10; maxVal = 22;
+        baseVal = 45; minVal = 30; maxVal = 65; hasEstimate = true;
+      } else if (allText.includes("50ème") || allText.includes("50eme") || allText.includes("cinquantenaire")) {
+        baseVal = 40; minVal = 25; maxVal = 60; hasEstimate = true;
+      } else if (allText.includes("nostalgia") || allText.includes("boîte bois") || allText.includes("boite bois") || allText.includes("wooden")) {
+        baseVal = 55; minVal = 35; maxVal = 80; hasEstimate = true;
+      } else if (allText.includes("deluxe") && (year === 1995 || year === 1996)) {
+        baseVal = 35; minVal = 25; maxVal = 50; hasEstimate = true;
+      } else if (allText.includes("007") && allText.includes("50th")) {
+        baseVal = 60; minVal = 40; maxVal = 90; hasEstimate = true;
+      } else if (year < 1960) {
+        baseVal = 70; minVal = 45; maxVal = 120; hasEstimate = true;
+      } else if (year < 1980) {
+        baseVal = 30; minVal = 20; maxVal = 45; hasEstimate = true;
+      } else if (allText.includes("électronique") || allText.includes("electronique") || allText.includes("banking")) {
+        baseVal = 20; minVal = 12; maxVal = 28; hasEstimate = true;
       }
 
-      // 2. Bonus pour les mots-clés collector
-      if (allText.includes("collector") || allText.includes("limité") || allText.includes("deluxe") || allText.includes("anniversaire")) {
-        if (baseVal < 35) {
-          baseVal += 15;
-          minVal += 10;
-          maxVal += 25;
-        }
+      // Si aucune transaction documentée ou cote vérifiée : ne pas inventer de cote au hasard
+      if (!hasEstimate) {
+        return {
+          value: 0,
+          hasEstimate: false,
+          rangeStr: "Cote non disponible",
+          label: "Cote non disponible (manque de transactions sources)"
+        };
       }
 
-      // 3. Ajustement selon l'état de conservation
-      const cond = (condition || item.condition || "").toLowerCase();
-      let mult = 1.0;
-      if (cond.includes("neuf") || cond.includes("blister")) {
-        mult = 1.35;
-      } else if (cond.includes("très bon") || cond.includes("tres bon")) {
-        mult = 1.0;
-      } else if (cond.includes("bon état") || cond.includes("bon etat")) {
-        mult = 0.8;
-      } else if (cond.includes("moyen")) {
-        mult = 0.6;
-      } else if (cond.includes("incomplet") || cond.includes("pièce")) {
-        mult = 0.4;
-      }
+      // Ajustement selon l'état réel
+      const c = (condition || "").toLowerCase();
+      let factor = 1.0;
+      if (c.includes("neuf sous blister") || c.includes("scellé")) factor = 1.7;
+      else if (c.includes("comme neuf")) factor = 1.25;
+      else if (c.includes("très bon état") || c.includes("tres bon etat")) factor = 1.0;
+      else if (c.includes("bon état") || c.includes("bon etat")) factor = 0.8;
+      else if (c.includes("état moyen") || c.includes("etat moyen") || c.includes("incomplet")) factor = 0.55;
 
-      const finalVal = Math.max(5, Math.round(baseVal * mult));
-      const finalMin = Math.max(4, Math.round(minVal * mult));
-      const finalMax = Math.max(8, Math.round(maxVal * mult));
+      const finalVal = Math.round(baseVal * factor);
+      const finalMin = Math.round(minVal * factor);
+      const finalMax = Math.round(maxVal * factor);
 
       return {
         value: finalVal,
+        hasEstimate: true,
         rangeStr: finalMin + " € - " + finalMax + " €",
         min: finalMin,
         max: finalMax
@@ -2567,6 +2547,15 @@
 
     function initDatabase() {
       let saved = localStorage.getItem(STORAGE_KEY);
+      if (!saved) {
+        for (let i = 0; i < localStorage.length; i++) {
+          const k = localStorage.key(i);
+          if (k && k.startsWith("monopoly_collection_db")) {
+            saved = localStorage.getItem(k);
+            if (saved) break;
+          }
+        }
+      }
 
       if (saved) {
         try {
@@ -2619,8 +2608,10 @@
             reconciled.forEach(function(item) {
               if (item.status === "owned" && (!item.value || parseFloat(item.value) === 0)) {
                 const est = estimateMarketResaleValue(item, item.condition || "Très bon état");
-                item.value = est.value;
-                item.estimated_range = est.rangeStr;
+                if (est && est.hasEstimate) {
+                  item.value = est.value;
+                  item.estimated_range = est.rangeStr;
+                }
               }
             });
 
@@ -2628,7 +2619,9 @@
             saveDatabase();
             return;
           }
-        } catch(e) {}
+        } catch(e) {
+          console.warn("Could not parse saved collection, initializing from seed:", e);
+        }
       }
       loadFromSeed();
     }
@@ -2645,8 +2638,10 @@
         }, item);
         if (obj.status === "owned" && (!obj.value || parseFloat(obj.value) === 0)) {
           const est = estimateMarketResaleValue(obj, obj.condition || "Très bon état");
-          obj.value = est.value;
-          obj.estimated_range = est.rangeStr;
+          if (est && est.hasEstimate) {
+            obj.value = est.value;
+            obj.estimated_range = est.rangeStr;
+          }
         }
         return obj;
       });
@@ -2689,6 +2684,7 @@
 
     function showToast(msg) {
       const toast = document.getElementById("toast");
+      if (!toast) return;
       toast.textContent = msg;
       toast.classList.add("show");
       setTimeout(function() {
@@ -2895,6 +2891,23 @@
       });
     }
 
+    
+    function setViewMode(mode) {
+      currentView = mode;
+      const cardBtn = document.getElementById("cardViewBtn");
+      const tableBtn = document.getElementById("tableViewBtn");
+      if (cardBtn && tableBtn) {
+        if (mode === "card") {
+          cardBtn.classList.add("active");
+          tableBtn.classList.remove("active");
+        } else {
+          tableBtn.classList.add("active");
+          cardBtn.classList.remove("active");
+        }
+      }
+      renderList(false);
+    }
+
     function renderList(resetPagination) {
       if (resetPagination) displayedCount = PAGE_SIZE;
 
@@ -3025,7 +3038,7 @@
           userInfoHtml = '<div class="card-user-info">';
           userInfoHtml += 
             '<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; padding-bottom:4px; border-bottom:1px dashed rgba(245,158,11,0.3);">' +
-              '<span class="resale-badge">💰 Cote : ' + displayVal + ' €</span>' +
+              (est.hasEstimate || (item.value && item.value !== "0") ? '<span class="resale-badge">💰 Cote : ' + displayVal + ' €</span>' : '<span class="resale-badge-nodata">💰 Cote non disponible</span>') +
               '<span style="font-size:0.72rem; color:var(--text-muted);">' + rangeText + '</span>' +
             '</div>';
           if (item.condition) userInfoHtml += '<div><strong>État :</strong> ' + item.condition + '</div>';
@@ -3145,7 +3158,7 @@
           '<td>' + (item.country || 'Monde') + '</td>' +
           '<td>' +
             '<div style="display:flex; align-items:center; gap:4px;">' +
-              '<span class="resale-badge">~' + displayVal + ' €</span>' +
+              (est.hasEstimate || (item.value && item.value !== "0") ? '<span class="resale-badge">~' + displayVal + ' €</span>' : '<span class="resale-badge-nodata">Non coté</span>') +
               '<a href="' + links.ebaySold + '" target="_blank" class="market-btn ebay" style="padding:1px 5px; font-size:0.65rem;" title="Ventes terminées eBay (Exemplaire exact)">🛒</a>' +
               '<a href="' + links.vinted + '" target="_blank" class="market-btn vinted" style="padding:1px 5px; font-size:0.65rem;" title="Vinted Jeux de société (Exemplaire exact)">🏷️</a>' +
             '</div>' +
@@ -3286,6 +3299,17 @@
               '<a href="' + links.vinted + '" target="_blank" class="market-btn vinted" style="font-size:0.75rem; padding:4px 9px;" title="Vinted Jeux de société (Exemplaire exact)">🎯 Vinted Exact</a>' +
               '<a href="' + links.leboncoin + '" target="_blank" class="market-btn lbc" style="font-size:0.75rem; padding:4px 9px;">📦 Le Bon Coin</a>' +
               '<a href="' + links.vintedBroad + '" target="_blank" class="market-btn" style="border:1px dashed var(--border-color); font-size:0.7rem; padding:4px 7px;" title="Recherche sans l\'année si peu d\'annonces avec l\'année exacte">🔎 Vinted Large</a>' +
+            '</div>' +
+          '</div>' +
+          '<div style="margin-top:10px; padding-top:8px; border-top:1px dashed rgba(255,255,255,0.1);">' +
+            '<div style="font-size:0.74rem; font-weight:700; color:var(--text-muted); margin-bottom:6px;">Boutiques & Fabricants (Images, Variantes & Pièces) :</div>' +
+            '<div style="display:flex; gap:5px; flex-wrap:wrap;">' +
+              '<a href="' + links.amazonFr + '" target="_blank" class="market-btn" style="font-size:0.72rem; padding:3px 7px; background:#232f3e; color:#ff9900; border-color:#ff9900;" title="Amazon France">🛒 Amazon FR</a>' +
+              '<a href="' + links.amazonDe + '" target="_blank" class="market-btn" style="font-size:0.72rem; padding:3px 7px; background:#232f3e; color:#ff9900; border-color:#ff9900;" title="Amazon Allemagne">🇩🇪 Amazon DE</a>' +
+              '<a href="' + links.amazonUs + '" target="_blank" class="market-btn" style="font-size:0.72rem; padding:3px 7px; background:#232f3e; color:#ff9900; border-color:#ff9900;" title="Amazon États-Unis">🇺🇸 Amazon US</a>' +
+              '<a href="' + links.amazonUk + '" target="_blank" class="market-btn" style="font-size:0.72rem; padding:3px 7px; background:#232f3e; color:#ff9900; border-color:#ff9900;" title="Amazon Royaume-Uni">🇬🇧 Amazon UK</a>' +
+              '<a href="' + links.hasbro + '" target="_blank" class="market-btn" style="font-size:0.72rem; padding:3px 7px; background:rgba(2,103,193,0.15); color:#38bdf8; border-color:#0267c1;" title="Boutique officielle Hasbro">🎲 Hasbro Officiel</a>' +
+              '<a href="' + links.etsy + '" target="_blank" class="market-btn" style="font-size:0.72rem; padding:3px 7px; background:rgba(241,100,30,0.15); color:#fb923c; border-color:#f1641e;" title="Etsy (Pièces détachées, vintage & fait-main)">🎨 Etsy Raretés</a>' +
             '</div>' +
           '</div>' +
           '<div style="margin-top:6px; font-size:0.73rem; color:var(--text-muted);">' +
@@ -4211,26 +4235,172 @@
       showToast("Sauvegarde JSON téléchargée !");
     }
 
+    function restoreItemsArray(itemsArray) {
+      let restoredCount = 0;
+      const userMap = {};
+      itemsArray.forEach(function(u) {
+        if (u && u.id) userMap[u.id] = u;
+        if (u && u.name) userMap[u.name.toLowerCase().trim()] = u;
+      });
+
+      // Réconciliation avec les éditions du catalogue
+      database.forEach(function(item) {
+        const userItem = userMap[item.id] || userMap[item.name.toLowerCase().trim()];
+        if (userItem) {
+          if (userItem.status) item.status = userItem.status;
+          if (userItem.condition) item.condition = userItem.condition;
+          if (userItem.price) item.price = userItem.price;
+          if (userItem.value) item.value = userItem.value;
+          if (userItem.location || userItem.emplacement) item.location = userItem.location || userItem.emplacement;
+          if (userItem.notes) item.notes = userItem.notes;
+          if (userItem.is_complete !== undefined) item.is_complete = userItem.is_complete;
+          if (userItem.missing_pieces) item.missing_pieces = userItem.missing_pieces;
+          if (userItem.image_url && !item.image_url) item.image_url = userItem.image_url;
+          if (userItem.user_image) item.user_image = userItem.user_image;
+          if (userItem.user_photos) item.user_photos = userItem.user_photos;
+          if (item.status === "owned") restoredCount++;
+        }
+      });
+
+      // Conserver également les éditions personnalisées créées par l'utilisateur
+      itemsArray.forEach(function(u) {
+        if (u && u.id && !database.some(function(d) { return d.id === u.id; })) {
+          database.unshift(u);
+          if (u.status === "owned") restoredCount++;
+        }
+      });
+
+      saveDatabase();
+      renderStats();
+      renderList(true);
+      showToast("Collection restaurée : " + restoredCount + " éditions récupérées !");
+    }
+
+    function restoreFromCsvText(csvText) {
+      const lines = csvText.split(/\r?\n/).filter(function(l) { return l.trim().length > 0; });
+      if (lines.length < 2) throw new Error("Fichier CSV vide ou incomplet.");
+
+      const firstLine = lines[0];
+      const delim = (firstLine.split(";").length > firstLine.split(",").length) ? ";" : ",";
+
+      function parseCsvLine(line) {
+        const result = [];
+        let cur = "";
+        let inQuotes = false;
+        for (let i = 0; i < line.length; i++) {
+          const c = line[i];
+          if (c === '"') {
+            if (inQuotes && line[i+1] === '"') {
+              cur += '"';
+              i++;
+            } else {
+              inQuotes = !inQuotes;
+            }
+          } else if (c === delim && !inQuotes) {
+            result.push(cur);
+            cur = "";
+          } else {
+            cur += c;
+          }
+        }
+        result.push(cur);
+        return result.map(function(s) { return s.trim(); });
+      }
+
+      const headerCells = parseCsvLine(lines[0]).map(function(h) { return h.toLowerCase().replace(/["\s_]/g, ""); });
+      const idIdx = headerCells.indexOf("id");
+      const nameIdx = headerCells.indexOf("nom") !== -1 ? headerCells.indexOf("nom") : headerCells.indexOf("name");
+      const statusIdx = headerCells.indexOf("statut") !== -1 ? headerCells.indexOf("statut") : headerCells.indexOf("status");
+      const condIdx = headerCells.indexOf("etat") !== -1 ? headerCells.indexOf("etat") : headerCells.indexOf("condition");
+      const priceIdx = headerCells.findIndex(function(h) { return h.includes("prix") || h.includes("price"); });
+      const valIdx = headerCells.findIndex(function(h) { return h.includes("valeur") || h.includes("cote"); });
+      const locIdx = headerCells.findIndex(function(h) { return h.includes("emplacement") || h.includes("location"); });
+      const notesIdx = headerCells.indexOf("notes");
+      const compIdx = headerCells.findIndex(function(h) { return h.includes("complet"); });
+      const mpIdx = headerCells.findIndex(function(h) { return h.includes("manquant") || h.includes("pieces"); });
+
+      const restoredItems = [];
+      for (let i = 1; i < lines.length; i++) {
+        const row = parseCsvLine(lines[i]);
+        if (row.length === 0 || !row[0]) continue;
+
+        const rowId = idIdx !== -1 ? row[idIdx] : "";
+        const rowName = nameIdx !== -1 ? row[nameIdx] : "";
+        let rowStatus = statusIdx !== -1 ? row[statusIdx].toLowerCase() : "none";
+        if (rowStatus.includes("posséd") || rowStatus.includes("possed") || rowStatus === "owned") {
+          rowStatus = "owned";
+        } else if (rowStatus.includes("recherch") || rowStatus === "wishlist") {
+          rowStatus = "wishlist";
+        } else {
+          rowStatus = "none";
+        }
+
+        const itemObj = {
+          id: rowId,
+          name: rowName,
+          status: rowStatus,
+          condition: condIdx !== -1 ? row[condIdx] : "",
+          price: priceIdx !== -1 ? row[priceIdx] : "",
+          value: valIdx !== -1 ? row[valIdx] : "",
+          location: locIdx !== -1 ? row[locIdx] : "",
+          notes: notesIdx !== -1 ? row[notesIdx] : ""
+        };
+
+        if (compIdx !== -1 && row[compIdx]) {
+          itemObj.is_complete = !row[compIdx].toLowerCase().includes("incomplet");
+        }
+        if (mpIdx !== -1 && row[mpIdx]) {
+          try {
+            itemObj.missing_pieces = JSON.parse(row[mpIdx]);
+          } catch(e) {}
+        }
+
+        restoredItems.push(itemObj);
+      }
+
+      restoreItemsArray(restoredItems);
+      return restoredItems;
+    }
+
     function importFromJson(e) {
       const file = e.target.files[0];
       if (!file) return;
+
       const reader = new FileReader();
       reader.onload = function(event) {
         try {
-          const imported = JSON.parse(event.target.result);
-          if (Array.isArray(imported)) {
-            database = imported;
-            saveDatabase();
-            renderList(true);
-            showToast("Collection restaurée avec succès !");
+          const rawText = (event.target.result || "").trim();
+          if (!rawText) throw new Error("Fichier sélectionné vide.");
+
+          const cleanText = rawText.replace(/^\ufeff/, "").trim();
+
+          // Détection automatique CSV vs JSON
+          if (cleanText.startsWith('"ID"') || cleanText.startsWith("ID,") || cleanText.startsWith("ID;") || cleanText.startsWith('"Statut"') || cleanText.includes("Valeur_Estimee") || cleanText.includes("Prix_Achat")) {
+            restoreFromCsvText(cleanText);
           } else {
-            alert("Format JSON non valide.");
+            let imported;
+            try {
+              imported = JSON.parse(cleanText);
+            } catch(jsonErr) {
+              if (cleanText.includes(",") || cleanText.includes(";")) {
+                restoreFromCsvText(cleanText);
+                return;
+              }
+              throw jsonErr;
+            }
+
+            const itemsArray = Array.isArray(imported) ? imported : (imported.database || imported.editions || imported.items);
+            if (!Array.isArray(itemsArray)) {
+              throw new Error("Format JSON non reconnu (tableau d'éditions attendu).");
+            }
+            restoreItemsArray(itemsArray);
           }
         } catch(err) {
-          alert("Erreur lors de la lecture du fichier : " + err.message);
+          console.error("Erreur de restauration:", err);
+          alert("Erreur lors de la lecture du fichier : " + err.message + "\n\nConseil : Vérifiez que vous sélectionnez bien le fichier de sauvegarde (.json ou .csv) généré par l'application.");
         }
       };
-      reader.readAsText(file);
+      reader.readAsText(file, "UTF-8");
       e.target.value = "";
     }
 
@@ -5883,8 +6053,8 @@
             💾 Télécharger une sauvegarde de ma collection (.json)
           </button>
           <label class="btn btn-secondary" style="justify-content: flex-start; text-align: left; cursor: pointer; margin: 0;">
-            📥 Restaurer ma sauvegarde (.json)
-            <input type="file" id="settingsImportInput" accept=".json" style="display: none;" onchange="importJsonFile(event); closeSettingsModal();">
+            📥 Restaurer ma sauvegarde (.json ou .csv)
+            <input type="file" id="settingsImportInput" accept=".json,.csv,.txt" style="display: none;" onchange="importJsonFile(event); closeSettingsModal();">
           </label>
           <button class="btn btn-secondary" onclick="exportToCsv(); closeSettingsModal();" style="justify-content: flex-start; text-align: left;">
             📊 Exporter l'inventaire pour Excel (.csv)
