@@ -1258,39 +1258,433 @@
       font-size: 0.75rem;
       font-weight: 700;
     }
+
+    /* ========================================================== */
+    /* BOTTOM NAVIGATION BAR (Option A) & TABBED SYSTEM           */
+    /* ========================================================== */
+    body {
+      padding-bottom: 80px !important;
+    }
+
+    .bottom-nav-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 62px;
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.28);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      padding-bottom: env(safe-area-inset-bottom, 0);
+    }
+
+    .nav-item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      padding: 6px 0;
+      cursor: pointer;
+      position: relative;
+      transition: all 0.2s ease;
+      font-family: inherit;
+      text-decoration: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .nav-item:active {
+      transform: scale(0.92);
+    }
+
+    .nav-item.active {
+      color: var(--primary);
+    }
+
+    .nav-icon {
+      font-size: 1.3rem;
+      line-height: 1;
+      margin-bottom: 2px;
+      transition: transform 0.2s ease;
+    }
+
+    .nav-item.active .nav-icon {
+      transform: translateY(-2px) scale(1.1);
+    }
+
+    .nav-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+
+    .nav-badge {
+      position: absolute;
+      top: 4px;
+      right: calc(50% - 22px);
+      background: #10b981;
+      color: #fff;
+      font-size: 0.65rem;
+      font-weight: 800;
+      padding: 1px 6px;
+      border-radius: 10px;
+      min-width: 16px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    #navWishlistBtn .nav-badge {
+      background: #f59e0b;
+    }
+
+    /* Floating Center Scan Button */
+    .nav-scan-btn {
+      position: relative;
+      top: -12px;
+      overflow: visible;
+    }
+
+    .nav-scan-circle {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #6366f1, #4f46e5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+      border: 3px solid var(--bg-surface);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .nav-scan-btn:active .nav-scan-circle {
+      transform: scale(0.9);
+      box-shadow: 0 2px 10px rgba(99, 102, 241, 0.3);
+    }
+
+    .nav-scan-icon {
+      font-size: 1.55rem;
+      line-height: 1;
+    }
+
+    /* Header Compact */
+    .header-compact-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .icon-btn-circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      font-size: 1.15rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .icon-btn-circle:active {
+      transform: scale(0.92);
+    }
+
+    /* Theme Chips Carousel */
+    .theme-carousel-container {
+      margin-bottom: 16px;
+    }
+
+    .theme-carousel-title {
+      font-size: 0.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .theme-carousel {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 4px 2px 10px 2px;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .theme-carousel::-webkit-scrollbar {
+      display: none;
+    }
+
+    .theme-chip {
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 14px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--text-main);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .theme-chip:hover, .theme-chip.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+      box-shadow: 0 4px 12px rgba(99, 102, 241, 0.35);
+    }
+
+    /* Home Dashboard Layout */
+    #viewHome {
+      display: none;
+    }
+
+    .dashboard-hero {
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(16, 185, 129, 0.1));
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      border-radius: 16px;
+      padding: 22px;
+      margin-bottom: 22px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .dashboard-hero h2 {
+      margin: 0 0 6px 0;
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .dashboard-hero p {
+      margin: 0 0 16px 0;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    .hero-stats-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .hero-stat-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 14px;
+      text-align: center;
+    }
+
+    .hero-stat-val {
+      font-size: 1.55rem;
+      font-weight: 800;
+      color: #10b981;
+      margin-bottom: 2px;
+    }
+
+    .hero-stat-lbl {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+
+    .hub-tiles-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .hub-tile-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-align: left;
+    }
+
+    .hub-tile-card:hover, .hub-tile-card:active {
+      transform: translateY(-2px);
+      border-color: var(--primary);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    }
+
+    .hub-tile-icon {
+      font-size: 2rem;
+      line-height: 1;
+    }
+
+    .hub-tile-title {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .hub-tile-sub {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      line-height: 1.35;
+    }
+
+    /* Section Banner Header for dedicated tabs */
+    .section-banner-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 14px 18px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .section-banner-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--text-main);
+      margin: 0 0 2px 0;
+    }
+
+    .section-banner-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin: 0;
+    }
   </style>
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- Header Compact & Élégant -->
   <header>
     <div class="container header-content">
-      <div class="logo-area">
+      <div class="logo-area" onclick="switchTab('home')" style="cursor: pointer;">
         <div class="logo-badge">MONOPOLY</div>
         <div class="logo-title">
           <h1>Collector Hub <span>🎩</span></h1>
-          <p>Répertoire Mondial & Suivi de Collection (1225 Éditions répertoriées)</p>
+          <p>Suivi de Collection & Répertoire Mondial</p>
         </div>
       </div>
-      <div class="header-actions">
-        <div class="header-actions-primary">
-          <button class="btn btn-secondary" id="scanBoxBtn" style="background: linear-gradient(135deg, #6366f1, #4f46e5); color: #fff; font-weight: 700; border: none; box-shadow: 0 4px 12px rgba(99,102,241,0.35);" title="Identifier une boîte par photo ou code-barres">📸 Scanner & Identifier</button>
-          <button class="btn btn-primary" id="addCustomBtn">➕ Ajouter</button>
-        </div>
-        <div class="header-actions-secondary">
-          <button class="btn btn-secondary" id="backupJsonBtn" title="Sauvegarder ma progression">💾 Sauvegarde</button>
-          <label class="btn btn-secondary" style="cursor:pointer;" title="Restaurer une sauvegarde">
-            📥 Restaurer <input type="file" id="importJsonInput" accept=".json" style="display:none;">
-          </label>
-          <button class="btn btn-secondary" id="exportCsvBtn" title="Exporter pour Microsoft Excel">📊 Excel</button>
-          <button class="btn btn-secondary" id="themeBtn" title="Basculer Mode Clair / Sombre">🌓 Thème</button>
-          <button class="btn btn-secondary" id="installPwaBtn" style="background: rgba(16, 185, 129, 0.15); color: #10b981; border: 1px solid #10b981; font-weight: 700;" title="Installer l'application sur votre smartphone ou PC">📲 Installer</button>
-        </div>
+      <div class="header-compact-actions">
+        <button class="btn btn-primary" id="addCustomBtn" onclick="openAddModal()" style="font-size: 0.82rem; padding: 6px 12px;" title="Ajouter une boîte manuellement">➕ Ajouter</button>
+        <button class="icon-btn-circle" onclick="openSettingsModal()" title="Paramètres & Sauvegardes">⚙️</button>
       </div>
     </div>
   </header>
 
   <main class="container">
+    <!-- VUE ACCUEIL / HUB TABLEAU DE BORD -->
+    <section id="viewHome">
+      <div class="dashboard-hero">
+        <h2>Bienvenue sur votre Hub Monopoly 🎩</h2>
+        <p>Gérez votre collection de jeux Monopoly physiques, estimez leur cote de revente actuelle et parcourez plus de 1 200 éditions mondiales.</p>
+        
+        <div class="hero-stats-row">
+          <div class="hero-stat-box" onclick="switchTab('collection')" style="cursor: pointer;">
+            <div class="hero-stat-val" id="heroStatOwned">0</div>
+            <div class="hero-stat-lbl">Boîtes Possédées</div>
+          </div>
+          <div class="hero-stat-box" onclick="switchTab('collection')" style="cursor: pointer;">
+            <div class="hero-stat-val" style="color: #f59e0b;" id="heroStatValue">0 €</div>
+            <div class="hero-stat-lbl">Valeur Estimée</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grandes Tuiles d'Accès Rapide (Option A & Hub) -->
+      <div style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); margin-bottom: 10px;">
+        Navigation Rapide
+      </div>
+      <div class="hub-tiles-grid">
+        <div class="hub-tile-card" onclick="switchTab('collection')" style="border-left: 4px solid #10b981;">
+          <div class="hub-tile-icon">🟢</div>
+          <div class="hub-tile-title">Ma Collection</div>
+          <div class="hub-tile-sub">Accéder à vos boîtes, photos réelles et cotes d'occasion</div>
+        </div>
+
+        <div class="hub-tile-card" onclick="openScannerModal()" style="border-left: 4px solid #6366f1;">
+          <div class="hub-tile-icon">📸</div>
+          <div class="hub-tile-title">Scanner une Boîte</div>
+          <div class="hub-tile-sub">Identification instantanée par photo (Face & Dos) ou code-barres</div>
+        </div>
+
+        <div class="hub-tile-card" onclick="switchTab('wishlist')" style="border-left: 4px solid #f59e0b;">
+          <div class="hub-tile-icon">⭐</div>
+          <div class="hub-tile-title">Ma Wishlist</div>
+          <div class="hub-tile-sub">Vos recherches prioritaires pour les brocantes, Vinted et eBay</div>
+        </div>
+
+        <div class="hub-tile-card" onclick="switchTab('catalog')" style="border-left: 4px solid #38bdf8;">
+          <div class="hub-tile-icon">📚</div>
+          <div class="hub-tile-title">Le Catalogue</div>
+          <div class="hub-tile-sub">Explorer les 1 225 éditions répertoriées par thème et époque</div>
+        </div>
+      </div>
+
+      <!-- Dernières Acquisitions du Collectionneur -->
+      <div style="margin-bottom: 24px;" id="homeRecentSection">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+          <div style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted);">
+            Dernières Boîtes dans votre Collection
+          </div>
+          <button class="btn btn-secondary" onclick="switchTab('collection')" style="font-size: 0.75rem; padding: 3px 8px;">Voir tout ➔</button>
+        </div>
+        <div id="homeRecentGrid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px;"></div>
+      </div>
+    </section>
+
+    <!-- SECTION BANNER (Pour Collection / Wishlist / Catalogue) -->
+    <div id="viewSectionHeader" class="section-banner-header" style="display: none;">
+      <div>
+        <h2 class="section-banner-title" id="sectionHeaderTitle">Ma Collection</h2>
+        <p class="section-banner-desc" id="sectionHeaderDesc">Vos jeux enregistrés</p>
+      </div>
+      <div id="sectionHeaderActions"></div>
+    </div>
+
+    <!-- CARROUSEL DES THÈMES MONOPOLY AVEC ICÔNES (Onglet Catalogue) -->
+    <div class="theme-carousel-container" id="themeCarouselContainer" style="display: none;">
+      <div class="theme-carousel-title">Explorer par Thématique :</div>
+      <div class="theme-carousel" id="themeChipsBar">
+        <button class="theme-chip active" onclick="selectThemeChip('all', this)">✨ Tous les Thèmes</button>
+        <button class="theme-chip" onclick="selectThemeChip('Classique', this)">👑 Classique & Vintage</button>
+        <button class="theme-chip" onclick="selectThemeChip('Films', this)">🎬 Cinéma & Séries</button>
+        <button class="theme-chip" onclick="selectThemeChip('Jeux Vidéo', this)">🎮 Jeux Vidéo & Geek</button>
+        <button class="theme-chip" onclick="selectThemeChip('Villes', this)">🌍 Villes & Pays</button>
+        <button class="theme-chip" onclick="selectThemeChip('Marques', this)">🏎️ Marques & Sports</button>
+        <button class="theme-chip" onclick="selectThemeChip('Cartes', this)">⚡ Cartes & Rapides</button>
+        <button class="theme-chip" onclick="selectThemeChip('Variantes', this)">🎲 Variantes & Règles</button>
+      </div>
+    </div>
+
     <!-- Stats Dashboard -->
     <div class="stats-bar">
       <div class="stat-card">
@@ -2008,6 +2402,24 @@
       document.getElementById("countOwned").textContent = owned;
       document.getElementById("countWishlist").textContent = wishlist;
       document.getElementById("countNone").textContent = none;
+
+      // Update Bottom Nav Bar Badges
+      const badgeOwned = document.getElementById("navBadgeOwned");
+      if (badgeOwned) {
+        badgeOwned.textContent = owned;
+        badgeOwned.style.display = owned > 0 ? "inline-block" : "none";
+      }
+      const badgeWish = document.getElementById("navBadgeWishlist");
+      if (badgeWish) {
+        badgeWish.textContent = wishlist;
+        badgeWish.style.display = wishlist > 0 ? "inline-block" : "none";
+      }
+
+      // Update Home dashboard hero
+      const heroOwned = document.getElementById("heroStatOwned");
+      if (heroOwned) heroOwned.textContent = owned + " / " + total;
+      const heroVal = document.getElementById("heroStatValue");
+      if (heroVal) heroVal.textContent = Math.round(totalVal) + " €";
     }
 
     function populateFilters() {
@@ -3690,17 +4102,233 @@
     }
 
     // INITIALIZATION & LISTENERS
+
+    // ==========================================================
+    // TAB NAVIGATION (Option A) & DASHBOARD
+    // ==========================================================
+    let currentActiveTab = localStorage.getItem("monopoly_active_tab") || "home";
+
+    function switchTab(tabName) {
+      currentActiveTab = tabName;
+      localStorage.setItem("monopoly_active_tab", tabName);
+
+      // Update Bottom Nav Active Classes
+      document.querySelectorAll(".nav-item").forEach(function(el) { el.classList.remove("active"); });
+      const navBtn = document.getElementById("nav" + tabName.charAt(0).toUpperCase() + tabName.slice(1) + "Btn");
+      if (navBtn) navBtn.classList.add("active");
+
+      const viewHome = document.getElementById("viewHome");
+      const statsBar = document.querySelector(".stats-bar");
+      const controlsPanel = document.querySelector(".controls-panel");
+      const sectionBanner = document.getElementById("viewSectionHeader");
+      const themeCarousel = document.getElementById("themeCarouselContainer");
+      const cardsGrid = document.getElementById("cardsContainer");
+      const tableContainer = document.getElementById("tableContainer");
+      const paginationBar = document.getElementById("paginationBar");
+
+      if (tabName === "home") {
+        viewHome.style.display = "block";
+        if (statsBar) statsBar.style.display = "none";
+        if (controlsPanel) controlsPanel.style.display = "none";
+        if (sectionBanner) sectionBanner.style.display = "none";
+        if (themeCarousel) themeCarousel.style.display = "none";
+        if (cardsGrid) cardsGrid.style.display = "none";
+        if (tableContainer) tableContainer.style.display = "none";
+        if (paginationBar) paginationBar.style.display = "none";
+        renderHomeDashboard();
+      } else {
+        viewHome.style.display = "none";
+        if (statsBar) statsBar.style.display = "flex";
+        if (controlsPanel) controlsPanel.style.display = "block";
+        if (sectionBanner) sectionBanner.style.display = "flex";
+
+        const titleEl = document.getElementById("sectionHeaderTitle");
+        const descEl = document.getElementById("sectionHeaderDesc");
+        const actionsEl = document.getElementById("sectionHeaderActions");
+
+        if (tabName === "collection") {
+          currentFilterStatus = "owned";
+          updateStatusPillsUI();
+          if (themeCarousel) themeCarousel.style.display = "none";
+          titleEl.textContent = "🟢 Ma Collection Personnelle";
+          descEl.textContent = "Vos boîtes enregistrées avec photos réelles et cotes estimées.";
+          actionsEl.innerHTML = '<button class="btn btn-primary" onclick="openAddModal()" style="font-size:0.75rem; padding:5px 10px;">➕ Ajouter une boîte</button>';
+          renderList(true);
+        } else if (tabName === "wishlist") {
+          currentFilterStatus = "wishlist";
+          updateStatusPillsUI();
+          if (themeCarousel) themeCarousel.style.display = "none";
+          titleEl.textContent = "⭐ Ma Wishlist & Recherches";
+          descEl.textContent = "Vos éditions recherchées pour vos sorties brocantes et achats en ligne.";
+          actionsEl.innerHTML = '<button class="btn btn-secondary" onclick="switchTab(\'catalog\')" style="font-size:0.75rem; padding:5px 10px;">📚 Chercher dans le catalogue</button>';
+          renderList(true);
+        } else if (tabName === "catalog") {
+          currentFilterStatus = "all";
+          updateStatusPillsUI();
+          if (themeCarousel) themeCarousel.style.display = "block";
+          titleEl.textContent = "📚 Répertoire Mondial Monopoly";
+          descEl.textContent = "1 225 éditions répertoriées avec historique et cotes du marché.";
+          actionsEl.innerHTML = '<button class="btn btn-secondary" onclick="openScannerModal()" style="font-size:0.75rem; padding:5px 10px;">📸 Scanner une boîte</button>';
+          renderList(true);
+        }
+      }
+
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function renderHomeDashboard() {
+      const ownedItems = database.filter(function(i) { return i.status === "owned"; });
+      const wishlistItems = database.filter(function(i) { return i.status === "wishlist"; });
+
+      let totalVal = 0;
+      ownedItems.forEach(function(i) {
+        const est = estimateMarketResaleValue(i, i.condition);
+        totalVal += (i.value && !isNaN(parseFloat(i.value))) ? parseFloat(i.value) : est.value;
+      });
+
+      const heroOwned = document.getElementById("heroStatOwned");
+      if (heroOwned) heroOwned.textContent = ownedItems.length + " / " + database.length;
+
+      const heroVal = document.getElementById("heroStatValue");
+      if (heroVal) heroVal.textContent = Math.round(totalVal) + " €";
+
+      // Render recent additions
+      const recentGrid = document.getElementById("homeRecentGrid");
+      const recentSection = document.getElementById("homeRecentSection");
+      if (recentGrid && recentSection) {
+        if (ownedItems.length === 0) {
+          recentSection.style.display = "block";
+          recentGrid.innerHTML = 
+            '<div style="grid-column: 1 / -1; text-align: center; padding: 24px; background: var(--bg-card); border: 1px dashed var(--border-color); border-radius: 12px; color: var(--text-muted);">' +
+              '<div style="font-size: 2rem; margin-bottom: 6px;">📦</div>' +
+              '<div style="font-weight: 700; margin-bottom: 4px;">Votre collection est encore vide</div>' +
+              '<div style="font-size: 0.8rem; margin-bottom: 12px;">Scannez une boîte ou ajoutez un jeu pour démarrer votre suivi !</div>' +
+              '<button class="btn btn-primary" onclick="openScannerModal()" style="font-size: 0.8rem;">📸 Scanner ma première boîte</button>' +
+            '</div>';
+        } else {
+          recentSection.style.display = "block";
+          const recentList = ownedItems.slice(0, 4);
+          let html = "";
+          recentList.forEach(function(item) {
+            html += 
+              '<div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 8px; text-align: center; cursor: pointer;" onclick="openLightboxForId(\'' + item.id + '\')">' +
+                (item.image_url ? 
+                  '<img src="' + item.image_url + '" style="width: 100%; height: 90px; object-fit: contain; border-radius: 6px; margin-bottom: 6px;" onerror="handleImageError(this)">' :
+                  '<div style="height: 90px; display: flex; align-items: center; justify-content: center; background: var(--bg-surface); border-radius: 6px; font-weight: 800; color: var(--primary); margin-bottom: 6px;">M</div>'
+                ) +
+                '<div style="font-size: 0.75rem; font-weight: 700; color: var(--text-main); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">' + item.name + '</div>' +
+                '<div style="font-size: 0.7rem; color: #10b981; font-weight: 800;">' + (item.value || estimateMarketResaleValue(item).value) + ' €</div>' +
+              '</div>';
+          });
+          recentGrid.innerHTML = html;
+        }
+      }
+    }
+
+    function openLightboxForId(id) {
+      const item = database.find(function(e) { return e.id === id; });
+      if (item) openLightbox(item);
+    }
+
+    function selectThemeChip(themeKeyword, chipBtn) {
+      document.querySelectorAll(".theme-chip").forEach(function(c) { c.classList.remove("active"); });
+      if (chipBtn) chipBtn.classList.add("active");
+
+      if (themeKeyword === "all") {
+        currentFilterCategory = "all";
+      } else {
+        const matchingCat = Object.keys(database.reduce(function(acc, item) {
+          if (item.category) acc[item.category] = true;
+          return acc;
+        }, {})).find(function(c) {
+          return c.toLowerCase().includes(themeKeyword.toLowerCase());
+        });
+        currentFilterCategory = matchingCat || "all";
+      }
+
+      // Update pills
+      document.querySelectorAll("#categoryPills .pill").forEach(function(p) {
+        if (p.getAttribute("data-category") === currentFilterCategory) p.classList.add("active");
+        else p.classList.remove("active");
+      });
+
+      renderList(true);
+    }
+
+    function openSettingsModal() {
+      const modal = document.getElementById("settingsModalBackdrop");
+      if (modal) modal.classList.add("open");
+    }
+
+    function closeSettingsModal() {
+      const modal = document.getElementById("settingsModalBackdrop");
+      if (modal) modal.classList.remove("open");
+    }
+
+    function toggleTheme() {
+      const body = document.body;
+      const newTheme = body.getAttribute("data-theme") === "light" ? "dark" : "light";
+      body.setAttribute("data-theme", newTheme);
+      try {
+        localStorage.setItem("monopoly_theme", newTheme);
+      } catch (e) {}
+      showToast("Mode " + (newTheme === "light" ? "Clair" : "Sombre") + " activé !");
+    }
+
+    function downloadBackupJson() {
+      backupToJson();
+    }
+
+    function importJsonFile(e) {
+      importFromJson(e);
+    }
+
+    let deferredInstallPrompt = null;
+    window.addEventListener("beforeinstallprompt", function(e) {
+      e.preventDefault();
+      deferredInstallPrompt = e;
+      const btn = document.getElementById("settingsInstallBtn");
+      if (btn) btn.style.fontWeight = "bold";
+    });
+
+    function installPwaAction() {
+      if (deferredInstallPrompt) {
+        deferredInstallPrompt.prompt();
+        deferredInstallPrompt.userChoice.then(function(choiceResult) {
+          if (choiceResult.outcome === "accepted") {
+            showToast("Application installée avec succès !");
+          }
+          deferredInstallPrompt = null;
+        });
+      } else {
+        const isIos = /iphone|ipad|ipod/.test(window.navigator.userAgent.toLowerCase());
+        if (isIos) {
+          alert("📲 Pour installer sur iPhone / iPad :\n\n1. Appuyez sur le bouton Partager en bas de Safari (icône carré avec une flèche vers le haut).\n2. Faites défiler vers le bas et sélectionnez 'Sur l'écran d'accueil'.\n3. Cliquez sur 'Ajouter' en haut à droite.\n\nL'icône Monopoly apparaîtra sur votre écran d'accueil et fonctionnera hors-ligne !");
+        } else {
+          alert("📲 Pour installer sur Android / PC :\n\nDans le menu de votre navigateur (les 3 points verticaux en haut à droite), appuyez sur 'Installer l'application' ou 'Ajouter à l'écran d'accueil'.");
+        }
+      }
+      closeSettingsModal();
+    }
+
     document.addEventListener("DOMContentLoaded", function() {
+      try {
+        const savedTheme = localStorage.getItem("monopoly_theme");
+        if (savedTheme) {
+          document.body.setAttribute("data-theme", savedTheme);
+        }
+      } catch (e) {}
+
       initDatabase();
       renderStats();
       populateFilters();
       renderList(true);
+      switchTab(currentActiveTab);
 
-      document.getElementById("themeBtn").addEventListener("click", function() {
-        const body = document.body;
-        const newTheme = body.getAttribute("data-theme") === "light" ? "dark" : "light";
-        body.setAttribute("data-theme", newTheme);
-      });
+      const themeBtn = document.getElementById("themeBtn");
+      if (themeBtn) {
+        themeBtn.addEventListener("click", toggleTheme);
+      }
 
       document.getElementById("searchInput").addEventListener("input", function(e) {
         currentSearchTerm = e.target.value.trim();
@@ -3821,7 +4449,8 @@
       });
 
       // Add Modal Actions
-      document.getElementById("addCustomBtn").addEventListener("click", openAddModal);
+      const addCustomBtn = document.getElementById("addCustomBtn");
+      if (addCustomBtn) addCustomBtn.addEventListener("click", openAddModal);
       document.getElementById("closeAddModal").addEventListener("click", function() {
         document.getElementById("addModalBackdrop").classList.remove("open");
       });
@@ -3845,12 +4474,16 @@
       });
 
       // Export / Import
-      document.getElementById("exportCsvBtn").addEventListener("click", exportToCsv);
-      document.getElementById("backupJsonBtn").addEventListener("click", backupToJson);
-      document.getElementById("importJsonInput").addEventListener("change", importFromJson);
+      const exportCsvBtn = document.getElementById("exportCsvBtn");
+      if (exportCsvBtn) exportCsvBtn.addEventListener("click", exportToCsv);
+      const backupJsonBtn = document.getElementById("backupJsonBtn");
+      if (backupJsonBtn) backupJsonBtn.addEventListener("click", backupToJson);
+      const importJsonInput = document.getElementById("importJsonInput");
+      if (importJsonInput) importJsonInput.addEventListener("change", importFromJson);
 
       // Box Scanner Events
-      document.getElementById("scanBoxBtn").addEventListener("click", openScannerModal);
+      const scanBoxBtn = document.getElementById("scanBoxBtn");
+      if (scanBoxBtn) scanBoxBtn.addEventListener("click", openScannerModal);
       document.getElementById("closeScannerModal").addEventListener("click", closeScannerModal);
       document.getElementById("closeScannerFooterBtn").addEventListener("click", closeScannerModal);
 
@@ -3984,5 +4617,82 @@
       });
     }
   </script>
+  <!-- BARRE DE NAVIGATION INFÉRIEURE PAR ICÔNES (Option A) -->
+  <nav class="bottom-nav-bar" id="bottomNavBar">
+    <button class="nav-item active" id="navHomeBtn" onclick="switchTab('home')">
+      <span class="nav-icon">🏠</span>
+      <span class="nav-label">Accueil</span>
+    </button>
+
+    <button class="nav-item" id="navCollectionBtn" onclick="switchTab('collection')">
+      <span class="nav-icon">🟢</span>
+      <span class="nav-label">Collection</span>
+      <span class="nav-badge" id="navBadgeOwned" style="display:none;">0</span>
+    </button>
+
+    <button class="nav-item nav-scan-btn" id="navScanBtn" onclick="openScannerModal()" title="Scanner une boîte">
+      <div class="nav-scan-circle">
+        <span class="nav-scan-icon">📸</span>
+      </div>
+      <span class="nav-label">Scanner</span>
+    </button>
+
+    <button class="nav-item" id="navWishlistBtn" onclick="switchTab('wishlist')">
+      <span class="nav-icon">⭐</span>
+      <span class="nav-label">Wishlist</span>
+      <span class="nav-badge" id="navBadgeWishlist" style="display:none;">0</span>
+    </button>
+
+    <button class="nav-item" id="navCatalogBtn" onclick="switchTab('catalog')">
+      <span class="nav-icon">📚</span>
+      <span class="nav-label">Catalogue</span>
+    </button>
+  </nav>
+
+  <!-- MODAL RÉGLAGES & SAUVEGARDE PROPRE -->
+  <div class="modal-backdrop" id="settingsModalBackdrop">
+    <div class="modal-window" style="max-width: 480px;">
+      <div class="modal-header">
+        <h2>⚙️ Paramètres & Sauvegarde</h2>
+        <button class="modal-close-btn" onclick="closeSettingsModal()">&times;</button>
+      </div>
+      <div class="modal-body" style="display: flex; flex-direction: column; gap: 14px;">
+        <div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.4;">
+          Gérez vos données personnelles, sauvegardez votre progression ou exportez votre inventaire pour Excel.
+        </div>
+
+        <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 12px; display: flex; flex-direction: column; gap: 8px;">
+          <div style="font-size: 0.8rem; font-weight: 800; color: var(--text-muted); text-transform: uppercase;">Sécurité de votre collection</div>
+          <button class="btn btn-secondary" id="settingsBackupBtn" onclick="downloadBackupJson(); closeSettingsModal();" style="justify-content: flex-start; text-align: left;">
+            💾 Télécharger une sauvegarde de ma collection (.json)
+          </button>
+          <label class="btn btn-secondary" style="justify-content: flex-start; text-align: left; cursor: pointer; margin: 0;">
+            📥 Restaurer ma sauvegarde (.json)
+            <input type="file" id="settingsImportInput" accept=".json" style="display: none;" onchange="importJsonFile(event); closeSettingsModal();">
+          </label>
+          <button class="btn btn-secondary" onclick="exportToCsv(); closeSettingsModal();" style="justify-content: flex-start; text-align: left;">
+            📊 Exporter l'inventaire pour Excel (.csv)
+          </button>
+        </div>
+
+        <div style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 10px; padding: 12px; display: flex; flex-direction: column; gap: 8px;">
+          <div style="font-size: 0.8rem; font-weight: 800; color: var(--text-muted); text-transform: uppercase;">Affichage & Application</div>
+          <button class="btn btn-secondary" id="settingsThemeBtn" onclick="toggleTheme();" style="justify-content: flex-start; text-align: left;">
+            🌓 Basculer le Thème (Clair / Sombre)
+          </button>
+          <button class="btn btn-secondary" id="settingsInstallBtn" onclick="installPwaAction();" style="justify-content: flex-start; text-align: left; color: #10b981; border-color: #10b981;">
+            📲 Installer l'application sur l'écran d'accueil
+          </button>
+          <button class="btn btn-secondary" onclick="openGeminiModal(); closeSettingsModal();" style="justify-content: flex-start; text-align: left;">
+            🤖 Clé API Google Gemini Vision (Optionnel)
+          </button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="closeSettingsModal()">Fermer</button>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
