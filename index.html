@@ -1936,8 +1936,85 @@
     }
 
   
-    /* Masquer le bouton paramètres flottant quand une modale est ouverte */
-    body.modal-open .floating-settings-btn {
+    /* Indicateur Réseau / Données Mobiles Flottant */
+    .floating-network-badge {
+      position: fixed;
+      top: 10px;
+      right: 58px;
+      z-index: 1100;
+      height: 38px;
+      padding: 0 12px;
+      border-radius: 20px;
+      background: var(--bg-surface);
+      border: 1.5px solid var(--border-color);
+      color: var(--text-main);
+      font-size: 0.74rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.45);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      user-select: none;
+    }
+    .floating-network-badge:hover {
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+    .floating-network-badge .net-pulse-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #10b981;
+      box-shadow: 0 0 8px #10b981;
+      animation: pulseDot 2s infinite ease-in-out;
+    }
+    @keyframes pulseDot {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.35); opacity: 0.7; }
+    }
+    .floating-network-badge.offline {
+      border-color: #ef4444;
+      background: rgba(239, 68, 68, 0.12);
+      color: #f87171;
+    }
+    .floating-network-badge.offline .net-pulse-dot {
+      background: #ef4444;
+      box-shadow: 0 0 8px #ef4444;
+      animation: none;
+    }
+
+    /* Cartes de résultats de recherche web en ligne */
+    .online-result-card {
+      background: var(--bg-surface);
+      border: 1.5px solid var(--border-color);
+      border-radius: 10px;
+      padding: 14px;
+      margin-bottom: 12px;
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      transition: all 0.2s ease;
+      text-align: left;
+    }
+    .online-result-card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    }
+    .online-result-thumb {
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
+      border-radius: 6px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      flex-shrink: 0;
+    }
+
+    /* Masquer le bouton paramètres et l'indicateur réseau quand une modale est ouverte */
+    body.modal-open .floating-settings-btn,
+    body.modal-open .floating-network-badge {
       display: none !important;
     }
 
@@ -2149,8 +2226,63 @@
 <body>
 
   <!-- Header Compact & Élégant -->
-    <!-- BOUTON PARAMÈTRES FLOTTANT DISCRET -->
+  <!-- Indicateur Réseau Données Mobiles & Paramètres Flottants -->
+  <div id="networkStatusBadge" class="floating-network-badge" onclick="openNetworkStatusModal()" title="Statut de connexion réseau">
+    <span class="net-pulse-dot"></span>
+    <span id="networkStatusText">🟢 En ligne</span>
+  </div>
   <button class="floating-settings-btn" onclick="openSettingsModal()" title="Paramètres & Sauvegarde">⚙️</button>
+
+  <!-- MODAL STATUT RÉSEAU & MODE DONNÉES MOBILES -->
+  <div class="modal-backdrop" id="networkModalBackdrop">
+    <div class="modal-window" style="max-width: 460px;">
+      <div class="modal-header">
+        <h3 class="modal-title" style="display:flex; align-items:center; gap:8px;">
+          <span>📶</span> Mode Connecté & Réseau Mobile
+        </h3>
+        <button class="modal-close-btn" onclick="closeNetworkStatusModal()">&times;</button>
+      </div>
+      <div class="modal-body" style="padding: 20px;">
+        <div id="networkModalStatusBanner" style="display:flex; align-items:center; gap:12px; padding:14px; border-radius:10px; background:rgba(16,185,129,0.12); border:1px solid rgba(16,185,129,0.3); margin-bottom:16px;">
+          <span style="font-size:2rem;" id="networkModalStatusIcon">🟢</span>
+          <div>
+            <div id="networkModalStatusTitle" style="font-weight:800; font-size:1.05rem; color:#10b981;">Connecté au Réseau Mobile</div>
+            <div id="networkModalStatusDesc" style="font-size:0.8rem; color:var(--text-muted);">Données mobiles actives (4G/5G/Wi-Fi)</div>
+          </div>
+        </div>
+
+        <div style="background:var(--bg-card); border:1px solid var(--border-color); border-radius:8px; padding:14px; margin-bottom:16px;">
+          <div style="font-size:0.8rem; font-weight:700; text-transform:uppercase; color:var(--text-muted); margin-bottom:10px;">Services En Ligne Actifs :</div>
+          <div style="display:flex; flex-direction:column; gap:8px; font-size:0.85rem;">
+            <div style="display:flex; align-items:center; justify-content:space-between;">
+              <span>🌐 Recherche d'éditions non répertoriées :</span>
+              <strong style="color:#10b981;" id="networkServiceSearchStatus">Opérationnelle</strong>
+            </div>
+            <div style="display:flex; align-items:center; justify-content:space-between;">
+              <span>📈 Cotes de revente en direct (Vinted, eBay, LBC) :</span>
+              <strong style="color:#10b981;">En direct</strong>
+            </div>
+            <div style="display:flex; align-items:center; justify-content:space-between;">
+              <span>🤖 IA Vision Gemini & enrichissement :</span>
+              <strong style="color:#38bdf8;" id="networkModalAiStatus">Prête</strong>
+            </div>
+            <div style="display:flex; align-items:center; justify-content:space-between;">
+              <span>💾 Sauvegarde & PWA hors ligne :</span>
+              <strong style="color:#10b981;">Synchronisée</strong>
+            </div>
+          </div>
+        </div>
+
+        <p style="font-size:0.82rem; color:var(--text-muted); line-height:1.5; margin:0 0 16px 0;">
+          💡 <strong>Fonctionnement constant en ligne :</strong> Cette application est conçue pour fonctionner avec vos <strong>données mobiles</strong>. Dès que vous cherchez une édition inconnue, elle interroge le web en direct pour vous permettre de l'importer instantanément dans votre collection.
+        </p>
+
+        <button class="btn btn-primary" onclick="closeNetworkStatusModal()" style="width:100%; font-weight:700;">
+          Compris
+        </button>
+      </div>
+    </div>
+  </div>
 
   <main class="container">
     <!-- VUE ACCUEIL / HUB TABLEAU DE BORD -->
@@ -3272,11 +3404,31 @@
               '<button class="btn btn-primary" onclick="openScannerModal()">📸 Scanner ma première boîte</button>' +
             '</div>';
         } else {
+          const links = getMarketLinks(currentSearchTerm);
           emptyState.innerHTML = 
-            '<div style="text-align:center; padding: 40px 16px;">' +
-              '<span style="font-size:3.2rem; display:block; margin-bottom:12px;">🔎</span>' +
-              '<h3 style="margin-bottom:8px; font-size:1.15rem;">Aucune édition trouvée</h3>' +
-              '<p style="color:var(--text-muted); font-size:0.88rem; max-width:380px; margin:0 auto 16px;">Aucun Monopoly ne correspond à votre recherche "' + (currentSearchTerm || '').replace(/</g, '&lt;') + '".</p>' +
+            '<div style="text-align:center; padding: 30px 16px; max-width: 580px; margin: 0 auto;">' +
+              '<span style="font-size:3rem; display:block; margin-bottom:10px;">🌐</span>' +
+              '<h3 style="margin-bottom:8px; font-size:1.2rem; font-weight:800;">Édition non répertoriée dans le catalogue local</h3>' +
+              '<p style="color:var(--text-muted); font-size:0.88rem; line-height:1.5; margin:0 auto 16px auto;">' +
+                'Aucune édition ne correspond à "<strong>' + (currentSearchTerm || '').replace(/</g, '&lt;') + '</strong>" parmi les ' + database.length + ' références locales.<br>' +
+                'Votre application fonctionne en <strong>mode connecté aux données mobiles</strong> : vous pouvez lancer une recherche en direct sur le Web mondial pour l\'importer en 1 clic !' +
+              '</p>' +
+              '<button class="btn btn-primary" onclick="launchOnlineCatalogSearch()" style="background: linear-gradient(135deg, #6366f1, #4f46e5); font-weight:700; padding:10px 22px; font-size:0.9rem; margin-bottom:16px; cursor:pointer;">' +
+                '🌐 Rechercher "' + (currentSearchTerm || '').replace(/"/g, '&quot;') + '" en direct sur le Web' +
+              '</button>' +
+              '<div id="catalogOnlineSearchResults"></div>' +
+              '<div style="margin-top:18px; padding-top:14px; border-top:1px dashed var(--border-color);">' +
+                '<div style="font-size:0.75rem; font-weight:700; color:var(--text-muted); margin-bottom:8px;">Explorer directement sur les plateformes officielles & marchandes :</div>' +
+                '<div style="display:flex; gap:6px; justify-content:center; flex-wrap:wrap;">' +
+                  '<a href="' + links.hasbro + '" target="_blank" class="market-btn" style="font-size:0.72rem; padding:4px 8px; background:rgba(2,103,193,0.15); color:#38bdf8; border-color:#0267c1;">🎲 Hasbro</a>' +
+                  '<a href="' + links.amazonFr + '" target="_blank" class="market-btn" style="font-size:0.72rem; padding:4px 8px; background:#232f3e; color:#ff9900; border-color:#ff9900;">🇫🇷 Amazon FR</a>' +
+                  '<a href="' + links.amazonDe + '" target="_blank" class="market-btn" style="font-size:0.72rem; padding:4px 8px; background:#232f3e; color:#ff9900; border-color:#ff9900;">🇩🇪 Amazon DE</a>' +
+                  '<a href="' + links.amazonUs + '" target="_blank" class="market-btn" style="font-size:0.72rem; padding:4px 8px; background:#232f3e; color:#ff9900; border-color:#ff9900;">🇺🇸 Amazon US</a>' +
+                  '<a href="' + links.vinted + '" target="_blank" class="market-btn" style="font-size:0.72rem; padding:4px 8px; color:#007782; border-color:#007782;">👗 Vinted</a>' +
+                  '<a href="' + links.ebay + '" target="_blank" class="market-btn" style="font-size:0.72rem; padding:4px 8px; color:#e53238; border-color:#e53238;">🏷️ eBay Vendus</a>' +
+                  '<a href="' + links.leboncoin + '" target="_blank" class="market-btn" style="font-size:0.72rem; padding:4px 8px; color:#f97316; border-color:#f97316;">📦 Leboncoin</a>' +
+                '</div>' +
+              '</div>' +
             '</div>';
         }
         return;
@@ -4901,6 +5053,324 @@
     }
 
     // ==========================================
+    // MOTEUR RÉSEAU MOBILE & RECHERCHE EN LIGNE (DONNÉES MOBILES)
+    // ==========================================
+    function updateNetworkStatus() {
+      const badge = document.getElementById("networkStatusBadge");
+      const text = document.getElementById("networkStatusText");
+      if (!badge || !text) return;
+
+      const isOnline = navigator.onLine;
+      let netType = "En ligne";
+      if (navigator.connection && navigator.connection.effectiveType) {
+        netType = navigator.connection.effectiveType.toUpperCase();
+      }
+
+      if (isOnline) {
+        badge.className = "floating-network-badge";
+        text.textContent = "🟢 " + (netType === "4G" || netType === "5G" ? netType : "En ligne");
+        badge.title = "Connecté aux données mobiles / Internet (" + netType + ") - Recherche en direct active";
+      } else {
+        badge.className = "floating-network-badge offline";
+        text.textContent = "🔴 Hors ligne";
+        badge.title = "Hors ligne - Activez vos données mobiles pour la recherche web";
+      }
+    }
+
+    function openNetworkStatusModal() {
+      const modal = document.getElementById("networkModalBackdrop");
+      if (!modal) return;
+      const isOnline = navigator.onLine;
+      const icon = document.getElementById("networkModalStatusIcon");
+      const title = document.getElementById("networkModalStatusTitle");
+      const desc = document.getElementById("networkModalStatusDesc");
+      const banner = document.getElementById("networkModalStatusBanner");
+      const searchStatus = document.getElementById("networkServiceSearchStatus");
+      const aiStatus = document.getElementById("networkModalAiStatus");
+
+      let netType = "Réseau mobile actif";
+      if (navigator.connection && navigator.connection.effectiveType) {
+        netType = "Données mobiles " + navigator.connection.effectiveType.toUpperCase();
+      }
+
+      const key = localStorage.getItem("gemini_api_key");
+      if (aiStatus) {
+        aiStatus.textContent = (key && key.trim()) ? "Active (Gemini Vision)" : "Standard Web (Sans clé)";
+      }
+
+      if (isOnline) {
+        if (icon) icon.textContent = "🟢";
+        if (title) {
+          title.textContent = "Connecté aux Données Mobiles";
+          title.style.color = "#10b981";
+        }
+        if (desc) desc.textContent = netType + " - Recherche d'éditions et cotes en direct opérationnelles";
+        if (banner) {
+          banner.style.background = "rgba(16,185,129,0.12)";
+          banner.style.borderColor = "rgba(16,185,129,0.3)";
+        }
+        if (searchStatus) {
+          searchStatus.textContent = "Opérationnelle";
+          searchStatus.style.color = "#10b981";
+        }
+      } else {
+        if (icon) icon.textContent = "🔴";
+        if (title) {
+          title.textContent = "Hors ligne (Données inactives)";
+          title.style.color = "#ef4444";
+        }
+        if (desc) desc.textContent = "Activez vos données mobiles pour rechercher des éditions sur le Web.";
+        if (banner) {
+          banner.style.background = "rgba(239,68,68,0.12)";
+          banner.style.borderColor = "rgba(239,68,68,0.3)";
+        }
+        if (searchStatus) {
+          searchStatus.textContent = "En attente de connexion";
+          searchStatus.style.color = "#ef4444";
+        }
+      }
+
+      document.body.classList.add("modal-open");
+      modal.classList.add("open");
+    }
+
+    function closeNetworkStatusModal() {
+      const modal = document.getElementById("networkModalBackdrop");
+      if (modal) modal.classList.remove("open");
+      document.body.classList.remove("modal-open");
+    }
+
+    // Recherche en direct d'éditions Monopoly sur le web mondial (Fandom API + Gemini + Open Data)
+    async function searchOnlineMonopolyEditions(query) {
+      const cleanQ = (query || "").trim().replace(/monopoly/gi, "").trim();
+      const fullSearchTerm = cleanQ ? ("Monopoly " + cleanQ) : "Monopoly";
+      const results = [];
+
+      if (!navigator.onLine) {
+        throw new Error("Vous êtes actuellement hors ligne. Veuillez activer votre connexion de données mobiles.");
+      }
+
+      // Source 1: Encyclopédie Fandom Monopoly (CORS-enabled avec origin=*)
+      try {
+        const fandomUrl = "https://monopoly.fandom.com/api.php?action=query&list=search&srsearch=" + 
+                          encodeURIComponent(cleanQ || fullSearchTerm) + "&format=json&origin=*";
+        const res = await fetch(fandomUrl);
+        const data = await res.json();
+
+        if (data && data.query && data.query.search) {
+          const hits = data.query.search.slice(0, 4);
+          for (let hit of hits) {
+            if (hit.title.includes("User:") || hit.title.includes("Category:") || hit.title.includes("File:")) continue;
+
+            let editionName = hit.title.trim();
+            if (!/monopoly/i.test(editionName)) editionName = "Monopoly " + editionName;
+
+            let thumbUrl = "";
+            let extractSnippet = hit.snippet.replace(/<[^>]+>/g, "");
+            let detectedYear = null;
+
+            try {
+              const detailUrl = "https://monopoly.fandom.com/api.php?action=query&prop=pageimages|extracts&exintro&explaintext&titles=" + 
+                                encodeURIComponent(hit.title) + "&pithumbsize=400&format=json&origin=*";
+              const detailRes = await fetch(detailUrl);
+              const detailData = await detailRes.json();
+              if (detailData && detailData.query && detailData.query.pages) {
+                const page = Object.values(detailData.query.pages)[0];
+                if (page && page.thumbnail && page.thumbnail.source) {
+                  thumbUrl = page.thumbnail.source;
+                }
+                if (page && page.extract) {
+                  extractSnippet = page.extract.slice(0, 180) + "...";
+                  const yearMatch = page.extract.match(/\b(19[3-9]\d|20[0-2]\d)\b/);
+                  if (yearMatch) detectedYear = parseInt(yearMatch[1], 10);
+                }
+              }
+            } catch(e) {
+              console.warn("Fandom detail fetch warning:", e);
+            }
+
+            results.push({
+              source: "Monopoly Wiki Fandom",
+              name: editionName,
+              year: detectedYear,
+              publisher: "Hasbro",
+              category: "Thématique & Pop Culture",
+              description: extractSnippet || "Édition répertoriée sur l'encyclopédie mondiale Monopoly.",
+              image_url: thumbUrl
+            });
+          }
+        }
+      } catch(fandomErr) {
+        console.warn("Fandom search error:", fandomErr);
+      }
+
+      // Source 2: IA Gemini Live (si clé configurée)
+      const geminiKey = localStorage.getItem("gemini_api_key");
+      if (geminiKey && geminiKey.trim()) {
+        try {
+          const prompt = "Donne les informations exactes de l'édition du jeu Monopoly : '" + fullSearchTerm + "'. " +
+                         "Réponds en JSON strict : {\"name\": \"Monopoly ...\", \"year\": 2021, \"publisher\": \"Hasbro / Winning Moves\", \"category\": \"...\", \"description\": \"Courte description du thème et contenu...\", \"estimated_price_range\": \"20 - 35 €\"}";
+          const gRes = await fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=" + geminiKey.trim(), {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] })
+          });
+          const gData = await gRes.json();
+          if (gData && gData.candidates && gData.candidates[0]) {
+            const rawText = gData.candidates[0].content.parts[0].text;
+            const jMatch = rawText.match(/\{[\s\S]*?\}/);
+            if (jMatch) {
+              const parsed = JSON.parse(jMatch[0]);
+              if (parsed && parsed.name && /monopoly/i.test(parsed.name)) {
+                results.unshift({
+                  source: "IA Gemini Live",
+                  name: parsed.name,
+                  year: parsed.year || null,
+                  publisher: parsed.publisher || "Hasbro",
+                  category: parsed.category || "Thématique",
+                  description: parsed.description || "",
+                  estimated_range: parsed.estimated_price_range || "",
+                  image_url: ""
+                });
+              }
+            }
+          }
+        } catch(gErr) {
+          console.warn("Gemini online search error:", gErr);
+        }
+      }
+
+      return results;
+    }
+
+    async function launchOnlineCatalogSearch() {
+      const container = document.getElementById("catalogOnlineSearchResults");
+      if (!container) return;
+      const q = currentSearchTerm || (document.getElementById("catalogSearchInput") ? document.getElementById("catalogSearchInput").value : "");
+      if (!q) {
+        alert("Veuillez saisir un terme de recherche.");
+        return;
+      }
+
+      container.innerHTML = 
+        '<div style="padding: 20px; text-align: center; color: var(--accent);">' +
+          '<div style="font-size: 1.8rem; margin-bottom: 8px; animation: pulseDot 1.5s infinite;">🌐</div>' +
+          '<div style="font-weight: 700; font-size: 0.9rem;">Interrogation des bases mondiales en direct (Données Mobiles)...</div>' +
+        '</div>';
+
+      try {
+        const found = await searchOnlineMonopolyEditions(q);
+        if (!found || found.length === 0) {
+          container.innerHTML = 
+            '<div style="padding: 16px; text-align: center; background: rgba(0,0,0,0.2); border-radius: 8px; font-size: 0.85rem; color: var(--text-muted);">' +
+              'Aucune édition spécifique trouvée en ligne pour ce terme. Vous pouvez utiliser les liens marchands ci-dessous pour voir les offres actuelles.' +
+            '</div>';
+          return;
+        }
+
+        let html = '<div style="margin-top: 14px; text-align: left;">' +
+                   '<div style="font-size: 0.85rem; font-weight: 800; color: #10b981; margin-bottom: 10px;">✨ ' + found.length + ' édition(s) trouvée(s) en ligne :</div>';
+
+        found.forEach(function(item, idx) {
+          const jsonStr = encodeURIComponent(JSON.stringify(item));
+          html += 
+            '<div class="online-result-card">' +
+              (item.image_url ? 
+                '<img src="' + item.image_url + '" class="online-result-thumb" onerror="this.style.display=\'none\'">' : 
+                '<div class="online-result-thumb" style="display:flex; align-items:center; justify-content:center; font-weight:800; color:var(--primary);">M</div>') +
+              '<div style="flex: 1; min-width: 0;">' +
+                '<div style="display:flex; align-items:center; justify-content:space-between; gap:8px;">' +
+                  '<strong style="font-size: 0.95rem; color: var(--text-main);">' + item.name + '</strong>' +
+                  '<span style="font-size: 0.65rem; padding: 2px 6px; border-radius: 4px; background: rgba(99,102,241,0.2); color: #818cf8; font-weight:700;">' + item.source + '</span>' +
+                '</div>' +
+                '<div style="font-size: 0.78rem; color: var(--text-muted); margin: 3px 0;">' +
+                  (item.year ? '📅 ' + item.year + ' • ' : '') + '🏢 ' + (item.publisher || 'Hasbro') +
+                '</div>' +
+                '<div style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.3; margin-bottom: 8px;">' +
+                  (item.description || '') +
+                '</div>' +
+                '<div style="display: flex; gap: 6px; flex-wrap: wrap;">' +
+                  '<button class="btn btn-secondary" onclick="importOnlineEditionDirect(\'' + jsonStr + '\', \'wishlist\')" style="font-size: 0.75rem; padding: 4px 8px; color: #f59e0b; border-color: #f59e0b; cursor:pointer;">⭐ Wishlist</button>' +
+                  '<button class="btn btn-primary" onclick="importOnlineEditionDirect(\'' + jsonStr + '\', \'owned\')" style="font-size: 0.75rem; padding: 4px 10px; background: #10b981; border-color: #10b981; font-weight:700; cursor:pointer;">🟢 Importer dans ma Collection</button>' +
+                '</div>' +
+              '</div>' +
+            '</div>';
+        });
+
+        html += '</div>';
+        container.innerHTML = html;
+      } catch(err) {
+        container.innerHTML = 
+          '<div style="padding: 12px; background: rgba(239,68,68,0.1); border: 1px solid #ef4444; border-radius: 6px; color: #ef4444; font-size: 0.85rem; text-align: center;">' +
+            'Erreur lors de la recherche en ligne : ' + err.message +
+          '</div>';
+      }
+    }
+
+    function importOnlineEditionDirect(encodedJson, targetStatus) {
+      try {
+        const item = JSON.parse(decodeURIComponent(encodedJson));
+        const newId = "mono-online-" + Date.now();
+        const est = estimateMarketResaleValue({ name: item.name, year: item.year, publisher: item.publisher, category: item.category }, "Très bon état");
+
+        const newEntry = {
+          id: newId,
+          name: item.name,
+          year: item.year || null,
+          publisher: item.publisher || "Hasbro",
+          category: item.category || "Thématique & Pop Culture",
+          country: "France",
+          description: item.description || "Édition importée via la recherche Web en direct.",
+          image_url: item.image_url || "",
+          user_image: "",
+          back_image_url: "",
+          is_complete: true,
+          status: targetStatus || "owned",
+          condition: targetStatus === "owned" ? "Très bon état" : "",
+          price: "",
+          value: targetStatus === "owned" ? est.value : "",
+          estimated_range: est.rangeStr,
+          notes: "Importé via données mobiles (" + (item.source || 'Web') + ")"
+        };
+
+        database.unshift(newEntry);
+        saveDatabase();
+        renderStats();
+        renderList(true);
+        showToast("✓ " + item.name + " ajouté avec succès à " + (targetStatus === "owned" ? "votre collection" : "votre wishlist") + " !");
+      } catch(err) {
+        console.error("Importation error:", err);
+        alert("Erreur lors de l'importation : " + err.message);
+      }
+    }
+
+    async function autoFillFromOnlineSearch() {
+      const statusDiv = document.getElementById("scannerOnlineSearchStatus");
+      const nameInput = document.getElementById("scanNewName");
+      const curName = nameInput ? nameInput.value.trim() : "";
+      const searchTarget = curName || (detectedInfoFromScan && detectedInfoFromScan.title) || (detectedInfoFromScan && detectedInfoFromScan.barcode) || "Monopoly";
+
+      if (statusDiv) statusDiv.innerHTML = '<span style="color:var(--accent);">⚡ Recherche des données officielles en direct...</span>';
+
+      try {
+        const found = await searchOnlineMonopolyEditions(searchTarget);
+        if (found && found.length > 0) {
+          const top = found[0];
+          if (nameInput && top.name) nameInput.value = top.name;
+          if (top.year && document.getElementById("scanNewYear")) document.getElementById("scanNewYear").value = top.year;
+          if (top.publisher && document.getElementById("scanNewPublisher")) document.getElementById("scanNewPublisher").value = top.publisher;
+          if (top.category && document.getElementById("scanNewCategory")) document.getElementById("scanNewCategory").value = top.category;
+          if (top.description && document.getElementById("scanNewDesc")) document.getElementById("scanNewDesc").value = top.description;
+          if (statusDiv) statusDiv.innerHTML = '<span style="color:#10b981; font-weight:700;">✓ Informations officielles trouvées (' + top.source + ') et appliquées !</span>';
+        } else {
+          if (statusDiv) statusDiv.innerHTML = '<span style="color:var(--text-muted);">Aucune fiche exacte trouvée, vous pouvez compléter manuellement.</span>';
+        }
+      } catch(e) {
+        if (statusDiv) statusDiv.innerHTML = '<span style="color:#ef4444;">' + e.message + '</span>';
+      }
+    }
+
+    // ==========================================
     // BOX SCANNER & INTELLIGENT MULTI-PHOTO IDENTIFIER
     // ==========================================
     let currentScannedPhotos = []; // [{ id, dataUrl, name, role: 'front'|'back'|'extra' }]
@@ -5250,6 +5720,14 @@
       let url = "";
       if (target === "google") {
         url = "https://www.google.com/search?q=" + encodeURIComponent(barcode ? ("Monopoly " + barcode + " " + q) : q);
+      } else if (target === "hasbro") {
+        url = "https://shop.hasbro.com/fr-fr/search?q=" + encodeURIComponent(name);
+      } else if (target === "amazonFr") {
+        url = "https://www.amazon.fr/s?k=" + encodeURIComponent("jeu " + q);
+      } else if (target === "amazonDe") {
+        url = "https://www.amazon.de/s?k=" + encodeURIComponent("monopoly " + q);
+      } else if (target === "amazonUs") {
+        url = "https://www.amazon.com/s?k=" + encodeURIComponent("monopoly " + q);
       } else if (target === "vinted") {
         url = "https://www.vinted.fr/catalog?search_text=" + encodeURIComponent("jeu " + q);
       } else if (target === "ebay") {
@@ -5645,6 +6123,14 @@
             '</div>' +
           '</div>' +
           '<div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: 8px; padding: 14px 12px; box-sizing: border-box;">' +
+            '<div style="margin-bottom: 12px; padding: 10px 12px; background: rgba(99, 102, 241, 0.1); border: 1px solid rgba(99, 102, 241, 0.3); border-radius: 8px; text-align: center;">' +
+              '<button type="button" class="btn btn-primary" onclick="autoFillFromOnlineSearch()" style="background: linear-gradient(135deg, #6366f1, #4f46e5); font-weight: 700; padding: 9px 16px; font-size: 0.85rem; width: 100%; box-sizing: border-box; cursor: pointer;">' +
+                '🌐 Rechercher automatiquement les infos de cette boîte sur le Web (Données Mobiles)' +
+              '</button>' +
+              '<div id="scannerOnlineSearchStatus" style="font-size: 0.74rem; color: var(--text-muted); margin-top: 5px;">' +
+                'Interroge l\'encyclopédie mondiale Monopoly pour renseigner automatiquement le titre, l\'année, l\'éditeur et les particularités.' +
+              '</div>' +
+            '</div>' +
             '<div class="scanner-grid-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 12px;">' +
               '<div>' +
                 '<label style="display:block; font-size:0.75rem; font-weight:700; color:var(--text-muted); margin-bottom:4px;">Nom de l\'édition *</label>' +
@@ -5674,6 +6160,10 @@
               '<div style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); margin-bottom: 6px;">🔍 Vérifier cette édition et sa cote en direct sur le web :</div>' +
               '<div style="display: flex; gap: 6px; flex-wrap: wrap;">' +
                 '<button type="button" class="btn btn-secondary" onclick="searchWebForScanned(\'google\')" style="font-size: 0.75rem; padding: 4px 8px;">🌐 Google</button>' +
+                '<button type="button" class="btn btn-secondary" onclick="searchWebForScanned(\'hasbro\')" style="font-size: 0.75rem; padding: 4px 8px; background:rgba(2,103,193,0.15); color:#38bdf8; border-color:#0267c1;">🎲 Hasbro</button>' +
+                '<button type="button" class="btn btn-secondary" onclick="searchWebForScanned(\'amazonFr\')" style="font-size: 0.75rem; padding: 4px 8px; background:#232f3e; color:#ff9900; border-color:#ff9900;">🇫🇷 Amazon FR</button>' +
+                '<button type="button" class="btn btn-secondary" onclick="searchWebForScanned(\'amazonDe\')" style="font-size: 0.75rem; padding: 4px 8px; background:#232f3e; color:#ff9900; border-color:#ff9900;">🇩🇪 Amazon DE</button>' +
+                '<button type="button" class="btn btn-secondary" onclick="searchWebForScanned(\'amazonUs\')" style="font-size: 0.75rem; padding: 4px 8px; background:#232f3e; color:#ff9900; border-color:#ff9900;">🇺🇸 Amazon US</button>' +
                 '<button type="button" class="btn btn-secondary" onclick="searchWebForScanned(\'vinted\')" style="font-size: 0.75rem; padding: 4px 8px; color: #007782; border-color: #007782;">👗 Vinted</button>' +
                 '<button type="button" class="btn btn-secondary" onclick="searchWebForScanned(\'ebay\')" style="font-size: 0.75rem; padding: 4px 8px; color: #e53238; border-color: #e53238;">🏷️ eBay (Vendus)</button>' +
                 '<button type="button" class="btn btn-secondary" onclick="searchWebForScanned(\'leboncoin\')" style="font-size: 0.75rem; padding: 4px 8px; color: #f97316; border-color: #f97316;">📦 Leboncoin</button>' +
@@ -6249,6 +6739,20 @@
       renderStats();
       populateFilters();
       switchTab(currentActiveTab || "home");
+
+      // Suivi de la connectivité réseau mobile en continu
+      updateNetworkStatus();
+      window.addEventListener("online", function() {
+        updateNetworkStatus();
+        showToast("🟢 Connexion réseau active (Données mobiles)");
+      });
+      window.addEventListener("offline", function() {
+        updateNetworkStatus();
+        showToast("🔴 Hors ligne : La recherche web nécessite une connexion active.");
+      });
+      if (navigator.connection) {
+        navigator.connection.addEventListener("change", updateNetworkStatus);
+      }
 
       const themeBtn = document.getElementById("themeBtn");
       if (themeBtn) {

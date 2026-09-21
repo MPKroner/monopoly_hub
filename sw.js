@@ -1,4 +1,4 @@
-const CACHE_NAME = "monopoly-hub-v5";
+const CACHE_NAME = "monopoly-hub-v6";
 const ASSETS_TO_CACHE = [
   "./",
   "./index.html",
@@ -43,8 +43,8 @@ self.addEventListener("fetch", function(event) {
   if (event.request.method !== "GET") return;
   const url = new URL(event.request.url);
 
-  // Skip Google Gemini / external APIs
-  if (url.hostname.includes("googleapis.com") || url.hostname.includes("google.com")) {
+  // Skip Google Gemini / external APIs & live search
+  if (url.hostname.includes("googleapis.com") || url.hostname.includes("google.com") || url.hostname.includes("fandom.com") || url.hostname.includes("wikimedia.org") || url.hostname.includes("wikipedia.org")) {
     return;
   }
 
