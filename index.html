@@ -2701,10 +2701,16 @@
     function estimateMarketResaleValue(item, condition) {
       if (!item) return { value: 0, hasEstimate: false, rangeStr: "Cote non disponible", label: "Cote non disponible" };
 
-      // Si l'utilisateur a renseigné une valeur personnalisée, l'utiliser en priorité
+      // 1. Si l'utilisateur a renseigné une valeur personnalisée, l'utiliser en priorité absolue
       if (item.value && !isNaN(parseFloat(item.value)) && parseFloat(item.value) > 0) {
         const v = parseFloat(item.value);
-        return { value: v, hasEstimate: true, rangeStr: Math.round(v * 0.85) + " € - " + Math.round(v * 1.15) + " €", min: Math.round(v * 0.85), max: Math.round(v * 1.15) };
+        return { 
+          value: v, 
+          hasEstimate: true, 
+          rangeStr: Math.round(v * 0.85) + " € - " + Math.round(v * 1.15) + " €", 
+          min: Math.round(v * 0.85), 
+          max: Math.round(v * 1.15) 
+        };
       }
 
       const name = (item.name || "").toLowerCase();
@@ -2715,58 +2721,115 @@
       const notes = (item.notes || "").toLowerCase();
       const allText = name + " " + pub + " " + cat + " " + desc + " " + notes;
 
-      let baseVal = 0;
-      let minVal = 0;
-      let maxVal = 0;
-      let hasEstimate = false;
+      let baseVal = 15;
+      let minVal = 10;
+      let maxVal = 22;
 
-      // Cotes documentées et réelles
-      if (allText.includes("1937") || allText.includes("s.g.d.g") || allText.includes("miro company") || allText.includes("breveté")) {
-        baseVal = 350; minVal = 250; maxVal = 550; hasEstimate = true;
-      } else if (allText.includes("1935") || allText.includes("white box") || allText.includes("black box") || allText.includes("darrow")) {
-        baseVal = 500; minVal = 350; maxVal = 800; hasEstimate = true;
+      // 2. Grille tarifaire basée sur les offres et ventes du marché secondaire (Vinted, eBay, LeBonCoin)
+      
+      // === RARETÉS HISTORIQUES & VINTAGE PRÉ-1960 ===
+      if (allText.includes("1935") || allText.includes("white box") || allText.includes("black box") || allText.includes("darrow")) {
+        baseVal = 500; minVal = 350; maxVal = 800;
       } else if (allText.includes("1936")) {
-        baseVal = 400; minVal = 300; maxVal = 600; hasEstimate = true;
-      } else if (allText.includes("mega")) {
-        baseVal = 45; minVal = 30; maxVal = 65; hasEstimate = true;
-      } else if (allText.includes("50ème") || allText.includes("50eme") || allText.includes("cinquantenaire")) {
-        baseVal = 40; minVal = 25; maxVal = 60; hasEstimate = true;
-      } else if (allText.includes("nostalgia") || allText.includes("boîte bois") || allText.includes("boite bois") || allText.includes("wooden")) {
-        baseVal = 55; minVal = 35; maxVal = 80; hasEstimate = true;
-      } else if (allText.includes("deluxe") && (year === 1995 || year === 1996)) {
-        baseVal = 35; minVal = 25; maxVal = 50; hasEstimate = true;
-      } else if (allText.includes("007") && allText.includes("50th")) {
-        baseVal = 60; minVal = 40; maxVal = 90; hasEstimate = true;
+        baseVal = 400; minVal = 300; maxVal = 600;
+      } else if (allText.includes("1937") || allText.includes("s.g.d.g") || allText.includes("miro company") || allText.includes("breveté") || allText.includes("brevete")) {
+        baseVal = 350; minVal = 250; maxVal = 550;
+      } else if (year < 1950) {
+        baseVal = 180; minVal = 120; maxVal = 280;
       } else if (year < 1960) {
-        baseVal = 70; minVal = 45; maxVal = 120; hasEstimate = true;
+        baseVal = 70; minVal = 45; maxVal = 120;
+      } else if (year < 1970) {
+        baseVal = 45; minVal = 30; maxVal = 70;
       } else if (year < 1980) {
-        baseVal = 30; minVal = 20; maxVal = 45; hasEstimate = true;
-      } else if (allText.includes("électronique") || allText.includes("electronique") || allText.includes("banking")) {
-        baseVal = 20; minVal = 12; maxVal = 28; hasEstimate = true;
+        baseVal = 32; minVal = 22; maxVal = 48;
+      } else if (year < 1990) {
+        baseVal = 25; minVal = 18; maxVal = 38;
+      } else if (year < 2000) {
+        baseVal = 20; minVal = 15; maxVal = 30;
       }
 
-      // Si aucune transaction documentée ou cote vérifiée : ne pas inventer de cote au hasard
-      if (!hasEstimate) {
-        return {
-          value: 0,
-          hasEstimate: false,
-          rangeStr: "Cote non disponible",
-          label: "Cote non disponible (manque de transactions sources)"
-        };
+      // === ÉDITIONS DE PRESTIGE, BOIS & ANNIVERSAIRES ===
+      if (allText.includes("nostalgia") || allText.includes("boîte bois") || allText.includes("boite bois") || allText.includes("wooden") || allText.includes("ébénisterie")) {
+        baseVal = 55; minVal = 38; maxVal = 85;
+      } else if (allText.includes("deluxe") || allText.includes("prestige")) {
+        baseVal = Math.max(baseVal, 35); minVal = Math.max(minVal, 24); maxVal = Math.max(maxVal, 50);
+      } else if (allText.includes("cinquantenaire") || allText.includes("50ème") || allText.includes("50eme")) {
+        baseVal = 40; minVal = 28; maxVal = 60;
+      } else if (allText.includes("anniversaire") || allText.includes("collector")) {
+        baseVal = Math.max(baseVal, 28); minVal = Math.max(minVal, 20); maxVal = Math.max(maxVal, 42);
+      } else if (allText.includes("mega")) {
+        baseVal = 40; minVal = 28; maxVal = 60;
       }
 
-      // Ajustement selon l'état réel
-      const c = (condition || "").toLowerCase();
+      // === POP CULTURE TRÈS RECHERCHÉE SUR VINTED & EBAY ===
+      if (allText.includes("pokémon") || allText.includes("pokemon")) {
+        baseVal = 60; minVal = 42; maxVal = 90;
+      } else if (allText.includes("zelda")) {
+        baseVal = 48; minVal = 32; maxVal = 70;
+      } else if (allText.includes("mario") || allText.includes("nintendo")) {
+        baseVal = 38; minVal = 26; maxVal = 55;
+      } else if (allText.includes("dragon ball") || allText.includes("dbz") || allText.includes("naruto") || allText.includes("one piece") || allText.includes("manga")) {
+        baseVal = 35; minVal = 24; maxVal = 50;
+      } else if (allText.includes("star wars")) {
+        baseVal = (allText.includes("trilogy") || allText.includes("étain") || allText.includes("etain") || allText.includes("1997")) ? 42 : 28;
+        minVal = Math.round(baseVal * 0.7); maxVal = Math.round(baseVal * 1.45);
+      } else if (allText.includes("harry potter") || allText.includes("seigneur des anneaux") || allText.includes("lord of the rings")) {
+        baseVal = 32; minVal = 22; maxVal = 48;
+      } else if (allText.includes("007") || allText.includes("james bond")) {
+        baseVal = allText.includes("50th") ? 55 : 32;
+        minVal = Math.round(baseVal * 0.7); maxVal = Math.round(baseVal * 1.4);
+      } else if (allText.includes("marvel") || allText.includes("batman") || allText.includes("dc comics") || allText.includes("avengers")) {
+        baseVal = 28; minVal = 18; maxVal = 40;
+      } else if (allText.includes("fortnite")) {
+        baseVal = 20; minVal = 14; maxVal = 28;
+      } else if (allText.includes("casa de papel")) {
+        baseVal = 20; minVal = 14; maxVal = 28;
+      } else if (allText.includes("game of thrones") || allText.includes("stranger things") || allText.includes("friends") || allText.includes("the walking dead")) {
+        baseVal = 24; minVal = 16; maxVal = 35;
+      } else if (allText.includes("fallout") || allText.includes("skyrim") || allText.includes("assassin's creed") || allText.includes("minecraft") || allText.includes("world of warcraft")) {
+        baseVal = 30; minVal = 20; maxVal = 45;
+      } else if (cat.includes("jeux vidéo") || cat.includes("jeux video")) {
+        baseVal = Math.max(baseVal, 22); minVal = Math.max(minVal, 15); maxVal = Math.max(maxVal, 32);
+      }
+
+      // === VILLES, DÉPARTEMENTS & RÉGIONS (WINNING MOVES) ===
+      if (pub.includes("winning moves") || cat.includes("villes") || cat.includes("régions") || cat.includes("regions")) {
+        baseVal = Math.max(baseVal, 26); minVal = Math.max(minVal, 18); maxVal = Math.max(maxVal, 38);
+      }
+
+      // === VARIANTES MODERNE HASBRO & ÉLECTRONIQUES ===
+      if (allText.includes("builder")) {
+        baseVal = 18; minVal = 12; maxVal = 25;
+      } else if (allText.includes("gliss") || allText.includes("knockout")) {
+        baseVal = 16; minVal = 12; maxVal = 22;
+      } else if (allText.includes("tricheurs") || allText.includes("cheaters") || allText.includes("mauvais perdants") || allText.includes("sore losers")) {
+        baseVal = 16; minVal = 12; maxVal = 22;
+      } else if (allText.includes("électronique") || allText.includes("electronique") || allText.includes("banking") || allText.includes("voice banking")) {
+        baseVal = 18; minVal = 12; maxVal = 25;
+      } else if (allText.includes("et si monopoly était inventé") || allText.includes("et si monopoly")) {
+        baseVal = 18; minVal = 12; maxVal = 25;
+      } else if (allText.includes("junior") || allText.includes("voyage") || allText.includes("grab & go")) {
+        baseVal = 10; minVal = 7; maxVal = 15;
+      }
+
+      // 3. Ajustement selon l'état réel et la complétude
+      const c = (condition || item.condition || "").toLowerCase();
       let factor = 1.0;
-      if (c.includes("neuf sous blister") || c.includes("scellé")) factor = 1.7;
+      if (c.includes("neuf sous blister") || c.includes("scellé") || c.includes("scelle")) factor = 1.6;
       else if (c.includes("comme neuf")) factor = 1.25;
       else if (c.includes("très bon état") || c.includes("tres bon etat")) factor = 1.0;
-      else if (c.includes("bon état") || c.includes("bon etat")) factor = 0.8;
-      else if (c.includes("état moyen") || c.includes("etat moyen") || c.includes("incomplet")) factor = 0.55;
+      else if (c.includes("bon état") || c.includes("bon etat")) factor = 0.85;
+      else if (c.includes("état moyen") || c.includes("etat moyen")) factor = 0.65;
+      else if (c.includes("usé") || c.includes("use") || c.includes("abîmé") || c.includes("abime")) factor = 0.55;
 
-      const finalVal = Math.round(baseVal * factor);
-      const finalMin = Math.round(minVal * factor);
-      const finalMax = Math.round(maxVal * factor);
+      // Déduction si la boîte est déclarée incomplète
+      if (item.is_complete === false) {
+        factor *= 0.75;
+      }
+
+      const finalVal = Math.max(5, Math.round(baseVal * factor));
+      const finalMin = Math.max(4, Math.round(minVal * factor));
+      const finalMax = Math.max(8, Math.round(maxVal * factor));
 
       return {
         value: finalVal,
