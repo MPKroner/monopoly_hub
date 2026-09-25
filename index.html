@@ -2411,8 +2411,17 @@
             <span id="matchStatsLabel" style="font-size: 0.75rem; color: var(--text-muted);">Recherche dans 1 226 références</span>
           </div>
           <div style="position: relative;">
-            <input type="text" id="scannerSearchQuery" class="form-control" placeholder="Titre ou mots visibles sur la boîte (ex: Fortnite, Builder, Gliss, Mega, 1992...)" style="padding-left: 36px; font-weight: 600;">
+            <input type="text" id="scannerSearchQuery" class="form-control" placeholder="Titre, éditeur (Parker, Miro...), année ou réf (ex: Parker, 1982, 00009, Deluxe...)" style="padding-left: 36px; font-weight: 600;">
             <span style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); opacity: 0.5;">🔍</span>
+          </div>
+          <div style="display: flex; gap: 5px; flex-wrap: wrap; margin-top: 6px; align-items: center;">
+            <span style="font-size: 0.72rem; color: var(--text-muted);">Filtres rapides :</span>
+            <button type="button" class="btn btn-secondary" style="font-size: 0.7rem; padding: 2px 7px;" onclick="applyScannerSearch('Parker')">🎲 Parker</button>
+            <button type="button" class="btn btn-secondary" style="font-size: 0.7rem; padding: 2px 7px;" onclick="applyScannerSearch('Miro Company')">🏛️ Miro Company</button>
+            <button type="button" class="btn btn-secondary" style="font-size: 0.7rem; padding: 2px 7px;" onclick="applyScannerSearch('Hasbro')">🔴 Hasbro</button>
+            <button type="button" class="btn btn-secondary" style="font-size: 0.7rem; padding: 2px 7px;" onclick="applyScannerSearch('Vintage')">🕰️ Vintage</button>
+            <button type="button" class="btn btn-secondary" style="font-size: 0.7rem; padding: 2px 7px;" onclick="applyScannerSearch('Deluxe')">✨ Deluxe</button>
+            <button type="button" class="btn btn-secondary" style="font-size: 0.7rem; padding: 2px 7px;" onclick="applyScannerSearch('Classique')">👑 Classique</button>
           </div>
         </div>
 
@@ -5379,6 +5388,14 @@
       }
     }
 
+    function applyScannerSearch(term) {
+      const input = document.getElementById("scannerSearchQuery");
+      if (input) {
+        input.value = term;
+        searchAndRenderScannerCandidates(term);
+      }
+    }
+
     async function autoFillFromOnlineSearch() {
       const statusDiv = document.getElementById("scannerOnlineSearchStatus");
       const nameInput = document.getElementById("scanNewName");
@@ -5987,10 +6004,9 @@
         isNotMonopoly = true;
         const ocrMatch = ocrAllText.match(nonMonopolyRegex);
         detectedNonMonopolyName = ocrMatch ? ocrMatch[0] : "Autre élément non-Monopoly";
-      } else if (!hasMonopolyEvidence) {
-        // No barcode match, no AI confirmation, no OCR 'monopoly' text detected in the photo
+      } else if (queryGuess && nonMonopolyRegex.test(queryGuess) && !/monopoly/i.test(queryGuess)) {
         isNotMonopoly = true;
-        detectedNonMonopolyName = "Objet non-Monopoly (ex: Clavier, objet du quotidien...)";
+        detectedNonMonopolyName = queryGuess;
       }
 
       // If year is not yet resolved, use OCR detected year from the box photos!
@@ -6047,11 +6063,15 @@
           if (nameLower.includes(q)) score += 30;
 
           tokens.forEach(function(tok) {
-            if (nameLower.includes(tok)) score += 12;
-            if (descLower.includes(tok)) score += 4;
-            if (pubLower.includes(tok)) score += 3;
-            if (catLower.includes(tok)) score += 3;
-            if (yearStr === tok) score += 8;
+            if (nameLower.includes(tok)) score += 15;
+            if (item.id && item.id.toLowerCase().includes(tok)) score += 20;
+            if (descLower.includes(tok)) score += 6;
+            if (pubLower.includes(tok)) score += 12;
+            if (catLower.includes(tok)) score += 5;
+            if (item.notes && item.notes.toLowerCase().includes(tok)) score += 15;
+            if (yearStr === tok || (tok.length === 4 && yearStr.includes(tok))) score += 20;
+            if (tok === "parker" && pubLower.includes("parker")) score += 30;
+            if (tok === "miro" && (pubLower.includes("miro") || nameLower.includes("miro"))) score += 30;
           });
 
           return { item: item, score: score };
@@ -6110,7 +6130,31 @@
           statsLabel.textContent = "Recherche dans " + database.length + " références";
           container.innerHTML = 
             '<div style="text-align: center; padding: 24px; color: var(--text-muted); border: 1px dashed var(--border-color); border-radius: 8px;">' +
-            '<span>💡</span> Déposez une photo ci-dessus ou saisissez un mot-clé pour lancer l\'identification.' +
+            '<span>💡</span> Déposez vos photos ci-dessus ou saisissez un mot-clé pour lancer l\'identification.' +
+            '</div>';
+          return;
+        }
+
+        // When photos are uploaded but query is empty (or no automatic text was found locally)
+        if (!query && currentScannedPhotos.length > 0) {
+          statsLabel.textContent = currentScannedPhotos.length + " photo(s) chargée(s) • En attente de mot-clé ou réf";
+          container.innerHTML = 
+            '<div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: 10px; padding: 20px 16px; text-align: center; margin-top: 10px;">' +
+              '<div style="font-size: 2.2rem; margin-bottom: 8px;">📸</div>' +
+              '<h4 style="margin: 0 0 6px 0; color: var(--text-main); font-size: 1.05rem; font-weight: 700;">' + currentScannedPhotos.length + ' photo(s) enregistrée(s) avec succès !</h4>' +
+              '<p style="font-size: 0.88rem; color: var(--text-muted); max-width: 520px; margin: 0 auto 14px auto; line-height: 1.4;">' +
+                'Saisissez le nom de l\'éditeur (<strong>Parker</strong>, <strong>Miro</strong>, <strong>Hasbro</strong>), l\'année ou un mot visible sur la boîte ci-dessus pour afficher la fiche correspondante :' +
+              '</p>' +
+              '<div style="display: flex; gap: 6px; justify-content: center; flex-wrap: wrap; margin-bottom: 12px;">' +
+                '<button type="button" class="btn btn-secondary" onclick="applyScannerSearch(\'Parker\')" style="font-size: 0.8rem; padding: 6px 12px;">🎲 Parker Brothers</button>' +
+                '<button type="button" class="btn btn-secondary" onclick="applyScannerSearch(\'Miro Company\')" style="font-size: 0.8rem; padding: 6px 12px;">🏛️ Miro Company</button>' +
+                '<button type="button" class="btn btn-secondary" onclick="applyScannerSearch(\'Hasbro\')" style="font-size: 0.8rem; padding: 6px 12px;">🔴 Hasbro</button>' +
+                '<button type="button" class="btn btn-secondary" onclick="applyScannerSearch(\'Vintage\')" style="font-size: 0.8rem; padding: 6px 12px;">🕰️ Vintage</button>' +
+                '<button type="button" class="btn btn-secondary" onclick="applyScannerSearch(\'Deluxe\')" style="font-size: 0.8rem; padding: 6px 12px;">✨ Deluxe</button>' +
+              '</div>' +
+              '<div style="font-size: 0.76rem; color: var(--text-muted); border-top: 1px dashed var(--border-color); padding-top: 10px; margin-top: 10px;">' +
+                '💡 <em>Astuce : Activez la <strong>Clé IA Gemini</strong> (bouton en haut) pour une reconnaissance 100% automatique et instantanée de toutes vos photos de boîte.</em>' +
+              '</div>' +
             '</div>';
           return;
         }
