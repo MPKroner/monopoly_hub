@@ -2843,7 +2843,8 @@
         etsy: "https://www.etsy.com/fr/search?q=" + encodeURIComponent("Monopoly " + cleanTitle),
         google: "https://www.google.com/search?tbm=isch&q=" + encodeURIComponent("jeu de societe monopoly " + cleanTitle + " boite"),
         jeuMonopoly: "https://www.google.com/search?q=" + encodeURIComponent("site:jeu-monopoly.com " + (cleanTitle || "monopoly")),
-        coleka: "https://www.coleka.com/fr/recherche?q=" + encodeURIComponent("Monopoly " + cleanTitle)
+        coleka: "https://www.coleka.com/fr/recherche?q=" + encodeURIComponent("Monopoly " + cleanTitle),
+        worldOfMonopoly: "https://www.google.com/search?q=" + encodeURIComponent("site:worldofmonopoly.com " + (cleanTitle || "monopoly"))
       };
     }
 
@@ -5255,7 +5256,8 @@
       if (geminiKey && geminiKey.trim()) {
         try {
           const prompt = "Donne les informations exactes de l'édition du jeu Monopoly : '" + fullSearchTerm + "'. " +
-                         "Réponds en JSON strict : {\"name\": \"Monopoly ...\", \"year\": 2021, \"publisher\": \"Hasbro / Winning Moves\", \"category\": \"...\", \"description\": \"Courte description du thème et contenu...\", \"estimated_price_range\": \"20 - 35 €\"}";
+                         "Consulte et recoupe les archives mondiales et françaises de référence : World of Monopoly (worldofmonopoly.com Albert Veldhuis), Jeu-Monopoly.com, Coleka.com et Monopoly Fandom Wiki. " +
+                         "Réponds en JSON strict : {\"name\": \"Monopoly ...\", \"year\": 2021, \"publisher\": \"Hasbro / Parker Brothers / Miro Company / Winning Moves\", \"category\": \"...\", \"description\": \"Description précise de la boîte, format, références de pièces et détails d'époque...\", \"estimated_price_range\": \"20 - 35 €\"}";
           const gRes = await fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=" + geminiKey.trim(), {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -5797,6 +5799,8 @@
         url = "https://www.google.com/search?q=" + encodeURIComponent("site:jeu-monopoly.com " + (barcode ? (barcode + " ") : "") + q);
       } else if (target === "coleka") {
         url = "https://www.coleka.com/fr/recherche?q=" + encodeURIComponent((barcode ? (barcode + " ") : "") + "Monopoly " + q);
+      } else if (target === "worldOfMonopoly") {
+        url = "https://www.google.com/search?q=" + encodeURIComponent("site:worldofmonopoly.com " + (barcode ? (barcode + " ") : "") + q);
       }
       if (url) window.open(url, "_blank", "noopener,noreferrer");
     }
