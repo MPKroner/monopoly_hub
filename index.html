@@ -2415,13 +2415,17 @@
             <span style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); opacity: 0.5;">🔍</span>
           </div>
           <div style="display: flex; gap: 5px; flex-wrap: wrap; margin-top: 6px; align-items: center;">
-            <span style="font-size: 0.72rem; color: var(--text-muted);">Filtres rapides :</span>
+            <span style="font-size: 0.72rem; color: var(--text-muted); font-weight: 700;">Éditeur :</span>
             <button type="button" class="btn btn-secondary" style="font-size: 0.7rem; padding: 2px 7px;" onclick="applyScannerSearch('Parker')">🎲 Parker</button>
-            <button type="button" class="btn btn-secondary" style="font-size: 0.7rem; padding: 2px 7px;" onclick="applyScannerSearch('Miro Company')">🏛️ Miro Company</button>
+            <button type="button" class="btn btn-secondary" style="font-size: 0.7rem; padding: 2px 7px;" onclick="applyScannerSearch('Miro Company')">🏛️ Miro</button>
             <button type="button" class="btn btn-secondary" style="font-size: 0.7rem; padding: 2px 7px;" onclick="applyScannerSearch('Hasbro')">🔴 Hasbro</button>
-            <button type="button" class="btn btn-secondary" style="font-size: 0.7rem; padding: 2px 7px;" onclick="applyScannerSearch('Vintage')">🕰️ Vintage</button>
-            <button type="button" class="btn btn-secondary" style="font-size: 0.7rem; padding: 2px 7px;" onclick="applyScannerSearch('Deluxe')">✨ Deluxe</button>
-            <button type="button" class="btn btn-secondary" style="font-size: 0.7rem; padding: 2px 7px;" onclick="applyScannerSearch('Classique')">👑 Classique</button>
+            
+            <span style="font-size: 0.72rem; color: var(--text-muted); font-weight: 700; margin-left: 4px;">Époque (BGG) :</span>
+            <button type="button" class="btn btn-secondary" style="font-size: 0.7rem; padding: 2px 7px; background: rgba(245,158,11,0.15); color: #f59e0b; border-color: #f59e0b;" onclick="applyScannerEraFilter('1935-1979')" title="Filtrer les éditions historiques 1935-1979">🕰️ 1935-1979</button>
+            <button type="button" class="btn btn-secondary" style="font-size: 0.7rem; padding: 2px 7px; background: rgba(245,158,11,0.15); color: #f59e0b; border-color: #f59e0b;" onclick="applyScannerEraFilter('1980-1999')" title="Filtrer les éditions 80s-90s">📼 80s-90s</button>
+            <button type="button" class="btn btn-secondary" style="font-size: 0.7rem; padding: 2px 7px;" onclick="applyScannerEraFilter('2000-2009')" title="Filtrer les éditions 2000-2009">✨ 2000s</button>
+            <button type="button" class="btn btn-secondary" style="font-size: 0.7rem; padding: 2px 7px;" onclick="applyScannerEraFilter('2010+')" title="Filtrer les éditions récentes 2010+">🚀 2010+</button>
+            <button type="button" class="btn btn-secondary" style="font-size: 0.7rem; padding: 2px 7px; background: rgba(239,68,68,0.12); color: #f87171; border-color: #ef4444;" onclick="searchWebForScanned('bgg')" title="Rechercher sur BoardGameGeek">🎲 BGG</button>
           </div>
         </div>
 
@@ -2844,7 +2848,8 @@
         google: "https://www.google.com/search?tbm=isch&q=" + encodeURIComponent("jeu de societe monopoly " + cleanTitle + " boite"),
         jeuMonopoly: "https://www.google.com/search?q=" + encodeURIComponent("site:jeu-monopoly.com " + (cleanTitle || "monopoly")),
         coleka: "https://www.coleka.com/fr/recherche?q=" + encodeURIComponent("Monopoly " + cleanTitle),
-        worldOfMonopoly: "https://www.google.com/search?q=" + encodeURIComponent("site:worldofmonopoly.com " + (cleanTitle || "monopoly"))
+        worldOfMonopoly: "https://www.google.com/search?q=" + encodeURIComponent("site:worldofmonopoly.com " + (cleanTitle || "monopoly")),
+        bgg: "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=" + encodeURIComponent("Monopoly " + cleanTitle)
       };
     }
 
@@ -5392,6 +5397,26 @@
       }
     }
 
+    function applyScannerEraFilter(era) {
+      const input = document.getElementById("scannerSearchQuery");
+      let currentVal = (input ? input.value : "").trim();
+      // Remove any existing year/era tags
+      currentVal = currentVal.replace(/\b(19\d{2}|20\d{2}|vintage|80s|90s|2000s|moderne)\b/gi, "").trim();
+
+      let queryWithEra = currentVal;
+      if (era === "1935-1979") {
+        queryWithEra = (currentVal ? currentVal + " " : "") + "1935 1979 vintage";
+      } else if (era === "1980-1999") {
+        queryWithEra = (currentVal ? currentVal + " " : "") + "1980 1999";
+      } else if (era === "2000-2009") {
+        queryWithEra = (currentVal ? currentVal + " " : "") + "2000 2009";
+      } else if (era === "2010+") {
+        queryWithEra = (currentVal ? currentVal + " " : "") + "2010 2025";
+      }
+      if (input) input.value = queryWithEra;
+      searchAndRenderScannerCandidates(queryWithEra);
+    }
+
     function applyScannerSearch(term) {
       const input = document.getElementById("scannerSearchQuery");
       if (input) {
@@ -5801,6 +5826,8 @@
         url = "https://www.coleka.com/fr/recherche?q=" + encodeURIComponent((barcode ? (barcode + " ") : "") + "Monopoly " + q);
       } else if (target === "worldOfMonopoly") {
         url = "https://www.google.com/search?q=" + encodeURIComponent("site:worldofmonopoly.com " + (barcode ? (barcode + " ") : "") + q);
+      } else if (target === "bgg") {
+        url = "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=" + encodeURIComponent("Monopoly " + q);
       }
       if (url) window.open(url, "_blank", "noopener,noreferrer");
     }
@@ -6052,6 +6079,16 @@
       let candidates = [];
 
       if (q) {
+        // Extract BGG-style year (e.g. "Monopoly (1935)", "Monopoly 1982")
+        let bggTargetYear = null;
+        const bggYearMatch = q.match(/\b(19\d{2}|20\d{2})\b/);
+        if (bggYearMatch) {
+          bggTargetYear = parseInt(bggYearMatch[1], 10);
+        }
+
+        const isVintageFiltered = Boolean(q.includes("vintage") || (bggTargetYear && bggTargetYear < 1995) || q.includes("1935") || q.includes("1980") || q.includes("parker") || q.includes("miro"));
+        const isModernFiltered = Boolean(q.includes("2010") || q.includes("2020") || q.includes("moderne"));
+
         const tokens = q.split(/\s+/).filter(function(t) { return t.length > 1; });
         candidates = database.map(function(item) {
           let score = 0;
@@ -6059,8 +6096,27 @@
           const descLower = (item.description || "").toLowerCase();
           const pubLower = (item.publisher || "").toLowerCase();
           const catLower = (item.category || "").toLowerCase();
-          const yearStr = item.year ? item.year.toString() : "";
+          const itemYear = item.year ? parseInt(item.year, 10) : null;
+          const yearStr = itemYear ? itemYear.toString() : "";
           const barStr = item.barcode ? item.barcode.toString().toLowerCase() : "";
+
+          // BGG Exact Year Match Boost
+          if (bggTargetYear && itemYear) {
+            if (itemYear === bggTargetYear) score += 60;
+            else if (Math.abs(itemYear - bggTargetYear) <= 2) score += 30;
+            else if (Math.abs(itemYear - bggTargetYear) <= 5) score += 15;
+          }
+
+          // Smart Chronological Era Weighting
+          if (isVintageFiltered) {
+            if (itemYear && itemYear <= 1995) score += 25;
+            if (pubLower.includes("parker") || pubLower.includes("miro")) score += 20;
+            if (itemYear && itemYear >= 2010) score -= 30; // Deprioritize 2010+ modern editions when searching vintage
+          }
+          if (isModernFiltered) {
+            if (itemYear && itemYear >= 2010) score += 25;
+            if (itemYear && itemYear <= 1990) score -= 20;
+          }
 
           if (detectedInfoFromScan && detectedInfoFromScan.barcode) {
             const scanBar = detectedInfoFromScan.barcode.trim().toLowerCase();
@@ -6079,7 +6135,7 @@
             if (pubLower.includes(tok)) score += 12;
             if (catLower.includes(tok)) score += 5;
             if (item.notes && item.notes.toLowerCase().includes(tok)) score += 15;
-            if (yearStr === tok || (tok.length === 4 && yearStr.includes(tok))) score += 20;
+            if (yearStr === tok || (tok.length === 4 && yearStr.includes(tok))) score += 25;
             if (tok === "parker" && pubLower.includes("parker")) score += 30;
             if (tok === "miro" && (pubLower.includes("miro") || nameLower.includes("miro"))) score += 30;
           });
