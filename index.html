@@ -1180,6 +1180,9 @@
     .scanner-thumb-badge.back {
       background: rgba(16, 185, 129, 0.9);
     }
+    .scanner-thumb-badge.spine {
+      background: rgba(245, 158, 11, 0.95);
+    }
     .scanner-thumb-badge.extra {
       background: rgba(99, 102, 241, 0.9);
     }
@@ -2663,9 +2666,12 @@
 
         <div id="modalImagePreviewContainer" style="max-height:180px; overflow:hidden; border-radius:6px; background:#000; display:flex; align-items:center; justify-content:center;"></div>
       </div>
-      <div class="modal-footer">
-        <button class="btn btn-secondary" id="cancelEditBtn">Annuler</button>
-        <button class="btn btn-primary" id="saveEditBtn">Enregistrer les modifications</button>
+      <div class="modal-footer" style="display: flex; justify-content: space-between; align-items: center;">
+        <button type="button" class="btn" id="deleteEditionBtn" onclick="deleteEditionFromCatalog(document.getElementById('editItemId').value)" style="background: rgba(239, 68, 68, 0.12); border: 1px solid #ef4444; color: #ef4444; font-weight: 600; padding: 7px 14px; border-radius: 6px; cursor: pointer;" title="Supprimer définitivement cette édition du catalogue">🗑️ Supprimer du catalogue</button>
+        <div style="display: flex; gap: 8px;">
+          <button class="btn btn-secondary" id="cancelEditBtn">Annuler</button>
+          <button class="btn btn-primary" id="saveEditBtn">Enregistrer les modifications</button>
+        </div>
       </div>
     </div>
   </div>
@@ -4758,6 +4764,35 @@
       showToast('Fiche de "' + item.name + '" mise à jour !');
     }
 
+    function deleteEditionFromCatalog(id) {
+      if (!id) return;
+      const item = database.find(function(e) { return e.id === id; });
+      if (!item) return;
+
+      const confirmed = confirm('Êtes-vous sûr de vouloir supprimer définitivement l\'édition "' + item.name + '" de votre catalogue ?\n\nCette référence sera retirée de votre base et de votre collection.');
+      if (!confirmed) return;
+
+      const idx = database.findIndex(function(e) { return e.id === id; });
+      if (idx !== -1) {
+        database.splice(idx, 1);
+      }
+      if (typeof SEED_DATA !== "undefined" && Array.isArray(SEED_DATA)) {
+        const seedIdx = SEED_DATA.findIndex(function(e) { return e.id === id; });
+        if (seedIdx !== -1) {
+          SEED_DATA.splice(seedIdx, 1);
+        }
+      }
+
+      document.body.classList.remove("modal-open");
+      const editModal = document.getElementById("editModalBackdrop");
+      if (editModal) editModal.classList.remove("open");
+
+      saveDatabase();
+      renderStats();
+      renderList(false);
+      showToast('Édition "' + item.name + '" supprimée du catalogue.');
+    }
+
     // Add Modal
     function openAddModal() {
       document.getElementById("addName").value = "";
@@ -5482,6 +5517,7 @@
           let role = "extra";
           if (countBefore === 0) role = "front";
           else if (countBefore === 1) role = "back";
+          else if (countBefore === 2) role = "spine";
 
           currentScannedPhotos.push({
             id: "photo-" + Date.now() + "-" + Math.random().toString(36).substr(2, 4),
@@ -5525,6 +5561,9 @@
         if (p.role === "back") {
           roleLabel = "Dos";
           roleClass = "back";
+        } else if (p.role === "spine") {
+          roleLabel = "Tranche";
+          roleClass = "spine";
         } else if (p.role === "extra") {
           roleLabel = "Détail";
           roleClass = "extra";
@@ -5560,7 +5599,8 @@
       if (idx < 0 || idx >= currentScannedPhotos.length) return;
       const p = currentScannedPhotos[idx];
       if (p.role === "front") p.role = "back";
-      else if (p.role === "back") p.role = "extra";
+      else if (p.role === "back") p.role = "spine";
+      else if (p.role === "spine") p.role = "extra";
       else p.role = "front";
       renderScannerGallery();
       renderScannerResults(currentScannerCandidates, document.getElementById("scannerSearchQuery").value);
@@ -5786,8 +5826,10 @@
                 const str = t.rawValue || "";
                 ocrAllText += " " + str;
                 if (/hasbro/i.test(str)) detectedLegalPublisher = "Hasbro";
+                else if (/miro\s*company|miro/i.test(str)) detectedLegalPublisher = "Miro Company";
                 else if (/parker/i.test(str)) detectedLegalPublisher = "Parker Brothers";
                 else if (/winning\s*moves/i.test(str)) detectedLegalPublisher = "Winning Moves";
+                else if (/waddingtons/i.test(str)) detectedLegalPublisher = "Waddingtons";
 
                 // Priority 1: © 2021, (c) 2021, Copyright 2021, Hasbro 2021
                 const copyMatch = str.match(/(?:©|\(c\)|copyright|hasbro|parker|tm|®|parution|date|distribué\s+en)[\s:–-]*([12][90]\d{2})/i);
@@ -5832,9 +5874,12 @@
       if (geminiKey && geminiKey.trim() && photos.length > 0) {
         try {
           const parts = [
-            { text: "Analyse ces photos. ATTENTION CRITIQUE : cette application est STRICTEMENT et EXCLUSIVEMENT réservée aux boîtes officielles du jeu de société MONOPOLY.\n" +
-                    "- Si la photo montre un objet du quotidien (clavier d'ordinateur, écran, souris, bureau, meuble, etc.), un être vivant, un vêtement, ou un jeu de société qui n'est PAS un Monopoly (Scrabble, Uno, Cluedo, Catan, etc.), tu DOIS STRICTEMENT répondre avec ce JSON : {\"is_monopoly\": false, \"detected_game\": \"[Nom précis de l'objet ou jeu détecté, ex: Clavier d'ordinateur]\", \"reason\": \"not_a_monopoly\"}\n" +
-                    "- SEULEMENT et UNIQUEMENT si l'image montre de manière incontestable une boîte officielle du jeu de société MONOPOLY (avec le logo officiel Monopoly présent ou reconnaissable), réponds avec ce JSON strict : {\"is_monopoly\": true, \"title\": \"Nom officiel exact (ex: Monopoly Fortnite, Monopoly Classique...)\", \"year\": \"Année ou null\", \"publisher\": \"Hasbro / Parker...\", \"category\": \"...\", \"barcode\": \"EAN si visible ou null\"}" }
+            { text: "Tu es un expert mondial des jeux de société MONOPOLY. Analyse l'ensemble des photos fournies (Face avant, Dos, Tranche/Côté, Détails de boîte ou mentions légales).\n" +
+                    "RÈGLE 1 - REJET NON-MONOPOLY : Si les photos montrent un objet du quotidien (clavier d'ordinateur, écran, souris, bureau, meuble, tasse, etc.), un être vivant, ou un jeu de société différent qui n'est PAS un Monopoly (Scrabble, Uno, Cluedo, Catan, Mille Bornes, etc.), réponds STRICTEMENT avec ce JSON : {\"is_monopoly\": false, \"detected_game\": \"[Nom précis de l'objet ou jeu détecté, ex: Clavier d'ordinateur]\", \"reason\": \"not_a_monopoly\"}\n" +
+                    "RÈGLE 2 - IDENTIFICATION MONOPOLY (TOUS ANGLES ACCEPTÉS : Face seule, Recto-Verso, Face + Tranche, Détails...) : Dès lors qu'au moins une photo montre une boîte de Monopoly officielle (moderne ou vintage/ancienne) :\n" +
+                    "- Analyse minutieusement la face avant ET les tranches/côtés pour identifier l'édition exacte, l'année de parution, et l'éditeur.\n" +
+                    "- Pour les éditions anciennes/vintage (ex: Miro Company Paris, Parker Brothers, Breveté S.G.D.G., boîte blanche 1961, édition originale 1937, Parker 1974, Deluxe, etc.), identifie précisément l'éditeur d'époque (Miro Company, Parker Brothers, Hasbro...) et l'année d'après les mentions légales, typographies ou graphismes visibles sur la face ou la tranche.\n" +
+                    "- Réponds avec ce JSON strict : {\"is_monopoly\": true, \"title\": \"Nom officiel exact (ex: Monopoly France Édition Originale 1937 (Miro Company), Monopoly France 1961 (Boîte Blanche), Monopoly Fortnite, Monopoly Classique...)\", \"year\": \"Année ou null\", \"publisher\": \"Miro Company / Parker Brothers / Hasbro / Winning Moves...\", \"category\": \"Historique & Vintage / Classique & Standard / Thématique...\", \"barcode\": \"EAN si visible ou null\"}" }
           ];
 
           photos.slice(0, 4).forEach(function(p) {
@@ -6193,28 +6238,26 @@
 
       let userPhotosPreviewHtml = "";
       if (currentScannedPhotos.length > 0) {
-        userPhotosPreviewHtml = '<div style="display: flex; gap: 8px; align-items: center; background: rgba(0,0,0,0.25); padding: 8px; border-radius: 8px;">';
-        if (frontPhoto) {
+        userPhotosPreviewHtml = '<div style="display: flex; gap: 6px; align-items: center; background: rgba(0,0,0,0.25); padding: 6px 8px; border-radius: 8px; flex-wrap: wrap;">';
+        currentScannedPhotos.forEach(function(p) {
+          let roleLabel = "Face";
+          let roleColor = "#f43f5e";
+          if (p.role === "back") { roleLabel = "Dos"; roleColor = "#10b981"; }
+          else if (p.role === "spine") { roleLabel = "Tranche"; roleColor = "#f59e0b"; }
+          else if (p.role === "extra") { roleLabel = "Détail"; roleColor = "#6366f1"; }
           userPhotosPreviewHtml += 
             '<div style="text-align: center;">' +
-              '<div style="font-size: 0.65rem; color: #f43f5e; font-weight: 700; margin-bottom: 2px;">Face Avant</div>' +
-              '<img src="' + frontPhoto.dataUrl + '" style="width: 65px; height: 65px; object-fit: contain; border-radius: 4px; border: 1px solid var(--border-color);">' +
+              '<div style="font-size: 0.62rem; color: ' + roleColor + '; font-weight: 700; margin-bottom: 2px;">' + roleLabel + '</div>' +
+              '<img src="' + p.dataUrl + '" style="width: 55px; height: 55px; object-fit: contain; border-radius: 4px; border: 1px solid var(--border-color);">' +
             '</div>';
-        }
-        if (backPhoto && backPhoto !== frontPhoto) {
-          userPhotosPreviewHtml += 
-            '<div style="text-align: center;">' +
-              '<div style="font-size: 0.65rem; color: #10b981; font-weight: 700; margin-bottom: 2px;">Dos de Boîte</div>' +
-              '<img src="' + backPhoto.dataUrl + '" style="width: 65px; height: 65px; object-fit: contain; border-radius: 4px; border: 1px solid var(--border-color);">' +
-            '</div>';
-        }
-        userPhotosPreviewHtml += '<div style="font-size: 1.1rem; opacity: 0.4;">➔</div>';
+        });
+        userPhotosPreviewHtml += '<div style="font-size: 1.1rem; opacity: 0.4; margin: 0 4px;">➔</div>';
         userPhotosPreviewHtml += 
           '<div style="text-align: center;">' +
-            '<div style="font-size: 0.65rem; color: var(--text-muted); font-weight: 700; margin-bottom: 2px;">Catalogue</div>' +
+            '<div style="font-size: 0.62rem; color: var(--text-muted); font-weight: 700; margin-bottom: 2px;">Catalogue</div>' +
             (topMatch.image_url ? 
-              '<img src="' + topMatch.image_url + '" style="width: 65px; height: 65px; object-fit: contain; border-radius: 4px; border: 1px solid var(--border-color);" onerror="handleImageError(this)">' :
-              '<div style="width: 65px; height: 65px; display: flex; align-items: center; justify-content: center; background: var(--bg-card); border-radius: 4px; font-weight: 800; color: var(--primary);">M</div>') +
+              '<img src="' + topMatch.image_url + '" style="width: 55px; height: 55px; object-fit: contain; border-radius: 4px; border: 1px solid var(--border-color);" onerror="handleImageError(this)">' :
+              '<div style="width: 55px; height: 55px; display: flex; align-items: center; justify-content: center; background: var(--bg-card); border-radius: 4px; font-weight: 800; color: var(--primary);">M</div>') +
           '</div>';
         userPhotosPreviewHtml += '</div>';
       }
